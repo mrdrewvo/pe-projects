@@ -5,6 +5,18 @@
 * [TowardsDataScience: The Ultimate Markdown Cheat Sheet](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107)
 * [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
+## MON 2022.10.10
+
+### Learnings
+
+* From HTML, learned about the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#properties) and [target](https://www.w3schools.com/tags/att_a_target.asp) attributes of an <a href> tag
+* Found that simpler websites with more explicit CTAs are more effective
+* in HTML files, references to links assume the same root folder as the current file - so you don't need the full URL!
+
+### Open Questions
+* How do I get this daily journal onto a server with markdown preview + git version control?
+
+
 ## TUE 2022.10.05
 
 ### Accomplishments
