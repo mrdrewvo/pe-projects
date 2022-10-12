@@ -1,9 +1,32 @@
 # My Daily Journal
 
 ## Resources
-* [Github: Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+* [Github: Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [TowardsDataScience: The Ultimate Markdown Cheat Sheet](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107)
 * [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+
+## TUE 2022.10.11
+
+### Learnings
+
+* from in Sublime, you can right-click and open the page in browser instead of opening it from the file in finder/Cyberduck
+* got my emojis to show up using <meta charset="utf-8"/>
+
+### Lesson Notes
+* **Protocol**: a set of rules /an agreed-upon system that defines how to transfer data
+	* e.g. HTTP, FTP, POP3, IMAP, SMTP
+	* HTTPS is a secure version of HTTP
+* Web Crawler (aka spider): software application or bot that downloads and catalogs webpage content and connections.
+* A style sheet will contain overarching rules for formatting
+* Viewing source code: `Right-click>View source`
+* Inspect code: Shortcut for Chrome Dev tools ⌘ + ⌥ + i
+* Lighthouse scoring:
+	* Open incognito window then run report
+* Metadata: data about data
+
+### Questions
+* Is it more difficult or more expensive to have an HTTPS protocol?
+* Why do we need to run Lighthouse in an incognito window?
 
 ## MON 2022.10.10
 
