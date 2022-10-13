@@ -5,6 +5,18 @@
 * [TowardsDataScience: The Ultimate Markdown Cheat Sheet](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107)
 * [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
+## WED 2022.10.12
+
+### Learnings
+
+* Google Calendar for Slack didn't work out too well. Alina and I couldn't get the mutually available times to show up. We only see our own available times even after adding one other to the invitee list in the Create Event dialogue box.
+* We are working out of our local files and using the PE server only to push and save our updated files.
+
+### Lesson Notes
+
+* **dpi**: dots per inch
+* standard graphic size: page width 1200px, page height 630px
+
 ## TUE 2022.10.11
 
 ### Learnings
@@ -16,13 +28,13 @@
 * **Protocol**: a set of rules /an agreed-upon system that defines how to transfer data
 	* e.g. HTTP, FTP, POP3, IMAP, SMTP
 	* HTTPS is a secure version of HTTP
-* Web Crawler (aka spider): software application or bot that downloads and catalogs webpage content and connections.
+* **Web Crawler (aka spider)**: software application or bot that downloads and catalogs webpage content and connections.
 * A style sheet will contain overarching rules for formatting
 * Viewing source code: `Right-click>View source`
-* Inspect code: Shortcut for Chrome Dev tools ⌘ + ⌥ + i
+* Inspect code: Shortcut for Chrome Dev tools `⌘ + ⌥ + i`
 * Lighthouse scoring:
 	* Open incognito window then run report
-* Metadata: data about data
+* **Metadata**: data about data
 
 ### Questions
 * Is it more difficult or more expensive to have an HTTPS protocol?
@@ -32,7 +44,7 @@
 
 ### Learnings
 
-* From HTML, learned about the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#properties) and [target](https://www.w3schools.com/tags/att_a_target.asp) attributes of an <a href> tag
+* From HTML, learned about the [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#properties) and [target](https://www.w3schools.com/tags/att_a_target.asp) attributes of an `<a href>` tag
 * Found that simpler websites with more explicit CTAs are more effective
 * in HTML files, references to links assume the same root folder as the current file - so you don't need the full URL!
 
