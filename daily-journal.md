@@ -7,24 +7,41 @@
 * [TowardsDataScience: The Ultimate Markdown Cheat Sheet](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107)
 * [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
-## WED 2022.10.12
+---
+
+## THU 2022.10.13 | A day in the life of a “visual designer”
+
+### Lesson Notes
+
+*  Affinity Designer
+	* Use the Fill tool (G) to create a gradient
+	* Gradients must be used to fill a shape (cannot be used to fill the canvas/background)
+	* You can add more color points and fill in any type of shape
+	* try changing their opacities
 
 ### Learnings
 
-* Google Calendar for Slack didn't work out too well. Alina and I couldn't get the mutually available times to show up. We only see our own available times even after adding one other to the invitee list in the Create Event dialogue box.
-* We are working out of our local files and using the PE server only to push and save our updated files.
+* Affinity Designer Gradients
+	*  When an object with a linear or radial gradient fill is sheared (skewed) or transformed onto an isometric pane, an additional pair of correction points appears. [ref](https://affinity.help/designer/en-US.lproj/index.html?page=pages/Clr/gradientEditor.html?title=Gradient%20editing)
+
+
+---
+
+## WED 2022.10.12
 
 ### Lesson Notes
 
 * **dpi**: dots per inch
 * standard graphic size: page width 1200px, page height 630px
 
-## TUE 2022.10.11
-
 ### Learnings
 
-* from in Sublime, you can right-click and open the page in browser instead of opening it from the file in finder/Cyberduck
-* got my emojis to show up using <meta charset="utf-8"/>
+* Google Calendar for Slack didn't work out too well. Alina and I couldn't get the mutually available times to show up. We only see our own available times even after adding one other to the invitee list in the Create Event dialogue box.
+* We are working out of our local files and using the PE server only to push and save our updated files.
+
+---
+
+## TUE 2022.10.11
 
 ### Lesson Notes
 * **Protocol**: a set of rules /an agreed-upon system that defines how to transfer data
@@ -38,9 +55,21 @@
 	* Open incognito window then run report
 * **Metadata**: data about data
 
-### Questions
-* Is it more difficult or more expensive to have an HTTPS protocol?
-* Why do we need to run Lighthouse in an incognito window?
+### Learnings
+
+* from in Sublime, you can right-click and open the page in browser instead of opening it from the file in finder/Cyberduck
+* got my emojis to show up using <meta charset="utf-8"/>
+
+### Open Questions
+
+* [x] Is it more difficult or more expensive to have an HTTPS protocol?
+	* The hosting companies use this as a way to extort you --- but it’s technically free - — (they just won’t let you use the free one) — so, that’s a factor in deciding what companies to work with. Not having HTTPS - is really no longer an option - (your site just wont load in most cases)
+* [x] Why do we need to run Lighthouse in an incognito window?
+	* Some plugins like Grammarly - might inject code into the page - and change how the page loads. It’s not a huge deal - but if you’re looking for real data - we’ll be talking about many more tools. https://www.webpagetest.org/. https://pagespeed.web.dev/
+* [x] I see best practice is to have an index.html file for each project, but what about like... our portal or word processor challenge that are one page each? Typically, does the project folder indicate the project name, and the file names inside just name the components (e.g. home, contact, etc)?
+	* this is a convention that the ‘server’ languages have adopted. IF there is an index.html or index.php etc — it will automatically load that file  mysite/portal  - would look for mysite/portal/index.html   - and it’s nice to not have to type the file name and extension
+
+---
 
 ## MON 2022.10.10
 
