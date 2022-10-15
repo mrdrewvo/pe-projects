@@ -9,6 +9,34 @@
 
 ---
 
+## FRI 2022.10.14 | Introducing the Style Information element
+
+### Lesson Notes
+
+* Apparently 1994 HTML with styling in-line still has to be done that way for HTML emails
+* **CSS (Cascading Style Sheets)**: a "style sheet" language - it describes the desired end result, "strongly suggesting" how our content is presented visually
+	* For now, the `<style></style>`  section will go in the `<head></head>`
+
+| Language  | Syntax Format                             |
+| :-------: | ------------------------------------------|
+| HTML      | attribute: value                          |
+| CSS       | property: value (aka style "declaration") |
+
+* `<abbr>`: used to have a hover abbreviation explanation
+* Fonts
+	* There is a Fontbook app native to Mac
+	* There are ~10 universal fonts
+	* If you download and use a unique font, you'll need to include that font file in your website
+* Formatting
+	* should be min 16px for readability
+	* for line-height, use relative units
+
+### Open Questions
+
+* How is everyone learning the possible attributes? I tried searching for the element and attributes in MDN but it doesn't list the attributes
+	* OH! If you use the style attribute in, for example, the <body>  tag, I think you end up using CSS language within the style=' ' attribute (ex)
+	* What about the attributes not found under style? Found these but align wasn't on this MDN list and I remember seeing Derek use it in one of the lessons (e.g. align="center")
+
 ## THU 2022.10.13 | A day in the life of a “visual designer”
 
 ### Lesson Notes
