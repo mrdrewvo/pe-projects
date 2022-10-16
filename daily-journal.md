@@ -33,7 +33,7 @@
 
 ### Open Questions
 
-* How is everyone learning the possible attributes? I tried searching for the element and attributes in MDN but it doesn't list the attributes
+* [ ] How is everyone learning the possible attributes? I tried searching for the element and attributes in MDN but it doesn't list the attributes
 	* OH! If you use the style attribute in, for example, the <body>  tag, I think you end up using CSS language within the style=' ' attribute (ex)
 	* What about the attributes not found under style? Found these but align wasn't on this MDN list and I remember seeing Derek use it in one of the lessons (e.g. align="center")
 
