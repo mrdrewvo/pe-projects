@@ -9,6 +9,25 @@
 
 ---
 
+## SUN 2022.10.16 | HTML/CSS CHALLENGE!
+
+### Lesson Notes
+
+* `../` helps you go up a folder hierarchy
+* QAing a page
+	* open link in browser, mobile, and iPad
+	* run metadata through FB debugger
+	* run lighthouse on all pages while in incognito
+	* run W3 validator for errors
+
+### Learnings
+
+* you don't need the full `a:link` css property. just `a` is fine
+* store your metadata image in your root folder and not your project folder because it's the only link that's absolute, not relative
+* Sublime
+	* auto detects HTML syntax once file is saved as an ".html"
+	* watch out where you're expecting the autopopulating elements/attributes/properties to come up (e.g. for css property `background`, it must be written under an element like `h2`)
+
 ## FRI 2022.10.14 | Introducing the Style Information element
 
 ### Lesson Notes
