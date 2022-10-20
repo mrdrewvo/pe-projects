@@ -9,6 +9,29 @@
 
 ---
 
+## TUE 2022.10.18 | 
+
+### Lesson Notes
+
+* don't name your div classes around where the element will be. focus on it's formatting characteristics
+* iFrame is a way to put a website or piece of a website into yours
+	* usually not a good idea because it's not crawlable = bad SEO
+	* good for video embeds and things like Substack subscriber buttons
+	* iFrames are inline elements by default
+		* if you set an element as `display: block`, you have to also set `width: 100%`
+* SEO just means write good code
+* `min-height:` you can use `vh` for "viewport height" in percentage (e.g. 120vh is 120% of the viewport height)
+* you can add identifiers (`id`) to a section to link to them
+	* e.g. `<a href='#welcome'>Welcome</a>` will go to the `<section id="welcome">` tag on the page
+
+
+
+## MON 2022.10.17 | Pen and CodePen
+
+### Learnings
+
+* `<span>` is just a way to format in-line
+
 ## SUN 2022.10.16 | HTML/CSS CHALLENGE!
 
 ### Lesson Notes
@@ -52,9 +75,10 @@
 
 ### Open Questions
 
-* [ ] How is everyone learning the possible attributes? I tried searching for the element and attributes in MDN but it doesn't list the attributes
+* [X] How is everyone learning the possible attributes? I tried searching for the element and attributes in MDN but it doesn't list the attributes
 	* OH! If you use the style attribute in, for example, the <body>  tag, I think you end up using CSS language within the style=' ' attribute (ex)
 	* What about the attributes not found under style? Found these but align wasn't on this MDN list and I remember seeing Derek use it in one of the lessons (e.g. align="center")
+	* Didn't really get an asnwer for this one but our [Features](https://perpetual.education/features/) page is good for now
 
 ## THU 2022.10.13 | A day in the life of a “visual designer”
 
