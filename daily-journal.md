@@ -9,7 +9,37 @@
 
 ---
 
-## TUE 2022.10.18 | 
+## SUN 2022.10.23 | More catchup 
+
+
+### Other Learnings
+* CSS (like other languages) is read top to bottom, so parameters will override one another
+	* ex: `padding: 200px; padding-left:50px` will keep left at 50px but `padding-left:50px; padding: 200px` will have 200px all around
+* Selectors (can be combined)
+	* elements
+	* * (universal/everything)
+	* selector lists (using , ) - don't get too specific with the path
+	* descendant combinators (no punctuations)
+
+## FRI 2022.10.21 | Styling text and resets
+
+### Lesson Notes
+
+* font-weight: 400 is normal, 700 is bold
+* advanced selectors
+	*  
+
+### Other Learnings
+
+* 1:1 with Derek
+	* eventually we'll try all of the elements - even backend, 
+	* sr roles may not really mean you have more experience in being a developer, but could mean domain space
+* Why do 
+* Bruce Mau's 24 Principles of Design for Transforming the World
+	* Redesigning Everything: A New Era of Massive Change
+
+
+## TUE 2022.10.18
 
 ### Lesson Notes
 
@@ -23,8 +53,6 @@
 * `min-height:` you can use `vh` for "viewport height" in percentage (e.g. 120vh is 120% of the viewport height)
 * you can add identifiers (`id`) to a section to link to them
 	* e.g. `<a href='#welcome'>Welcome</a>` will go to the `<section id="welcome">` tag on the page
-
-
 
 ## MON 2022.10.17 | Pen and CodePen
 
