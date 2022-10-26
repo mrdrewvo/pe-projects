@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Above is the Eric Meyer CSS Reset */
+
+
+html {
+	scroll-behavior: smooth;
+	background: #D7BEAF;
+}
+
+body {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px 20px 200px 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: #F2F3EF;
+	box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+	background-color: inherit;
+	font-family: serif;
+	font-size: 50px;
+	text-align: center;
+	color: #384661;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	padding: 20px;
+	padding-top: 40px;
+	margin: 0px;
+}
+
+header p {
+	background-color: inherit;
+	font-family: serif;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 30px;
+}
+
+nav {
+	padding: 15px;
+	background-color: #8B6F56;
+}
+
+header ul {
+	background-color: inherit;
+	text-align: center;
+}
+
+header li, header a {
+	background-color: inherit;
+}
+
+header li {
+	display: inline-block;
+	list-style: none;
+	padding: 10px 15px;
+}
+
+header a {
+	color: #F2F3EF;
+	text-transform: lowercase;
+	letter-spacing: 0.1rem;
+	font-size: 14px;
+	border-left: 2px #F2F3EF solid;
+	padding-left: 5px;
+}
+
+header a:hover {
+	color: #384661;
+}
+
+main {
+	background-color: #F2F3EF;
+	padding: 15px;
+	box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section h2{
+	background-color: #384661;
+	color: #D97B59;
+	font-family: verdana;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: .5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+section ul {
+ 	padding: 20px;
+ 	text-align: center;
+}
+
+section li {
+	display: inline-block;
+	padding: 20px;
+}
+
+section a {
+	background-color: #7F4707;
+	color: #BFA694;
+	border-radius: 4px;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 10px;
+}
+
+section a:hover {
+	background-color: #BFA694;
+	color: #7F4707;
+}
+
+section a:active {
+	color: #D97B59;
+}
+
+footer {
+	text-align: center;
+	margin-top: 40px;
+}
+
+footer a {
+	color: #384661;
+	font-family: serif;
+	font-style: italic;
+}
+
+footer a:hover {
+	color: #D97B59;
+}
+
+
