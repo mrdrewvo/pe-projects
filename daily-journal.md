@@ -9,8 +9,17 @@
 
 ---
 
-## SUN 2022.10.23 | More catchup 
+## WED 2022.10.26 | `divs` are for real
 
+### Lesson Notes
+* Original websites for 960px wide
+* Using `div` is purely for visual layouts. Structure should be laid out using semantic elements
+	* Ultimately we want to separate the formatting of the section from an "inner-column", that way you're not confined
+
+### Other Learnings
+* [Understanding page width constraint](https://cdpn.io/pen/debug/eYgrpXW])
+
+## SUN 2022.10.23 | More catchup
 
 ### Other Learnings
 * CSS (like other languages) is read top to bottom, so parameters will override one another

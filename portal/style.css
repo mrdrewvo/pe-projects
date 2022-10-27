@@ -1,3 +1,5 @@
+/* Eric Meyer CSS Reset */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +45,7 @@ table {
 }
 
 
-/* Above is the Eric Meyer CSS Reset */
+/*Inspired by https://www.behance.net/gallery/27898479/Desi-Shirt*/
 
 
 html {
@@ -56,10 +58,15 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 25px 20px 200px 20px;
+	box-sizing: border-box;
 }
 
 a {
 	text-decoration: none;
+}
+
+a:hover {
+	transition: 0.4s;
 }
 
 header {
@@ -96,12 +103,7 @@ nav {
 }
 
 header ul {
-	background-color: inherit;
 	text-align: center;
-}
-
-header li, header a {
-	background-color: inherit;
 }
 
 header li {
@@ -121,6 +123,8 @@ header a {
 
 header a:hover {
 	color: #384661;
+	border-top: 2px #F2F3EF solid;
+	transition: .25s;
 }
 
 main {
@@ -132,7 +136,7 @@ main {
 section h2{
 	background-color: #384661;
 	color: #D97B59;
-	font-family: verdana;
+	font-family: Lato, Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 20px;
 	letter-spacing: .5rem;
@@ -157,9 +161,10 @@ section a {
 	background-color: #7F4707;
 	color: #BFA694;
 	border-radius: 4px;
-	font-family: sans-serif;
+	font-family: Lato, Helvetica, sans-serif;
 	font-size: 14px;
 	padding: 10px;
+	transform: lowercase;
 }
 
 section a:hover {
