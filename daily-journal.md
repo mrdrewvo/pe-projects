@@ -1,4 +1,4 @@
-[back to Drew Vo Homepage](http://peprojects.dev/alpha-6/drew/projects/personal-website/home.html)
+[back to Drew Vo Homepage](http://peprojects.dev/alpha-6/drew/projects/personal-website/index.html)
 
 # My Daily Journal
 
@@ -21,7 +21,7 @@
 	* Ultimately we want to separate the formatting of the section from an "inner-column", that way you're not confined
 
 ### Other Learnings
-* [Understanding page width constraint](https://cdpn.io/pen/debug/eYgrpXW])
+* [Understanding page width constraint](https://codepen.io/perpetual-education/pen/abpRdjJ)
 
 ## SUN 2022.10.23 | More catchup
 
