@@ -9,6 +9,10 @@
 
 ---
 
+## FRI 2022.10.28
+
+* (For the most part)... Semantic elements are for content and organization (+ some formatting using classes) and divs are for formatting
+
 ## WED 2022.10.26 | `divs` are for real
 
 ### Lesson Notes
