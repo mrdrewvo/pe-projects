@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	outline: 1px red solid;
+}
+
+body {
+	background-color: white;
+}
+
+.inner-column {
+
+}
+
+.index a {
+	
+	display: inline-block;
+	background-color: white;
+	border-radius: 4px;
+	padding: 20px;
+	
+	text-decoration: none;
+	color: white;
+
+	transition: .5s;
+}
+
+.index a:hover {
+	color: grey;
+	outline: 1px solid grey;
+	
+	transition: .5s;
+	transition-delay: 2s;
+	cursor: default;
+}
+
+.logo {
+	height: 100vh;
+	text-align: center;
+	padding-top: 15vh;
+}
+
+.logo img {
+	max-width: 30vw;
+	height: auto;
+}
+
+.banner {
+	height: 70vh;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+}

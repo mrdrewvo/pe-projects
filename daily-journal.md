@@ -9,6 +9,11 @@
 
 ---
 
+## WED 2022.11.02
+
+* started our first client project today!
+	* I might be thinking too much about the bigger picture and asking the wrong questions...
+
 ## FRI 2022.10.28
 
 * (For the most part)... Semantic elements are for content and organization (+ some formatting using classes) and divs are for formatting
