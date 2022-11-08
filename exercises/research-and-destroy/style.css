@@ -1,0 +1,78 @@
+* {
+	outline: 1px solid red;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: Garamond;
+}
+
+.inner-column {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.announcements {
+	background-color: #CFB69C;
+}
+
+.announcements p {
+	color: #FAFAFA;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	text-align: center;
+	padding: 15px;
+}
+
+.title-banner {
+	text-align: center;
+	padding: 20px;
+}
+
+.title-banner .three-columns {
+	display: inline-block;
+}
+
+.title-banner .third-column {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+}
+
+.title-banner a {
+	display: inline;
+}
+nav {
+	text-align: center;
+	padding: 10px;
+}
+
+nav a {
+	display: inline;
+	padding: 5px;
+}
+
+.billboard .inner-column {
+	background-image: url("https://www.brides.com/thmb/LIqHMOgNeMRi9nTSnKNUPyKtteo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/beigeweddings-a0f6735ca15c4d588d4821dc836d00d1.jpg");
+	height: 65vh;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.billboard .inner-column h1{
+	color: #FAF5F3;
+	font-size: 50px;
+	letter-spacing: 0.3em;
+	text-align: center;	
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.cake-2 {
+	background-image: url("https://ruffledblog.com/wp-content/uploads/2019/12/Best-Wedding-Cakes-2019-11.jpg");
+	height: 65vh;
+}

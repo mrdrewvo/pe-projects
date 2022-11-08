@@ -4,14 +4,14 @@
 
 body {
 	background-color: #434343;
-	font-family: 'Noto Sans', helvetica;
+	font-family: helvetica;
 	color: #FDFDFD;
 }
 
 .inner-column {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 600px;
+	max-width: 700px;
 	padding: 10px;
 }
 
@@ -38,7 +38,7 @@ nav a {
 	color: #434343;
 }
 
-nav a:hover , .inner-column a:hover {
+nav a:hover, .inner-column a:hover {
 	color: #B8814C;
 }
 
@@ -59,28 +59,12 @@ h1 {
 	text-align: center;
 }
 
-.inner-column li + li, p + p {
-	padding-top: 15px;
-}
-
 main a {
 	text-decoration: none;
 	color: #99AA8A;
 }
 
-main iframe {
-
-}
-
 .site-footer {
 	padding-top: 50px;
 	text-align: center;
-}
-
-.substack {
-	background-color: #F5F5F5;
-	border-radius: 5px;
-	font-family: inherit;
-	frameborder="0";
-	scrolling="no";
 }
