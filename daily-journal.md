@@ -9,6 +9,10 @@
 
 ---
 
+## TUE 2022.11.08
+
+* added critiques to my colleagues' client sites
+
 ## WED 2022.11.02
 
 * started our first client project today!
