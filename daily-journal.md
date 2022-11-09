@@ -9,9 +9,15 @@
 
 ---
 
+##
+
 ## TUE 2022.11.08
 
 * added critiques to my colleagues' client sites
+* watched Tend Your Garden video - and yeah I really should tend my garden!
+* added reader mode to Chrome and it's great!
+* read about Morning Pages from Conria
+	* it's a brain dump of 3 pages of non stop writing
 
 ## WED 2022.11.02
 
