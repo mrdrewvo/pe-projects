@@ -2,12 +2,14 @@
 
 # My Daily Journal
 
-## Resources
-* [Github: Markdown Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [TowardsDataScience: The Ultimate Markdown Cheat Sheet](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107)
-* [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+
+## MON 2022.11.14
+
+* 
+
 
 ## SUN 2022.11.13
 

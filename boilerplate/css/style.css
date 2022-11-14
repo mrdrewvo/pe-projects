@@ -1,8 +1,8 @@
 
 /* ~~~ DOC STRUCTURE ~~~ */
 
-@import url("meyer-reset.css");
-@import url("reset.css")
+@import "meyer-reset.css";
+@import "reset.css";
 
 /** {
 	outline: 1px solid red;
