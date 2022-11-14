@@ -9,7 +9,14 @@
 
 ---
 
-##
+## SUN 2022.11.13
+
+* Committing the followign to my routine:
+	* Organize: take inventory of my to-do backlog and purge. PE is my priority now!
+	* Setting realistic commitments: at least... I think these are realistic haha
+		* Daily: journal entry, 20min morning pages, commit files to Tower and sync to server and GitHub
+		* Once weekly: 30min substack post
+		* Twice weekly:  30min visual inspo exploration, 30min personal website work
 
 ## TUE 2022.11.08
 

@@ -1,11 +1,17 @@
+
+/* ~~~ DOC STRUCTURE ~~~ */
+
+@import url("meyer-reset.css");
+@import url("reset.css")
+
 /** {
 	outline: 1px solid red;
 }*/
 
 body {
 	background-color: #434343;
-	font-family: helvetica;
 	color: #FDFDFD;
+	font-family: helvetica;
 }
 
 .inner-column {
@@ -19,6 +25,7 @@ a {
 	transition: 0.4s;
 }
 
+/* ~~~ ELEMENT STYLING ~~~ */
 
 .site-header {
 	background-color: #F5F5F5;
