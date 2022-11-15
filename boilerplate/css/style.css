@@ -21,10 +21,6 @@ body {
 	padding: 10px;
 }
 
-a {
-	transition: 0.4s;
-}
-
 /* ~~~ ELEMENT STYLING ~~~ */
 
 .site-header {
@@ -64,6 +60,10 @@ h1 {
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
+}
+
+a {
+	transition: 0.4s;
 }
 
 main a {

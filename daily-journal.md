@@ -8,12 +8,12 @@
 
 ## MON 2022.11.14
 
-* 
+* I think I've gotten the hang of our layout concepts... maybe I should go back to our past exercises to clean them up and practice that way?
 
 
 ## SUN 2022.11.13
 
-* Committing the followign to my routine:
+* Committing the following to my routine:
 	* Organize: take inventory of my to-do backlog and purge. PE is my priority now!
 	* Setting realistic commitments: at least... I think these are realistic haha
 		* Daily: journal entry, 20min morning pages, commit files to Tower and sync to server and GitHub
