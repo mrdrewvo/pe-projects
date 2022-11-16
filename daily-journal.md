@@ -6,6 +6,11 @@
 
 ---
 
+## TUE 2022.11.15
+
+* Flexbox Day! Before made a grid of the different justify-content and align-items combos
+* Got my new laptop!
+
 ## MON 2022.11.14
 
 * I think I've gotten the hang of our layout concepts... maybe I should go back to our past exercises to clean them up and practice that way?
