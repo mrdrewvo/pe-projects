@@ -6,13 +6,15 @@
 
 ---
 
+## WED 2022.11.16
+
+* Finished Flexbox Exercise 1 Variant 3 and Exercise 2, but it was tougher on Exercise 2 where I had to use `padding` more often to get the element shapes to match the goal.
+* Couldn't start the lesson exercises for lesson 66. Setting too many commitments to myself.
+
 ## TUE 2022.11.15
 
 * Flexbox Day! Before made a grid of the different justify-content and align-items combos
-<<<<<<< HEAD
 * Got my new laptop!
-=======
->>>>>>> b8a205febd93703799b5f0dbb90cfa13ce93cb70
 
 ## MON 2022.11.14
 
