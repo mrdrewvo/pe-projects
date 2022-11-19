@@ -6,6 +6,17 @@
 
 ---
 
+## FRI 2022.11.18
+
+* Catching back up on school work
+* Box framed wired.com, emphasizing that everything really is a box in a box
+* Created responsive layout based on wired.com. Was a little ambitious doing three secitons but it worked!
+* I need to write more!
+* I want to organize my P.E. stuff.
+	* number my Affinity Designer files. Link them into my work
+	* number my Code Pens. Link them into my work
+	* Should I really go through all 70 LESSONS!? haha
+
 ## WED 2022.11.16
 
 * Finished Flexbox Exercise 1 Variant 3 and Exercise 2, but it was tougher on Exercise 2 where I had to use `padding` more often to get the element shapes to match the goal.
