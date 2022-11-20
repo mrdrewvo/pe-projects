@@ -6,6 +6,11 @@
 
 ---
 
+## SUN 2022.11.20
+
+* Yesterday, learned about CSS positioning properties and started drawing boxes for the super responsive layout challenge
+* Today, gonna tackle the rest of the challenge
+
 ## FRI 2022.11.18
 
 * Catching back up on school work

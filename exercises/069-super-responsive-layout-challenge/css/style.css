@@ -1,0 +1,77 @@
+
+/* ~~~ DOC STRUCTURE ~~~ */
+
+@import "meyer-reset.css";
+@import "reset.css";
+
+/** {
+	outline: 1px solid red;
+}*/
+
+body {
+	background-color: #434343;
+	color: #FDFDFD;
+	font-family: helvetica;
+}
+
+.inner-column {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	padding: 10px;
+}
+
+/* ~~~ ELEMENT STYLING ~~~ */
+
+.site-header {
+	background-color: #F5F5F5;
+}
+
+nav {
+	text-align: center;
+	padding: 10px 5px;
+}
+
+nav a {
+	display: inline-block;
+	padding: 15px;
+
+	text-decoration: none;
+	font-size: 14px;
+	color: #434343;
+}
+
+nav a:hover, .inner-column a:hover {
+	color: #B8814C;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 800;
+	padding-top: 40px;
+	text-align:center;
+}
+
+.site-main {
+	min-height: 65vh;
+}
+
+.welcome-message p {
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+}
+
+a {
+	transition: 0.4s;
+}
+
+main a {
+	text-decoration: none;
+	color: #99AA8A;
+}
+
+.site-footer {
+	padding-top: 50px;
+	text-align: center;
+}
