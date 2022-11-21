@@ -77,8 +77,6 @@ headline-module picture {
 	border: 2px solid #999;
 }
 
-
-
 .home-types{
 	background-color: rgba(255,255,255,.6);
 	position: relative;
@@ -87,8 +85,8 @@ headline-module picture {
 
 .home-types>img {
 	position: absolute;
-	bottom: -20px;
-	right: -50px;
+	bottom: -10px;
+	right: -40px;
 	height: 225px;
 	width: auto;
 	display: none;
@@ -165,7 +163,6 @@ footer-module p, footer-module a {
 	color: white;
 }
 
-
 @media (min-width: 600px) {
 
 	headline-module {
@@ -214,7 +211,7 @@ footer-module p, footer-module a {
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	headline-module {
 		align-items: flex-start;
 	}
@@ -233,8 +230,8 @@ footer-module p, footer-module a {
 	}
 
 	.home-types>img {
-	bottom: -10px;
-	right: -40px;
+	bottom: -20px;
+	right: -50px;
 	height: 300px;
 	}
 
