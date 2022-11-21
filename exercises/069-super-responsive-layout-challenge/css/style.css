@@ -1,77 +1,285 @@
+@import 'meyer-reset.css';
+@import 'setup.css';
+
 
 /* ~~~ DOC STRUCTURE ~~~ */
-
-@import "meyer-reset.css";
-@import "reset.css";
-
-/** {
+* {
 	outline: 1px solid red;
-}*/
-
-body {
-	background-color: #434343;
-	color: #FDFDFD;
-	font-family: helvetica;
 }
 
-.inner-column {
+body {
+	background-color: dodgerblue;
+	font-family: helveticaneue;
+}
+
+inner-column {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
+	max-width: 900px;
 	padding: 10px;
 }
 
 /* ~~~ ELEMENT STYLING ~~~ */
 
 .site-header {
-	background-color: #F5F5F5;
+	background-color: rgba(0,0,0,.5);
 }
 
 nav {
-	text-align: center;
-	padding: 10px 5px;
+	display: flex;
+	padding: 5px;
+	max-height: 50px;
 }
 
-nav a {
-	display: inline-block;
-	padding: 15px;
-
-	text-decoration: none;
-	font-size: 14px;
-	color: #434343;
+nav picture {
+	max-width: 30%;
 }
 
-nav a:hover, .inner-column a:hover {
-	color: #B8814C;
+.headline {
+	background-color: rgba(0,0,0,.3);
+	position: relative;
+	overflow: hidden;
 }
 
-h1 {
-	font-size: 50px;
-	font-weight: 800;
-	padding-top: 40px;
-	text-align:center;
+.headline inner-column {
+	max-width: 800px;
 }
 
-.site-main {
-	min-height: 65vh;
+.headline .building {
+	position: absolute;
+	bottom: -10px;
+	left: -50px;
+	height: 250px;
+	width: auto;
+	display: none;
+	opacity: 0.3;
 }
 
-.welcome-message p {
-	font-size: 16px;
-	line-height: 1.5;
-	text-align: center;
+.headline .sun {
+	position: absolute;
+	bottom: -120px;
+	right: 15%;
+	height: 300px;
+	width: auto;
+	display: none;
+	opacity: 0.2;
 }
 
-a {
-	transition: 0.4s;
+headline-module  {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 30px 0px;
 }
 
-main a {
-	text-decoration: none;
-	color: #99AA8A;
+headline-module picture {
+	max-width: 75%;
+}
+
+.home-types{
+	background-color: rgba(255,255,255,.6);
+	position: relative;
+	overflow: hidden;
+}
+
+.home-types>img {
+	position: absolute;
+	bottom: -20px;
+	right: -50px;
+	height: 225px;
+	width: auto;
+	display: none;
+	opacity: 0.4;
+}
+
+home-types-module {
+	display:flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 30px 0px;
+}
+
+home-types-component {
+	display: flex;
+	flex-direction: column;
+	max-width: 85vw;
+}
+
+home-types-component-text {
+	outline: 2px solid blue;
+}
+
+home-types-component img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
 .site-footer {
 	padding-top: 50px;
-	text-align: center;
+	padding-bottom: 20px;
+	background-color: rgba(0,0,0,.5);
 }
+
+footer-module {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+/*~~~ FONT STYLING ~~~*/
+
+h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	padding: 10px 0px;
+	color: white;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 10px 0px;
+	font-style: italic;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.15;
+}
+
+headline-module p {
+	color: white;
+}
+
+home-types-component a {
+	padding-top: 10px;
+	font-size: 0.9rem;
+}
+
+footer-module p, footer-module a {
+	font-size: 12px;
+	color: white;
+}
+
+
+@media (min-width: 600px) {
+
+	headline-module {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
+	}
+
+	headline-module picture {
+	max-width: 55%;
+	}
+
+	headline-module-copy {
+		flex: 1;
+	}
+
+	headline-module-copy h1 {
+		font-size: 2.6rem;
+	}
+
+	home-types-module {
+		margin: 0px 50px;
+	}
+
+	home-types-component {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 15px;
+		max-width: 80%;
+	}
+
+	home-types-component h2 {
+		font-size: 1.25rem;
+	}
+
+	.home-types>img {
+		display: block;
+	}
+
+	footer-module {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+}
+
+@media (min-width: 1000px) {
+	headline-module {
+		align-items: flex-start;
+	}
+
+	headline-module h2 {
+		font-size: 4rem;
+	}
+
+	headline-module p {
+		font-size: 1.25rem;
+		font-weight: 200;
+	}
+
+	.headline .building, .headline .sun {
+		display: block;
+	}
+
+	.home-types>img {
+	bottom: -10px;
+	right: -40px;
+	height: 300px;
+	}
+
+	home-types-module {
+		flex-direction: row;
+		gap: 20px;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	home-types-component {
+		flex-direction: column;
+		gap: 10px;
+		justify-content: flex-start;
+		align-items: center;
+		width: 32%;
+	}
+
+	home-types-component {
+		text-align: center;
+	}
+
+	home-types-component a {
+		display: inline-block;
+		background-color: #333;
+		color: white;
+		border-radius: 6px;
+		margin-top: 10px;
+		padding: 5px;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 /* ~~~ DOC STRUCTURE ~~~ */
 
 @import "meyer-reset.css";
-@import "reset.css";
+@import "setup.css";
 
 /** {
 	outline: 1px solid red;
