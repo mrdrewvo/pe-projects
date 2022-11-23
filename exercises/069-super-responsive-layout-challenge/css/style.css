@@ -10,17 +10,22 @@
 body {
 	background-color: dodgerblue;
 	font-family: helveticaneue;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 inner-column {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 900px;
+	max-width: 1200px;
 	padding: 0px 30px;
 }
 
 /* ~~~ ELEMENT STYLING ~~~ */
+
+/*$SITE-HEADER*/
 
 .site-header {
 	background-color: rgba(0,0,0,.5);
@@ -35,6 +40,11 @@ nav img {
 	width: auto;
 }
 
+.site-main {
+	flex-grow: 1;
+}
+
+/*$HEADLINE*/
 .headline {
 	background-color: rgba(0,0,0,.3);
 	position: relative;
@@ -85,11 +95,11 @@ headline-module picture {
 
 .home-types>img {
 	position: absolute;
+	display: none;
 	bottom: -10px;
 	right: -40px;
 	height: 225px;
 	width: auto;
-	display: none;
 	opacity: 0.4;
 }
 
@@ -115,8 +125,7 @@ home-types-component img {
 }
 
 .site-footer {
-	padding-top: 50px;
-	padding-bottom: 20px;
+	padding: 30px 0px;
 	background-color: rgba(0,0,0,.5);
 }
 
@@ -126,6 +135,17 @@ footer-module {
 	gap: 10px;
 }
 
+/*$SITE-MAIN FILL TO FOOTER*/
+
+.site-main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.home-types{
+	flex: 1;
+}
 
 /*~~~ FONT STYLING ~~~*/
 
@@ -208,10 +228,9 @@ footer-module p, footer-module a {
 		flex-direction: row;
 		gap: 40px;
 	}
-
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	headline-module {
 		align-items: flex-start;
 	}
@@ -260,7 +279,7 @@ footer-module p, footer-module a {
 		color: white;
 		border-radius: 6px;
 		margin-top: 10px;
-		padding: 5px;
+		padding: 10px;
 
 	}
 
