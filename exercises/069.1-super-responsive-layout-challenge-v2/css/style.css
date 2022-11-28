@@ -1,0 +1,207 @@
+
+/* ~~~ DOC STRUCTURE ~~~ */
+
+@import "meyer-reset.css";
+@import "setup.css";
+
+/** {
+	outline: 1px solid red;
+}*/
+
+/*DOC STRUCTURE*/
+
+body {
+	color: black;
+	font-family: helvetica;
+}
+
+inner-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+.site-main section {
+	padding: 65px 0px;
+}
+
+/*HEADER SECTION*/
+
+.site-header {
+	background-color: #E9E9E9;
+	padding: 5px 0px;
+}
+
+.site-header a {
+	font-family: serif;
+}
+
+/*WLECOME SECTION*/
+
+.welcome {
+	background-color: #FFBFCB;
+	position: relative;
+	overflow: hidden;
+}
+
+.welcome > picture {
+	position: absolute;
+	opacity: .25;
+	left: 50%;
+	top: 0;
+	width: 35%;
+	height: auto;
+	transform: translate(-250px, -60%);
+}
+
+.welcome p {
+	display: none;
+}
+
+welcome-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+welcome-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+welcome-text h1 {
+	font-size: 48px;
+	padding: 10px 0px;
+}
+
+welcome-text > a {
+	display: inline-block;
+	background-color: #FF0066;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 50px;
+	padding: 10px 30px;
+}
+
+@media (min-width: 700px) {
+	welcome-wrap {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+	.welcome p {
+	display: block;
+	margin-top: 40px;
+	border: 1px black solid;
+	width: 65%;
+	padding: 10px;
+	font-family: serif;
+	font-size: 16px;
+	}
+
+	welcome-text {
+		width: 45%;
+	}
+
+	welcome-wrap picture {
+		width: 55%;
+	}
+}
+
+
+/*ABOUT SECTION*/
+
+.about {
+	background-color: #FF0066;
+	position: relative;
+}
+
+about-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+feature-story {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: #FFBFCB;
+}
+
+feature-story h2 {
+	font-size: 20px;
+	padding: 10px 0px;
+}
+
+.about > picture {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	feature-story {
+		flex-direction: row;
+		gap: 10px;
+	}
+
+	feature-story picture {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.about > picture {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		opacity: .25;
+		width: 40%;
+		height: auto;
+		transform: translate(0%, -50%);
+	}
+
+	about-wrap {
+		flex-direction: row;
+	}
+
+	feature-story {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	feature-story picture {
+		width: 100%;
+	}
+}
+
+/*FOOTER SECTION*/
+
+.site-footer {
+	background-color: #222222;
+	color: white;
+	font-family: serif;
+	padding: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
