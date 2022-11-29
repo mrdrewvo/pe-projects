@@ -56,7 +56,7 @@ body {
 
 	/*	height: 32vh;*/
 
-	background-image: url("images/background-small.jpeg");
+	background-image: url("../images/background-small.jpeg");
 	background-size: cover;
 	background-position: center center;
 
@@ -65,13 +65,13 @@ body {
 
 	@media (min-width: 800px) {
 			.banner {
-				background-image: url("images/background-med.svg");
+				background-image: url("../images/background-med.svg");
 			}
 		}
 
 	@media (min-width: 1350px) {
 		.banner {
-			background-image: url("images/background-large.svg");
+			background-image: url("../images/background-large.svg");
 		}
 	}
 
