@@ -6,6 +6,11 @@
 
 ---
 
+## WED 2022.12.01
+
+* learned about what PHP is for the first time!
+* sad to see my site wasn't made with reset.css so my original formatting didn't work haha
+
 ## SUN 2022.11.20
 
 * Yesterday, learned about CSS positioning properties and started drawing boxes for the super responsive layout challenge

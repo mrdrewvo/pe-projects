@@ -1,0 +1,76 @@
+/*@import "meyer-reset.css";
+@import "setup.css";*/
+
+h1 {
+	padding: 36px;
+	text-align: center;
+	font-size: 36px;
+	font-family: bookman;
+	color: #a8674d;
+}
+
+h2 {
+	padding: 12px;
+	text-align: center;
+	font-size: 24px;
+	font-family: helvetica;
+	color: #c79526;
+}
+
+h3 {
+	padding: 12px;
+	text-align: center;
+	font-size: 18px;
+	font-family: bookman;
+	font-style: italic;
+	color: chocolate;
+}
+
+nav {
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	font-family: bookman;
+	color: #696969;
+	width: 100%;
+	font-family: helvetica;
+}
+
+p {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: helvetica;
+}
+
+a {
+	color: #696969;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:visited {
+ 	color: #14312d;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c79526;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	font-family: helvetica;
+	line-height: 2;
+	padding-left: 0;
+}
+
+img {
+	display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
