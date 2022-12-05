@@ -23,6 +23,10 @@
 		<meta property="og:image:height" content="630">
 		<meta property="og:image:alt" content="A blob-style graphic of letters D and V">
 
-		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="../css/style.css">	
 
 	</head>
+
+	<body>
+
+		<h1>Sterling Circle Bakeshop</h1>

@@ -1,10 +1,10 @@
-<?php include('header.php'); ?>
+<?php include('../header.php'); ?>
 
 	<body>
 
 		<h1>Sterling Circle Bakeshop</h1>
 
-		<?php include('nav.php'); ?>
+		<?php include('../nav.php'); ?>
 
 		<h2>Let's bake <i>together</i></h2>
 
@@ -20,4 +20,4 @@
 
 	</body>
 
-<?php include('footer.php'); ?>
+<?php include('../footer.php'); ?>
