@@ -6,10 +6,6 @@
 
 ---
 
-## THU 2022.12.02
-
-*
-
 ## WED 2022.12.01
 
 * learned about what PHP is for the first time!
