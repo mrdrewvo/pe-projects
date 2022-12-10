@@ -6,6 +6,10 @@
 
 ---
 
+## TUE 2022.12.06
+
+* Finally putting my mood boards together for the exercise but I am not feeling it. How do I better gather artwork? I don't look at much art a day
+
 ## WED 2022.12.01
 
 * learned about what PHP is for the first time!
