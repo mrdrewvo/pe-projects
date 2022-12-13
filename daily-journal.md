@@ -6,6 +6,10 @@
 
 ---
 
+## MON 2022.12.12
+
+* really do start with mobile layout first... it was hard going backward
+
 ## TUE 2022.12.06
 
 * Finally putting my mood boards together for the exercise but I am not feeling it. How do I better gather artwork? I don't look at much art a day
