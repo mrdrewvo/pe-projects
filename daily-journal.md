@@ -1,10 +1,14 @@
-[back to Drew Vo Homepage](http://peprojects.dev/alpha-6/drew/projects/personal-website/index.html)
+[back to Drew Vo Homepage](http://peprojects.dev/alpha-6/drew)
 
 # My Daily Journal
 
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+
+## THU 2022.12.15
+
+* First real day having my own schedule after the layoffs. Feeling focused and grateful for the space to look at my lesson exercise and be present.
 
 ## MON 2022.12.12
 
