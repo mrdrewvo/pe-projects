@@ -9,6 +9,9 @@
 ## THU 2022.12.15
 
 * First real day having my own schedule after the layoffs. Feeling focused and grateful for the space to look at my lesson exercise and be present.
+* Creativity - Trust the process. Take breaks, but keep going
+* Blog idea: boxes in boxes, feeling put in a box and getting the courage to escape the comfort of a box
+* apparently envokes isn't a word. It's either invokes (direct/active) or evokes (indirect/passive)
 
 ## MON 2022.12.12
 
