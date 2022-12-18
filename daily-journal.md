@@ -6,6 +6,11 @@
 
 ---
 
+## SAT 2022.12.17
+
+* Had Derek basically do my design for me, from the style tile to actual layouts at different screen sizes
+
+
 ## THU 2022.12.15
 
 * First real day having my own schedule after the layoffs. Feeling focused and grateful for the space to look at my lesson exercise and be present.
