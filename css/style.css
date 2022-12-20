@@ -1,89 +1,75 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-/** {
+* {
 	outline: 1px solid red;
-}*/
-
-body {
-	background-color: #434343;
-	font-family: 'Noto Sans', helvetica;
-	color: #FDFDFD;
 }
 
-.inner-column {
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Avenir Next", "Helvetica Neue";
+	font-weight: 200;
+}
+
+inner-column {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 600px;
-	padding: 10px;
+	padding: 20px;
+}
+
+/* ---- $$ WELCOME SECTION ----*/
+.welcome {
+	min-height: 95vh;
+	outline: 2px blue solid;
+}
+
+welcome-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90vh;
+	padding: 50px 0px 100px 0px;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
 }
 
 a {
 	transition: 0.4s;
 }
 
-
-.site-header {
-	background-color: #F5F5F5;
-}
-
-nav {
-	text-align: center;
-	padding: 10px 5px;
-}
-
 nav a {
-	display: inline-block;
-	padding: 15px;
-
-	text-decoration: none;
+	padding: 10px;
+	text-decoration: underline;
 	font-size: 14px;
-	color: #434343;
 }
 
 nav a:hover , .inner-column a:hover {
 	color: #B8814C;
 }
 
+welcome-mod p {
+	text-align: left;
+	margin-left: 45%;
+	width: 225px;
+	font-size: 18px;
+	line-height: 1.25;
+}
+
 h1 {
-	font-size: 50px;
-	font-weight: 800;
+	font-size: 96px;
+	font-family: didot;
 	padding-top: 40px;
-	text-align:center;
+	text-align: left;
 }
 
-.site-main {
-	min-height: 65vh;
-}
+/*---- $$ ABOUT ME SECTION ----*/
 
-.welcome-message p {
-	font-size: 16px;
-	line-height: 1.5;
-	text-align: center;
-}
-
-.inner-column li + li, p + p {
-	padding-top: 15px;
-}
-
-main a {
-	text-decoration: none;
-	color: #99AA8A;
-}
-
-main iframe {
-
-}
-
-.site-footer {
-	padding-top: 50px;
-	text-align: center;
-}
-
-.substack {
-	background-color: #F5F5F5;
-	border-radius: 5px;
-	font-family: inherit;
-	frameborder="0";
-	scrolling="no";
-}
