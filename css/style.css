@@ -33,7 +33,7 @@ welcome-mod {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 90vh;
-	padding: 50px 0px 100px 0px;
+	padding: 10% 0px 20% 0px;
 }
 
 nav {
