@@ -5,9 +5,7 @@
 @import "setup.css";
 
 body {
-	background-color: #434343;
-	color: #FDFDFD;
-	font-family: helvetica;
+	font-family: sans-serif;
 }
 
 inner-column {
@@ -32,7 +30,7 @@ inner-column {
 	text-align: center;
 }
 
-.site-main {
+.site-main section{
 	min-height: 40vh;
 	padding: 40px 0px;
 }
@@ -41,10 +39,23 @@ h2 {
 	font-size: 30px;
 	font-weight: 800;
 	text-align:center;
+	padding-bottom: 20px;
 }
 
 p {
 	line-height: 1.25;
 }
+
+.price-alert {
+	background-color: #179ACE;
+	color: white;
+}
+
+.inventory-levels {
+	background-color: #CD4521;
+	color: black;
+}
+
+
 
 
