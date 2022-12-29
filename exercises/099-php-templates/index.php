@@ -39,7 +39,7 @@
 
 			echo "<h1>Drew's Madlib</h1>";
 
-			echo "<p>" . "$name1" . " has " . $number1 . " " . $noun1 . "(s) and " . $name2 . " has " . $number2 . " " . $noun1 . "(s). </p>"
+			echo "<p>" . "$name1" . " has " . $number1 . " " . $noun1 . "(s) and " . $name2 . " has " . $number2 . " " . $noun1 . "(s). </p>";
 
 		?>
 		
