@@ -1,9 +1,9 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-* {
+/** {
 	outline: 1px solid red;
-}
+}*/
 
 html {
 	scroll-behavior: smooth;
@@ -23,7 +23,7 @@ inner-column {
 }
 
 h1 {
-	font-size: 96px;
+	font-size: clamp(50px,70px, 96px);
 	font-family: didot;
 	padding-top: 40px;
 	text-align: left;
@@ -37,17 +37,16 @@ h2:last-of-type {
 	font-weight: 225;
 }
 
-/* ---- $$ WELCOME SECTION ----*/
-.welcome {
-	min-height: 95vh;
+.main-section {
 	position: relative;
+	min-height: 95vh;
 }
 
+/* ---- $$ WELCOME SECTION ----*/
 welcome-mod {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 90vh;
 	padding: 10% 0px 20% 0px;
 }
 
@@ -74,27 +73,23 @@ nav a:hover , .inner-column a:hover {
 welcome-mod p {
 	text-align: left;
 	margin-left: 45%;
-	width: 225px;
+/*	width: 225px;*/
 	font-size: 18px;
 	line-height: 1.25;
 }
 
 .background-blue {
 	position: absolute;
-
 	z-index: -1;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
-
 about-me-mod {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 90vh;
+	gap: 10px;
 	padding: 10% 0px 20% 0px;
-	gap: 20px;
-	position: relative;
 }
 
 about-me-title h2:first-of-type {
@@ -118,7 +113,7 @@ about-me-picture {
 }
 
 about-me-picture picture {
- 	width: 40%;
+ 	width: 50%;
 }
 
 contact-icons {
@@ -156,10 +151,8 @@ featured-projects-mod {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 90vh;
 	padding: 10% 0px 20% 0px;
 	gap: 20px;
-	position: relative;
 }
 
 featured-projects-title h2:first-of-type {
@@ -180,13 +173,39 @@ featured-projects-title h2:last-of-type {
 	color: white;
 }
 
+.project-module h3 {
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.project-module p {
+	font-size: 18px;
+}
+
+.featured-projects-list {
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.featured-projects-list li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+}
+
+.featured-projects-list a {
+	flex: 1;
+}
+
 /*---- $$ RESUME SECTION ----*/
 
 resume-mod {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: 90vh;
 	padding: 10% 0px 20% 0px;
 	gap: 20px;
 }
@@ -198,6 +217,26 @@ resume-title h2:first-of-type {
 resume-title h2:last-of-type {
 	font-size: 40px;
 	padding-left: 25%;
+}
+
+.resume-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.company {
+	display: flex;
+	flex-direction: column;
+}
+
+.company h3 {
+	font-weight: 700;
+}
+
+role {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*---- $$ UP ARROW SECTION ----*/
