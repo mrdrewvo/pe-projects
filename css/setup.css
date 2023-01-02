@@ -12,7 +12,7 @@ picture {
 	display: block; /* it's inline by default for some reason */
 }
 
-picture img { /* "ALL images inside of pictures" */
+picture img, picture svg { /* "ALL images inside of pictures" */
 	display: block;
 	/* it's inline-block by default */
 	width: 100%;

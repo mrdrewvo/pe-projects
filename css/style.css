@@ -22,10 +22,25 @@ inner-column {
 	padding: 20px;
 }
 
+h1 {
+	font-size: 96px;
+	font-family: didot;
+	padding-top: 40px;
+	text-align: left;
+}
+
+h2:first-of-type {
+	font-weight: 400;
+}
+
+h2:last-of-type {
+	font-weight: 225;
+}
+
 /* ---- $$ WELCOME SECTION ----*/
 .welcome {
 	min-height: 95vh;
-	outline: 2px blue solid;
+	position: relative;
 }
 
 welcome-mod {
@@ -64,12 +79,148 @@ welcome-mod p {
 	line-height: 1.25;
 }
 
-h1 {
-	font-size: 96px;
-	font-family: didot;
-	padding-top: 40px;
-	text-align: left;
+.background-blue {
+	position: absolute;
+
+	z-index: -1;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
+
+about-me-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90vh;
+	padding: 10% 0px 20% 0px;
+	gap: 20px;
+	position: relative;
+}
+
+about-me-title h2:first-of-type {
+	font-size: 50px;
+}
+
+about-me-title h2:last-of-type {
+	font-size: 40px;
+	padding-left: 30%;
+}
+
+about-me-text p {
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 0px 30% 15px 0px;
+}
+
+about-me-picture {
+	display: flex;
+ 	justify-content: center;
+}
+
+about-me-picture picture {
+ 	width: 40%;
+}
+
+contact-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+contact-icons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 8%;
+	text-align: center;
+}
+
+.email-icon picture{
+	width: 100%;
+	height: auto;
+}
+
+.substack-icon picture{
+	width: 80%;
+	height: auto;
+}
+
+contact-icons a picture * {
+	outline: unset;
+}
+
+/*---- $$ FEATURED PROJECTS SECTION ----*/
+
+featured-projects-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90vh;
+	padding: 10% 0px 20% 0px;
+	gap: 20px;
+	position: relative;
+}
+
+featured-projects-title h2:first-of-type {
+	font-size: 50px;
+}
+
+featured-projects-title h2:last-of-type {
+	font-size: 40px;
+	padding-left: 30%;
+}
+
+.project-module {
+	padding: 20px;
+	margin: 20px;
+	background-color: blue;
+	opacity: 50%;
+	border-radius: 10px;
+	color: white;
+}
+
+/*---- $$ RESUME SECTION ----*/
+
+resume-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 90vh;
+	padding: 10% 0px 20% 0px;
+	gap: 20px;
+}
+	
+resume-title h2:first-of-type {
+	font-size: 50px;
+}
+
+resume-title h2:last-of-type {
+	font-size: 40px;
+	padding-left: 25%;
+}
+
+/*---- $$ UP ARROW SECTION ----*/
+
+.up-arrow {
+	position: absolute;
+	width: 30px;
+	height: auto;
+	right: 0px;
+  	bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

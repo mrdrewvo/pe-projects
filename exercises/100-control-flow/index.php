@@ -83,10 +83,30 @@
 				</inner-column>
 			</section>
 
-			<section class="inventory-monitor">
+			<section class="inventory-levels">
 				
 				<inner-column>
 					
+					<h2>Inventory Level Check</h2>
+
+					<?php
+
+						$current_quantity = 200;
+						$sales_rate = 10; //per day
+						$procurement_time = 14; //time between order submission and receiving the next shipment
+						$days_to_depeletion = $current_quantity / $sales_rate; //time before inventory is depleted
+						$days_till_order_signal = $days_to_depeletion - $procurement_time;
+
+						if ($days_to_depeletion > $procurement_time) {
+							$order_signal = "No";
+						} else {
+							$order_signal = "Yes";
+						}
+					?>
+
+					<p>We currently have <?=$current_quantity?> iPhones in stock.</p>
+					<p>Should we submit the next order of iPhones?: <?=$order_signal?></p>
+					<p>Submit order at least <?=$days_till_order_signal?> from now.</p>
 
 				</inner-column>
 			</section>
