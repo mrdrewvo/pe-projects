@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Lesson 109 - Monster Adoption Looping Exercise</title>
+		<title>Lesson 109 - Looping Lesson Notes</title>
 		
 		<!-- favicon -->
 		<!-- <link rel="icon" href="[[Insert favicon image source]]" type="image/x-icon"> -->
@@ -41,11 +41,11 @@
 
 			<inner-column>
 			
-				<h2>Review</h2>
+				<h2>Review and Intro to our Montsters</h2>
 
 				<?php
 
-					echo "helllo";
+					echo "<p>helllo</p>";
 
 					$myArray = ["one", true, "cat", 3.0];
 
@@ -84,7 +84,7 @@
 					
 					echo "</ol>";
 
-					echo "DONE";
+					echo "<p>DONE</p>";
 
 				?>
 
