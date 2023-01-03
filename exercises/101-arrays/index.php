@@ -58,7 +58,7 @@
 							"capacity" => 0.75, //in liters
 							"style" => "industrial",
 							"weight" => 0.5, //empty, in lbs
-
+							"picture_url" => "images/bottle.jpg",
 							"quantity" => 10,
 						];
 
@@ -72,11 +72,22 @@
 
 					<h2>Item Summary for "<?=$item["item_name"]?>"</h2>
 
-					<p>The <?=$item["item_name"]?> is <?=$purchase_status?> with <?=$item["quantity"]?> in stock.</p>
-
+					<section class="availability">
+						
+						<p>The <?=$item["item_name"]?> is <?=$purchase_status?> with <?=$item["quantity"]?> in stock.</p>	
+					</section>
+					
 					<section class="ad_description">
 						
 						<p>The lovely <?=$item["item_name"]?> is the the first of it's kind. Made of <?=$item["material"]["material_1"]?> and <?=$item["material"]["material_2"]?>, it's our first with an <?=$item["style"]?> style.</p>
+					</section>
+
+					<section class="item_photos">
+						
+						<picture>
+								
+							<img src="<?=$item["picture_url"]?>" alt="">
+						</picture>
 					</section>
 
 				</inner-column>
