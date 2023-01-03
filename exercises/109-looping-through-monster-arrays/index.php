@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 
 <html lang="en">
 
@@ -28,62 +28,106 @@
 
 	<body>
 
-		<?php
-
-		echo "helllo";
-
-		$myArray = [1203, true, "stringy", 3.0];
-
-		$monsterProfile = [
-			"id" => 2593,
-			"name" => "Jeremy Beremy",
-			"favorite food" => "baked apples",
-			"age" => 5,
-			"adopted?" => false,
-		]
-
-		?>
-
-<!-- 		<header class="page-section site-header">
-
-			<div class="inner-column">
+		<header>
+			
+			 <inner-column>
 				
-				<nav>
-
-					<a href="index.html">Home</a>
-					<a href="#">Thing 1</a>
-					<a href="#">Thing 2</a>
-					<a href="#">Thing 3</a>
-				</nav>
-			</div>
+				<h1>Lesson 109 - foreach loops</h1>
+			</inner-column>
 		</header>
 		
-		<main class="page-section site-main">
 
-			<section class="welcome-banner"> 
+		<section class="review">
+
+			<inner-column>
 			
-				<div class="inner-column">
+				<h2>Review</h2>
+
+				<?php
+
+					echo "helllo";
+
+					$myArray = ["one", true, "cat", 3.0];
+
+					$monsterProfile = [
+						"id" => 2593,
+						"name" => "Jeremy Beremy",
+						"favoriteFood" => "baked apples",
+						"age" => 5,
+						"adopted" => false,
+					];
+				?>
+
+				<p>I have <?=$myArray[0] . " " . $myArray[2]?> at my house.</p>
+
+				<p class="<?=$monsterProfile["id"]?>">This monster's name is <?=$monsterProfile["name"]?>. They are <?=$monsterProfile["age"]?> years old and their favorite food is <?=$monsterProfile["favoriteFood"]?>. Their ID# is <?=$monsterProfile["id"]?>.</p>
+			</inner-column>
+		</section>
+
+		<section class="foreach-exercise">
+			
+			<inner-column>
+
+				<h2>Foreach Loops</h2>
+
+				<h3>Fruits Example</h3>
 				
-					<h1>[[Main Section Title]]</h1>
-				</div>
-			</section>
-
-			<section class="welcome-message">
+				<?php
 				
-				<div class="inner-column">
+					$fruitsArray = ["apple", "banana", "carrot", "daikon", "eggplant"];
 
-					<p>[[Main Section text}}</p>
-				</div>
-			</section>
+					echo "<ol>";
 
-		</main>
+					foreach ($fruitsArray as $fruit) {
+						echo "<li>" . $fruit . "</li>";
+					};	
+					
+					echo "</ol>";
 
-		<footer class="page-section site-footer">
+					echo "DONE";
 
-			<div class="inner-column">
-				
-				<p>[[FOOTER!]]</p>
-			</div>
-		</footer> -->
+				?>
+
+				<h3>Cake Flavors</h3>
+
+				<?php
+
+					$cakeFlavors = ["brown butter vanilla", "chocolate", "chai", "red velvet"];
+				?>
+
+				<p>Our 2023 standard cake flavors are:</p>
+
+				<ol>
+
+				<?php
+
+					foreach ($cakeFlavors as $cakeFlavor) {
+						echo "<li>" . $cakeFlavor . "</li>";
+					};
+				?>
+
+				</ol>
+
+			</inner-column>
+		</section>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
