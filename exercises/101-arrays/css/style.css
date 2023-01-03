@@ -1,0 +1,61 @@
+
+/* ~~~ DOC STRUCTURE ~~~ */
+
+@import "meyer-reset.css";
+@import "setup.css";
+
+body {
+	font-family: sans-serif;
+}
+
+inner-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+	padding: 10px;
+}
+
+/* ~~~ ELEMENT STYLING ~~~ */
+
+.site-header {
+	background-color: #F5F5F5;
+	padding: 20px;
+	font-weight: 800;
+}
+
+.site-header h1 {
+	color: #434343;
+	font-size: 40px;
+	text-align: center;
+}
+
+.site-main section{
+	min-height: 40vh;
+	padding: 40px 0px;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 800;
+	text-align:center;
+	padding-bottom: 20px;
+}
+
+p {
+	line-height: 1.25;
+}
+
+.bottle {
+	background-color: maroon;
+	color: white;
+}
+
+.inventory-levels {
+	background-color: #CD4521;
+	color: black;
+}
+
+
+
+
