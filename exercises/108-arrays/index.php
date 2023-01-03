@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>101-arrays</title>
+		<title>108-arrays</title>
 		
 		<!-- favicon -->
 		<!-- <link rel="icon" href="[[Insert favicon image source]]" type="image/x-icon"> -->
@@ -32,7 +32,7 @@
 
 			<inner-column>
 				
-				<h1>Lesson 101 - Arrays</h1>
+				<h1>Lesson 108 - Arrays</h1>
 
 			</inner-column>
 		</header>
