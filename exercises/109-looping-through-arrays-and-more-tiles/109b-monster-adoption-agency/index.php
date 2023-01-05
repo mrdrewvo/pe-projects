@@ -158,19 +158,23 @@
 								
 								<picture>
 									<img src='" . $monster["pictureURL"] . "' alt='" . $monster["pictureAltText"] ."'>
-									</picture>
-								</monster-picture>
+								</picture>
+							</monster-picture>
 
-							<monster-profile-text>";
+							<monster-profile-text>
 
-						if ($monster["adopted"] == true) {
+								<adoption-status>";
 
-							echo "<a class='adopted-false-button' href='#'>Adopt Me Today!</a>";
-						} else {
-							echo "<p class='adopted-true-text'>I'm adopted!</p>";
-						}
+								if ($monster["adopted"] == true) {
 
-						echo "<p class='hi'>Hi! My name is</p>
+									echo "<a class='adopted-false-button' href='#'>Adopt Me Today!</a>";
+								} else {
+									echo "<p class='adopted-true-text'>I'm adopted!</p>";
+								}
+
+						echo "	</adoption-status>
+
+								<p class='hi'>Hi! My name is</p>
 
 								<h2>" . $monster["name"] . "</h2>
 
