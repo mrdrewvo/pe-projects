@@ -132,7 +132,7 @@ monster-profile-text {
 	border: 1px solid black;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 650px) {
 	.adoptee-list-mod {
 		justify-content: center;
 	}
@@ -141,7 +141,7 @@ monster-profile-text {
 		flex-basis: 45%;		
 	}
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	.monster-profile {
 		flex-basis: 30%;
 }
