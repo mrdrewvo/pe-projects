@@ -32,9 +32,25 @@
 			
 			 <inner-column>
 				
-				<h1>MonStar Adoptions</h1>
+				<head-banner>
+					
+					<h1>MonStar Adoptions</h1>
 
+					<picture>
+						<svg width="100%" height="100%" viewBox="0 0 542 564" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+						    <g transform="matrix(1,0,0,1,-1225.96,197.253)">
+						        <g transform="matrix(3.99472,0,0,1.05888,-3329.14,11)">
+						            <g transform="matrix(0.444777,-0.485645,0.12873,1.67796,487.918,501.364)">
+						                <path d="M1575.54,40L1611.53,150.767L1728,150.767L1633.78,219.224L1669.77,329.991L1575.54,261.533L1481.32,329.991L1517.31,219.224L1423.09,150.767L1539.55,150.767L1575.54,40Z" style="fill:rgb(255,254,43);fill-opacity:0.5;"/>
+						            </g>
+						        </g>
+						    </g>
+						</svg>
+					</picture>
+				</banner>
+				
 				<p>Where every monster is a star. Adopt one today!</p>
+				
 			</inner-column>
 		</header>
 
@@ -43,8 +59,6 @@
 			<section class="adoptee-list">
 				
 				<inner-column>
-
-					<ul class="adoptee-list-mod">
 
 					<?php
 
@@ -62,7 +76,7 @@
 
 					$fragoo = [
 						"id" => 0002,
-						"name" => "fragoo",
+						"name" => "Fragoo",
 						"age" => 6,
 						"favoriteFood" => "scrambled eggs",
 						"favoriteHobby" => "hiking",
@@ -73,7 +87,7 @@
 
 					$limabean = [
 						"id" => 0003,
-						"name" => "limabean",
+						"name" => "Limabean",
 						"age" => 4,
 						"favoriteFood" => "lentils",
 						"favoriteHobby" => "gardening",
@@ -110,7 +124,7 @@
 						"age" => 4,
 						"favoriteFood" => "tangerines",
 						"favoriteHobby" => "crochet",
-						"adopted" => true,
+						"adopted" => false,
 						"pictureURL" => "images/orangina.jpg",
 						"pictureAltText" => "a happy orange monster that loves to joke around and find the good times at their new home",
 					];
@@ -130,26 +144,35 @@
 						$codey, $fragoo, $limabean, $missReadsALot, $mrBanana, $orangina, $shadow,
 					];
 
+					?>
+
+					<ul class="adoptee-list-mod">
+
+					<?php
+
 					foreach ($monstersArray as $monster) {
 				
-						echo "<li class='monster-profile' id='". $monster["id"] . "'>";
+						echo "<li class='monster-profile' id='". $monster["id"] . "'>
 							
-						echo "<monster-picture>";
+							<monster-picture>
 								
-						echo "		<picture>
+								<picture>
 									<img src='" . $monster["pictureURL"] . "' alt='" . $monster["pictureAltText"] ."'>
-								</picture>
-							</monster-picture>
+									</picture>
+								</monster-picture>
 
-							<monster-profile-text>
-								
+							<monster-profile-text>";
 
-								<a class='adoption-button' href=''></a>
+						if ($monster["adopted"] == true) {
 
-								<p class='hi'>Hi! My name is</p>
+							echo "<a class='adopted-false-button' href='#'>Adopt Me Today!</a>";
+						} else {
+							echo "<p class='adopted-true-text'>I'm adopted!</p>";
+						}
+
+						echo "<p class='hi'>Hi! My name is</p>
 
 								<h2>" . $monster["name"] . "</h2>
-
 
 								<p class='age'>Age: " . $monster["age"] . "</p>
 
