@@ -4,9 +4,9 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-* {
+/** {
 	outline: 1px solid red;
-}
+}*/
 
 body {
 /*	background-color: #434343;*/
@@ -18,11 +18,11 @@ inner-column {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
-	padding: 10px;
+	max-width: 1500px;
+	padding: 20px;
 }
 
-/* ~~~ ELEMENT STYLING ~~~ */
+/* ~~~ TEXT STYLING ~~~ */
 
 h1 {
 	font-size: 50px;
@@ -32,30 +32,131 @@ h1 {
 	font-family: Century Schoolbook;
 }
 
-h2 {
-	font-size: 30px;
-	font-weight: 600;
-	padding: 20px 0px;
+header p {
 	text-align: center;
-
+	font-style: italic;
+	font-size: 24px;
 }
 
-h3 {
-	font-size: 20px;
+h2 {
+	font-size: 40px;
 	font-weight: 600;
-	padding: 20px 0px 10px 0px;
+	font-family: Century Schoolbook;
 }
 
-p {
-	line-height: 1.5;
-	padding: 10px 0px;
+monster-profile-text p {
+	padding-top: 20px;
+	font-size: 18px;
 }
 
 body section {
 	padding: 50px 0px;
 }
 
-.foreach-exercise {
-	background-color: white;
-	color: #434343;
+/* ~~~ BANNER STYLING ~~~ */
+head-banner {
+	display: block;
+	position: relative;
 }
+
+head-banner picture {
+	position: absolute;
+	z-index: -1;
+	top: -35%;
+
+}
+
+/* ~~~ ADOPTEE LIST STYLING ~~~ */
+
+.adoptee-list-mod {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.adoptee-list-mod li:nth-of-type(3n+1) { /*Every 1st, 4th, 7th, etc. card is yellow*/
+	background-color: #FCFFB1;
+}
+
+.adoptee-list-mod li:nth-of-type(3n+2) { /*Every 2nd, 5th, 8th, etc. card is blue*/
+	background-color: #B1FEFF;
+}
+
+.adoptee-list-mod li:nth-of-type(3n+3) { /*Every 3rd, 6th, 9th, etc. card is pink*/
+	background-color: #FFB1F8;
+}
+
+.monster-profile {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+monster-picture picture {
+	border-radius: 10px;
+	overflow: hidden;
+	border: 2px solid black;
+}
+
+monster-profile-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.adopted-false-button {
+	background-color: #FF1500;
+	color: white;
+	font-weight: 800;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border: 2px black solid;
+}
+
+.adopted-false-button:hover {
+	background-color: white;
+	color: #FF1500;
+	transition: .25s;
+}
+
+.adopted-true-text {
+	background-color: #21DB94;
+	color: darkgrey;
+	font-weight: 800;
+	font-style: italic;
+	padding: 10px 20px;
+	border: 1px solid black;
+}
+
+@media (min-width: 750px) {
+	.adoptee-list-mod {
+		justify-content: center;
+	}
+
+	.monster-profile {
+		flex-basis: 45%;		
+	}
+
+@media (min-width: 1200px) {
+	.monster-profile {
+		flex-basis: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
