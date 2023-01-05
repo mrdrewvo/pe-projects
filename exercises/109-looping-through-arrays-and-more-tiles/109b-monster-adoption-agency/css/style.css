@@ -25,7 +25,7 @@ inner-column {
 /* ~~~ TEXT STYLING ~~~ */
 
 h1 {
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 800;
 	padding: 40px 0px;
 	text-align: center;
@@ -55,15 +55,15 @@ body section {
 
 /* ~~~ BANNER STYLING ~~~ */
 head-banner {
-	display: block;
 	position: relative;
 }
 
 head-banner picture {
 	position: absolute;
 	z-index: -1;
-	top: -35%;
-
+  	top: 50%;
+  	left: 48%;
+  	transform: translate(-50%, -50%);
 }
 
 /* ~~~ ADOPTEE LIST STYLING ~~~ */
@@ -105,7 +105,12 @@ monster-profile-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-start;
+}
+
+adoption-status {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .adopted-false-button {
