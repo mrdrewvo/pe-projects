@@ -45,8 +45,12 @@ h2 {
 }
 
 monster-profile-text p {
-	padding-top: 20px;
+	padding-top: 15px;
 	font-size: 18px;
+}
+
+.hi {
+	font-size: 12px;
 }
 
 body section {
@@ -105,6 +109,20 @@ monster-profile-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+
+basic-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+basic-info .age {
+	flex-basis: 20%;
+}
+
+basic-info .preferredPronouns {
+	flex-basis: 80%;
 }
 
 adoption-status {
