@@ -60,97 +60,59 @@
 				
 				<inner-column>
 
+					<ul class="adoptee-list-mod">
+						
 					<?php
 
-					$codey = [
-						"id" => 0001,
-						"name" => "Codey",
-						"age" => 5,
-						"preferredPronouns" => "he/him",
-						"favoriteFood" => "spaghetti and meatballs",
-						"favoriteHobby" => "making websites",
-						"adopted" => true,
-						"pictureURL" => "images/codey.jpg",
-						"pictureAltText" => "an adorable happy red monster with a pink nose and a tuft of pink hair, excited to be adopted",
-					];
+					//monster generator function
+					function monsterGenerator($id, $name, $age, $preferredPronouns, $favoriteFood, $favoriteHobby, $adopted, $pictureURL, $pictureAtlText) {
+						$monster = [
+							"id" => $id,
+							"name" => $name,
+							"age" => $age,
+							"preferredPronouns" => $preferredPronouns,
+							"favoriteFood" => $favoriteFood,
+							"favoriteHobby" => $favoriteHobby,
+							"adopted" => $adopted,
+							"pictureURL" => $pictureURL,
+							"pictureAltText" => $pictureAtlText,
+						];
 
-					$fragoo = [
-						"id" => 0002,
-						"name" => "Fragoo",
-						"age" => 6,
-						"favoriteFood" => "scrambled eggs",
-						"favoriteHobby" => "hiking",
-						"adopted" => false,
-						"pictureURL" => "images/fragoo.jpg",
-						"pictureAltText" => "a innocent pink little monster looking curiously to the left for a loving home",
-					];
+						return $monster;
+					}
 
-					$limabean = [
-						"id" => 0003,
-						"name" => "Limabean",
-						"age" => 4,
-						"favoriteFood" => "lentils",
-						"favoriteHobby" => "gardening",
-						"adopted" => false,
-						"pictureURL" => "images/limabean.jpg",
-						"pictureAltText" => "a spunky little green monster with a tuft of dark blue hair looking like he's ready to tell a funny joke to his new family",
-					];
+					//monster list
+					$codey = monsterGenerator(0001, "Codey", 5, "he/him", "spaghetti and meatballs", "making websites", true, "images/codey.jpg", "an adorable happy red monster with a pink nose and a tuft of pink hair, excited to be adopted",);
+					$fragoo = monsterGenerator(0002,"Fragoo",6,"he/him","scrambled eggs","hiking",false,"images/fragoo.jpg","a innocent pink little monster looking curiously to the left for a loving home",);
 
-					$missReadsALot = [
-						"id" => 0004,
-						"name" => "Miss Reads-A-Lot",
-						"age" => 9,
-						"favoriteFood" => "grilled salmon",
-						"favoriteHobby" => "writing short stories",
-						"adopted" => true,
-						"pictureURL" => "images/miss-reads-a-lot.jpg",
-						"pictureAltText" => "an intellectual blue monster with gorgeous purple eye shadow reading a book about awesome places to see with her new family",
-					];
+					$limabean = monsterGenerator(0003, "Limabean", 4, "they/them", "lentils", "gardening", false, "images/limabean.jpg", "a spunky little green monster with a tuft of dark blue hair looking like he's ready to tell a funny joke to his new family",);
 
-					$mrBanana = [
-						"id" => 0005,
-						"name" => "Mr. Banana",
-						"age" => 2,
-						"favoriteFood" => "baked apples",
-						"favoriteHobby" => "rock climbing",
-						"adopted" => true,
-						"pictureURL" => "images/mr-banana.jpg",
-						"pictureAltText" => "a wacky yellow and tall monster with wide eyes full of curiousity and excitement to take on the world with his new family",
-					];
+					$missReadsALot = monsterGenerator(0004, "Miss Reads-A-Lot", 9, "she/her", "grilled salmon", "writing short stories", true, "images/miss-reads-a-lot.jpg", "an intellectual blue monster with gorgeous purple eye shadow reading a book about awesome places to see with her new family",);
 
-					$orangina = [
-						"id" => 0006,
-						"name" => "Orangina",
-						"age" => 4,
-						"favoriteFood" => "tangerines",
-						"favoriteHobby" => "crochet",
-						"adopted" => false,
-						"pictureURL" => "images/orangina.jpg",
-						"pictureAltText" => "a happy orange monster that loves to joke around and find the good times at their new home",
-					];
+					$mrBanana = monsterGenerator(0005, "Mr. Banana", 2, "he/him", "baked apples", "rock climbing", true, "images/mr-banana.jpg", "a wacky yellow and tall monster with wide eyes full of curiousity and excitement to take on the world with his new family",);
 
-					$shadow = [
-						"id" => 0007,
-						"name" => "Shadow",
-						"age" => 7,
-						"favoriteFood" => "Canadian bacon",
-						"favoriteHobby" => "chalk art",
-						"adopted" => true,
-						"pictureURL" => "images/shadow.jpg",
-						"pictureAltText" => "a curious purple monster with a shy demeanor but a lot of love for a future home",
-					];
+					$orangina = monsterGenerator(0006, "Orangina", 4, "she/her", "tangerines", "crochet", false, "images/orangina.jpg", "a happy orange monster that loves to joke around and find the good times at their new home",);
 
+					$shadow = monsterGenerator(0007, "Shadow", 7, "they/them", "Canadian bacon", "chalk art", true, "images/shadow.jpg", "a curious purple monster with a shy demeanor but a lot of love for a future home",);
+
+					//final monster array
 					$monstersArray = [
 						$codey, $fragoo, $limabean, $missReadsALot, $mrBanana, $orangina, $shadow,
 					];
 
-					?>
-
-					<ul class="adoptee-list-mod">
+					?>					
 
 					<?php
 
 						foreach ($monstersArray as $monster) {
+
+						//adoption status
+						if ($monster["adopted"] == true) {
+
+							$adoptionStatus = "<a class='adopted-false-button' href='#'>Adopt Me Today!</a>";
+						} else {
+							$adoptionStatus = "<p class='adopted-true-text'>I'm adopted!</p>";
+						}							
 					?>
 				
 					<li class='monster-profile' id='<?=$monster["id"]?>'>
@@ -167,15 +129,7 @@
 
 							<adoption-status>
 
-								<?php
-
-									if ($monster["adopted"] == true) {
-
-									echo "<a class='adopted-false-button' href='#'>Adopt Me Today!</a>";
-									} else {
-										echo "<p class='adopted-true-text'>I'm adopted!</p>";
-									}
-								?>
+								<?=$adoptionStatus?>
 
 							</adoption-status>
 
@@ -183,7 +137,14 @@
 
 							<h2><?=$monster["name"]?></h2>
 
-							<p class='age'>Age: <?=$monster["age"]?></p>
+							<basic-info>
+
+								<p class='age'>Age: <?=$monster["age"]?></p>
+
+								<p class='preferredPronouns'>Pronouns: <?=$monster["preferredPronouns"]?></p>
+
+							</basic-info>
+							
 
 							<p class='food'>Favorite Food: <?=$monster["favoriteFood"]?></p>
 
