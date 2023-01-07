@@ -4,9 +4,9 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-* {
+/** {
 	outline: 1px solid red;
-}
+}*/
 
 body {
 /*	background-color: #434343;*/
@@ -74,8 +74,8 @@ head-banner picture {
 
 .adoptee-list-mod {
 	display: flex;
+	flex-direction: column;
 	gap: 20px;
-	flex-wrap: wrap;
 }
 
 .adoptee-list-mod li:nth-of-type(3n+1) { /*Every 1st, 4th, 7th, etc. card is yellow*/
@@ -158,6 +158,8 @@ adoption-status {
 
 @media (min-width: 750px) {
 	.adoptee-list-mod {
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 
