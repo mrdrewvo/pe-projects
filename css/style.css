@@ -12,6 +12,9 @@ html {
 body {
 	font-family: "Avenir Next", "Helvetica Neue";
 	font-weight: 200;
+	--blue: #162442;
+	--white: #FBF9F3;
+	--green: #486254;
 }
 
 inner-column {
@@ -19,8 +22,8 @@ inner-column {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 600px;
-	padding: 0px 20px;
-	outline: 2px solid purple;
+	padding: 0px 25px;
+/*	outline: 2px solid purple;*/
 }
 
 h1 {
@@ -46,22 +49,22 @@ h2:last-of-type {
 /* ---- $$ WELCOME SECTION ----*/
 
 .welcome {
-	outline: 2px solid red;
+/*	outline: 2px solid red;*/
 }
 
 welcome-mod {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 0px 0px 25% 0px;
-	outline: 2px solid blue;
+	padding: 0px 0px 200px 0px;
+/*	outline: 2px solid blue;*/
 }
 
 nav {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
-	padding-top: 5%;
+	padding-top: 20px;
 }
 
 a {
@@ -69,7 +72,7 @@ a {
 }
 
 nav a {
-	padding: 10px;
+	padding: 10px 0px;
 	text-decoration: underline;
 	font-size: 14px;
 }
@@ -86,6 +89,20 @@ welcome-mod p {
 	line-height: 1.25;
 }
 
+drew-name {
+	display: block;
+}
+
+drew-name h1:first-of-type {
+	display: inline;
+	color: var(--white);
+}
+
+drew-name h1:last-of-type {
+	display: inline;
+	color: var(--blue);
+}
+
 .background-blue {
 	position: absolute;
 	z-index: -1;
@@ -98,22 +115,22 @@ welcome-mod p {
 	height: 100%;
 	width: auto;
 	z-index: -2;
-	transform: translate(-73.5%, 0%);
+	transform: translate(-711px, 0%);
 }
 
 .pink-circle1 {
 	position: absolute;
 	z-index: -1;
-	width: 70%;
+	width: 300px;
 	height: auto;
 	top: 25%;
-	transform: translate(-100%, 0%);
+	transform: translate(-90%, 0%);
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
 .about-me {
-	background-color: #486254;
-	color: #FBF9F3;
+	background-color: var(--green);
+	color: var(--white);
 }
 
 about-me-mod {
