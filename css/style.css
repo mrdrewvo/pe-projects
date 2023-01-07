@@ -13,8 +13,9 @@ body {
 	font-family: "Avenir Next", "Helvetica Neue";
 	font-weight: 200;
 	--blue: #162442;
-	--white: #FBF9F3;
+	--white: #F2EFE6;
 	--green: #486254;
+	background-color: var(--white);
 }
 
 inner-column {
@@ -49,6 +50,7 @@ h2:last-of-type {
 /* ---- $$ WELCOME SECTION ----*/
 
 .welcome {
+	position: relative;
 /*	outline: 2px solid red;*/
 }
 
@@ -106,16 +108,15 @@ drew-name h1:last-of-type {
 .background-blue {
 	position: absolute;
 	z-index: -1;
-	object-fit: cover;
 	height: 100%;
 	width: auto;
+	bottom: 0;
+	transform: translate(-72%, 0%);
 }
 
 .background-blue svg {
 	height: 100%;
 	width: auto;
-	z-index: -2;
-	transform: translate(-711px, 0%);
 }
 
 .pink-circle1 {
@@ -123,8 +124,22 @@ drew-name h1:last-of-type {
 	z-index: -1;
 	width: 300px;
 	height: auto;
-	top: 25%;
+	top: 25vh;
 	transform: translate(-90%, 0%);
+}
+
+.background-green {
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	bottom: -475px;
+}
+
+.background-green svg {
+	width: 1500px;
+	height: auto;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
@@ -138,7 +153,7 @@ about-me-mod {
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 10px;
-	padding: 10% 0px 20% 0px;
+	padding: 15% 0px 20% 0px;
 }
 
 about-me-title h2:first-of-type {
@@ -215,40 +230,39 @@ featured-projects-title h2:last-of-type {
 	padding-bottom: 20px;
 }
 
-.project-module {
-	padding: 20px;
-	margin: 20px;
-	background-color: blue;
-	opacity: 50%;
-	border-radius: 10px;
-	color: white;
-}
-
 .project-module h3 {
 	font-size: 25px;
 	font-weight: 700;
 	margin-bottom: 20px;
+	color: white;
 }
 
 .project-module p {
 	font-size: 18px;
+	color: white;
 }
 
 .featured-projects-list {
 	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
+	background-color: var(--blue);
 }
 
 .featured-projects-list li {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	flex: 1;
+	flex: 1;	
 }
 
 .featured-projects-list a {
 	flex: 1;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	text-decoration: none;
 }
 
 /*---- $$ RESUME SECTION ----*/
@@ -273,12 +287,14 @@ resume-title h2:last-of-type {
 .resume-list {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 20px;
 }
 
 .company {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .company h3 {
@@ -288,6 +304,19 @@ resume-title h2:last-of-type {
 role {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
+}
+
+role + role {
+	padding-top: 20px;
+}
+
+role h4 {
+	flex-basis: cal(75% - 10px);
+}
+
+role resume-date {
+	flex-basis: calc(25% - 10px);
 }
 
 /*---- $$ UP ARROW SECTION ----*/
@@ -297,7 +326,7 @@ role {
 	width: 30px;
 	height: auto;
 	right: 0px;
-  	bottom: 0px;
+  	bottom: 25px;
 }
 
 
