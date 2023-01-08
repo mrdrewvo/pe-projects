@@ -28,7 +28,7 @@ inner-column {
 }
 
 h1 {
-	font-size: clamp(50px,70px, 96px);
+	font-size: clamp(50px,70px, 120px);
 	font-family: didot;
 	padding-top: 40px;
 	text-align: left;
@@ -45,6 +45,10 @@ h2:last-of-type {
 .main-section {
 	position: relative;
 	min-height: 98vh;
+}
+
+.site-main {
+	overflow: hidden;
 }
 
 /* ---- $$ WELCOME SECTION ----*/
@@ -97,7 +101,8 @@ drew-name {
 
 drew-name h1:first-of-type {
 	display: inline;
-	color: var(--white);
+	color: var(--blue);
+/*	color: var(--white);*/
 }
 
 drew-name h1:last-of-type {
@@ -105,7 +110,7 @@ drew-name h1:last-of-type {
 	color: var(--blue);
 }
 
-.background-blue {
+/*.background-blue {
 	position: absolute;
 	z-index: -1;
 	height: 100%;
@@ -115,9 +120,9 @@ drew-name h1:last-of-type {
 }
 
 .background-blue svg {
-	height: 100%;
+	height: 2000px;
 	width: auto;
-}
+}*/
 
 .pink-circle1 {
 	position: absolute;
@@ -125,7 +130,7 @@ drew-name h1:last-of-type {
 	width: 300px;
 	height: auto;
 	top: 25vh;
-	transform: translate(-90%, 0%);
+	transform: translate(-50%, 0%);
 }
 
 .background-green {

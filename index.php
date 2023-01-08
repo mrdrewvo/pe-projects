@@ -51,7 +51,9 @@
 
 					<drew-name><h1>Drew  </h1><h1>  Vo</h1></drew-name>
 
-					<picture class="background-blue">
+					<!-- Maybe add this back in at a later time. Issue here was getting the diagonal to stay stationary with "Drew" and "Vo", idealy between the words, allowing us to put "Drew" in --white.
+						
+						<picture class="background-blue">
 				
 						<svg width="100%" height="100%" viewBox="0 0 857 677" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 						    <g transform="matrix(1,0,0,1,-23590.3,-13033.6)">
@@ -62,7 +64,7 @@
 						        </g>
 						    </g>
 						</svg>
-					</picture>
+					</picture> -->
 
 					<svg class="pink-circle1" width="100%" height="100%" viewBox="0 0 203 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 					    <g transform="matrix(1,0,0,1,-25057.9,-11815.3)">
