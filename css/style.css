@@ -1,3 +1,5 @@
+/* ---- $$ DOC STRUCTURE ----*/
+
 @import "meyer-reset.css";
 @import "setup.css";
 
@@ -10,11 +12,14 @@ html {
 }
 
 body {
-	font-family: "Avenir Next", "Helvetica Neue";
+	font-family: "Avenir Next", "Helvetica Neue"; /*default fonts*/
 	font-weight: 200;
+	
+	/*color palette*/
 	--blue: #162442;
 	--white: #F2EFE6;
 	--green: #486254;
+	
 	background-color: var(--white);
 }
 
@@ -23,14 +28,14 @@ inner-column {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 600px;
-	padding: 0px 25px;
-/*	outline: 2px solid purple;*/
+	padding: 0px 20px;
 }
 
+/* ---- $$ TEXT STYLING ----*/
+
 h1 {
-	font-size: clamp(50px,70px, 120px);
+	font-size: 70px;
 	font-family: didot;
-	padding-top: 40px;
 	text-align: left;
 }
 
@@ -80,7 +85,7 @@ a {
 nav a {
 	padding: 10px 0px;
 	text-decoration: underline;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 nav a:hover, .inner-column a:hover {
@@ -90,7 +95,7 @@ nav a:hover, .inner-column a:hover {
 welcome-mod p {
 	text-align: left;
 	margin-left: 45%;
-	width: 225px;
+	width: 40%;
 	font-size: 18px;
 	line-height: 1.25;
 }
@@ -139,12 +144,12 @@ drew-name h1:last-of-type {
 	object-fit: cover;
 	width: 100%;
 	height: auto;
-	bottom: -475px;
+	bottom: 0px;
 }
 
 .background-green svg {
-	width: 1500px;
-	height: auto;
+	width: 2000px;
+	height: 400px;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
@@ -308,6 +313,7 @@ resume-title h2:last-of-type {
 
 role {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	gap: 10px;
 }
@@ -324,7 +330,7 @@ role resume-date {
 	flex-basis: calc(25% - 10px);
 }
 
-/*---- $$ UP ARROW SECTION ----*/
+/*---- $$ UP ARROW ----*/
 
 .up-arrow {
 	position: absolute;
