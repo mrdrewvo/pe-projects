@@ -5,6 +5,18 @@
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+## MON 2023.01.09
+* PHP Early Exploration Notes
+	* If you're only writing PHP, you don't need the closing bracket (it might even cause more issues like if there's a space after the bracket)
+echo [text] outputs text (requires "" for strings)
+		* print_r("[text]"); does the same thing, but more for developer stuff
+		* you need a space between echo and the text so it recognizes the echo keyword vs the text to echo
+	* Default to " " instead of ' '
+	* you can now reference variables in a string without using concatenate (.) and instead, go ahead and write the variable. It'll automatically add it to the string (string interpolation). You can also use {} around the variable so you can add characters immediately before or after the variable.
+	* 5 different ways to make a comment
+		* `//`
+		* `/* [text] * /` (can be made into multiline)
+		* `<! -- [text] -->` (outside the PHP tags and can be made into multiline) - note that the HTML comments stay in the page source but the PHP comments will be gone!
 
 ## SAT 2022.12.17
 

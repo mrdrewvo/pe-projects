@@ -1,53 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Drew Vo</title>
+	<?php include("header.php"); ?>
 	
-	<!-- favicon -->
-	<link rel="icon" href="http://peprojects.dev/alpha-6/drew/images/logo.svg" type="image/x-icon">
 	
-	<!-- style sheets -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- metadata -->
-	<meta name="description" content="Hi, I'm Drew Vo - UX Engineer in training. Check out my learning journey as I set my right-brain free.">
-	<meta property="og:image" content="https://peprojects.dev/alpha-6/drew/images/logo-meta.jpg">
-	<meta property="og:image:secure_url" content="https://peprojects.dev/alpha-6/drew/images/logo-meta.jpg">
-	<meta property="og:image:type" content="image/jpeg">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="A blob-style graphic of letters D and V">
-	
-</head>
-
-<body>
-
-<!-- 	<header class="page-section site-header top">
-
-		<inner-column>
-			
-		</inner-column>
-	</header> -->
-	
-	<main class="page-section site-main">
 
 		<section class="welcome" id="top"> 
 
 			<inner-column>
 
-				 <welcome-mod class="main-section">
-					
-					<nav>
-						<a href="#about-me">Let's vibe</a>
-						<a href="#featured-projects">I made these</a>
-						<a href="#resume">I did that</a>
-					</nav>
-				
-					<p>UX Development student with a passion for bringing web designs to life</p>
+					<p>UX Engineering student with a passion for bringing web designs to life</p>
 
 					<drew-name><h1>Drew  </h1><h1>  Vo</h1></drew-name>
 
@@ -78,7 +38,7 @@
 				</welcome-mod>
 			</inner-column>
 
-			<picture class="background-green">
+			<!-- <picture class="background-green">
 	
 				<svg width="100%" height="100%" viewBox="0 0 375 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 				    <g transform="matrix(1,0,0,1,-25324.6,-12139.4)">
@@ -89,7 +49,7 @@
 				        </g>
 				    </g>
 				</svg>
-			</picture>	
+			</picture>	 -->
 		</section>
 
 		<section class="about-me" id="about-me">
@@ -172,21 +132,28 @@
 						</a>
 					</contact-icons>
 
-					<a class="up-arrow" href="#top">
+					<?php
+
+					$upArrow =
+
+					"<a class='up-arrow' href='#top'>
 						
 						<picture>
 						
-							<svg width="100%" height="100%" viewBox="0 0 33 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1;">
-							    <g transform="matrix(1,0,0,1,-25529.7,-12936.5)">
-							        <g transform="matrix(1.12541,0,0,2.85093,25200.6,11612.9)">
-							            <g transform="matrix(6.245e-17,-0.350763,0.888568,1.96919e-17,-11263.9,9248.96)">
-							                <path d="M25028.4,13036.6L25033.6,13021.6L25028.4,13006.6L25043.4,13021.6L25028.4,13036.6Z" style="fill:rgb(244,160,86);stroke:rgb(244,160,86);stroke-width:2px;"/>
+							<svg viewBox='0 0 33 18' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1;'>
+							    <g transform='matrix(1,0,0,1,-25529.7,-12936.5)'>
+							        <g transform='matrix(1.12541,0,0,2.85093,25200.6,11612.9)'>
+							            <g transform='matrix(6.245e-17,-0.350763,0.888568,1.96919e-17,-11263.9,9248.96)'>
+							                <path d='M25028.4,13036.6L25033.6,13021.6L25028.4,13006.6L25043.4,13021.6L25028.4,13036.6Z' style='fill:rgb(244,160,86);stroke:rgb(244,160,86);stroke-width:2px;'/>
 							            </g>
 							        </g>
 							    </g>
 							</svg>
 						</picture>
-					</a>
+					</a>";
+					?>
+
+					<?=$upArrow?>
 				</about-me-mod>
 			</inner-column>
 
@@ -233,21 +200,7 @@
 						</li>
 					</ul>
 
-					<a class="up-arrow" href="#top">
-						
-						<picture>
-						
-							<svg width="100%" height="100%" viewBox="0 0 33 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1;">
-							    <g transform="matrix(1,0,0,1,-25529.7,-12936.5)">
-							        <g transform="matrix(1.12541,0,0,2.85093,25200.6,11612.9)">
-							            <g transform="matrix(6.245e-17,-0.350763,0.888568,1.96919e-17,-11263.9,9248.96)">
-							                <path d="M25028.4,13036.6L25033.6,13021.6L25028.4,13006.6L25043.4,13021.6L25028.4,13036.6Z" style="fill:rgb(244,160,86);stroke:rgb(244,160,86);stroke-width:2px;"/>
-							            </g>
-							        </g>
-							    </g>
-							</svg>
-						</picture>
-					</a>
+					<?=$upArrow?>
 				</featured-projects-mod>	
 			</inner-column>
 		</section>
@@ -327,21 +280,7 @@
 						</li>
 					</ul>
 
-					<a class="up-arrow" href="#top">
-						
-						<picture>
-						
-							<svg width="100%" height="100%" viewBox="0 0 33 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1;">
-							    <g transform="matrix(1,0,0,1,-25529.7,-12936.5)">
-							        <g transform="matrix(1.12541,0,0,2.85093,25200.6,11612.9)">
-							            <g transform="matrix(6.245e-17,-0.350763,0.888568,1.96919e-17,-11263.9,9248.96)">
-							                <path d="M25028.4,13036.6L25033.6,13021.6L25028.4,13006.6L25043.4,13021.6L25028.4,13036.6Z" style="fill:rgb(244,160,86);stroke:rgb(244,160,86);stroke-width:2px;"/>
-							            </g>
-							        </g>
-							    </g>
-							</svg>
-						</picture>
-					</a>
+					<?=$upArrow?>
 				</resume-mod>				
 			</inner-column>
 		</section>

@@ -46,13 +46,17 @@ p {
 	line-height: 1.25;
 }
 
-.price-alert {
+p + p {
+	padding-top: 10px;
+}
+
+.site-main section:nth-of-type(2n+1) {
 	background-color: #179ACE;
 	color: white;
 }
 
-.inventory-levels {
-	background-color: #CD4521;
+.site-main section:nth-of-type(2n+2) {
+	background-color: yellow;
 	color: black;
 }
 
