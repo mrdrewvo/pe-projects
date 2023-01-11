@@ -5,7 +5,18 @@
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+## TUE 2023.01.10
+* Accomplishments
+	* PHP Array basics and some “loops” milestone
+	* Read through the PHP walkthrough
+
+
 ## MON 2023.01.09
+* Accomplishments
+	* DoorDash style and branding research, set up SOW
+	* 30 min on Substack
+	* Lesson
+
 * PHP Early Exploration Notes
 	* If you're only writing PHP, you don't need the closing bracket (it might even cause more issues like if there's a space after the bracket)
 echo [text] outputs text (requires "" for strings)

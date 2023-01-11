@@ -167,7 +167,7 @@
 					$boxCount = round(($totalBerries / $berriesPerBox), 0);
 					$totalPrice = $pricePerBox * $boxCount;
 
-					echo "<p>Boxes each come with $berriesPerBox so we'll need to buy $boxCount boxes. Each box is {$pricePerBox} so the total budget needs to cover {$totalPrice}.</p>";
+					echo "<p>Boxes each come with $berriesPerBox so we'll need to buy $boxCount boxes. Each box is \${$pricePerBox} so the total budget needs to cover \${$totalPrice}.</p>";
 					?> 
 				</inner-column>
 			</section>
