@@ -1,13 +1,11 @@
-@import "meyer-reset.css";
-@import "setup.css";
-
-/** {
-	outline: 1px red solid;
-}*/
+* {
+	box-sizing: border-box;
+	/*outline: 1px red solid;*/
+}
 
 @font-face {
 	font-family: "Italiana";
-	src: url("../fonts/Italiana-Regular.ttf");
+	src: url("fonts/Italiana-Regular.ttf");
 }
 
 body {
@@ -22,6 +20,7 @@ body {
 	padding: 20px;
 	
 	font-family: Didot, Italiana, Garamond;
+	font-style: italic;
 	text-decoration: none;
 	color: white;
 
@@ -49,149 +48,54 @@ body {
 	height: auto;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 100vh;
-	border: 3px solid orange;
-}
-
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
-	height: 80%;
-	border: 3px solid blue;
-}
-
 .banner {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border: 3px solid red;
+	
+	height: 70vh;
+	margin-top: 15vh;
+	padding-top: 20vh;
+
+	/*	height: 32vh;*/
+
+	background-image: url("../images/background-small.jpeg");
+	background-size: cover;
+	background-position: center center;
+
+	transition: .5s;
 }
 
-.banner-photos {
-	display: flex;
-	flex-direction: row;
-	justify-content: stretch;
-	align-items: center;
-	gap: 10px;
-	width: 100vw;
-	border: 3px solid green;
-}
+	@media (min-width: 800px) {
+			.banner {
+				background-image: url("../images/background-med.svg");
+			}
+		}
 
-.banner-photos picture {
-	flex: 1;
-	object-fit: cover;
-}
-
-.flower-1 img:last-child {
-	display: none;
-	transition: 2s;
-	object-fit: cover;
-}
-
-.flower-1:hover img:last-child {
-	display: block;  
-	transition: 2s;
-	object-fit: cover;
-}
-
-.flower-1:hover img:first-child {
-	display: none;
-	transition: 2s;
-	object-fit: cover;
-}
-
-.flower-2 {
-	display: none;
-}
-
-.flower-3 {
-	display: none;
-}
-
-@media (min-width: 650px) {
-	.flower-2 {
-	display: block;
+	@media (min-width: 1350px) {
+		.banner {
+			background-image: url("../images/background-large.svg");
+		}
 	}
-
-	.flower-2 img:last-child {
-	display: none;
-	transition: 2s;
-	object-fit: cover;
-	}
-
-	.flower-2:hover img:last-child {
-	display: block;  
-	transition: 2s;
-	object-fit: cover;
-	}
-
-	.flower-2:hover img:first-child {
-	display: none;
-	transition: 2s;
-	object-fit: cover;
-	}
-}
-
-@media (min-width: 1200px) {
-	.flower-3 {
-	display: block;
-	transition: 2s ease-in-out;
-	}
-
-	.flower-3 img:last-child {
-	display: none;
-	transition: 2s ease-in-out;
-	object-fit: cover;
-	}
-
-	.flower-3:hover img:last-child {
-	display: block;  
-	transition: 2s ease-in-out;
-	object-fit: cover;
-	}
-
-	.flower-3:hover img:first-child {
-	display: none;
-	transition: 2s ease-in-out;
-	object-fit: cover;
-	}
-}
-
-.banner-text {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	border: 3px solid green;
-}
 
 .banner-text p {
-	font-size: clamp(14px, 2vw, 60px);
+	font-size: clamp(16px, 1.75vw, 50px);
 	font-family: Helvetica;
 	font-weight: 100;
-	letter-spacing: -.06em;
+	letter-spacing: -.07em;
 	text-align: center;
 	color: white;
 	text-shadow: 2px 2px 5px rgba(0,0,0,.3);
 
 	padding: 0px;
 	margin: 0px;
-	margin-bottom: -.4em;
+	margin-bottom: -.75em;
 }
 
 .banner-text h1 {
+	/*font-size: 15vw;*/
 	font-size: clamp(30px, 14vw, 300px);
 	font-family: Didot, Italiana, Garamond;
 	font-weight: 100;
-	letter-spacing: 0.25em;
-	text-indent: 0.25em;
+	letter-spacing: 0.2em;
+	text-indent: 0.2em;
 	text-align: center;
 	color: white;
 	text-shadow: 2px 2px 10px rgba(0,0,0,.3);
@@ -203,7 +107,6 @@ main {
 .hidden-row {
 	text-align: right;
 	padding: 10px;
-	border: 3px solid red;
 }
 
 .hidden-row a {
@@ -212,18 +115,13 @@ main {
 	
 	font-family: Didot, Italiana, Garamond;
 	text-decoration: none;
-	color: grey;
+	color: white;
 
+	transition: .5s;
 }
 
-@media (min-width: 500px) {
-	.hidden-row a {
-	color: white;
-	}
-
-	.hidden-row a:hover {	
+.hidden-row a:hover {	
+	color: grey;
 	transition: .5s;
 	cursor: default;
-	color: grey;
-	}
 }
