@@ -12,36 +12,38 @@
 
 			<form>
 				
-				<input type='text'/>
+				<p>input type='text'</p>
+				<input type='text' placeholder="name" />
 				<!--self-closing tag, can have different types (e.g. text (default), number) -->
 
+				<p>input type='number' with a label</p>
+				<label>Age</label>
 				<input type='number'/>
+				<!-- has some built-in validation -->
 
+				<p>input type='email'</p>
 				<input type='email'/>
 
+				<p>input type='password'</p>
 				<input type='password'/>
 
+				<p>input type='range'</p>
 				<input type="range">
 
-				<button>button</button>
-				
+				<p>Button type=''</p>
+				<button>button</Button>
+
+				<p>input type='submit'</p>
 				<input type="submit">
 
-
+				<p>button type='submit'</p>
+				<button type='submit'>Submit</button>
 			</form>
+
+
 
 		</inner-column>
 	</section>
-
-
-
-
-
-
-
-
-
-
 
 	<section class="early-php-exploration">
 

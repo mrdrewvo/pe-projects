@@ -3,7 +3,7 @@
 
 	<inner-column>
 		
-		<h1>Lesson 122 - Forms</h1>
+		<h1>🎨 Paint Calculator</h1>
 
 	</inner-column>
 </header>
