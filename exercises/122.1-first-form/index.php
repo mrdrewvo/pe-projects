@@ -73,10 +73,11 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 				
 				<div class="form-field">
 					
-					<label>Length (in feet)</label>
+					<label for="length">Length (in feet)</label>
 					<input
 						type="number"
 						name="length"
+						id="length"
 						value="<?=$ceilingLength?>"
 						step="any"
 						min="0"/>	
@@ -84,10 +85,11 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 				
 				<div class="form-field">
 					
-					<label>Width (in feet)</label>
+					<label for="width">Width (in feet)</label>
 					<input
 						type="number"
 						name="width"
+						id="width"
 						value="<?=$ceilingWidth?>"
 						step="any"
 						min="0"/>	
