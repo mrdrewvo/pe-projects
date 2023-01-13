@@ -17,10 +17,10 @@ body {
 	
 	/*color palette*/
 	--blue: #162442;
-	--white: #F2EFE6;
+	--offwhite: #F2EFE6;
 	--green: #486254;
 	
-	background-color: var(--white);
+	background-color: var(--offwhite);
 }
 
 inner-column {
@@ -31,51 +31,80 @@ inner-column {
 	padding: 0px 20px;
 }
 
-/* ---- $$ TEXT STYLING ----*/
-
-h1 {
-	font-size: 70px;
-	font-family: didot;
-	text-align: left;
-}
-
-h2:first-of-type {
-	font-weight: 400;
-}
-
-h2:last-of-type {
-	font-weight: 225;
-}
-
-.main-section {
-	position: relative;
-	min-height: 98vh;
-}
-
 .site-main {
 	overflow: hidden;
 }
 
-/* ---- $$ WELCOME SECTION ----*/
+/* ---- $$ HEADER PHP ----*/
 
-.welcome {
-	position: relative;
-/*	outline: 2px solid red;*/
+
+/* ---- $$ FOOTER PHP ----*/
+footer {
+	background-color: var(--blue);
+	padding: 20px 0px;
+}
+
+footer p {
+	color: var(--offwhite);
+	font-size: 12px;
+	font-weight: 200;
+}
+
+/* ---- $$ INDEX PHP ----*/
+
+header.index-page {
+	padding: 20px 0px;
+}
+
+h1 {
+	font-size: 65px;
+	font-family: didot;
+	text-align: right;
+	color: var(--blue);
+	padding-bottom: 20px;
+}
+
+tagline {
+	display: flex;
+	flex-direction: column;
+	gap: 20px 0px;
+}
+
+tagline p:nth-of-type(2) {
+	margin-left: 50px;
+}
+
+tagline p:last-of-type {
+	margin-left: 75px;
 }
 
 welcome-mod {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
-	padding: 0px 0px 200px 0px;
-/*	outline: 2px solid blue;*/
+	min-height: 450px;
+	position: relative;
 }
 
-nav {
+welcome-mod picture {
+	flex-basis: 40%;
+	position: relative;
+}
+
+welcome-mod picture img {
+	position: absolute;
+	bottom: 0;
+	transform: translate(-45%, 0%);
+	height: 95%;
+	width: auto;
+}
+
+welcome-mod nav {
 	display: flex;
 	flex-direction: column;
-	text-align: right;
-	padding-top: 20px;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding: 40px 0px;
 }
 
 a {
@@ -92,70 +121,30 @@ nav a:hover, .inner-column a:hover {
 	color: #B8814C;
 }
 
-welcome-mod p {
-	text-align: left;
-	margin-left: 45%;
-	width: 40%;
-	font-size: 18px;
-	line-height: 1.25;
-}
-
-drew-name {
-	display: block;
-}
-
-drew-name h1:first-of-type {
-	display: inline;
-	color: var(--blue);
-/*	color: var(--white);*/
-}
-
-drew-name h1:last-of-type {
-	display: inline;
-	color: var(--blue);
-}
-
-/*.background-blue {
-	position: absolute;
-	z-index: -1;
-	height: 100%;
-	width: auto;
-	bottom: 0;
-	transform: translate(-72%, 0%);
-}
-
-.background-blue svg {
-	height: 2000px;
-	width: auto;
-}*/
-
 .pink-circle1 {
 	position: absolute;
 	z-index: -1;
-	width: 300px;
+	width: 400px;
 	height: auto;
-	top: 25vh;
-	transform: translate(-50%, 0%);
+	top: 0;
+	transform: translate(-40%, 0%);
 }
 
-.background-green {
-	position: absolute;
-	z-index: -1;
-	object-fit: cover;
-	width: 100%;
-	height: auto;
-	bottom: 0px;
+/* ---- $$ TEXT STYLING ----*/
+
+
+h2:first-of-type {
+	font-weight: 400;
 }
 
-.background-green svg {
-	width: 2000px;
-	height: 400px;
+h2:last-of-type {
+	font-weight: 225;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
 .about-me {
 	background-color: var(--green);
-	color: var(--white);
+	color: var(--offwhite);
 }
 
 about-me-mod {
