@@ -32,7 +32,7 @@ inner-column {
 }
 
 .site-main {
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 /* ---- $$ HEADER PHP ----*/
@@ -82,7 +82,7 @@ tagline p:nth-of-type(2) {
 }
 
 tagline p:last-of-type {
-	margin-left: 75px;
+	margin-left: 80px;
 }
 
 welcome-mod {
@@ -101,17 +101,10 @@ welcome-mod picture {
 welcome-mod picture img {
 	position: absolute;
 	bottom: 0;
-	transform: translate(-45%, 0%);
-	height: 85%;
+	right: 0;
+	transform: translate(10%, 0%);
+	height: 95%;
 	width: auto;
-}
-
-@media (min-width: 350px) {
-	welcome-mod picture img {
-	transform: translate(-35%, 0%);
-	height: 100%;
-	width: auto;
-	}
 }
 
 welcome-mod nav {
