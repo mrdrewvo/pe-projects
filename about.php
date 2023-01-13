@@ -1,4 +1,6 @@
 <?php include("head.php"); ?>
+
+<?php include("header.php"); ?>
 	
 <main class="page-section site-main">
 	
@@ -108,3 +110,5 @@
 		</inner-column>
 	</section>
 </main>
+
+<?php include("footer.php"); ?>
