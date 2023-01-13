@@ -22,7 +22,7 @@ bac calculator (ch4, ex17) -->
 				"formNum" => "15",
 				"formName" => "Password Validation",
 				"formSrc" => "password-validation.php"
-			]
+			],
 		];
 
 		echo "<ul>";

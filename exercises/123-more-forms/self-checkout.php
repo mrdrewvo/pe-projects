@@ -117,6 +117,10 @@ Pseudocode
 			$quantity3 = floatval($_POST["quantity3"]);
 			$price3 = floatval($_POST["price3"]);
 
+			$prettyprice1 = number_format($price1,2);
+			$prettyprice2 = number_format($price2,2);
+			$prettyprice3 = number_format($price3,2);
+
 			//calculate subtotal
 			$subtotalPrice = $quantity1 * $price1 + $quantity2 * $price2 + $quantity3 * $price3;
 
@@ -149,9 +153,9 @@ Pseudocode
 			}
 
 			//create all output messages
-			$msgItem1 = "<p>There $isOrAre1 $quantity1 of Item 1 priced at \${$price1} each.</p>";
-			$msgItem2 = "<p>There $isOrAre2 $quantity2 of Item 2 priced at \${$price2} each.</p>";
-			$msgItem3 = "<p>There $isOrAre3 $quantity3 of Item 3 priced at \${$price3} each.</p>";
+			$msgItem1 = "<p>There $isOrAre1 $quantity1 of Item 1 priced at \${$prettyprice1} each.</p>";
+			$msgItem2 = "<p>There $isOrAre2 $quantity2 of Item 2 priced at \${$prettyprice2} each.</p>";
+			$msgItem3 = "<p>There $isOrAre3 $quantity3 of Item 3 priced at \${$prettyprice3} each.</p>";
 			$msgSubtotal = "<p>The subtotal is \${$prettySubtotalPrice}.</p>";
 			$msgTax = "<p>The total tax is \${$prettyTaxPrice}.</p>";
 			$msgTotal = "<p>The final total is \${$totalPrice}.</p>";

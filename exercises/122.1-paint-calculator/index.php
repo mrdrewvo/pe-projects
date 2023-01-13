@@ -48,18 +48,18 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 				$ceilingLength = $_POST["length"];
 				$ceilingWidth = $_POST["width"];
 
-			$ceilingArea = $ceilingLength * $ceilingWidth;
+				$ceilingArea = $ceilingLength * $ceilingWidth;
 
-			$paintGallons = ceil($ceilingArea / $gallonCoverage);
+				$paintGallons = ceil($ceilingArea / $gallonCoverage);
 
-			if($paintGallons == 1) {
+				if($paintGallons == 1) {
 
-				$galorgals = "gallon";
-			} else {
-				$galorgals = "gallons";
-			}
+					$galorgals = "gallon";
+				} else {
+					$galorgals = "gallons";
+				}
 
-			$outputMessage = "<div class='output-message'><p>You will need to purchase <span>$paintGallons $galorgals of paint</span></p><p>to cover <span>$ceilingArea square feet.</span></p></div>";
+				$outputMessage = "<div class='output-message'><p>You will need to purchase <span>$paintGallons $galorgals of paint</span></p><p>to cover <span>$ceilingArea square feet.</span></p></div>";
 			}
 			?>
 
