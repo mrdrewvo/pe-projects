@@ -5,8 +5,6 @@
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
-## 
-
 ## TUE 2023.01.10
 * Accomplishments
 	* PHP Array basics and some “loops” milestone

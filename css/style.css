@@ -13,15 +13,14 @@ html {
 
 body {
 	font-family: "Avenir Next", "Helvetica Neue"; /*default fonts*/
-	font-weight: 300;
-	font-size: 20px;
+	font-weight: 200;
 	
 	/*color palette*/
 	--blue: #162442;
-	--offwhite: #F2EFE6;
+	--white: #F2EFE6;
 	--green: #486254;
 	
-	background-color: var(--offwhite);
+	background-color: var(--white);
 }
 
 inner-column {
@@ -32,11 +31,13 @@ inner-column {
 	padding: 0px 20px;
 }
 
-.site-main {
-	position: relative;
-}
-
 /* ---- $$ TEXT STYLING ----*/
+
+h1 {
+	font-size: 70px;
+	font-family: didot;
+	text-align: left;
+}
 
 h2:first-of-type {
 	font-weight: 400;
@@ -46,81 +47,35 @@ h2:last-of-type {
 	font-weight: 225;
 }
 
-/* ---- $$ FOOTER ----*/
-footer {
-	background-color: var(--blue);
-	padding: 10px 0px;
+.main-section {
+	position: relative;
+	min-height: 98vh;
 }
 
-footer p {
-	color: var(--offwhite);
-	font-size: 12px;
-	padding: 5px 0px;
+.site-main {
+	overflow: hidden;
 }
 
-
-/* ---- $$ INDEX.PHP ----*/
+/* ---- $$ WELCOME SECTION ----*/
 
 .welcome {
 	position: relative;
-}
-
-header.home {
-	padding: 25px 0px;
-}
-
-h1 {
-	font-size: 65px;
-	font-family: didot;
-	text-align: right;
-	color: var(--blue);
-}
-
-tagline {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 20px 0px;
-	font-size: 16px;
-}
-
-tagline p:nth-of-type(2) {
-	margin-left: 12vw;
-}
-
-tagline p:last-of-type {
-	margin-left: 20vw;
+/*	outline: 2px solid red;*/
 }
 
 welcome-mod {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-	min-height: 400px;
+	padding: 0px 0px 200px 0px;
+/*	outline: 2px solid blue;*/
 }
 
-welcome-mod picture {
-	display: flex;
-	align-items: flex-end;
-	flex-basis: 40%;
-	position: relative;
-}
-
-welcome-mod picture img {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	transform: translate(-35%, 0%);
-	height: 95%;
-	width: auto;
-}
-
-welcome-mod nav {
+nav {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-end;
 	text-align: right;
+	padding-top: 20px;
 }
 
 a {
@@ -137,16 +92,65 @@ nav a:hover, .inner-column a:hover {
 	color: #B8814C;
 }
 
+welcome-mod p {
+	text-align: left;
+	margin-left: 45%;
+	width: 40%;
+	font-size: 18px;
+	line-height: 1.25;
+}
+
+drew-name {
+	display: block;
+}
+
+drew-name h1:first-of-type {
+	display: inline;
+	color: var(--blue);
+/*	color: var(--white);*/
+}
+
+drew-name h1:last-of-type {
+	display: inline;
+	color: var(--blue);
+}
+
+/*.background-blue {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: auto;
+	bottom: 0;
+	transform: translate(-72%, 0%);
+}
+
+.background-blue svg {
+	height: 2000px;
+	width: auto;
+}*/
+
 .pink-circle1 {
 	position: absolute;
 	z-index: -1;
 	width: 300px;
 	height: auto;
-	top: 0;
-	transform: translate(-40%, 0%);
+	top: 25vh;
+	transform: translate(-50%, 0%);
 }
 
+.background-green {
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+}
 
+.background-green svg {
+	width: 2000px;
+	height: 400px;
+}
 
 /*---- $$ ABOUT ME SECTION ----*/
 .about-me {
@@ -184,7 +188,7 @@ about-me-picture {
 }
 
 about-me-picture picture {
- 	width: 60%;
+ 	width: 50%;
 }
 
 contact-icons {
