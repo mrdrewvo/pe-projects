@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>123-more-forms</title>
+		<title>Drew Vo | Exercises for Programmers</title>
 		
 		<!-- favicon -->
 		<!-- <link rel="icon" href="[[Insert favicon image source]]" type="image/x-icon"> -->

@@ -14,6 +14,11 @@ bac calculator (ch4, ex17) -->
 
 		$forms = [
 			[
+				"formNum" => "9",
+				"formName" => "Paint Calculator",
+				"formSrc" => "paint-calculator.php"
+			],
+			[
 				"formNum" => "10",
 				"formName" => "Self-Checkout",
 				"formSrc" => "self-checkout.php"
@@ -23,11 +28,6 @@ bac calculator (ch4, ex17) -->
 				"formName" => "Password Validation",
 				"formSrc" => "password-validation.php"
 			],
-			[
-				"formNum" => "?",
-				"formName" => "Paint Calculator",
-				"formSrc" => "paint-calculator.php"
-			]
 		];
 
 		echo "<ul>";
