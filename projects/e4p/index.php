@@ -2,10 +2,6 @@
 
 <?php include("header.php"); ?>
 
-<!-- self-checkout (ch3, ex10)
-password validation (ch4, ex15)
-bac calculator (ch4, ex17) -->
-
 <section>
 
 	<inner-column>
@@ -13,6 +9,11 @@ bac calculator (ch4, ex17) -->
 		<?php
 
 		$forms = [
+			[
+				"formNum" => "8",
+				"formName" => "Pizza Party",
+				"formSrc" => "pizza-party.php"
+			],
 			[
 				"formNum" => "9",
 				"formName" => "Paint Calculator",
@@ -27,6 +28,11 @@ bac calculator (ch4, ex17) -->
 				"formNum" => "15",
 				"formName" => "Password Validation",
 				"formSrc" => "password-validation.php"
+			],
+			[
+				"formNum" => "16",
+				"formName" => "Legal Driving Age",
+				"formSrc" => "legal-driving-age.php"
 			],
 		];
 

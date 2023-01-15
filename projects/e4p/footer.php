@@ -1,12 +1,15 @@
-</main>
+	</main>
 
-<!-- 		<footer class="page-section site-footer">
+		<footer class="page-section site-footer">
 
-			<div class="inner-column">
+			<inner-column>
 				
-				<p>[[FOOTER!]]</p>
-			</div>
-		</footer> -->
+				<div class="inner-column">
+					
+					<a href="./">Back to List</a>
+				</div>
+			</inner-column>
+		</footer>
 	</body>
 </html>
 
