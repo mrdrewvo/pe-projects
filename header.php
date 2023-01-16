@@ -2,6 +2,8 @@
 
 	<inner-column>
 		
+		
+		
 		<?php include("nav.php"); ?>
 	</inner-column>
 </header>
