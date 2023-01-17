@@ -84,7 +84,7 @@
 					</a>
 				</contact-icons>
 
-				<?php
+<!-- 				<?php
 
 				$upArrow =
 
@@ -105,7 +105,7 @@
 				</a>";
 				?>
 
-				<?=$upArrow?>
+				<?=$upArrow?> -->
 			</about-me-mod>
 		</inner-column>
 	</section>
