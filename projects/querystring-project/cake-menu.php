@@ -1,28 +1,18 @@
+<?php include('cake-data.php'); ?>
+
 <h1>Cake Menu</h1>
 
 
 <ul>
-	<li class="cake">
+	<?php foreach ($cakeData as $cake) { ?>
+		<li class="cake">
 		<cake-card>
-			<h2 class="name">Cake Name1</h2>
-			<h3 class="date">Project Date1</h3>
-			<a href="">More Details1</a>
+			<picture><img src=<?=$cake["pictureURL"]?> alt=""></picture>
+			<h2 class="name"><?=$cake["name"]?></h2>
+			<h3 class="date"><?=$cake["date"]?></h3>
+			<a href='?page=Cake Detail&cake=<?=$cake["id"]?>'>More Details</a>
 		</cake-card>
 	</li>
 
-	<li class="cake">
-		<cake-card>
-			<h2 class="name">Cake Name2</h2>
-			<h3 class="date">Project Date2</h3>
-			<a href="">More Details2</a>
-		</cake-card>
-	</li>
-
-	<li class="cake">
-		<cake-card>
-			<h2 class="name">Cake Name3</h2>
-			<h3 class="date">Project Date3</h3>
-			<a href="">More Details3</a>
-		</cake-card>
-	</li>
+	<?php } ?>
 </ul>

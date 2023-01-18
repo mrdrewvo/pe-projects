@@ -28,11 +28,14 @@
 			<?php
 
 				if ($page == "Home") {
-				  include('home.php');
+					include('home.php');
 				}
 				if ($page == "Cake Menu") {
-				  include('cake-menu.php');
-				} 
+					include('cake-menu.php');
+				}
+				if ($page == "Cake Detail") {
+					include('cake-detail.php');
+				}
 			?>
 		</main-mod>
 	</inner-column>

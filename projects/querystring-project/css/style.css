@@ -71,7 +71,7 @@ nav a:hover, .inner-column a:hover {
 
 /* ~~~ BODY MAIN STYLING ~~~ */
 .site-main {
-	min-height: 65vh;
+	min-height: 80vh;
 	padding: 30px 0px;
 }
 
@@ -107,6 +107,8 @@ cake-card {
 
 /* ~~~ BODY FOOTER STYLING ~~~ */
 .site-footer {
-	padding: 30px;
+	background-color: var(--rust);
+	padding: 20px 0px;
 	text-align: left;
+	font-size: 12px;
 }
