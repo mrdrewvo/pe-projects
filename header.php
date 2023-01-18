@@ -4,7 +4,7 @@
 		
 		<header-mod>
 			
-			<a href="index.php"><h1>Drew Vo</h1></a>
+			<a href="index.php"><h1 class="loud-voice">Drew Vo</h1></a>
 
 			<?php include("nav.php"); ?>
 		</header-mod>		

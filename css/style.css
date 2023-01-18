@@ -48,28 +48,30 @@ header-mod {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+	padding: 10px 0px;
 }
 
 header-mod h1 {
-	font-size: 40px;
+	font-size: 50px;
 	font-family: didot;
 	text-align: right;
 	color: var(--blue);
-	flex-basis: 50%;
+	text-align: left;
 }
 
-header-mod a {
+header-mod > a {
 	text-decoration: none;
+	min-width: 200px;
 }
 
 nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	padding: 30px 0px;
-	gap: 20px;
+	justify-content: flex-end;
+	padding: 20px 0px;
+	gap: 10px;
+	flex-grow: 1;
 	flex-wrap: wrap;
-	flex-basis: 50%;
 }
 
 a {
@@ -77,11 +79,13 @@ a {
 }
 
 nav a {
-	padding: 10px 0px;
+	padding: 5px 0px;
 	text-decoration: underline;
-	font-size: 16px;
-	flex-basis: 1;
+	font-size: 18px;
 	text-align: center;
+	flex-basis: 1;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
 
 nav a:hover, .inner-column a:hover {
@@ -183,10 +187,14 @@ welcome-mod nav {
 
 h2:first-of-type {
 	font-weight: 400;
+	font-size: 40px;
 }
 
 h2:last-of-type {
 	font-weight: 225;
+	font-size: 30px;
+	padding-left: 50px;
+	padding-bottom: 20px;
 }
 
 /*---- $$ ABOUT ME SECTION ----*/
@@ -201,16 +209,6 @@ about-me-mod {
 	justify-content: space-between;
 	gap: 10px;
 	padding: 15% 0px 20% 0px;
-}
-
-about-me-title h2:first-of-type {
-	font-size: 50px;
-}
-
-about-me-title h2:last-of-type {
-	font-size: 40px;
-	padding-left: 30%;
-	padding-bottom: 20px;
 }
 
 about-me-text p {
@@ -259,6 +257,10 @@ contact-icons a picture * {
 
 /*---- $$ FEATURED PROJECTS SECTION ----*/
 
+.featured-projects {
+	background-color: var(--blue);
+}
+
 featured-projects-mod {
 	display: flex;
 	flex-direction: column;
@@ -268,13 +270,15 @@ featured-projects-mod {
 }
 
 featured-projects-title h2:first-of-type {
-	font-size: 50px;
+	font-size: 40px;
+	color: var(--offwhite);
 }
 
 featured-projects-title h2:last-of-type {
-	font-size: 40px;
+	font-size: 30px;
 	padding-left: 30%;
 	padding-bottom: 20px;
+	color: var(--offwhite);
 }
 
 .project-module h3 {
@@ -293,7 +297,6 @@ featured-projects-title h2:last-of-type {
 	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--blue);
 }
 
 .featured-projects-list li {
@@ -323,11 +326,11 @@ resume-mod {
 }
 	
 resume-title h2:first-of-type {
-	font-size: 50px;
+	font-size: 40px;
 }
 
 resume-title h2:last-of-type {
-	font-size: 40px;
+	font-size: 30px;
 	padding-left: 25%;
 }
 
