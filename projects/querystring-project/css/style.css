@@ -3,14 +3,16 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-/** {
+* {
 	outline: 1px solid red;
-}*/
+}
 
 body {
-	font-family: helvetica;
+	font-family: helvetica neue;
+	font-size: 1rem;
 	--grey: #434343;
 	--white: #FDFDFD;
+	--transparentWhite: rgba(255,255,255,.5);
 	--beige: #F5F5F5;
 	--rust: #a8674d;
 
@@ -25,12 +27,6 @@ inner-column {
 	max-width: 1100px;
 	padding: 0px 20px;
 }
-
-a {
-	transition: 0.4s;
-}
-
-
 
 /* ~~~ BODY HEADER STYLING ~~~ */
 
@@ -47,7 +43,7 @@ header-mod {
 
 .site-header h1 {
 	text-align: center;
-	font-size: 36px;
+	font-size: 48px;
 	font-family: bookman;
 	color: var(--rust) ;
 }
@@ -55,18 +51,21 @@ header-mod {
 nav {
 	display: flex;
 	justify-content: center;
-	gap: 0px 40px;
+	gap: 0px 36px;
 	text-align: center;
 }
 
 nav a {
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 1rem;
+	font-weight: 600;
 	color: var(--grey);
+
+	transition: .4s;
 }
 
 nav a:hover, .inner-column a:hover {
-	color: #B8814C;
+	color: var(--rust);
 }
 
 /* ~~~ BODY MAIN STYLING ~~~ */
@@ -77,33 +76,90 @@ nav a:hover, .inner-column a:hover {
 
 main-mod {
 	display: block;
-	border: 2px solid var(--rust);
 }
 
 .site-main h1 {
 	text-align: center;
-	font-size: 24px;
+	font-size: 32px;
 	font-family: bookman;
-	color: var(--rust) ;
+	color: var(--white);
+	margin-bottom: 20px;
 }
 
 main a {
+	display: inline;
 	text-decoration: none;
-	color: #99AA8A;
+	padding: 5px 10px;
+	color: var(--beige);
+	background-color: var(--rust);
+}
+
+/* ~~~ HOME STYLING ~~~ */
+
+about p {
+	font-size: 1.1rem;
+	line-height: 1.25;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+cake-feature-card {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: var(--transparentWhite);
+	display: block;
+}
+
+cake-feature {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+cake-feature picture {
+
+	overflow: hidden;
+}
+
+cake-feature-card h1 {
+	border-bottom: 2px solid var(--white);
+	margin-bottom: 10px;
+}
+
+cake-feature-text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px 0px;
+}
+
+cake-feature-text h2 {
+	font-size: 24px;
+	font-style: italic;
+}
+
+cake-feature-text a {
+	align-self: center;
 }
 
 
 /* ~~~ CAKE MENU STYLING ~~~ */
 cake-card {
 	display: block;
-	border: 1px solid var(--beige);
-	padding: 10px;
+	background-color: var(--transparentWhite);
+	padding: 20px;
 }
 
 .cake + .cake {
 	margin-top: 20px;
 }
 
+cake-card picture {
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+cake-card h2 {
+	font-size: 1.1rem;
+}
 
 /* ~~~ BODY FOOTER STYLING ~~~ */
 .site-footer {
