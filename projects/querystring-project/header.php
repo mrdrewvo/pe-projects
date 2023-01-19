@@ -3,7 +3,7 @@
 <header class="body-section site-header">
 
     <inner-column>
-
+        
         <header-mod>
             
             <h1>Sterling Circle Bakeshop</h1>
