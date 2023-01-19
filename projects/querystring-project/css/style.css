@@ -3,9 +3,9 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-* {
+/** {
 	outline: 1px solid red;
-}
+}*/
 
 body {
 	font-family: helvetica neue;
@@ -24,11 +24,14 @@ inner-column {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1100px;
+	max-width: 550px;
 	padding: 0px 20px;
 }
 
-/* ~~~ BODY HEADER STYLING ~~~ */
+
+
+
+/* ~~~ HEADER STYLING ~~~ */
 
 .site-header {
 	background-color: var(--beige);
@@ -51,24 +54,27 @@ header-mod {
 nav {
 	display: flex;
 	justify-content: center;
-	gap: 0px 36px;
+	gap: 0px 35px;
 	text-align: center;
 }
 
 nav a {
 	text-decoration: none;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 500;
 	color: var(--grey);
-
-	transition: .4s;
+	text-decoration: underline;
+	transition: .3s;
 }
 
-nav a:hover, .inner-column a:hover {
+nav a:hover {
 	color: var(--rust);
 }
 
-/* ~~~ BODY MAIN STYLING ~~~ */
+
+
+
+/* ~~~ MAIN STYLING ~~~ */
 .site-main {
 	min-height: 80vh;
 	padding: 30px 0px;
@@ -83,7 +89,7 @@ main-mod {
 	font-size: 32px;
 	font-family: bookman;
 	color: var(--white);
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 main a {
@@ -92,14 +98,43 @@ main a {
 	padding: 5px 10px;
 	color: var(--beige);
 	background-color: var(--rust);
+	transition: .3s;
 }
 
-/* ~~~ HOME STYLING ~~~ */
+main a:hover {
+	background-color: var(--beige);
+	color: var(--rust);
+	outline: 2px solid var(--rust);
+}
 
-about p {
+
+
+
+
+/* ~~~ HOME STYLING ~~~ */
+home-mod {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+about {
+	display: block;
+	max-width: 600px;
+}
+
+cake-feature-card {
+	max-width: 750px;
+}
+
+p {
 	font-size: 1.1rem;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+p + P {
 	margin-top: 20px;
 }
 
@@ -116,9 +151,13 @@ cake-feature {
 	gap: 10px;
 }
 
-cake-feature picture {
-
+cake-feature picture, cake-detail-mod picture {	
 	overflow: hidden;
+	align-self: center;
+}
+
+cake-feature picture img, cake-detail-mod picture img {	
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 cake-feature-card h1 {
@@ -134,37 +173,153 @@ cake-feature-text {
 
 cake-feature-text h2 {
 	font-size: 24px;
-	font-style: italic;
+	font-family: bookman;
 }
 
 cake-feature-text a {
 	align-self: center;
 }
 
+@media (min-width: 550px) {
+	inner-column {
+		max-width: 1200px;
+	}
+
+	cake-feature {
+		flex-direction: row;
+	}
+
+	cake-feature picture {
+		flex-basis: 55%;
+	}
+
+	cake-feature-text {
+		flex: 1;
+	}
+
+	cake-feature picture img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
 
 /* ~~~ CAKE MENU STYLING ~~~ */
-cake-card {
+.cake-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cake {
 	display: block;
 	background-color: var(--transparentWhite);
 	padding: 20px;
-}
-
-.cake + .cake {
-	margin-top: 20px;
-}
-
-cake-card picture {
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-cake-card h2 {
-	font-size: 1.1rem;
+.cake picture {
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
+
+.cake .name {
+	font-size: 1.5rem;
+	font-family: bookman;
+	margin: 30px 0px 20px 0px;
+	text-align: center;
+}
+
+.cake div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (min-width: 600px) {
+	.cake-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.cake {
+		flex-basis: calc((100% - 20px)/2);		
+	}
+}
+
+@media (min-width: 1100px) {
+	.cake {
+		flex-basis: calc((100% - 40px)/3);
+	}
+}
+
+
+
+
+
+
+/* ~~~ CAKE DETAIL STYLING ~~~ */
+cake-detail-mod {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 700px;
+}
+
+cake-detail-mod picture {
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+cake-detail-text {
+	display: flex;
+	flex-direction: column;
+}
+
+cake-detail-text h2 {
+	margin-top: 20px;
+	font-size: 1.4rem;
+	line-height: 1.25;
+	font-weight: 500;
+	font-family: bookman;
+}
+
+cake-detail-text ul {
+	list-style-type: disc;
+	margin-left: 30px;
+	font-size: 1rem;
+	line-height: 1.25;
+	font-weight: 300;
+}
+
+@media (min-width: 600px) {
+	cake-detail-mod {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	cake-detail-mod > * {
+		flex-basis: calc((100% - 20px)/2);		
+	}
+}
+
+
+
+
+
+
+
 
 /* ~~~ BODY FOOTER STYLING ~~~ */
 .site-footer {
 	background-color: var(--rust);
 	padding: 20px 0px;
+}
+
+.site-footer p {
 	text-align: left;
 	font-size: 12px;
+	margin: unset;
 }

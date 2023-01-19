@@ -141,7 +141,7 @@ $cakeData = [
 
 	[
 		"id" => 9,
-		"name" => "Simple and sweet (and small)",
+		"name" => "Simple and sweet (and&nbspsmall)",
 		"pictureURL" => "images/cupcakes.jpg",
 		"date" => "July 2022",
 		"story" => "Even small gatherings need need celebration cake!",
