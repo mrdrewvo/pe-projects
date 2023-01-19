@@ -10,6 +10,7 @@
   } else {
       $page = "Home";
   }
+
 ?>
 
 <!-- SITE HEAD -->
@@ -35,6 +36,9 @@
 				}
 				if ($page == "Cake Detail") {
 					include('cake-detail.php');
+				}
+				if ($page == "Add a Cake") {
+					include('create.php');
 				}
 			?>
 		</main-mod>

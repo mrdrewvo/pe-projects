@@ -31,6 +31,7 @@ inner-column {
 
 
 
+
 /* ~~~ HEADER STYLING ~~~ */
 
 .site-header {
@@ -70,6 +71,7 @@ nav a {
 nav a:hover {
 	color: var(--rust);
 }
+
 
 
 
@@ -260,7 +262,6 @@ cake-feature-text a {
 
 
 
-
 /* ~~~ CAKE DETAIL STYLING ~~~ */
 cake-detail-mod {
 	display: flex;
@@ -308,6 +309,22 @@ cake-detail-text ul {
 
 
 
+/* ~~~ FORM STYLING ~~~ */
+form {
+	padding: 30px 0px;
+}
+
+form-field {
+	display: block;
+}
+
+field :is(label, input) {
+	display: block;
+}
+
+form-field form-field {
+	margin-top: 20px;
+}
 
 
 
