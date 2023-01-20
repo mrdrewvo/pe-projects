@@ -10,7 +10,6 @@
   } else {
       $page = "Home";
   }
-
 ?>
 
 <!-- SITE HEAD -->

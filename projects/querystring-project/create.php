@@ -1,3 +1,12 @@
+<?php
+
+	if ( isset($_POST["add"]) ) {
+		
+	}
+
+?>
+
+
 <h1>Add a cake</h1>
 
 <form method="POST">
@@ -20,7 +29,7 @@
 	<form-field>
 		<label for="date">Date (MMM YYYY)</label>
 		<input
-			type="text"
+			type="date"
 			name="date"/>
 	</form-field>
 
