@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<meta name="description" content="Sterling Circle Bakeshop | Named after the street of our first  bakery, SCB is home to baker Drew Vo and his modern-style cakes and macarons.">
-	<meta property="og:title" content="SC Bakeshop | About">
+	<meta property="og:title" content="<?=$page?> | Sterling Circle Bakeshop">
 	<meta property="og:url" content="https://peprojects.dev/alpha-6/drew/challenge-1/index.html">
 	<meta name="og: description" content="Sterling Circle Bakeshop | Named after the street of our first  bakery, SCB is home to baker Drew Vo and his modern-style cakes and macarons.">
 	<meta property="og:image" content="https://peprojects.dev/alpha-6/drew/images/scb-logo-meta.png">
