@@ -1,0 +1,38 @@
+.home main-mod {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+cake-feature-card {
+	margin-top: 30px;
+	padding: 20px;
+	background-color: var(--transparentWhite);
+	display: block;
+}
+
+cake-feature {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+cake-feature-text {
+	display: flex;
+	flex-direction: column;
+	gap: 20px 0px;
+}
+
+@media (min-width: 550px) {
+	cake-feature {
+		flex-direction: row;
+	}
+
+	cake-feature .cake-pic {
+		flex-basis: 50%;
+	}
+
+	cake-feature-text {
+		flex: 1;
+	}
+}

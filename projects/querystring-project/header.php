@@ -1,12 +1,12 @@
-<body>
+<body class="<?=$page?>">
 
-<header class="body-section site-header">
+<header class="body-section">
 
     <inner-column>
         
         <header-mod>
             
-            <h1>Sterling Circle Bakeshop</h1>
+            <h1 class="company-name">Sterling Cir Bakeshop</h1>
 
             <?php include('site-menu.php'); ?>
         </header-mod>

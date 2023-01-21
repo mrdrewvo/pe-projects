@@ -2,14 +2,19 @@
 
 @import "meyer-reset.css";
 @import "setup.css";
+@import "font.css";
+@import "header.css";
+@import "home.css";
+@import "list.css";
+@import "detail.css";
+@import "form.css";
+@import "footer.css";
 
 /** {
 	outline: 1px solid red;
 }*/
 
 body {
-	font-family: helvetica neue;
-	font-size: 1rem;
 	--grey: #434343;
 	--white: #FDFDFD;
 	--transparentWhite: rgba(255,255,255,.5);
@@ -24,60 +29,18 @@ inner-column {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 550px;
+	max-width: 625px;
 	padding: 0px 20px;
 }
 
-
-
-
-
-/* ~~~ HEADER STYLING ~~~ */
-
-.site-header {
-	background-color: var(--beige);
-	padding: 30px 0px;
+@media (min-width: 550px) {
+	:is(.list, .detail) inner-column {
+		max-width: 1200px;
+	}
 }
-
-header-mod {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.site-header h1 {
-	text-align: center;
-	font-size: 48px;
-	font-family: bookman;
-	color: var(--rust) ;
-}
-
-nav {
-	display: flex;
-	justify-content: center;
-	gap: 0px 35px;
-	text-align: center;
-}
-
-nav a {
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: 500;
-	color: var(--grey);
-	text-decoration: underline;
-	transition: .3s;
-}
-
-nav a:hover {
-	color: var(--rust);
-}
-
-
-
-
 
 /* ~~~ MAIN STYLING ~~~ */
-.site-main {
+main {
 	min-height: 80vh;
 	padding: 30px 0px;
 }
@@ -86,297 +49,19 @@ main-mod {
 	display: block;
 }
 
-.site-main h1 {
-	text-align: center;
-	font-size: 32px;
-	font-family: bookman;
-	color: var(--white);
-	margin-bottom: 25px;
+/* ~~~ PICTURE STYLING ~~~ */
+.cake-pic {
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
-main a {
-	display: inline;
-	text-decoration: none;
-	padding: 5px 10px;
-	color: var(--beige);
-	background-color: var(--rust);
-	transition: .3s;
-}
-
-main a:hover {
-	background-color: var(--beige);
-	color: var(--rust);
-	outline: 2px solid var(--rust);
-}
-
-
-
-
-
-/* ~~~ HOME STYLING ~~~ */
-home-mod {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-about {
-	display: block;
-	max-width: 600px;
-}
-
-cake-feature-card {
-	max-width: 750px;
-}
-
-p {
-	font-size: 1.1rem;
-	line-height: 1.25;
-	font-weight: 300;
-	margin-top: 10px;
-}
-
-p + P {
-	margin-top: 20px;
-}
-
-cake-feature-card {
-	margin-top: 50px;
-	padding: 20px;
-	background-color: var(--transparentWhite);
-	display: block;
-}
-
-cake-feature {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-}
-
-cake-feature picture, cake-detail-mod picture {	
+:is(.home, .list) .cake-pic {
+	aspect-ratio: 1 / 1;
 	overflow: hidden;
-	align-self: center;
 }
 
-cake-feature picture img, cake-detail-mod picture img {	
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-cake-feature-card h1 {
-	border-bottom: 2px solid var(--white);
-	margin-bottom: 10px;
-}
-
-cake-feature-text {
-	display: flex;
-	flex-direction: column;
-	gap: 20px 0px;
-}
-
-cake-feature-text h2 {
-	font-size: 24px;
-	font-family: bookman;
-}
-
-cake-feature-text a {
-	align-self: center;
-}
-
-@media (min-width: 550px) {
-	inner-column {
-		max-width: 1200px;
-	}
-
-	cake-feature {
-		flex-direction: row;
-	}
-
-	cake-feature picture {
-		flex-basis: 55%;
-	}
-
-	cake-feature-text {
-		flex: 1;
-	}
-
-	cake-feature picture img {
-		width: 100%;
-		height: auto;
-	}
-}
-
-
-
-
-
-/* ~~~ CAKE MENU STYLING ~~~ */
-.cake-list {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.cake {
-	display: block;
-	background-color: var(--transparentWhite);
-	padding: 20px;
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-.cake picture {
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-.cake .name {
-	font-size: 1.5rem;
-	font-family: bookman;
-	margin: 30px 0px 20px 0px;
-	text-align: center;
-}
-
-.cake div {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-@media (min-width: 600px) {
-	.cake-list {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
-
-	.cake {
-		flex-basis: calc((100% - 20px)/2);		
-	}
-}
-
-@media (min-width: 1100px) {
-	.cake {
-		flex-basis: calc((100% - 40px)/3);
-	}
-}
-
-
-
-
-
-/* ~~~ CAKE DETAIL STYLING ~~~ */
-cake-detail-mod {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-}
-
-cake-detail-mod picture {
-	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-cake-detail-text {
-	display: flex;
-	flex-direction: column;
-}
-
-cake-detail-text h2 {
-	margin-top: 20px;
-	font-size: 1.4rem;
-	line-height: 1.25;
-	font-weight: 500;
-	font-family: bookman;
-}
-
-cake-detail-text ul {
-	list-style-type: disc;
-	margin-left: 30px;
-	font-size: 1rem;
-	line-height: 1.25;
-	font-weight: 300;
-}
-
-@media (min-width: 600px) {
-	cake-detail-mod {
-		flex-direction: row;
-		gap: 20px;
-	}
-
-	cake-detail-mod > * {
-		flex-basis: calc((100% - 20px)/2);		
-	}
-}
-
-
-
-
-
-/* ~~~ FORM STYLING ~~~ */
-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: stretch;
-	gap: 20px;
-
-}
-
-form-field {
-	display: block;
-}
-
-field :is(label, input) {
-	display: block;
-}
-
-form-field + form-field {
-	margin-top: 20px;
-}
-
-h2 {
-	margin-bottom: 20px;
-	font-size: 1.4rem;
-	line-height: 1.25;
-	font-weight: 500;
-	font-family: bookman;
-	text-align: center;
-}
-
-basic-info, composition {
-	display: block;
-	background-color: var(--white);
-	color: var(--rust);
-	padding: 20px;
-	border: 5px solid var(--rust);
-}
-
-button {
-	align-self: center;
-	text-decoration: none;
-	padding: 5px 10px;
-	color: var(--beige);
-	background-color: var(--rust);
-	transition: .3s;
-}
-
-.error {
-	color: red;
-	font-size: 14px;
-	margin-bottom: 20px;
-	font-weight: 500;
-}
-
-
-
-
-
-
-/* ~~~ BODY FOOTER STYLING ~~~ */
-.site-footer {
-	background-color: var(--rust);
-	padding: 20px 0px;
-}
-
-.site-footer p {
-	text-align: left;
-	font-size: 12px;
-	margin: unset;
+.cake-pic img {
+	object-fit: cover;
+	object-position: 0 50%;
+	width: 100%;
+	height: 100%;
 }

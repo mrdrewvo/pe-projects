@@ -1,4 +1,4 @@
-<?php include("cake-data.php"); ?>
+<?php include("data.php"); ?>
 
 <?php
 	if ( isset($_GET["cake"]) ) {
@@ -17,7 +17,7 @@
 
 	<cake-detail-mod>
 		
-		<picture>
+		<picture class='cake-pic'>
 			
 			<img src=<?=$cakeDetail["pictureURL"]?> alt="">
 		</picture>

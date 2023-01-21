@@ -1,0 +1,114 @@
+
+body {
+	font-family: helvetica neue;
+	font-size: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--grey);
+	text-decoration: underline;
+	transition: .3s;
+}
+
+nav a:hover {
+	color: var(--rust);
+}
+
+main a {
+	display: inline;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: var(--beige);
+	background-color: var(--rust);
+	transition: .3s;
+}
+
+main a:hover {
+	background-color: var(--beige);
+	color: var(--rust);
+	outline: 2px solid var(--rust);
+}
+
+cake-feature-text a {
+	align-self: center;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 48px;
+	font-family: bookman;
+	color: var(--rust) ;
+}
+
+main h1 {
+	text-align: center;
+	font-size: 32px;
+	font-family: bookman;
+	color: var(--white);
+	margin-bottom: 25px;
+}
+
+cake-feature-card h1 {
+	border-bottom: 2px solid var(--white);
+	margin-bottom: 15px;
+}
+
+cake-feature-text h2 {
+	font-size: 24px;
+	font-family: bookman;
+}
+
+.create h2 {
+	margin-bottom: 20px;
+	font-size: 1.4em;
+	font-family: bookman;
+	text-align: center;
+}
+
+.cake-card h2 {
+	font-size: 1.5rem;
+	font-family: bookman;
+	margin: 30px 0px 20px 0px;
+	text-align: center;
+}
+
+cake-feature-text h2 {
+	margin-top: 10px;
+}
+
+cake-detail-text h2 {
+	margin-top: 20px;
+	font-size: 1.4rem;
+	line-height: 1.25;
+	font-weight: 500;
+	font-family: bookman;
+}
+
+cake-detail-text ul {
+	list-style-type: disc;
+	margin-left: 30px;
+	font-size: 1rem;
+	line-height: 1.25;
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 1.25;
+	font-weight: 300;
+	margin-top: 10px;
+	letter-spacing: .02rem;
+	kerning: ;
+}
+
+p + p {
+	margin-top: 20px;
+}
+
+.site-footer p {
+	text-align: left;
+	font-size: 12px;
+	margin: unset;
+}

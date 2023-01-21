@@ -1,5 +1,5 @@
 <nav class="site-menu">
-  <a href="?page=Home">Home</a>
-  <a href="?page=Cake Menu">Cake Menu</a>
-  <a href="?page=Add a Cake">Add New Cake</a>
+  <a href="?page=home">Home</a>
+  <a href="?page=list">Cake Menu</a>
+  <a href="?page=create">Add New Cake</a>
 </nav>

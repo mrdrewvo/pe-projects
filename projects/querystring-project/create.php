@@ -55,8 +55,8 @@ $nameError = null;
 				name="story"
 				rows="5"
 				cols="30"
-				required>
-			</textarea>
+				required
+			></textarea>
 		</form-field>
 	</basic-info>
 

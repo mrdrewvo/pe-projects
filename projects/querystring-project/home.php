@@ -1,18 +1,15 @@
-<home-mod>
+<h1>Welcome to our humble bakeshop!</h1>
 
-	<about>
+<p>Sterling Circle is a boutique bakeshop focused on custom modern-style cakes and macarons, found by home baker, Drew Vo.</p>
 
-		<h1>Welcome to our humble bakeshop!</h1>
+<p>Named after the street where it all began in 2018, Sterling Circle Bakeshop has created hundreds of special orders for our customers.</p>
 
-		<p>Started by hobby baker, Drew Vo, Sterling Circle is a boutique bakeshop focused on custom modern-style cakes and macarons.</p>
+<?php include("data.php"); ?>
 
-		<p>Named after the street where it all began in 2018, Sterling Circle Bakeshop has created hundreds of special orders for our customers.</p>
-	</about>
+<?php
 
-	<?php include("cake-data.php"); ?>
-
-	<?php foreach($cakeData as $cake) {
-			
+	foreach($cakeData as $cake) {
+		
 		if($cake["id"] == 10) { ?>
 
 			<cake-feature-card>
@@ -21,7 +18,10 @@
 
 				<cake-feature>
 					
-					<picture><img src=<?=$cake["pictureURL"]?> alt=""></picture>
+					<picture class="cake-pic">
+
+						<img src=<?=$cake["pictureURL"]?> alt="">
+					</picture>
 
 					<cake-feature-text>	
 						
@@ -29,11 +29,11 @@
 
 						<p><span><?=$cake["date"]?></span> - <?=$cake["story"]?></p>
 
-						<a href='?page=Cake Detail&cake=<?=$cake["id"]?>'>More Details</a>
+						<a href='?page=detail&cake=<?=$cake["id"]?>'>More Details</a>
 
 					</cake-feature-text>
 				</cake-feature>
 			</cake-feature-card>
 		<?php };
-	}; ?>
-</home-mod>
+	};
+?>

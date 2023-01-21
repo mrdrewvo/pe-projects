@@ -1,0 +1,36 @@
+.cake-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.cake-card {
+	display: block;
+	background-color: var(--transparentWhite);
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.cake-card div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (min-width: 600px) {
+	.cake-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.cake-card {
+		flex-basis: calc((100% - 20px)/2);		
+	}
+}
+
+@media (min-width: 1100px) {
+	.cake-card {
+		flex-basis: calc((100% - 40px)/3);
+	}
+}
