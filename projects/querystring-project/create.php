@@ -1,11 +1,46 @@
 <?php
+	
+	$cakeData = file_get_contents("cakes.json");
 
-$nameError = null;
+	$hasName = false;
+	$nameError = null;
 
-	if ( isset($_POST["add"]) ) {
+	$formSubmitted = isset($_POST["add"]);
+
+	if ($formSubmitted) {
 
 		if ( !empty($_POST["name"]) ) {
+			
 			$hasName = true;
+
+			//CREATE MONSTER
+
+			$newCake = [
+				"id" => 0,
+				"name" => $_POST["name"],
+				"pictureURL" => $_POST["pictureURL"],
+				"date" => $_POST["date"],
+				"story" => $_POST["story"],
+				"composition" => [
+					"Sponge" => $_POST["sponge"],
+					"Filling" => $_POST["filling"],
+					"Texture" => $_POST["texture"],
+					"Soak"  => $_POST["soak"],
+					"Outer Frosting" => $_POST["outerFrosting"],
+					"Decorations" => $_POST["decorations"],
+				],
+			];
+
+			echo "<pre>";
+			var_dump($newCake);
+			echo "</pre>";
+
+			// Transform it to JSON file
+			$cakeJson = json_encode($newCake);
+
+			// SAVE MONSTER
+			file_put_contents('cakes.json', $cakeJson);
+
 		} else {
 			$nameError = "Please add a name";
 		}
@@ -99,11 +134,11 @@ $nameError = null;
 		</form-field>
 
 		<form-field>
-			<label for="outer frosting">Outer Frosting</label>
+			<label for="outerFrosting">Outer Frosting</label>
 			<input
 				type="text"
-				id="outer frosting"
-				name="outer frosting"/>
+				id="outerFrosting"
+				name="outerFrosting"/>
 		</form-field>
 
 		<form-field>

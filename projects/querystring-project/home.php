@@ -1,6 +1,6 @@
 <h1>Welcome to our humble bakeshop!</h1>
 
-<p>Sterling Circle is a boutique bakeshop focused on custom modern-style cakes and macarons, found by home baker, Drew Vo.</p>
+<p>Sterling Circle is a boutique bakeshop focused on custom modern-style cakes and macarons, founded by home baker, Drew Vo.</p>
 
 <p>Named after the street where it all began in 2018, Sterling Circle Bakeshop has created hundreds of special orders for our customers.</p>
 
