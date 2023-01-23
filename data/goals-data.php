@@ -18,6 +18,14 @@ $goalsData = [
 		],
 	],
 	[
+		"title" => "Next 30 Days",
+		"goals" => [
+			"Gain more expertise on flexbox and grid",
+			"Gain more expertise on SVGs",
+			"Revisit career pathing options"
+		],
+	],
+	[
 		"title" => "Weekly",
 		"goals" => [
 			"Spend a total of 1 hour on Substack",
