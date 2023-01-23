@@ -22,16 +22,18 @@ nav a:hover {
 	color: var(--rust);
 }
 
-main a {
-	display: inline;
+.create .button {
+	display: inline-block;
 	text-decoration: none;
 	padding: 5px 10px;
 	color: var(--beige);
 	background-color: var(--rust);
 	transition: .3s;
+	border: 0px;
+	font-size: 18px;
 }
 
-main a:hover {
+.button:hover {
 	background-color: var(--beige);
 	color: var(--rust);
 	outline: 2px solid var(--rust);

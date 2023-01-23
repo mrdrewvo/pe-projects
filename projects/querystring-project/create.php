@@ -89,7 +89,6 @@
 				id="story"
 				name="story"
 				rows="5"
-				cols="30"
 				required
 			></textarea>
 		</form-field>
@@ -151,5 +150,5 @@
 	</composition>	
 
 
-	<button type="submit" name="add">Add Cake</button>
+	<button class="button" type="submit" name="add">Add Cake</button>
 </form>

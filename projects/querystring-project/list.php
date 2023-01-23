@@ -18,7 +18,7 @@
 			<div>
 				
 				<h3 class="date"><?=$cake["date"]?></h3>
-				<a href='?page=detail&cake=<?=$cake["id"]?>'>More Details</a>
+				<a class="button" href='?page=detail&cake=<?=$cake["id"]?>'>More Details</a>
 			</div>
 		</li>
 	<?php } ?>

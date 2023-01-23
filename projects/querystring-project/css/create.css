@@ -10,13 +10,26 @@ form-field {
 	display: block;
 }
 
-field :is(label, input) {
+form-field :is(label, input, textarea) {
 	display: block;
+	padding-bottom: 5px;
+	width: 100%;
+	font-family: inherit;
+}
+
+form-field :is(input, textarea) {
+	font-weight: 200;
+	padding: 5px;
+	border: 1px solid var(--grey);
+	box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+	border-radius: 0px;
+	resize: vertical;
 }
 
 form-field + form-field {
 	margin-top: 20px;
 }
+
 
 basic-info, composition {
 	display: block;
@@ -24,15 +37,21 @@ basic-info, composition {
 	color: var(--rust);
 	padding: 20px;
 	border: 5px solid var(--rust);
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+form-field input[id='date'] {
+	width: unset;
+}
+
+textarea {
+	dispaly: block;
+	width: 100%;
 }
 
 button {
 	align-self: center;
-	text-decoration: none;
-	padding: 5px 10px;
-	color: var(--beige);
-	background-color: var(--rust);
-	transition: .3s;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
 .error {

@@ -29,7 +29,7 @@
 
 						<p><span><?=$cake["date"]?></span> - <?=$cake["story"]?></p>
 
-						<a href='?page=detail&cake=<?=$cake["id"]?>'>More Details</a>
+						<a class="button" href='?page=detail&cake=<?=$cake["id"]?>'>More Details</a>
 
 					</cake-feature-text>
 				</cake-feature>

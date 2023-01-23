@@ -7,7 +7,7 @@
 @import "home.css";
 @import "list.css";
 @import "detail.css";
-@import "form.css";
+@import "create.css";
 @import "footer.css";
 
 /** {
@@ -19,7 +19,7 @@ body {
 	--white: #FDFDFD;
 	--transparentWhite: rgba(255,255,255,.5);
 	--beige: #F5F5F5;
-	--rust: #a8674d;
+	--rust: #85462d;
 
 	background-color: var(--grey);
 	color: var(--white);
