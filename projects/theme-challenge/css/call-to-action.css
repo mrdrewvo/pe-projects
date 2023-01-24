@@ -1,0 +1,27 @@
+.cta1 {
+	background-color: #CFA0C7;
+}
+
+.cta2 {
+	background-color: #EA9698;
+}
+
+cta-module {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--gap);
+	border: var(--blackborder);
+}
+
+@media (min-width: 600px) {
+	cta-module {
+		padding: calc(10 * var(--gap)) calc(5 * var(--gap));
+	}
+}
+
+@media (min-width: 1000px) {
+	cta-module {
+		padding: calc(10 * var(--gap)) calc(10 * var(--gap));
+	}
+}

@@ -1,0 +1,62 @@
+/* Should we pull in @fonts here? */
+/* don't think you can... might have to be higher up (the top of) the food chain! */
+
+.loud-voice	{
+	font-family: sans-serif;
+	font-size: clamp(36px, 5vw, 40px);
+	font-weight: 700;
+	padding: var(--gap);
+	border: var(--blackborder);
+
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+.attention-voice	{
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+.calm-voice, p, li {
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+:is(.calm-voice, p) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p) strong {
+	font-weight: 700;
+}
+
+.button {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+/* or smaller group of article-like styles such as a <text-content> custom element */
+p + p {
+	margin-top: 1em;
+}
+
+:is(h2, h3) + p {
+	margin-top: calc(3 * var(--gap));
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}

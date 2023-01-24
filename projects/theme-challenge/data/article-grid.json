@@ -1,0 +1,32 @@
+[
+    {
+        "title": "This is an article card",
+        "blurb": "It's basically a mini call to action, right?",
+        "button": "act!"
+    },
+    {
+        "title": "This is the title of an article",
+        "blurb": "Here's a little info to help you understand if this is an article you wnat to read.",
+        "button": "read more"
+    },
+    {
+        "title": "This is the title of an article",
+        "blurb": "Here's a little info to help you understand if this is an article you wnat to read.",
+        "button": "read more"
+    },
+    {
+        "title": "This is the title of an article",
+        "blurb": "Here's a little info to help you understand if this is an article you wnat to read.",
+        "button": "read more"
+    },
+    {
+        "title": "This is the title of an article",
+        "blurb": "Here's a little info to help you understand if this is an article you wnat to read.",
+        "button": "read more"
+    },
+    {
+        "title": "This is the title of an article",
+        "blurb": "Here's a little info to help you understand if this is an article you wnat to read.",
+        "button": "read more"
+    }
+]

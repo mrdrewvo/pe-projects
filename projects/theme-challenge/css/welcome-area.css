@@ -1,0 +1,43 @@
+.welcome-area {
+	background-color: #BADCEB;
+}
+
+welcome-module {
+	display: flex;
+	flex-direction: column;
+	border: var(--blackborder);
+}
+
+welcome-module-picture {
+	display: block;
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+picture {
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+welcome-module-text {
+	display: flex;
+	flex-direction: column;
+	gap: calc(2 * var(--gap));
+	padding: calc(3 * var(--gap)) var(--gap);
+	border: var(--blackborder);
+}
+
+@media (min-width: 600px) {
+	welcome-module {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	welcome-module-picture {
+		flex-basis: 1;
+	}
+
+	welcome-module-text {
+		flex-basis: 1;
+	}
+}

@@ -1,7 +1,6 @@
 <?php
-	
-	$cakeData = file_get_contents("cakes.json");
 
+	//custom validation for "name" field
 	$hasName = false;
 	$nameError = null;
 
@@ -13,12 +12,13 @@
 			
 			$hasName = true;
 
-			//CREATE MONSTER
-
+			// Reference for saving to JSON file: https://www.c-sharpcorner.com/article/write-and-append-data-in-json-file-using-php/
+			
+			// Create newCake array 
 			$newCake = [
-				"id" => 0,
+				"id" => uniqid('cake-'),
 				"name" => $_POST["name"],
-				"pictureURL" => $_POST["pictureURL"],
+				"pictureURL" => "images/" . $_POST["pictureURL"],
 				"date" => $_POST["date"],
 				"story" => $_POST["story"],
 				"composition" => [
@@ -31,14 +31,16 @@
 				],
 			];
 
-			echo "<pre>";
-			var_dump($newCake);
-			echo "</pre>";
+			// Get code from JSON file and decode
+			$cakeData = json_decode(file_get_contents("cakes.json"),true);
+			
+			// Add newCake to pulled data
+			$cakeData[] = $newCake;
 
-			// Transform it to JSON file
-			$cakeJson = json_encode($newCake);
+			// Transform full data set to JSON format
+			$cakeJson = json_encode($cakeData, JSON_PRETTY_PRINT);
 
-			// SAVE MONSTER
+			// Save appended and formatted data to JSON file
 			file_put_contents('cakes.json', $cakeJson);
 
 		} else {
@@ -52,6 +54,7 @@
 <h1>Add a cake</h1>
 
 <form method="POST">
+<!-- action="upload.php" -->
 
 	<basic-info>
 	
@@ -72,7 +75,8 @@
 			<input
 				type="file"
 				id="pictureURL"
-				name="pictureURL"/>
+				name="pictureURL"
+				accept="image/*"/>
 		</form-field>
 
 		<form-field>
@@ -150,5 +154,5 @@
 	</composition>	
 
 
-	<button class="button" type="submit" name="add">Add Cake</button>
+	<button class="button" ™type="submit" name="add">Add Cake</button>
 </form>

@@ -1,0 +1,7 @@
+.button {
+	display: inline-block;
+	padding: var(--gap);
+	background: black;
+	color: white;
+	text-transform: uppercase;
+}

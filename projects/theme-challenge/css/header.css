@@ -1,0 +1,24 @@
+header {
+	background-color: #B9D8BF;
+}
+
+mast-head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+mast-head :is(.user-menu, .site-menu) {
+	display: flex;
+	align-items: center;
+	padding: var(--gap);
+	border: var(--blackborder);
+}
+
+mast-head a {
+	text-align: center;
+	padding: var(--gap);
+	border: var(--blackborder);
+}

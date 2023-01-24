@@ -11,7 +11,7 @@ nav a {
 	color: var(--grey);
 	transition: .3s;
 	border-bottom: 2px solid transparent;
-	padding: 10px;
+	padding: 0 5px 10px 5px;
 }
 
 nav a.active {
@@ -22,7 +22,7 @@ nav a:hover {
 	color: var(--rust);
 }
 
-.create .button {
+.button {
 	display: inline-block;
 	text-decoration: none;
 	padding: 5px 10px;

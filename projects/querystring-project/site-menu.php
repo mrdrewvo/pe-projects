@@ -2,14 +2,21 @@
 
    function isPage($name) {
    
-      $page = $_GET["page"];
+      $page = null;
+
+      if ( isset($page) ) {
+      
+         $page = $_GET["page"];
+      } else {
+
+         $page = "home"; // defaults class "active" if no query string
+      }
 
       if ($page == $name) {
          
-         echo 'class="active"';
-      } 
+         echo 'class="active"'; // assigns class "active" on the current page
+      }
    }
-
 ?>
 
 <nav class="site-menu">
