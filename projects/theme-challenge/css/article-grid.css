@@ -26,7 +26,7 @@ li.article-card {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--gap);
-	padding: calc(3 * var(--gap)) var(--gap);
+	padding: calc(3 * var(--gap)) var(--gap) var(--gap) var(--gap);
 }
 
 @media (min-width: 650px) {
