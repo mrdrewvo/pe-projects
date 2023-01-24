@@ -17,6 +17,10 @@ mast-head :is(.user-menu, .site-menu) {
 	border: var(--blackborder);
 }
 
+mast-head .user-menu p {
+	display: none;
+}
+
 mast-head a {
 	text-align: center;
 	padding: var(--gap);

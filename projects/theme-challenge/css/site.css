@@ -31,5 +31,5 @@ inner-column {
 }
 
 section {
-	padding: calc(6 * var(--gap)) 0px;
+	padding: calc(6 * var(--gap)) var(--gap);
 }
