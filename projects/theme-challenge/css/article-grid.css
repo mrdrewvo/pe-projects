@@ -1,5 +1,6 @@
 .article-grid {
 	background-color: #F1CE9C;
+	border: var(--blackborder);
 }
 
 article-module {
@@ -16,6 +17,7 @@ ul.article-list {
 	display: flex;
 	flex-direction: column;
 	gap: calc(2 * var(--gap));
+	padding: var(--gap);
 	border: var(--blackborder);
 }
 

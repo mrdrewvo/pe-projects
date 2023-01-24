@@ -16,12 +16,12 @@ cta-module {
 
 @media (min-width: 600px) {
 	cta-module {
-		padding: calc(10 * var(--gap)) calc(5 * var(--gap));
+		padding: calc(10 * var(--gap)) calc(10 * var(--gap));
 	}
 }
 
 @media (min-width: 1000px) {
 	cta-module {
-		padding: calc(10 * var(--gap)) calc(10 * var(--gap));
+		padding: calc(15 * var(--gap)) calc(10 * var(--gap));
 	}
 }

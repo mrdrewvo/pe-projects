@@ -1,11 +1,11 @@
 .welcome-area {
 	background-color: #BADCEB;
+	border: var(--blackborder);
 }
 
 welcome-module {
 	display: flex;
 	flex-direction: column;
-	border: var(--blackborder);
 }
 
 welcome-module-picture {

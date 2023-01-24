@@ -1,5 +1,6 @@
-<ul class="legal-stuff">
+<nav class="legal-stuff">
 
-	<li><a href=#>Legal thing a</a></li>
-	<li><a href=#>Legal thing b</a></li>
-</ul>	
+	<p>Legal Things</p>
+	<a href=#>Legal thing a</a>
+	<a href=#>Legal thing b</a>
+</nav>
