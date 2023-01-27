@@ -12,13 +12,6 @@ form {
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-form h2 {
-	font-size: 22px;
-	text-align: center;
-	line-height: 1.15;
-/*	padding: 0px calc(.5 * var(--gap));*/
-}
-
 form p {
 	text-align: center;
 	padding: 0px var(--gap) ;
@@ -38,7 +31,13 @@ form :is(input, select) {
 
 contact-info {
 	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
 	gap: calc(1.5 * var(--gap));
+}
+
+contact-info form-field {
+	flex: 1;
 }
 
 form .button {
