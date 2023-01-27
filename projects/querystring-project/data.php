@@ -1,7 +1,5 @@
 <?php
 
-$peImage = "https://peprojects.dev/images/landscape.jpg";
-
 $cakeData = [
 	[
 		"id" => 0,

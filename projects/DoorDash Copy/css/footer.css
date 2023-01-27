@@ -1,0 +1,34 @@
+footer {
+	background-color: #F6F0E4;
+	border: var(--blackborder);
+	padding: calc(6 * var(--gap)) var(--gap);
+}
+
+footer-module {
+	display: block;
+}
+
+footer-module-text {
+	display: block;
+	margin-bottom: calc(3 * var(--gap));
+}
+
+footer-module-links {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--gap);
+
+	padding: calc(6 * var(--gap)) var(--gap);
+	border: var(--blackborder);	
+}
+
+footer-module-links nav {
+	border: var(--blackborder);
+	padding: var(--gap);
+}
+
+footer-module-links a {
+	padding: var(--gap);
+	border: var(--blackborder);
+}

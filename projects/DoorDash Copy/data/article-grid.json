@@ -1,0 +1,17 @@
+[
+    {
+        "pictureURL": "boost-sales.png",
+        "title": "Boost your sales & overall profit",
+        "button": "Learn more"
+    },
+    {
+        "pictureURL": "convenient-ordering.png",
+        "title": "Expand your customer base",
+        "button": "Learn more"
+    },
+    {
+        "pictureURL": "customer-base.png",
+        "title": "Make ordering more convenient for your customers",
+        "button": "Learn more"
+    }
+]

@@ -154,5 +154,5 @@
 	</composition>	
 
 
-	<button class="button" ™type="submit" name="add">Add Cake</button>
+	<button class="button" type="submit" name="add">Add Cake</button>
 </form>

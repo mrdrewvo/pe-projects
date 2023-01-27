@@ -1,0 +1,46 @@
+/* ~~~ DOC STRUCTURE ~~~ */
+
+@import "reset.css";
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+@import "typography.css";
+@import "components.css";
+@import "header.css";
+@import "menu-site-hamburger.css";
+@import "welcome-area.css";
+@import "call-to-action.css";
+@import "cta-form.css";
+@import "article-grid.css";
+@import "footer.css";
+
+
+/** {
+	outline: 1px solid red;
+}*/
+
+html {
+	--darkblue: #233069;
+	--white: #fff;
+	--black: #191919;
+	--buttonpurple: #4969F5;
+	--red: #FF3008;
+}
+
+body {
+	font-family: 'TT Norms Pro';
+	font-color: var(--black);
+	--gap: 10px;
+
+	min-height: 100vh;
+	position: relative;
+}
+
+inner-column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+}
+
+header inner-column {
+	max-width: 1400px;
+}

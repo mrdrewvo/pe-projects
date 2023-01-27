@@ -1,0 +1,64 @@
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: calc(1.5 * var(--gap));
+
+	margin: calc(1.5 * var(--gap));
+	background-color: var(--white);
+	border-radius: var(--gap);
+	padding: calc(1.5 * var(--gap));
+
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form h2 {
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.15;
+/*	padding: 0px calc(.5 * var(--gap));*/
+}
+
+form p {
+	text-align: center;
+	padding: 0px var(--gap) ;
+}
+
+form :is(input, select) {
+	display: block;
+	padding: calc(.5 * var(--gap)) var(--gap);
+	width: 100%;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 500;
+	color: inherit;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+
+contact-info {
+	display: flex;
+	gap: calc(1.5 * var(--gap));
+}
+
+form .button {
+	align-self: flex-end;
+
+	padding: calc(1.5 * var(--gap)) calc(2.25 * var(--gap));
+
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+form-field select option:first-of-type {
+	color: #757575;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+.hero {
+	background-color: var(--darkblue);
+	padding-top: 1.5em;
+}
+
+cta-module {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--gap);
+	border: var(--blackborder);
+}
+
+cta-module > h1 {
+	color: var(--white);
+}
+
+cta-module :is(picture, picture img) {
+	display: none;
+}
+
+/*
+@media (min-width: 600px) {
+	cta-module {
+		padding: calc(10 * var(--gap)) calc(10 * var(--gap));
+	}
+}
+
+@media (min-width: 1000px) {
+	cta-module {
+		padding: calc(15 * var(--gap)) calc(10 * var(--gap));
+	}
+}*/
