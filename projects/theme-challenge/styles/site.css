@@ -1,0 +1,78 @@
+@import "reset.css";
+@import "custom-properties.css";
+/*@import "developer-styles.css";*/
+@import "typography.css";
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+@import "components.css";
+@import "modules.css";
+
+/*this page declares site-level, site-wide, or cross-section stylings*/
+
+/*COLORS*/
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: "TT Norms Pro";
+}
+
+/*header, welcome, and footer sections have white text against the gradient background*/
+header, section.welcome, footer {
+	color: var(--white);
+}
+
+/*header and welcome share the same gradient background*/
+header, section.welcome {
+	background: rgb(86,159,224);
+	background: linear-gradient(90deg, rgba(86,159,224,1) 35%, rgba(97,97,255,1) 65%);
+	position: relative;
+}
+
+/*@media (prefers-color-scheme: dark) {
+	section.sign-up {
+		background-color: var(--color);
+		color: var(--black);
+	}
+
+	section.sign-up .button {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	section.get-involved {
+		background-color: var(--highlight);
+		color: var(--black);
+	}
+}*/
+
+
+/*STRUCTURE*/
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* be at least a full viewport height */
+} 
+
+main {
+	flex-grow: 1; /* fill up available space + push the footer down */
+}
+
+inner-column {
+	display: block;
+	width: 95%;
+	max-width: var(--standard); /* could be a variable in settings */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+/*welcome and cta sections have smaller inner-columns*/
+section:is(.sign-up, .support) inner-column {
+	max-width: var(--tight);
+}
+
+

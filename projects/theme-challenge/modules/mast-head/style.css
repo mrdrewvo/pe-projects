@@ -1,0 +1,50 @@
+mast-head {
+	display: block;
+	z-index: 3;
+}
+
+mast-head * {
+	z-index: inherit;
+}
+
+/*logo svg styling*/
+mast-head .logo {
+	max-width: 180px;
+}
+
+mast-head .logo * {
+	fill: var(--white);
+}
+
+/*each nav list is flexible*/
+mast-head nav ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+mast-head nav li {
+	padding:  var(--space) 0;
+}
+
+mast-head nav a:not(.home) {
+	padding: .5em 1em;
+}
+
+mast-head .button {
+	background-color: var(--white);
+	color: var(--purple);
+}
+
+@media (min-width: 600px) {
+	mast-head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	mast-head nav li {
+		padding: calc(1.5 * var(--space)) 0;
+	}
+}

@@ -1,0 +1,38 @@
+/*this page declares all custom properties for the site*/
+
+html {
+	--black: #343334;
+	--white: #fefefe;
+
+	--gray: #6A6E7A;
+
+	--purple: #6161FF;
+	--blue: #569FE0;
+	--lightblue: #9BDFF0;
+	--darkblue: #11124B;
+	--green: #6ECC6D;
+	--yellow: #F0C72D;
+	--gold: #ECB34E;
+	--brown: #BD8855;
+	--pink: #E78FFC;
+	--magenta: #CC328A;
+
+	--shadow: rgba(0,0,0,.8);
+
+	--space: 10px;
+
+	--paper: var(--white);
+	--ink: var(--black);
+
+	--standard: 1140px;
+	--tight: 800px;
+}
+
+/*dark-mode is out of scope for now*/
+/*@media (prefers-color-scheme: dark) {
+	html {
+		--paper: #231a1a;
+		--ink: #ffffe2;
+	}
+}
+*/

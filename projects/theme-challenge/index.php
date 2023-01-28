@@ -1,45 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en">
+<html lang='en' class='special-magic no-js'>
 
-	<?php include("modules/head.php"); ?>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+		<title>Theme challenge master file</title>
+		<meta name='description' content='Theme challenge master file'>
+		<meta property='og:image' content='Can you research emulate a website for a specific niche industry?'>
+
+		<link rel='stylesheet' href='styles/site.css'>
+	</head>
+
 
 	<body>
+		<header class="site-header">
+		<inner-column>
+			
+			<?php include('modules/mast-head/template.php'); ?>
 
-		<?php include("modules/header.php"); ?>
-		
-		<main class="page-section site-main">
+		</inner-column>	
+		</header>
 
-			<?php include("modules/welcome-area.php"); ?>
+		<main>
 
-			<?php 
+			<section class='welcome' id='welcome'>
+			<inner-column>
 
-				$sectionClass = "cta1";
+				<?php include('modules/graphic-diptych/template.php'); ?>
 
-				$ctaData = json_decode(file_get_contents("data/" . $sectionClass . ".json"),true);
+				<?php include('modules/curve.php'); ?>
+			</inner-column>
+			</section>
 
-				$title = $ctaData["title"];
-				$blurb = $ctaData["blurb"];
-				$button = $ctaData["button"];
 
-				include("modules/call-to-action.php");
-			?>
+			<section class='sign-up' id='sign-up'>
+			<inner-column>
 
-			<?php include("modules/article-grid.php"); ?>
+				<?php include('modules/call-to-action/template.php'); ?>
 
-			<?php 
-				
-				$sectionClass = "cta2";
+			</inner-column>
+			</section>
 
-				$ctaData = json_decode(file_get_contents("data/" . $sectionClass . ".json"),true);
+			<section class='user-teams' id='user-teams'>
+			<inner-column>
 
-				$title = $ctaData["title"];
-				$blurb = $ctaData["blurb"];
-				$button = $ctaData["button"];
+				<?php include('modules/articles-intro/template.php'); ?>
 
-				include("modules/call-to-action.php"); ?>
-		</main>		
-		
-		<?php include("modules/footer.php"); ?>
+			</inner-column>
+			</section>
+
+
+			<section class='support' id='support'>
+			<inner-column>
+
+				<?php include('modules/call-to-action/template.php'); ?>
+
+			</inner-column>
+			</section>
+
+		</main>
+
+		<footer>
+		<inner-column>
+			
+			<?php include('modules/site-map/template.php'); ?>
+
+		</inner-column>
+		</footer>
 	</body>
+
 </html>

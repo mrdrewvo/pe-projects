@@ -1,0 +1,54 @@
+/* Should we pull in @fonts here? */
+
+.loud-voice	{
+	font-family: "TT Norms Pro";
+	font-size: clamp(36px, 5vw, 45px);
+	font-weight: 600;
+}
+@media (min-width: 600px) {
+	.loud-voice {
+		font-weight: 700; /* or variable font */
+	}
+}
+
+.attention-voice	{
+	font-family: "TT Norms Pro";
+	font-size: clamp(24px, 3vw, 32px);
+	font-weight: 700;
+}
+
+.strong-voice	{
+	font-family: "TT Norms Pro";
+	font-weight: 700;
+	font-size:  1rem;
+}
+
+.calm-voice, p, li {
+	font-family: "TT Norms Pro";
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+:is(.calm-voice, p, li) em {
+	font-style: italic;
+}
+
+:is(.calm-voice, p, li) strong {
+	font-weight: 700;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now */
+p + p {
+	margin-top: 1em;
+}
+
+:is(h1, h2) + p {
+	margin-top: 20px;
+}
+
+code {
+	font-family: monospace;
+	font-size: 1.1em;
+	color: green;
+}
