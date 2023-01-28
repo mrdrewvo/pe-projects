@@ -11,6 +11,7 @@ html {
 	--lightblue: #9BDFF0;
 	--darkblue: #11124B;
 	--green: #6ECC6D;
+	--greenLight: hsla(119, 48%, 61%, .1);
 	--yellow: #F0C72D;
 	--gold: #ECB34E;
 	--brown: #BD8855;

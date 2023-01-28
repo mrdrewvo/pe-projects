@@ -13,7 +13,7 @@
 
 .attention-voice	{
 	font-family: "TT Norms Pro";
-	font-size: clamp(24px, 3vw, 32px);
+	font-size: clamp(24px, 4vw, 36px);
 	font-weight: 700;
 }
 

@@ -7,7 +7,7 @@ graphic-diptych {
 	z-index: 2;
 }
 
-text-content {
+.welcome text-content {
 	text-align: center;
 	align-self: center;
 }
@@ -19,7 +19,7 @@ graphic-diptych picture {
 /* white wave svg styling */
 .hero-curve-divider {
     position: absolute;
-    bottom: 0;
+    bottom: -1px; /* to prevent any small lines of background coming through */
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -51,7 +51,7 @@ graphic-diptych picture {
 		flex-basis: 50%;
 	}
 
-	text-content {
+	.welcome text-content {
 		text-align: left;
 		padding-bottom: 5em;
 	}
