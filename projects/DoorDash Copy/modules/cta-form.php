@@ -48,11 +48,11 @@
 		</form-field>
 	</contact-info>
 
-	<form-field>
+	<form-field class="drop-down">
 		
 		<select id="business-type" name="business-type" required/>
 
-			<option value="" disabled selected>Select your business type</option>
+			<option class="drop-down-default" value="" hidden selected disabled>Select your business type</option>
 			<option value="restaurant">Restaurant</option>
 			<option value="grocery">Grocery</option>
 			<option value="alcohol">Alcohol</option>

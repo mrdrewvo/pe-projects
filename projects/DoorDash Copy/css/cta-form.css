@@ -25,7 +25,6 @@ form :is(input, select) {
 	font-family: inherit;
 	font-size: 16px;
 	font-weight: 500;
-	color: inherit;
 	border: 1px solid lightgrey;
 	border-radius: 8px;
 }
@@ -52,13 +51,10 @@ form .button {
 	font-weight: 500;
 }
 
-form-field select option:first-of-type {
-	color: #757575;
+.drop-down {
+	position: relative;
 }
 
-
-
-
-
-
-
+.drop-down select:invalid {
+	color: #757575;
+}
