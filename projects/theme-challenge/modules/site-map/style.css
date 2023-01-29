@@ -1,13 +1,17 @@
-
-site-map {
-	display: block;
-	/*border: 4px solid green;*/
-
+/*site-map {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 	grid-gap: 20px;
-
 	padding: 10vh 0 15vh;
+}*/
+
+site-map {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 10vh 0 15vh;
+	flex-wrap: wrap;
+	gap: calc(3 * var(--space));
 }
 
 site-map .logo {
@@ -16,7 +20,7 @@ site-map .logo {
 }
 
 site-map .logo * {
-	fill: var(--ink);
+	fill: var(--white);
 }
 
 site-map h3 {

@@ -75,7 +75,6 @@ inner-column {
 	max-width: var(--standard); /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;
-	outline: 2px solid orange;
 }
 
 .site-header {
