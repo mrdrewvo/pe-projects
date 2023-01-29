@@ -27,6 +27,11 @@ header, section.welcome {
 	position: relative;
 }
 
+footer {
+background: rgb(86,159,224);
+background: linear-gradient(63deg, rgba(86,159,224,1) 41%, rgba(97,97,255,1) 65%);
+}
+
 /*@media (prefers-color-scheme: dark) {
 	section.sign-up {
 		background-color: var(--color);
@@ -58,7 +63,7 @@ main {
 
 inner-column {
 	display: block;
-	width: 95%;
+	padding: calc(2 * var(--space));
 	max-width: var(--standard); /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;

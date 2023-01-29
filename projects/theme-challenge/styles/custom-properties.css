@@ -16,7 +16,9 @@ html {
 	--gold: #ECB34E;
 	--brown: #BD8855;
 	--pink: #E78FFC;
+	--pinkLight: hsla(288, 98%, 77%, .1);
 	--magenta: #CC328A;
+	--magentaLight: hsla(326, 61%, 50%, .1);
 
 	--shadow: rgba(0,0,0,.8);
 

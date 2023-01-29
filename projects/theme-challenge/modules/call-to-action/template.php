@@ -1,6 +1,6 @@
 <call-to-action>
 
-	<picture>
+	<picture class="cta-1">
 
 		<img src="images/cta-1.avif" alt="">
 	</picture>
