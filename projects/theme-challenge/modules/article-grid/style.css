@@ -47,7 +47,3 @@ article-intro {
 	grid-gap: 20px;
 	margin-top: calc(3 * var(--space));
 }*/
-
-.article-list li {
-	display: block;
-}
