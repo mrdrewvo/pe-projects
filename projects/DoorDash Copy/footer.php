@@ -4,23 +4,18 @@
 		
 		<footer-module>
 
-			<footer-module-text>
-				
-				<h2 class="attention-voice">This is the site footer and it has a "site-map" module in it.</h2>
+			<picture><img src="images/footer-img.svg" alt=""></picture>
 
-				<p>Pretty standard type thing, right?</p>
-			</footer-module-text>
+			<nav class="footer-site-links">
+			
+				<h4>Resources</h4>
 
-			<footer-module-links>
-				
-				<?php include("menu-site.php"); ?>
+				<?php include("modules/menu-site-links.php"); ?>	
+			</nav>
+			
+			<?php include("modules/menu-legal-stuff.php"); ?>
 
-				<?php include("menu-user.php"); ?>
-
-				<?php include("menu-legal-stuff.php"); ?>
-
-				<?php include("menu-socials.php"); ?>
-			</footer-module-links>
+			<?php include("modules/menu-socials.php"); ?>
 		</footer-module>
 	</inner-column>
 </footer>

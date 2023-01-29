@@ -1,0 +1,31 @@
+.bottom-banner {
+	background-color: var(--darkblue);
+	padding: calc(3 * var(--gap));
+	color: var(--white);
+}
+
+bottom-banner-module {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+bottom-banner-module picture {
+	width: 150px;
+}
+
+bottom-banner-module a {
+	display: none;
+}
+
+@media (min-width: 775px) {
+	bottom-banner-module {
+		justify-content: space-between;
+
+	}
+
+	bottom-banner-module a {
+		display: block;
+		text-decoration: none;
+	}
+}

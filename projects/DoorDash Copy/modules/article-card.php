@@ -4,5 +4,5 @@
 
 	<h2><?=$title?></h2>	
 
-	<a href="#" class="button"><?=$button?></a>			
+	<a class="button" href="#"><?=$button?></a>			
 </li>

@@ -7,7 +7,7 @@ mast-head {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: calc(1.2 * var(--gap)) calc(1.2 * var(--gap));
+	padding: calc(1.5 * var(--gap)) calc(1.5 * var(--gap));
 }
 
 mast-head :is(.ham-site-menu-and-logos, .user-menu) {
@@ -23,7 +23,6 @@ mast-head :is(.ham-site-menu-and-logos, .user-menu) {
 mast-head a {
 	text-align: center;
 	padding: var(--gap);
-	border: var(--blackborder);
 	text-decoration: none;
 }
 

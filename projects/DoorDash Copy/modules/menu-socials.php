@@ -1,12 +1,12 @@
 <nav class="socials-menu">
 
-	<p>Social Things</p>
+	<h4>Socials</h4>
 
-	<a href=#>social thing a</a>
+	<a href=#>Twitter</a>
 
-	<a href=#>social thing b</a>
+	<a href=#>Instagram</a>
 
-	<a href=#>social thing c</a>
+	<a href=#>Facebook</a>
 
-	<a href=#>social thing d</a>
+	<a href=#>LinkedIn</a>
 </nav>	

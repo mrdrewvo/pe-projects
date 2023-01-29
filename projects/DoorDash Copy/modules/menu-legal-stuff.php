@@ -1,8 +1,10 @@
-<nav class="legal-stuff">
+<nav class="products">
 
-	<p>Legal Things</p>
+	<h4>Products</h4>
 
-	<a href=#>Legal thing a</a>
+	<a href=#>Marketplace</a>
 	
-	<a href=#>Legal thing b</a>
+	<a href=#>Storefront</a>
+
+	<a href=#>On-Demand Delivery</a>
 </nav>

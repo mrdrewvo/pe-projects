@@ -2,12 +2,13 @@ form {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	gap: calc(1.5 * var(--gap));
+	gap: calc(1.75 * var(--gap));
 
 	margin: calc(1.5 * var(--gap));
+	margin-bottom: calc(-1 * var(--overhangSpace));
 	background-color: var(--white);
 	border-radius: var(--gap);
-	padding: calc(1.5 * var(--gap));
+	padding: calc(1.75 * var(--gap));
 
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -19,14 +20,14 @@ form p {
 
 form :is(input, select) {
 	display: block;
-	padding: calc(.5 * var(--gap)) var(--gap);
+	padding: var(--gap) calc(1.5 * var(--gap));
 	width: 100%;
 	font-family: inherit;
 	font-size: 16px;
 	font-weight: 500;
 	color: inherit;
 	border: 1px solid lightgrey;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 contact-info {

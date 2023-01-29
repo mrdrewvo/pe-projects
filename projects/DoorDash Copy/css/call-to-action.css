@@ -1,33 +1,52 @@
 .hero {
 	background-color: var(--darkblue);
-	padding-top: 1.5em;
+	padding-top: calc(1.5 * var(--gap));
 }
 
 cta-module {
+	position: relative;
+}
+
+cta-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: var(--gap);
-	border: var(--blackborder);
 }
 
-cta-module > h1 {
+cta-module h1 {
 	color: var(--white);
 }
 
 cta-module :is(picture, picture img) {
 	display: none;
+	object-fit: contain;
+	height: 100%;
+	width: auto;
+	z-index: 1;
 }
 
-/*
-@media (min-width: 600px) {
-	cta-module {
-		padding: calc(10 * var(--gap)) calc(10 * var(--gap));
-	}
+cta-module picture {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 @media (min-width: 1000px) {
-	cta-module {
-		padding: calc(15 * var(--gap)) calc(10 * var(--gap));
+	cta-module :is(picture, picture img) {
+		display: block;
 	}
-}*/
+
+	cta-text {
+		max-width: 55%;
+		align-items: flex-start;
+	}
+
+	cta-module form {
+		margin-left: unset;
+	}
+
+	cta-text > * {
+		margin-bottom: var(--gap);
+		z-index: 5;
+	}
+}

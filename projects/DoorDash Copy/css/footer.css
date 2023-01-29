@@ -1,34 +1,48 @@
 footer {
-	background-color: #F6F0E4;
-	border: var(--blackborder);
-	padding: calc(6 * var(--gap)) var(--gap);
+	background-color: var(--white);
 }
 
 footer-module {
-	display: block;
-}
-
-footer-module-text {
-	display: block;
-	margin-bottom: calc(3 * var(--gap));
-}
-
-footer-module-links {
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
 	gap: var(--gap);
 
 	padding: calc(6 * var(--gap)) var(--gap);
-	border: var(--blackborder);	
 }
 
-footer-module-links nav {
-	border: var(--blackborder);
+footer-module picture {
+	align-self: center;
+}
+
+footer-module nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	padding: var(--gap);
 }
 
-footer-module-links a {
-	padding: var(--gap);
-	border: var(--blackborder);
+footer-module h4 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-weight: 500;
+	line-height: 2;
+}
+
+footer-module a {
+	font-size: .9em;
+	line-height: 1.75;
+	text-decoration: none;
+}
+
+@media (min-width: 600px) {
+	footer-module {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: var(--gap);
+
+		padding: calc(6 * var(--gap)) var(--gap);
+	}
 }

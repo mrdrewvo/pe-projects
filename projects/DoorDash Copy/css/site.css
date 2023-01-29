@@ -10,6 +10,7 @@
 @import "call-to-action.css";
 @import "cta-form.css";
 @import "article-grid.css";
+@import "bottom-banner.css";
 @import "footer.css";
 
 
@@ -23,12 +24,14 @@ html {
 	--black: #191919;
 	--buttonpurple: #4969F5;
 	--red: #FF3008;
+
+	--overhangSpace: 30px;
+	--gap: 10px;
 }
 
 body {
 	font-family: 'TT Norms Pro';
-	font-color: var(--black);
-	--gap: 10px;
+	color: var(--black);
 
 	min-height: 100vh;
 	position: relative;
@@ -41,6 +44,6 @@ inner-column {
 	max-width: 1000px;
 }
 
-header inner-column {
+:is(header, .banner) inner-column {
 	max-width: 1400px;
 }
