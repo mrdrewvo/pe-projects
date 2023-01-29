@@ -23,13 +23,13 @@
 .strong-voice	{
 	font-family: "TT Norms Pro";
 	font-weight: 700;
-	font-size:  1rem;
+	font-size:  1.25rem;
 }
 
 .calm-voice, p, li {
 	font-family: "TT Norms Pro";
 	font-size: 1rem;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 :is(.calm-voice, p, li) em {

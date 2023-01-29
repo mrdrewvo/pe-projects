@@ -9,13 +9,13 @@
 	font-size: 1rem;
 	font-weight: 600;
 	line-height: 1.4;
+	text-align: center;
+
 	color: var(--white);
 
 	padding: 1em 1.5em;
-	min-width: 120px;
-	text-align: center;
-
 	border-radius: var(--space);
-
+	min-width: 120px;
+	
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

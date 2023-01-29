@@ -1,18 +1,27 @@
 .article-card {
-	display: block;
-	/*border: 4px solid red;*/
-
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding: calc(2 * var(--space));
+	gap: var(--space);
+	background-color: var(--blueLight);
+	border-radius: calc(2 * var(--space));
+}
+
+.article-card picture img {
+	height: 150px;
+	width: auto;
 }
 
 .article-card text-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: calc(2 * var(--space));
 }
 
-.article-card a {
+.article-card .button {
 	margin-top: 20px;
+	background-color: var(--blue);
+	align-self: flex-start;
 }

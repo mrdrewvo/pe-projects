@@ -1,4 +1,3 @@
-
 <?php
 	$heading = $article['heading'];
 	$description = $article['description'];
@@ -7,11 +6,13 @@
 
 <article class='article-card'>
 	<picture>
-		<img src='images/<?=$thumbnail?>' alt='$todo'>
+
+		<img src='images/articles/<?=$thumbnail?>' alt='$todo'>
 	</picture>
 
 	<text-content>
-		<h1 class='title strong-voice'><?=$heading?></h1>
+
+		<h3 class='strong-voice'><?=$heading?></h3>
 
 		<p class='teaser'><?=$description?></p>
 

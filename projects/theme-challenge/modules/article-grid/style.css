@@ -1,0 +1,30 @@
+article-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article-intro {
+	display: block;
+	max-width: var(--tight);
+	text-align: center;
+}
+
+/*.article-list {
+	display: flex;
+	flex-direction: column;
+	gap: calc(2 * var(--space));
+	margin-top: calc(3 * var(--space));
+}*/
+
+.article-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+	outline: 2px solid red;
+	margin-top: calc(3 * var(--space));
+}
+
+.article-list li {
+	display: block;
+}

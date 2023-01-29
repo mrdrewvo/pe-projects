@@ -28,8 +28,16 @@ header, section.welcome {
 }
 
 footer {
-background: rgb(86,159,224);
-background: linear-gradient(63deg, rgba(86,159,224,1) 41%, rgba(97,97,255,1) 65%);
+	background: rgb(86,159,224);
+	background: linear-gradient(63deg, rgba(86,159,224,1) 41%, rgba(97,97,255,1) 65%);
+}
+
+section:not(.welcome, .views), footer {
+	margin-top: 10vh;
+}
+
+section.views {
+	margin-top: 5vh;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -63,10 +71,11 @@ main {
 
 inner-column {
 	display: block;
-	padding: calc(2 * var(--space));
+	padding: 0 calc(2 * var(--space));
 	max-width: var(--standard); /* could be a variable in settings */
 	margin-right: auto;
 	margin-left: auto;
+	outline: 2px solid orange;
 }
 
 .site-header {
@@ -76,7 +85,7 @@ inner-column {
 }
 
 /*welcome and cta sections have smaller inner-columns*/
-section:is(.sign-up, .support) inner-column {
+section:is(.sign-up, .views) inner-column {
 	max-width: var(--tight);
 }
 

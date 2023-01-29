@@ -8,6 +8,7 @@ html {
 
 	--purple: #6161FF;
 	--blue: #569FE0;
+	--blueLight: hsla(208, 69%, 61%, .1);
 	--lightblue: #9BDFF0;
 	--darkblue: #11124B;
 	--green: #6ECC6D;
@@ -28,7 +29,7 @@ html {
 	--ink: var(--black);
 
 	--standard: 1140px;
-	--tight: 800px;
+	--tight: 850px;
 }
 
 /*dark-mode is out of scope for now*/

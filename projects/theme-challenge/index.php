@@ -35,7 +35,7 @@
 			</section>
 
 
-			<section class='sign-up' id='sign-up'>
+			<section class='views' id='views'>
 			<inner-column>
 
 				<?php include('modules/call-to-action/template.php'); ?>
@@ -46,13 +46,13 @@
 			<section class='user-teams' id='user-teams'>
 			<inner-column>
 
-				<?php include('modules/articles-intro/template.php'); ?>
+				<?php include('modules/article-grid/template.php'); ?>
 
 			</inner-column>
 			</section>
 
 
-			<section class='support' id='support'>
+			<section class='sign-up' id='sign-up'>
 			<inner-column>
 
 				<?php include('modules/call-to-action/template.php'); ?>

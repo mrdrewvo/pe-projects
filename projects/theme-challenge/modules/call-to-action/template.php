@@ -2,7 +2,12 @@
 
 	<picture class="cta-1">
 
-		<img src="images/cta-1.avif" alt="">
+		<img src="images/cta-1.png" alt="">
+	</picture>
+
+	<picture class="cta-2">
+
+		<img src="images/square.jpg" alt="">
 	</picture>
 	
 	<text-content>

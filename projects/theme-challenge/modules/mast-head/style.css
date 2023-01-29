@@ -25,7 +25,7 @@ mast-head nav ul {
 }
 
 mast-head nav li {
-	padding:  var(--space) 0;
+	padding: var(--space) 0;
 }
 
 mast-head nav a:not(.home) {
@@ -46,6 +46,6 @@ mast-head .button {
 	}
 
 	mast-head nav li {
-		padding: calc(1.5 * var(--space)) 0;
+		padding: calc(1.25 * var(--space)) 0;
 	}
 }

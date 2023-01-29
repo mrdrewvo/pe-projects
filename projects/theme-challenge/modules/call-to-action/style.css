@@ -1,18 +1,28 @@
 call-to-action {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	gap: calc(2 * var(--space));
 	padding: calc(4 * var(--space));
-	border-radius: 20px;
+	border-radius: calc(2 * var(--space));
+	text-align: center;
+}
+
+.views call-to-action {
+	flex-direction: column-reverse;
+	background-color: var(--magentaLight);
+	position: relative;
+	/*	padding-bottom: 400px;*/
+}
+
+.views picture {
+	max-width: 500px;
+	/*position: absolute;
+	bottom: -50px;*/
 }
 
 .sign-up call-to-action {
 	background-color: var(--greenLight);
-}
-
-.support call-to-action {
-	background-color: var(--magentaLight);
 }
 
 text-content {
@@ -20,9 +30,19 @@ text-content {
 	flex-direction: column;
 }
 
-.button {
+call-to-action .button {
 	margin-top: 20px;
 	align-self: center;
+}
+
+.views h2::before {
+    content: "SECTION HEADER";
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--magenta);
 }
 
 .sign-up h2::before {
@@ -35,32 +55,44 @@ text-content {
     color: var(--green);
 }
 
+/*button colors*/
+.views .button {
+	background-color: var(--magenta);
+}
+
 .sign-up .button {
 	background-color: var(--green);
 }
 
-.support .button {
-	background-color: var(--magenta);
-}
-
-.support picture.cta-1 {
+/*remove pictures from the other section*/
+.views picture.cta-2 {
 	display: none;
 }
 
+.sign-up picture.cta-1 {
+	display: none;
+}
+
+/*change flex-direction*/
 @media (min-width:  700px) {
 	.sign-up call-to-action {
 		flex-direction: row-reverse;
 		justify-content: center;
 		align-items: center;
-		padding: 4em;
+		padding: calc(4 * var(--space));
 		margin: calc(2 * var(--space)) 0;
 	}
 
 	.sign-up picture {
-		flex-basis: 55%;
+		flex-basis: 50%;
 	}
 
 	.sign-up text-content {
 		flex: 1;
+		text-align: left;
+	}
+
+	.sign-up .button {
+		align-self: flex-start;
 	}
 }
