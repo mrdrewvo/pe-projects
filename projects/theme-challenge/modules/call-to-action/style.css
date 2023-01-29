@@ -12,13 +12,11 @@ call-to-action {
 	flex-direction: column-reverse;
 	background-color: var(--magentaLight);
 	position: relative;
-	/*	padding-bottom: 400px;*/
 }
 
 .views picture {
 	max-width: 500px;
-	/*position: absolute;
-	bottom: -50px;*/
+	margin-bottom: calc(-1 * var(--overhangSpace));
 }
 
 .sign-up call-to-action {

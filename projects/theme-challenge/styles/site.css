@@ -32,14 +32,6 @@ footer {
 	background: linear-gradient(63deg, rgba(86,159,224,1) 41%, rgba(97,97,255,1) 65%);
 }
 
-section:not(.welcome, .views), footer {
-	margin-top: 10vh;
-}
-
-section.views {
-	margin-top: 5vh;
-}
-
 /*@media (prefers-color-scheme: dark) {
 	section.sign-up {
 		background-color: var(--color);
@@ -82,6 +74,15 @@ inner-column {
 	top: 0;
 	z-index: 5;
 }
+
+.views {
+	margin-top: 5vh;
+}
+
+.sign-up, footer {
+	margin-top: 10vh;
+}
+
 
 /*welcome and cta sections have smaller inner-columns*/
 section:is(.sign-up, .views) inner-column {

@@ -24,6 +24,7 @@ html {
 	--shadow: rgba(0,0,0,.8);
 
 	--space: 10px;
+	--overhangSpace: 150px;
 
 	--paper: var(--white);
 	--ink: var(--black);
