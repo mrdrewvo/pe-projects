@@ -2,6 +2,11 @@ article-grid {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: calc(2 *var(--space));
+}
+
+article-grid a span {
+	color: var(--blue);
 }
 
 article-intro {
@@ -16,11 +21,11 @@ article-intro {
 	justify-content: space-between;
 
 	gap: 20px;
-	margin-top: calc(3 * var(--space));
+	margin-top: calc(2 * var(--space));
 }
 
 .article {
-	max-width: 300px;
+	max-width: 325px;
 }
 
 @media (min-width: 650px) {

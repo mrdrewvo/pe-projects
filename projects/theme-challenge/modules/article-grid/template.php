@@ -16,4 +16,6 @@
 			<?php } ?>
 
 	</ul>
+
+	<a class="plain-link" href="#">See all teams <span>→</span></a>
 </article-grid>
