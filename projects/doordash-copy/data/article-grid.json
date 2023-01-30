@@ -5,13 +5,13 @@
         "button": "Learn more"
     },
     {
-        "pictureURL": "convenient-ordering.png",
-        "title": "Expand your customer base",
+        "pictureURL": "customer-base.png",
+        "title": "Make ordering more convenient for your customers",
         "button": "Learn more"
     },
     {
-        "pictureURL": "customer-base.png",
-        "title": "Make ordering more convenient for your customers",
+        "pictureURL": "convenient-ordering.png",
+        "title": "Expand your customer base",
         "button": "Learn more"
     }
 ]
