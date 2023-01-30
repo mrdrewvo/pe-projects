@@ -25,7 +25,7 @@ html {
 	--buttonpurple: #4969F5;
 	--red: #FF3008;
 
-	--overhangSpace: 30px;
+	--overhangSpace: 50px;
 	--gap: 10px;
 }
 
@@ -161,7 +161,7 @@ inner-column {
 	display: block;
 	
 	position: absolute;
-	width: 275px;
+	width: 250px;
 	bottom: 5px;
 	right: 70px;
 	border-radius: 10px;
@@ -178,7 +178,7 @@ inner-column {
 #support h3 {
 	font-weight: 700;
 	color: var(--black);
-	margin-bottom: var(--gap);
+	margin-bottom: calc(.5 *var(--gap));
 }
 
 #support p {

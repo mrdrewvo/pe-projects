@@ -4,7 +4,6 @@ form {
 	align-items: stretch;
 	gap: calc(1.75 * var(--gap));
 
-	margin: calc(1.5 * var(--gap));
 	margin-bottom: calc(-1 * var(--overhangSpace));
 	background-color: var(--white);
 	border-radius: var(--gap);
@@ -14,7 +13,7 @@ form {
 }
 
 form h2 {
-	max-width: 23ch;
+	max-width: 24ch;
 	align-self: center;
 }
 

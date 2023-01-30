@@ -1,21 +1,11 @@
 .hero {
 	background-color: var(--darkblue);
-	padding-top: calc(1.5 * var(--gap));
 }
 
 cta-module {
 	position: relative;
-}
-
-cta-text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-cta-module h1 {
-	color: var(--white);
-	max-width: 35ch;
+	padding: calc(1.5 * var(--gap));
+	display: block;
 }
 
 cta-module :is(picture, picture img) {
@@ -32,18 +22,48 @@ cta-module picture {
 	right: 0;
 }
 
-@media (min-width: 1000px) {
+cta-text {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--gap);
+}
+
+cta-text h1 {
+	color: var(--white);
+}
+
+@media (min-width: 700px) {
+	.hero {
+		padding-top: calc(1.5 * var(--gap));
+	}
+	
+	cta-text {
+		margin: 0 3em;
+	}
+}	
+
+@media (min-width: 900px) {
 	cta-module :is(picture, picture img) {
 		display: block;
 	}
 
+	cta-module {
+		display: flex;
+	}
+
 	cta-text {
-		max-width: 55%;
-		align-items: flex-start;
+		align-items: stretch;
+		min-width: 52%;
+		margin-left: unset;
+	}
+
+	cta-text h1 {
+		align-self: flex-start;
 	}
 
 	cta-module form {
-		margin-left: unset;
+/*		margin-left: unset;*/
 	}
 
 	cta-text > * {
