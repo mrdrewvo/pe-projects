@@ -15,6 +15,7 @@ cta-text {
 
 cta-module h1 {
 	color: var(--white);
+	max-width: 35ch;
 }
 
 cta-module :is(picture, picture img) {

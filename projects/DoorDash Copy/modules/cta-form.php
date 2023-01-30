@@ -1,6 +1,6 @@
 <form method="POST">
 	
-	<h2 class="attention-voice">Become a DoorDash Partner and increase your profit up to 60%</h2>
+	<h2 class="attention-voice">Become a DoorDash Partner and increase your profit up&nbspto&nbsp60%</h2>
 
 	<p>Fill out the form below to become a DoorDash Partner</p>
 
