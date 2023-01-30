@@ -22,7 +22,7 @@ cta-module :is(picture, picture img) {
 	object-fit: contain;
 	height: 100%;
 	width: auto;
-	z-index: 2;
+	z-index: 1;
 }
 
 cta-module picture {
@@ -47,6 +47,6 @@ cta-module picture {
 
 	cta-text > * {
 		margin-bottom: var(--gap);
-		z-index: 5;
+		z-index: 2;
 	}
 }
