@@ -8,6 +8,10 @@
 	border-radius: calc(2 * var(--space));
 }
 
+.article-card picture {
+	margin-bottom: calc(2 * var(--space));
+}
+
 .article-card picture img {
 	height: 125px;
 	width: auto;
@@ -17,11 +21,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: calc(2 * var(--space));
+	gap: calc(.5 * var(--space));
 }
 
 .article-card .button {
-	margin-top: 20px;
+	margin-top: calc(3 * var(--space));
 	background-color: var(--blue);
 	align-self: flex-start;
 }
