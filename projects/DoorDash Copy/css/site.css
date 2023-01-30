@@ -78,7 +78,7 @@ inner-column {
 
 #chat-close {
 	display: none;
-	
+	opacity: 0;
 }
 
 .close-circle {
@@ -201,11 +201,11 @@ inner-column {
 	transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#chat-bubble input:checked ~ svg #chat-icon {
-	display: none;
+#chat-bubble input:checked ~ #chat-icon {
+	opacity: 0;
 }
 
-#chat-bubble input:checked ~ svg #chat-close {
+#chat-bubble input:checked ~ #chat-close {
 	display: block;
-	z-index: 20;
+	z-index: 21;
 }
