@@ -1,4 +1,4 @@
-<li class="article-card">
+<li class="article-card <?=$class?>">
 				
 	<picture><img src="images/<?=$pictureURL?>" alt=""></picture>
 

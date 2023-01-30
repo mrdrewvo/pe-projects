@@ -13,6 +13,7 @@
 
 			foreach($articleData as $article) {
 
+				$class = $article["class"];
 				$pictureURL = $article["pictureURL"];
 				$title = $article["title"] ?? "default title";
 				$button = $article["button"];

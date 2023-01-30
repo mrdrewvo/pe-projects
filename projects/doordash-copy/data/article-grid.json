@@ -1,17 +1,20 @@
 [
     {
         "pictureURL": "boost-sales.png",
+        "class": "boost-sales",
         "title": "Boost your sales & overall&nbspprofit",
         "button": "Learn more"
     },
     {
         "pictureURL": "customer-base.png",
-        "title": "Make ordering more convenient for your customers",
+        "class": "customer-base",
+        "title": "Expand your customer base",
         "button": "Learn more"
     },
     {
         "pictureURL": "convenient-ordering.png",
-        "title": "Expand your customer base",
+        "class": "convenient-ordering",
+        "title": "Make ordering more convenient for your customers",
         "button": "Learn more"
     }
 ]
