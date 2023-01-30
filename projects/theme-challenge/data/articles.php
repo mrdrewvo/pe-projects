@@ -24,11 +24,11 @@ $articles = [
 	[
 		"heading" => "Design",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "project-management.png",
 	],
 	[
 		"heading" => "Finance",
 		"description" => "Here's a little info to help you understand if this is a thing you want to know about.",
-		"thumbnail" => "landscape.jpg",
+		"thumbnail" => "it.png",
 	],
 ];

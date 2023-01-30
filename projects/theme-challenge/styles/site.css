@@ -75,14 +75,24 @@ inner-column {
 	z-index: 5;
 }
 
+/*section top margins*/
 .views {
 	margin-top: 5vh;
 }
 
 .sign-up, footer {
-	margin-top: 10vh;
+margin-top: 10vh;
 }
 
+.user-teams {
+	margin: calc(10vh + var(--overhangSpace)) 0;
+}
+
+@media (min-width: 700px) {
+	.user-teams {
+		margin: 10vh 0;
+	}	
+}
 
 /*welcome and cta sections have smaller inner-columns*/
 section:is(.sign-up, .views) inner-column {

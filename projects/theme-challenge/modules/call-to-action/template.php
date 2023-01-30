@@ -7,7 +7,7 @@
 
 	<picture class="cta-2">
 
-		<img src="images/square.jpg" alt="">
+		<img src="images/support1.png" alt="">
 	</picture>
 	
 	<text-content>

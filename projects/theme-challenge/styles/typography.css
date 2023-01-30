@@ -47,7 +47,7 @@ p + p {
 }
 
 :is(h1, h2) + p {
-	margin-top: 20px;
+	margin-top: var(--space);
 }
 
 code {

@@ -23,8 +23,8 @@ html {
 
 	--shadow: rgba(0,0,0,.8);
 
-	--space: 10px;
-	--overhangSpace: 150px;
+	--space: 9px;
+	--overhangSpace: 100px;
 
 	--paper: var(--white);
 	--ink: var(--black);

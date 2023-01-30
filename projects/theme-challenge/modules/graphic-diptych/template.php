@@ -6,9 +6,9 @@
 	</picture>
 	
 	<text-content>
-		<h1 class='loud-voice'>Get it done with the best productivity app ever</h1>
+		<h1 class='loud-voice'>Get it done with the best productivity app&nbspever</h1>
 
-		<p>What a fun thing that we have here</p>
+		<p>Get it done</p>
 	</text-content>
 
 </graphic-diptych>

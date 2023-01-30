@@ -3,7 +3,7 @@ call-to-action {
 	flex-direction: column;
 	align-items: center;
 	gap: calc(2 * var(--space));
-	padding: calc(4 * var(--space));
+	padding: calc(3 * var(--space));
 	border-radius: calc(2 * var(--space));
 	text-align: center;
 }
@@ -14,13 +14,22 @@ call-to-action {
 	position: relative;
 }
 
+.sign-up call-to-action {
+	background-color: var(--greenLight);
+}
+
 .views picture {
-	max-width: 500px;
+	max-width: 550px;
 	margin-bottom: calc(-1 * var(--overhangSpace));
 }
 
-.sign-up call-to-action {
-	background-color: var(--greenLight);
+.sign-up picture {
+	max-width: 550px;
+	margin-top: calc(-1 * var(--overhangSpace));
+	filter: drop-shadow(2px 2px 2px #999);
+}
+
+.sign-up picture img {
 }
 
 text-content {
@@ -29,17 +38,18 @@ text-content {
 }
 
 call-to-action .button {
-	margin-top: 20px;
+	margin-top: calc(3 * var(--space));
 	align-self: center;
 }
 
+/*add in section headers*/
 .views h2::before {
     content: "SECTION HEADER";
     display: block;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: calc(.5 * var(--space));
     color: var(--magenta);
 }
 
@@ -49,7 +59,7 @@ call-to-action .button {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: calc(.5 * var(--space));
     color: var(--green);
 }
 
@@ -62,7 +72,7 @@ call-to-action .button {
 	background-color: var(--green);
 }
 
-/*remove pictures from the other section*/
+/*remove pictures from the opposite section*/
 .views picture.cta-2 {
 	display: none;
 }
@@ -73,7 +83,7 @@ call-to-action .button {
 
 /*change flex-direction*/
 @media (min-width:  700px) {
-	.sign-up call-to-action {
+	.views call-to-action {
 		flex-direction: row-reverse;
 		justify-content: center;
 		align-items: center;
@@ -81,8 +91,41 @@ call-to-action .button {
 		margin: calc(2 * var(--space)) 0;
 	}
 
+	.views picture {
+		flex-basis: 60%;
+		margin-bottom: unset;
+		margin-right: calc(-1 * var(--overhangSpace));
+	}
+
+	.views inner-column {
+		padding-right: var(--overhangSpace);
+	}
+
+	.views text-content {
+		flex: 1;
+		text-align: left;
+	}
+
+	.views .button {
+		align-self: flex-start;
+	}
+
+	.sign-up call-to-action {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: calc(4 * var(--space));
+		margin: calc(2 * var(--space)) 0;
+	}
+
 	.sign-up picture {
-		flex-basis: 50%;
+		flex-basis: 65%;
+		margin-top: unset;
+		margin-left: calc(-1 * var(--overhangSpace));
+	}
+
+	.sign-up inner-column {
+		padding-left: var(--overhangSpace);
 	}
 
 	.sign-up text-content {

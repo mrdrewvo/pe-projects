@@ -1,7 +1,3 @@
-.user-teams {
-	margin-top: calc(10vh + var(--overhangSpace));
-}
-
 article-grid {
 	display: flex;
 	flex-direction: column;
