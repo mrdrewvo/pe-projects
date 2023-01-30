@@ -1,5 +1,6 @@
 .grow-benefits {
 	margin: calc(8vh + var(--overhangSpace)) 0;
+	position: relative;
 }
 
 .article-grid {

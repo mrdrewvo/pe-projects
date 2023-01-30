@@ -34,7 +34,6 @@ body {
 	color: var(--black);
 
 	min-height: 100vh;
-	position: relative;
 }
 
 inner-column {
@@ -46,4 +45,167 @@ inner-column {
 
 :is(header, .banner) inner-column {
 	max-width: 1400px;
+}
+
+/* CHATBOT */
+
+#chat-bubble {
+	display: block;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#chat-bubble picture svg {
+	width: 60px;
+	height: 60px;
+}
+
+#chat-icon {
+	z-index: 20;
+}
+
+.bubble-circle {
+	fill: var(--red);
+}
+
+.bubble-speech {
+	fill: var(--white);
+}
+
+#chat-close {
+	display: none;
+	
+}
+
+.close-circle {
+	fill: var(--darkblue);
+}
+
+.close-x {
+	fill: var(--white);
+}
+
+#chat-bubble input {
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	cursor: pointer;
+
+	opacity: 0; /* hide this */
+	z-index: 22; /* and place it over the hamburger */
+
+	-webkit-touch-callout: none;
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#chat-window {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	margin: -480px 0 0 -240px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	z-index: 30;
+	
+	background: #FFF;
+	/* to stop flickering of text in safari */
+
+	transform-origin: 0% 0%;
+	transform: translate(390px, 0);
+
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+	-webkit-font-smoothing: antialiased;
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#chat-window * {
+	z-index: inherit;
+}
+
+#chat-title {
+	padding: 20px;
+	background-color: red;
+	position: relative;
+	display: block;
+}
+
+#chat-message {
+	display: block;
+	padding: 20px;
+	background-color: lightgray;
+}
+
+#chat-window h3 {
+	font-weight: 700;
+	color: var(--white);
+}
+
+#chat-window p {
+	font-size: 14px;
+}
+
+#support {
+	display: block;
+	
+	position: absolute;
+	width: 275px;
+	bottom: 5px;
+	right: 70px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: var(--gap);
+	
+	background: rgba(255,255,255,.9);
+
+	-webkit-font-smoothing: antialiased;
+
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#support h3 {
+	font-weight: 700;
+	color: var(--black);
+	margin-bottom: var(--gap);
+}
+
+#support p {
+	font-size: 12px;
+}
+
+/*after input is checked*/
+#chat-bubble input:checked ~ #chat-window {
+	transform: none;
+}
+
+#chat-bubble input:checked ~ #support {
+	opacity: 0;
+	transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#chat-bubble input:checked ~ svg #chat-icon {
+	display: none;
+}
+
+#chat-bubble input:checked ~ svg #chat-close {
+	display: block;
+	z-index: 20;
 }
