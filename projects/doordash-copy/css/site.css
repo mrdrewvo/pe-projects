@@ -57,6 +57,7 @@ inner-column {
 
 	-webkit-user-select: none;
 	user-select: none;
+	z-index: 10;
 }
 
 #chat-bubble picture svg {

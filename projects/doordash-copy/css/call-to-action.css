@@ -6,6 +6,7 @@ cta-module {
 	position: relative;
 	padding: calc(1.5 * var(--gap));
 	display: block;
+	z-index: 0;
 }
 
 cta-module :is(picture, picture img) {
