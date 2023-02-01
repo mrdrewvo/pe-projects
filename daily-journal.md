@@ -22,6 +22,12 @@
 		* cons: not accessible cuz screen reader doesn't recognize the added content
 		* you must have content declared
 
+## MON 2023.01.23
+* job hunting
+	* there are a lot of shops where ur expected to do HTML CSS and some PHP
+	* Look at marketing web design shops
+	* ask what these agencies are looking for
+
 ## TUE 2023.01.10
 * Accomplishments
 	* PHP Array basics and some “loops” milestone
