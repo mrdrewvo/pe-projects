@@ -10,6 +10,18 @@
 	* CI/CD: continuous integration (getting into the Git), use automated QA testing like Travis, then continuous deployment
 	* building CMS not "WordPress", PHP, HTML, CSS, eye for visual design
 
+## FRI 2023.01.27
+* Derek 1:1
+	* curvy/gradient background --> use shape divider
+	* I’m not sure how to have section backgrounds bleed into other sections --> use negative margin
+	* I’m not sure how to create scrolling banners of article cards. These sites are full of them! These sites' sections are all slideshows of article cards. Hardly any single CTA sections --> simplify this to cards
+	* Unsure how to add floating background shapes or more images in the sections using only CSS
+		* :before/:after
+		* original intent was to add things like dollar signs
+		* use double colons ::
+		* cons: not accessible cuz screen reader doesn't recognize the added content
+		* you must have content declared
+
 ## TUE 2023.01.10
 * Accomplishments
 	* PHP Array basics and some “loops” milestone
