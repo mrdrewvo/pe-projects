@@ -51,23 +51,24 @@ Output
 		$alcDistRatioFemale = .66;
 		$bacLimit = 0.08; // not legal to drive >=$bacLimit
 		
-		//assign the input variables
-		$weight = $_POST["weight"];
-		$sex = $_POST["sex"];
-		$countDrinks = $_POST["countDrinks"];	
-		$alcoholPerDrink = $_POST["alcoholPerDrink"];
-		$timeSinceDrink = $_POST["timeSinceDrink"];
-		
-		$alcoholConsumed = $countDrinks * $alcoholPerDrink;
+		if(isset($_POST["submitted"])) {
+			//assign the input variables
+			$weight = $_POST["weight"];
+			$sex = $_POST["sex"];
+			$countDrinks = $_POST["countDrinks"];	
+			$alcoholPerDrink = $_POST["alcoholPerDrink"];
+			$timeSinceDrink = $_POST["timeSinceDrink"];
+			
+			$alcoholConsumed = $countDrinks * $alcoholPerDrink;
 
-		if ($sex = "M") {
-			$alcRatio = $alcDistRatioMale;
-		} else {
-			$alcRatio = $alcDistRatioFemale;
+			if ($sex = "M") {
+				$alcRatio = $alcDistRatioMale;
+			} else {
+				$alcRatio = $alcDistRatioFemale;
+			}
+
+			$BAC = round(($alcoholConsumed * 5.14 / $weight * $alcRatio) - .015 * $timeSinceDrink,3);
 		}
-
-		$BAC = round(($alcoholConsumed * 5.14 / $weight * $alcRatio) - .015 * $timeSinceDrink,3);
-
 		?>
 
 		<!-- form -->

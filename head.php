@@ -8,15 +8,15 @@
 	<title>Drew Vo</title>
 	
 	<!-- favicon -->
-	<link rel="icon" href="http://peprojects.dev/alpha-6/drew/images/logo.svg" type="image/x-icon">
+	<link rel="icon" href="images/dv-logo-new.svg" type="image/x-icon">
 	
 	<!-- style sheets -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- metadata -->
 	<meta name="description" content="Hi, I'm Drew Vo - UX Engineer in training. Check out my learning journey as I set my right-brain free.">
-	<meta property="og:image" content="https://peprojects.dev/alpha-6/drew/images/logo-meta.jpg">
-	<meta property="og:image:secure_url" content="https://peprojects.dev/alpha-6/drew/images/logo-meta.jpg">
+	<meta property="og:image" content="https://peprojects.dev/alpha-6/drew/images/dv-logo-new.jpg">
+	<meta property="og:image:secure_url" content="https://peprojects.dev/alpha-6/drew/images/dv-logo-new.jpg">
 	<meta property="og:image:type" content="image/jpeg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
