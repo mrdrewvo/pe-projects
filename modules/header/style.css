@@ -40,15 +40,11 @@ mast-head nav {
 	gap: 50px;
 }
 
-nav a {
+mast-head nav a {
 	font-size: 16px;
 	text-align: center;
-	transition: 0.4s;
+	transition: 0.25s;
 	padding: 5px;
-}
-
-nav a:hover {
-	color: var(--linkHover);
 }
 
 @media (min-width: 500px) {
@@ -70,6 +66,12 @@ nav a:hover {
 
 	mast-head nav {
 		gap: 20px;
+	}
+}
+
+@media (min-width: 1000px) {
+	mast-head nav a {
+		font-size: 20px;
 	}
 }
 

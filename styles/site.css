@@ -60,6 +60,14 @@ inner-column {
 	}	
 }
 
+a {
+	transition: 0.25s;
+}
+
+a:hover {
+	color: var(--linkHover);
+}
+
 
 
 
