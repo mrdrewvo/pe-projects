@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
 
 	<meta charset="utf-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Drew Vo</title>
 	
 	<!-- favicon -->
 	<link rel="icon" href="images/dv-logo-new.svg" type="image/x-icon">
 	
 	<!-- style sheets -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="styles/site.css">
 
 	<!-- metadata -->
 	<meta name="description" content="Hi, I'm Drew Vo - UX Engineer in training. Check out my learning journey as I set my right-brain free.">

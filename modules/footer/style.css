@@ -1,0 +1,38 @@
+footer {
+	background-color: var(--blue);
+	padding: 20px 0px;
+}
+
+footer :is(p, a) {
+	color: var(--offwhite);
+	font-size: 16px;
+	font-weight: 200;
+	text-decoration: none;
+	padding: 5px;
+}
+
+contact-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 25px;
+}
+
+socials-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+@media (min-width: 500px) {
+	contact-menu {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	socials-menu {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 25px;
+	}
+}

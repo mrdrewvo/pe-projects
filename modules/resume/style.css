@@ -1,0 +1,54 @@
+/*---- $$ RESUME SECTION ----*/
+
+resume-mod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10% 0px 20% 0px;
+	gap: 20px;
+}
+	
+resume-title h2:first-of-type {
+	font-size: 40px;
+}
+
+resume-title h2:last-of-type {
+	font-size: 30px;
+	padding-left: 25%;
+}
+
+.resume-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.company {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.company h3 {
+	font-weight: 700;
+}
+
+role {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+role + role {
+	padding-top: 20px;
+}
+
+role h4 {
+	flex-basis: cal(75% - 10px);
+}
+
+role resume-date {
+	flex-basis: calc(25% - 10px);
+}
