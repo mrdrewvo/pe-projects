@@ -18,7 +18,7 @@ mast-head {
 }
 
 mast-head h1 {
-	font-size: 23.8vw;
+	font-size: 23vw;
 	font-weight: 800;
 	color: var(--primaryColor1);
 	margin-block-start: 0;
