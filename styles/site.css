@@ -1,9 +1,10 @@
 @import "meyer-reset.css";
 @import "setup.css";
 
-@import "components.css";
-@import "modules.css";
 @import "typography.css";
+@import "modules.css";
+@import "components.css";
+
 
 /** {
 	outline: 1px solid red;

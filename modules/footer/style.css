@@ -5,7 +5,7 @@ footer {
 
 footer :is(p, a) {
 	color: var(--offwhite);
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 200;
 	text-decoration: none;
 	padding: 5px;
@@ -33,6 +33,6 @@ socials-menu {
 	socials-menu {
 		flex-direction: row;
 		justify-content: space-between;
-		gap: 25px;
+		gap: 20px;
 	}
 }
