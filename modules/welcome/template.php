@@ -1,21 +1,27 @@
-<welcome-mod>
+<section class="welcome">
 
-	<picture class="drew-home">
-		
-		<img src="images/drew-nike.png" alt="">
-	</picture>
+	<inner-column>
 
-	<tagline>
-	
-		<p>The butcher,</p>
-		
-		<p>the baker,</p>
-		
-		<p>the web app maker.</p>
-	</tagline>
+		<welcome-mod>
 
-	<picture class="pink-circle">
-		
-		<?php include("images/graphics/pink-circle-svg.php"); ?>
-	</picture>	
-</welcome-mod>
+			<picture class="drew-home">
+				
+				<img src="images/drew-nike.png" alt="">
+			</picture>
+
+			<tagline>
+			
+				<p>The butcher,</p>
+				
+				<p>the baker,</p>
+				
+				<p>the web app maker.</p>
+			</tagline>
+
+			<picture class="pink-circle">
+				
+				<?php include("images/graphics/circle-svg.php"); ?>
+			</picture>	
+		</welcome-mod>
+	</inner-column>
+</section>
