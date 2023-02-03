@@ -24,7 +24,7 @@ socials-menu {
 	gap: 5px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
 	contact-menu {
 		flex-direction: row;
 		justify-content: space-between;
