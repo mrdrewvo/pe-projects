@@ -69,7 +69,7 @@
 				
 				<h3>Still have questions?</h3>
 
-				<p>Chat with one of our experts - available 24/7! →</p>
+				<p>Chat with one of our experts - available&nbsp24/7! →</p>
 			</div>
 		</div>
 	</body>
