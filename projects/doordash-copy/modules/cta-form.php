@@ -2,7 +2,7 @@
 	
 	<h2 class="attention-voice">Become a DoorDash Partner and increase your profit up&nbspto&nbsp60%</h2>
 
-	<p>Fill out the form below to become a DoorDash Partner</p>
+	<p>Fill out the form below to become a DoorDash Partner today!</p>
 
 	<form-field>
 		
@@ -60,8 +60,6 @@
 			<option value="flower-shop">Flower Shop</option>
 			<option value="pet-store">Pet Store</option>
 			<option value="retail">Retail</option>
-			<option value="order-food">I want to order food...</option>
-			<option value="dasher">I want to become a Dasher</option>
 		</select>
 	</form-field>
 
