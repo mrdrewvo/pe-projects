@@ -72,13 +72,15 @@ picture {
 	overflow: hidden;
 }
 
-img {
+picture img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-svg {
+picture svg {
   display: block;
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }

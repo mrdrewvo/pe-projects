@@ -1,29 +1,27 @@
 <mast-head>
+	<nav class="site-menu">
+		<a href="#" class="home-short">
+			<picture>
+				<?php
+					include('images/graphics/logo-short.php');
+				?>
+			</picture>
+		</a>
 
-	<nav class='site-menu'>
-		<ul>
-			<li>
-				<a class='home' href='#'>
-					<?php include('modules/logo.php'); ?>
-				</a>
-			</li>
-
-			<li>
-				<a href='#'>Some page</a>
-			</li>
-
-			<li>
-				<a href='#'>Some other page</a>
-			</li>
-		</ul>
+		<a href="#" class="home-full">
+			<picture>
+				<?php
+					include('images/graphics/logo-full.php');
+				?>
+			</picture>
+		</a>
+		
+		<a href='#'>Some page</a>
+		
+		<a href='#'>Some other page</a>
 	</nav>
 
 	<nav class='user-menu'>
-		<ul>
-			<li>
-				<a class='button' href='#'>Sign in</a>
-			</li>
-		</ul>
+		<a class='header-button' href='#'>Sign in</a>
 	</nav>
-
 </mast-head>

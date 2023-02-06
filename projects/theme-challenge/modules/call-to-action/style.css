@@ -87,7 +87,7 @@ call-to-action .button {
 		flex-direction: row-reverse;
 		justify-content: center;
 		align-items: center;
-		padding: calc(4 * var(--space));
+		padding: calc(8 * var(--space));
 		margin: calc(2 * var(--space)) 0;
 	}
 
@@ -114,7 +114,7 @@ call-to-action .button {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		padding: calc(4 * var(--space));
+		padding: calc(8 * var(--space));
 		margin: calc(2 * var(--space)) 0;
 	}
 

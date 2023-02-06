@@ -75,13 +75,23 @@ inner-column {
 	z-index: 5;
 }
 
-/*section top margins*/
+/*section margins*/
+.welcome {
+	padding: clamp(30px, 5vh, 100px) 0 150px 0;
+}
+
+@media (min-width: 700px) {
+	.welcome {
+		padding-bottom: 0px;
+	}
+}
+
 .views {
-	margin-top: 5vh;
+	margin-top: clamp(100px, 10vh, 200px);
 }
 
 .sign-up, footer {
-margin-top: 10vh;
+	margin-top: clamp(100px, 10vh, 200px);
 }
 
 .user-teams {

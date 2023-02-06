@@ -2,6 +2,24 @@
 
 /* buttons and icons and smaller reusable bits here */
 
+.header-button {
+	display: block;
+
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.4;
+	text-align: center;
+
+	background-color: var(--white);
+	color: var(--purple);
+
+	padding: .5em 1em;
+	border-radius: var(--space);
+	
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
 .button {
 	display: block;
 
@@ -13,7 +31,7 @@
 
 	color: var(--white);
 
-	padding: .9em 1.4em;
+	padding: .75em 1em;
 	border-radius: var(--space);
 	min-width: 120px;
 	

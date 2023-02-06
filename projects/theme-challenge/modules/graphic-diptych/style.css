@@ -3,7 +3,6 @@ graphic-diptych {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space);
-	padding: 1em 0 8em 0;
 	z-index: 2;
 }
 
@@ -53,7 +52,6 @@ graphic-diptych picture {
 
 	.welcome text-content {
 		text-align: left;
-		padding-bottom: 5em;
 	}
 
 	.hero-curve-divider svg {

@@ -29,8 +29,8 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 
-	--standard: 1140px;
-	--tight: 850px;
+	--standard: 1150px;
+	--tight: 900px;
 }
 
 /*dark-mode is out of scope for now*/

@@ -19,7 +19,7 @@ site-map .logo {
 	margin-bottom: 20px;
 }
 
-site-map .logo * {
+site-map .logo-full * {
 	fill: var(--white);
 }
 
