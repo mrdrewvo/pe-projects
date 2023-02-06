@@ -5,6 +5,25 @@
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+## SAT 2023.02.04
+* Feedback on Theme Challenge:
+	* Add more space between Header and Graphic Diptych
+	* Graphic diptych: Add more space between h1 the p
+	* Article text
+		* switch space size above and below the p
+		* more padding above the “see all teams” link
+	* General:
+		* Make buttons smaller/tighter
+		* Maybe more space between the sections - use a clamp so you have a mix/max (or use mix/max between vw/vh)
+	
+Header - how to prevent it blending into other colored elements
+- change color?
+- line separator?
+
+CTA cards bigger and more space between picture and text
+
+
+
 ## FRI 2023.02.03
 * hoping this pushes all of my files to our FTP server. I deleted everything bc many files were out of date.
 
