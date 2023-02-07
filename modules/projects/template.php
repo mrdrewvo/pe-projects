@@ -11,7 +11,7 @@
 		<ul class="featured-projects-list">
 			<?php foreach($projectsData as $project) { ?>
 				<li>
-					<a class="project-module" href="projects/<?=$project['link']?>" target="_blank" rel="noopener noreferrer">
+					<a class="project-module" href="projects/<?=$project['link']?>" target="project" rel="noopener noreferrer">
 						<picture>
 							<img src="images/project-thumbnails/<?=$project['link']?>.jpg" alt="">
 						</picture>

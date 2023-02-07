@@ -9,17 +9,17 @@
 	
 		<contact-menu>
 
-			<a href="mailto:andrew.d.vo@gmail.com">andrew.d.vo@gmail.com</a>
+			<a href="mailto:andrew.d.vo@gmail.com" target="project" rel="noopener noreferrer">andrew.d.vo@gmail.com</a>
 
 			<socials-menu>
 				
-				<a href="https://github.com/mrdrewvo">GitHub</a>
+				<a href="https://github.com/mrdrewvo" target="project" rel="noopener noreferrer">GitHub</a>
 
-				<a href="https://mrdrewvo.substack.com/">Substack</a>
+				<a href="https://mrdrewvo.substack.com/" target="project" rel="noopener noreferrer">Substack</a>
 
-				<a href="https://www.linkedin.com/in/drewvo/">LinkedIn</a>
+				<a href="https://www.linkedin.com/in/drewvo/" target="project" rel="noopener noreferrer">LinkedIn</a>
 
-				<a href="https://codepen.io/mrdrewvo">CodePen</a>
+				<a href="https://codepen.io/mrdrewvo" target="project" rel="noopener noreferrer">CodePen</a>
 
 			</socials-menu>
 		</contact-menu>

@@ -24,7 +24,7 @@ featured-projects-title h2 {
 }
 
 .project-module {
-/*	background-color: rgba(255,255,255,0.5);*/
+	background-color: rgba(255,255,255,0.25);
 	padding: 20px;
 	height: 100%;
 	width: 100%;
@@ -52,12 +52,13 @@ featured-projects-title h2 {
 }
 
 /*project link hover*/
-.project-module:hover {
+/*.project-module:hover {
 	background-color: rgba(255,255,255,0.5);
-}
+}*/
 
 .project-module:hover img {
 	opacity: unset;
+	transition: 0.5s;
 }
 
 @media (min-width: 700px) {
