@@ -43,10 +43,10 @@ tagline p:last-of-type {
 welcome-mod .pink-circle {
 	position: absolute;
 	z-index: -2;
-	width: clamp(400px, 35vw, 1000px);
+	width: clamp(500px, 30vw, 1000px);
 	height: auto;
 	top: 0;
-	transform: translate(-50%, 5%);
+	transform: translate(-50%, 15%);
 	fill: var(--accent);
 }
 

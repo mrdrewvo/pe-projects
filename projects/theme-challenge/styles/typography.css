@@ -47,7 +47,7 @@ p + p {
 }
 
 :is(h1, h2) + p {
-	margin-top: calc(3 * var(--space));
+	margin-top: var(--space);
 }
 
 code {
