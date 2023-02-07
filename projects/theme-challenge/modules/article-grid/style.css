@@ -5,6 +5,10 @@ article-grid {
 	gap: calc(2 *var(--space));
 }
 
+article-grid a {
+	margin-top: calc(2 * var(--space));
+}
+
 article-grid a span {
 	color: var(--blue);
 }
@@ -13,6 +17,10 @@ article-intro {
 	display: block;
 	max-width: var(--tight);
 	text-align: center;
+}
+
+article-intro h2 + p {
+	margin: var(--space) 0 calc(2 * var(--space)) 0;
 }
 
 .article-list {
