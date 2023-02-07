@@ -1,20 +1,16 @@
+.projects inner-column {
+	max-width: 400px;
+}
+
 featured-projects-title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 4em;
+	margin: clamp(50px, 4em, 150px) 0 20px 0;
 }
 
 featured-projects-title h2 {
 	color: var(--primaryColor1);
-}
-
-featured-projects-mod {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 20px;
-	gap: 20px;
 }
 
 .featured-projects-list {
@@ -27,18 +23,26 @@ featured-projects-mod {
 	background-color: var(--primaryColor1);	
 }
 
-.featured-projects-list a {
-	background-color: rgba(255,255,255,0.5);
+.project-module {
+/*	background-color: rgba(255,255,255,0.5);*/
 	padding: 20px;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
 }
 
+.project-module picture {
+	background: var(--primaryColor1);
+}
+
+.project-module img {
+	opacity: .60;
+}
+
 .project-module h3 {
 	font-size: 25px;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin: 10px 0 20px 0;
 	color: white;
 }
 
@@ -47,7 +51,20 @@ featured-projects-mod {
 	color: white;
 }
 
+/*project link hover*/
+.project-module:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+
+.project-module:hover img {
+	opacity: unset;
+}
+
 @media (min-width: 700px) {
+	.projects inner-column {
+		max-width: var(--standardWidth);
+	}
+
 	.featured-projects-list {
 		display: flex;
 		flex-direction: row;
