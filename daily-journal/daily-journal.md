@@ -5,6 +5,11 @@
 ## Markdown Formatting Resources: [Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [TowardsDataScience](https://towardsdatascience.com/the-ultimate-markdown-cheat-sheet-3d3976b31a0#c107), [The Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
 ---
+## SUN 2023.02.12
+* More Part III of UPP - hopefully get through Part IV today!
+* also hoping to finish styling the detail page for my WP site
+* also get the resume submitted for Chemistry
+
 ## SAT 2023.02.11
 * onto part III of the ultimate portfolio!
 
