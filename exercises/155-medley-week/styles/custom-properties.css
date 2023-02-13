@@ -1,0 +1,41 @@
+/*this page declares all custom properties for the site*/
+
+html {
+	--black: #343334;
+	--white: #fefefe;
+
+	--gray: #6A6E7A;
+
+	--purple: #6161FF;
+	--blue: #569FE0;
+	--blueLight: hsla(208, 69%, 61%, .1);
+	--lightblue: #9BDFF0;
+	--darkblue: #11124B;
+	--green: #6ECC6D;
+	--greenLight: hsla(119, 48%, 61%, .1);
+	--yellow: #F0C72D;
+	--gold: #ECB34E;
+	--brown: #BD8855;
+	--pink: #E78FFC;
+	--pinkLight: hsla(288, 98%, 77%, .1);
+	--magenta: #CC328A;
+	--magentaLight: hsla(326, 61%, 50%, .1);
+
+	--shadow: rgba(0,0,0,.8);
+
+	--space: 10px;
+
+	--paper: var(--white);
+	--ink: var(--black);
+
+	--standard: 1100px;
+	--tight: 900px;
+}
+
+/*dark-mode is out of scope for now*/
+@media (prefers-color-scheme: dark) {
+	html {
+		--paper: var(--black);
+		--ink: var(--white);
+	}
+}

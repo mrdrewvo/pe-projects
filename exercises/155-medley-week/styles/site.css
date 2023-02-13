@@ -1,0 +1,52 @@
+@import "reset.css";
+@import "custom-properties.css";
+/*@import "developer-styles.css";*/
+@import "typography.css";
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+@import "components.css";
+@import "modules.css";
+
+/*this page declares site-level, site-wide, or cross-section stylings*/
+
+/*COLORS*/
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+	font-family: "TT Norms Pro";
+}
+
+/*STRUCTURE*/
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; /* be at least a full viewport height */
+} 
+
+main {
+	flex-grow: 1; /* fill up available space + push the footer down */
+	position: relative;
+}
+
+inner-column {
+	display: block;
+	padding: 0 calc(2 * var(--space));
+	max-width: var(--standard); /* could be a variable in settings */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	padding: calc(1 * var(--space)) 0 calc(2 * var(--space)) 0;
+	background-color: var(--paper);
+}
+
+section {
+	padding: calc(2 * var(--space)) 0;
+}
+
+.site-footer {
+	margin: var(--space) 0;	
+}
