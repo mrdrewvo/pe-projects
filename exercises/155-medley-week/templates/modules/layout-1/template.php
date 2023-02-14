@@ -7,7 +7,7 @@
 		<article class="first-article">
 			<?php foreach($articles as $article) { ?>
 				<?php if($article['type'] == 2) { ?>
-					<h2><?=$article['heading']?></h2>
+					<h2 class="strong-voice"><?=$article['heading']?></h2>
 					
 					<p><?=$article['text']?></p>
 				<?php } ?>

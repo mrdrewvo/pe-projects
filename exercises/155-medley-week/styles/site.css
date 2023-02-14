@@ -39,8 +39,9 @@ inner-column {
 	position: sticky;
 	top: 0;
 	z-index: 5;
-	padding: calc(1 * var(--space)) 0 calc(2 * var(--space)) 0;
+	padding: calc(1 * var(--space)) 0 calc(1.5 * var(--space)) 0;
 	background-color: var(--paper);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 section {
