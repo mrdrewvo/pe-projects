@@ -1,4 +1,6 @@
-<?php include("data/projects-data.php"); ?>
+<?php $json = file_get_contents("data/projects-data.json"); ?>
+<?php $projectsData = json_decode($json, true); ?>
+
 
 <section class="projects">
 	<inner-column>
