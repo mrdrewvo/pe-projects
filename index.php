@@ -2,18 +2,15 @@
 
 <html lang="en">
 
-<!-- ROUTER -->
 <?php require('router.php'); ?>
 
-<!-- SITE HEAD -->
-<?php include("head.php"); ?>
+<?php include('functions.php'); ?>
 
-<!-- SITE BODY: HEADER -->
+<?php require("head.php"); ?>
+
 <?php include('modules/header/template.php'); ?>
 
-<!--SITE BODY: MAIN -->
 <main class="page-section site-main">
-
 		<?php getTemplate($page) ?>
 </main>
 
