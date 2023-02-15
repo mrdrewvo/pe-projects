@@ -5,29 +5,53 @@ layout-2 {
 layout-2 .article-list {
 	display: grid;
 	gap: calc(1.5 * var(--space));
+	margin-bottom: calc(4 * var(--space));
 }
 
 layout-2 .first-article {
-	padding: calc(4 * var(--space)) 0;
+	margin-top: calc(2 * var(--space));
+	padding: var(--space) 0;
+}
+
+layout-2 h2:after{
+	content: " small";
+	display: inline;
+}
+
+layout-2 h3:after{
+	content: " small";
+	display: inline;
+}
+
+layout-2 .first-article p {
+	max-width: 45ch;
+	font-size: 1.08rem;
 }
 
 layout-2 .first-article:before {
 	content: "Little teaser";
     display: block;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     margin-bottom: calc(.5 * var(--space));
     color: var(--color);
 }
 
 layout-2 .logo {
 	max-width: 30px;
+	margin-bottom: var(--space);
 }
 
-layout-2 .logo circle {
+layout-2 .logo .logo-circle {
 	fill: rgb(242, 13, 175);
 	stroke: black;
-	stroke-width: 5px;
+	stroke-width: 10px;
+}
+
+layout-2 .logo .logo-rect {
+	fill: rgb(13,121,242);
+	stroke: black;
+	stroke-width: 10px;
 }
 
 layout-2 li:not(.first-article) {
@@ -39,7 +63,16 @@ layout-2 h3 {
 	font-size: 1.1rem;
 }
 
-@media (min-width: 500px) {
+layout-2 span {
+	max-width: 60%;
+	border: 1px solid var(--color);
+}
+
+layout-2 .text-box {
+	padding: var(--space) 0;
+}
+
+@media (min-width: 600px) {
 	layout-2 .article-list {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -47,21 +80,23 @@ layout-2 h3 {
 	layout-2 .first-article {
 		grid-column: span 2;
 		grid-row: span 2;
-		padding: calc(4 * var(--space)) 0;
-	}
-}
-
-@media (min-width: 1000px) {
-	layout-2 {
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(6, 1fr);
-		gap: calc(1.5 * var(--space));
+		padding: calc(2 * var(--space)) 0;
 	}
 
-	layout-2 .article-list {
-		grid-template-columns: subgrid;
-		grid-template-rows: subgrid;
-		grid-column: 1 / 3;
-		grid-row: 1 / 6;
+	layout-2 li:not(.first-article) {
+		border: 2px solid var(--ink);
+		padding: calc(2 * var(--space));
 	}
+
+	layout-2 span {
+		display: none;
+		border: unset;
+	}
+
+	layout-2 .text-box {
+		max-width: 40ch;
+		padding: calc(2 * var(--space));
+		background: var(--highlight);
+	}
+
 }

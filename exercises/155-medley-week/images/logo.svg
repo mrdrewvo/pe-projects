@@ -4,8 +4,8 @@
             <g transform="matrix(0.873457,0,0,0.873457,31.2241,31.3768)">
                 <circle class="logo-circle" cx="318.302" cy="319.508" r="71.555"/>
             </g>
-            <g class="logo-rect" transform="matrix(0.852435,0,0,0.818415,36.9957,67.7357)">
-                <rect x="316.708" y="165.253" width="124.643" height="124.643" style="fill:rgb(13,121,242);stroke:black;stroke-width:5.98px;"/>
+            <g transform="matrix(0.852435,0,0,0.818415,36.9957,67.7357)">
+                <rect class="logo-rect" x="316.708" y="165.253" width="124.643" height="124.643"/>
             </g>
         </g>
     </g>

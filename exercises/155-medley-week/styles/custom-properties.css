@@ -28,6 +28,7 @@ html {
 	--paper: var(--white);
 	--ink: var(--black);
 	--color: var(--purple);
+	--highlight: var(--blue);
 
 	--standard: 1200px;
 	--tight: 900px;
