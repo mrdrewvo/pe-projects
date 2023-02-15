@@ -1,8 +1,5 @@
-<?php include("head.php"); ?>
-
-<?php include("header.php"); ?>
-
-<?php include("data/goals-data.php"); ?>
+<?php $json = file_get_contents("data/goals-data.json"); ?>
+<?php $goalsData = json_decode($json, true); ?>
 
 <main class="page-section site-main">
 	
@@ -31,5 +28,3 @@
 		</inner-column>
 	</section>
 </main>
-
-<?php include("footer.php"); ?>
