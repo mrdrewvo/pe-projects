@@ -45,7 +45,11 @@ inner-column {
 }
 
 section {
-	padding: calc(2 * var(--space)) 0;
+	padding: 50px 0;
+}
+
+section + section {
+	border-top: 2px solid var(--color);
 }
 
 .site-footer {

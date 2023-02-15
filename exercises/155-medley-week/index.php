@@ -21,9 +21,15 @@
 		</header>
 
 		<main>
-			<section class='layout-1' id='layout-1'>
+			<section class="layout-1" id="layout-1">
 			<inner-column>
 				<?php include('templates/modules/layout-1/template.php'); ?>
+			</inner-column>
+			</section>
+
+			<section class="layout-2" id="layout-2">
+			<inner-column>
+				<?php include('templates/modules/layout-2/template.php'); ?>	
 			</inner-column>
 			</section>
 		</main>
