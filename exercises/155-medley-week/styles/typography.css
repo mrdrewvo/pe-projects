@@ -13,7 +13,7 @@
 	}
 }
 
-.attention-voice	{
+.attention-voice {
 	font-family: "TT Norms Pro";
 	font-size: clamp(28px, 4vw, 36px);
 	font-weight: 700;
@@ -23,7 +23,7 @@
 .strong-voice	{
 	font-family: "TT Norms Pro";
 	font-weight: 700;
-	font-size:  1.25rem;
+	font-size:  1.1rem;
 }
 
 .calm-voice, p, li {

@@ -10,7 +10,7 @@
 			<?php if($article['type'] == "h2-article") { ?>
 				<li class="first-article">
 					<article>
-						<h2 class="strong-voice"><?=$article['heading']?></h2>
+						<h2 class="attention-voice"><?=$article['heading']?></h2>
 						
 						<p><?=$article['text']?></p>
 					</article>
@@ -24,7 +24,7 @@
 					<li>
 						<article>
 							<picture class="logo">
-								<img src="images/logo.svg" alt="">
+								<?php include('images/logo.svg'); ?>
 							</picture>
 						
 							<h3><?=$article['heading']?></h3>
@@ -36,4 +36,12 @@
 			<?php } ?>
 		<?php } ?>
 	</ul>
+
+	<?php foreach($articles as $article) { ?>
+		<?php if($article['type'] == "paragraph") { ?>
+			<span></span>
+			<p class="text-box"><?=$article['text']?></p>
+		<?php } ?>
+	<?php } ?>
+	
 </layout-2>
