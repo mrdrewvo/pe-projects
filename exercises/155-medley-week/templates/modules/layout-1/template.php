@@ -3,27 +3,29 @@
 	$articles = json_decode($json, true);?>
 
 <layout-1>
+	<h1 class="attention-voice">Layout 1</h1>
+
 	<ul class="article-list">
-		<article class="first-article">
-			<?php foreach($articles as $article) { ?>
-				<?php if($article['type'] == 2) { ?>
-					<h2 class="strong-voice"><?=$article['heading']?></h2>
-					
-					<p><?=$article['text']?></p>
-				<?php } ?>
-			<?php } ?>
-		</article>
-
-		<?php foreach($articles as $article) { ?>
-			<?php if($article['type'] == 3) { ?>
-				<?php for($i=1; $i <= 6; $i++) { ?>
-					<article>
-						<h3><?=$article['heading']?></h3>
-
+		<li class="first-article">
+			<article>
+				<?php foreach($articles as $article) { ?>
+					<?php if($article['type'] == "h2-article") { ?>
+						<h2 class="strong-voice"><?=$article['heading']?></h2>
+						
 						<p><?=$article['text']?></p>
-					</article>
+					<?php } ?>
 				<?php } ?>
-			<?php } ?>
+			</article>
+		</li>
+
+		<?php foreach (array_fill(0, 6, 'x') as $x) { ?>
+			<li>
+				<article>
+					<h3><?=$articles[1]['heading']?></h3>
+				
+					<p><?=$articles[1]['text']?></p>
+				</article>
+			</li>
 		<?php } ?>
 	</ul>
 

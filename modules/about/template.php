@@ -17,7 +17,7 @@
 
 			<about-me-text>
 
-				<p>Still curious about me? Well,&nbspI'm &nbspblushing!</p>
+				<p>Still curious about me? Well,&nbspI'm&nbspblushing!</p>
 
 				<p>I'm a tech ops leader turned UX engineer under mentorship of <a href="https://perpetual.education" target="_blank" rel="noopener noreferrer">Perpetual Education</a>.</p>
 
