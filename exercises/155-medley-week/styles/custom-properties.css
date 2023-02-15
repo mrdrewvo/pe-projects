@@ -27,6 +27,7 @@ html {
 
 	--paper: var(--white);
 	--ink: var(--black);
+	--color: var(--purple);
 
 	--standard: 1200px;
 	--tight: 900px;
