@@ -15,29 +15,35 @@
 
 	<body>
 		<header class="site-header">
-		<inner-column>
-			<?php include('templates/modules/mast-head/template.php'); ?>
-		</inner-column>	
+			<inner-column>
+				<?php include('templates/modules/mast-head/template.php'); ?>
+			</inner-column>	
 		</header>
 
 		<main>
 			<section class="layout-1" id="layout-1">
-			<inner-column>
-				<?php include('templates/modules/layout-1/template.php'); ?>
-			</inner-column>
+				<inner-column>
+					<?php include('templates/modules/layout-1/template.php'); ?>
+				</inner-column>
 			</section>
 
 			<section class="layout-2" id="layout-2">
-			<inner-column>
-				<?php include('templates/modules/layout-2/template.php'); ?>	
-			</inner-column>
+				<inner-column>
+					<?php include('templates/modules/layout-2/template.php'); ?>	
+				</inner-column>
+			</section>
+
+			<section class="layout-3" id="layout-3">
+				<inner-column>
+					<?php include('templates/modules/layout-3/template.php'); ?>	
+				</inner-column>
 			</section>
 		</main>
 
 		<footer class="site-footer">
-		<inner-column>
-			<a href="../../index.php" class="link">Back to Drew Vo Home</a>
-		</inner-column>
+			<inner-column>
+				<a href="../../index.php" class="link">Back to Drew Vo Home</a>
+			</inner-column>
 		</footer>
 	</body>
 
