@@ -24,7 +24,7 @@
 					<li>
 						<article>
 							<picture class="logo">
-								<?php include('images/logo.svg'); ?>
+								<?php include('images/layout2-logo.svg'); ?>
 							</picture>
 						
 							<h3><?=$article['heading']?></h3>
