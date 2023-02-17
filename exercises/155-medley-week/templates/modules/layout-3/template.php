@@ -24,7 +24,7 @@
 					<li>
 						<article>
 							<picture class="logo">
-								<?php include('images/logo.svg'); ?>
+								<?php include('images/layout3-logo.svg'); ?>
 							</picture>
 						
 							<h3><?=$article['heading']?></h3>
@@ -36,12 +36,4 @@
 			<?php } ?>
 		<?php } ?>
 	</ul>
-
-	<?php foreach($articles as $article) { ?>
-		<?php if($article['type'] == "paragraph") { ?>
-			<span></span>
-			<p class="text-box"><?=$article['text']?></p>
-		<?php } ?>
-	<?php } ?>
-	
 </layout-3>
