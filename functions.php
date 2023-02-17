@@ -6,7 +6,6 @@ function enableErrorReporting() {
 }
 enableErrorReporting(); // turn it on
 
-
 function show($things) {
 	echo "<code class='show-code'>";
 		echo '<pre>';
@@ -19,5 +18,9 @@ function show($things) {
 function getFile($path) {
 	return dirname(__FILE__) . '/' . $path;
 }
+// usage: include( getFile("templates/components/thing.php") );
 
-// usage:  include( getFile("templates/components/thing.php") );
+function printQueryString() {
+	return $_SERVER['QUERY_STRING'];
+}
+
