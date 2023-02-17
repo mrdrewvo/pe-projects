@@ -1,11 +1,16 @@
 <?php
 
+$page = null;
+
+
 function enableErrorReporting() {
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
 }
 enableErrorReporting(); // turn it on
 
+
+// Use to print out arrays to double check
 function show($things) {
 	echo "<code class='show-code'>";
 		echo '<pre>';
@@ -14,13 +19,39 @@ function show($things) {
 	echo '</code>';
 }
 
-// get file path - but always from the root
+
+// Get file path - but always from the root
+// Usage e.g. include( getFile("templates/components/thing.php") );
 function getFile($path) {
 	return dirname(__FILE__) . '/' . $path;
 }
-// usage: include( getFile("templates/components/thing.php") );
+
 
 function printQueryString() {
 	return $_SERVER['QUERY_STRING'];
 }
 
+
+// Router for php framework
+function getPageTemplate($page) {
+	if ( isset($_GET["page"]) ) {
+	   	$page = $_GET["page"]; //url?page=string
+	} else { 
+		$page = "welcome"; //default
+	}
+
+	include("templates/page/" . $page . "/template.php");
+}
+
+// Use to apply an "active" class and specific styling to the current page (e.g highlight the nav link of the current page)
+function isActivePage($name) {	
+	if ( isset($page) ) {
+		$page = $_GET["page"];
+	} else {
+		$page = "welcome"; // defaults class "active" if no query string
+	}
+
+	if ($page == $name) {
+		echo 'class="active"'; // assigns class "active" on the current page
+	}
+}

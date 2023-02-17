@@ -11,7 +11,7 @@
 <?php include('modules/header/template.php'); ?>
 
 <main class="page-section site-main">
-		<?php getTemplate($page) ?>
+		<?php getPageTemplate($page) ?>
 </main>
 
 <?php include("modules/footer/template.php"); ?>
