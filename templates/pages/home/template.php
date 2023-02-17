@@ -1,8 +1,8 @@
-<section class="welcome">
+<section class="home">
 
 	<inner-column>
 
-		<welcome-mod>
+		<home-mod>
 
 			<picture class="drew-home">
 				
@@ -22,6 +22,6 @@
 				
 				<?php include("images/graphics/circle-svg.php"); ?>
 			</picture>	
-		</welcome-mod>
+		</home-mod>
 	</inner-column>
 </section>

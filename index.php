@@ -2,18 +2,18 @@
 
 <html lang="en">
 
-<?php require('router.php'); ?>
-
 <?php include('functions.php'); ?>
 
 <?php require("head.php"); ?>
 
-<?php include('modules/header/template.php'); ?>
+<?php include('templates/modules/header/template.php'); ?>
+
+<p><?=printQueryString();?></p>
 
 <main class="page-section site-main">
-		<?php getPageTemplate($page) ?>
+		<?php getPageTemplate() ?>
 </main>
 
-<?php include("modules/footer/template.php"); ?>
+<?php include("templates/modules/footer/template.php"); ?>
 
 </html>

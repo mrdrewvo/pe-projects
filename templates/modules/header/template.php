@@ -8,7 +8,7 @@
 
 			?>
 
-			<a href="?page=welcome" <?=isActivePage("welcome")?>>
+			<a href="?page=home" <?=isActivePage("home")?>>
 
 				<h1>Drew Vo</h1>
 			</a>

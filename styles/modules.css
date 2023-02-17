@@ -1,8 +1,9 @@
-@import '../modules/header/style.css';
-@import '../modules/welcome/style.css';
-@import '../modules/about/style.css';
-@import '../modules/projects/style.css';
-@import '../modules/resume/style.css';
-@import '../modules/goals/style.css';
-@import '../modules/style-guide/style.css';
-@import '../modules/footer/style.css';
+@import '../templates/modules/header/style.css';
+@import '../templates/pages/home/style.css';
+@import '../templates/pages/404/style.css';
+@import '../templates/pages/about/style.css';
+@import '../templates/pages/projects/style.css';
+@import '../templates/pages/resume/style.css';
+@import '../templates/pages/goals/style.css';
+@import '../templates/pages/style-guide/style.css';
+@import '../templates/modules/footer/style.css';

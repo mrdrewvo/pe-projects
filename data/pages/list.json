@@ -1,0 +1,10 @@
+{
+	"id": "list",
+	"title": "Some stuff",
+	"intro": "Look at my list of stuff!",
+	"sections": [
+		{
+			"heading": "Grid of thing"
+		}
+	]
+}

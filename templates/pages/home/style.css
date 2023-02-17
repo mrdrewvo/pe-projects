@@ -1,4 +1,4 @@
-welcome-mod {
+home-mod {
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -40,7 +40,7 @@ tagline p:last-of-type {
 	margin-left: 30px;
 }
 
-welcome-mod .pink-circle {
+home-mod .pink-circle {
 	position: absolute;
 	z-index: -2;
 	width: clamp(500px, 30vw, 1000px);
@@ -98,7 +98,7 @@ welcome-mod .pink-circle {
 }
 
 @media (min-width: 550px) {
-	welcome-mod {
+	home-mod {
 		justify-content: center
 	}
 

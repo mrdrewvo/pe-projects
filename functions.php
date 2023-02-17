@@ -2,12 +2,11 @@
 
 $page = null;
 
-
-function enableErrorReporting() {
-	error_reporting(E_ALL);
-	ini_set('display_errors', '1');
-}
-enableErrorReporting(); // turn it on
+// function enableErrorReporting() {
+// 	error_reporting(E_ALL);
+// 	ini_set('display_errors', '1');
+// }
+// enableErrorReporting(); // turn it on
 
 
 // Use to print out arrays to double check
@@ -32,23 +31,31 @@ function printQueryString() {
 }
 
 
-// Router for php framework
-function getPageTemplate($page) {
-	if ( isset($_GET["page"]) ) {
-	   	$page = $_GET["page"]; //url?page=string
-	} else { 
-		$page = "welcome"; //default
-	}
-
-	include("templates/page/" . $page . "/template.php");
+function currentPage() {
+	if(isset($_GET["page"])) {
+		return $_GET["page"];
+	} else
+		return "home";
 }
+
+
+// Router for php framework based on current page... or 404
+function getPageTemplate() {
+	$filePath = "templates/pages/" . currentPage() . "/template.php";
+	if ( file_exists($filePath) ) {
+	   	include($filePath);
+	} else { 
+		include("templates/pages/404/template.php");
+	}
+}
+
 
 // Use to apply an "active" class and specific styling to the current page (e.g highlight the nav link of the current page)
 function isActivePage($name) {	
 	if ( isset($page) ) {
 		$page = $_GET["page"];
 	} else {
-		$page = "welcome"; // defaults class "active" if no query string
+		$page = "home"; // defaults class "active" if no query string
 	}
 
 	if ($page == $name) {
