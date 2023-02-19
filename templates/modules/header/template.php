@@ -3,13 +3,14 @@
 
 <header class="page-section site-header">
 	<header-bar>
+		<p><?=printQueryString();?></p>
 	</header-bar>
 
 	<inner-column>
 		<mast-head>
 			<a href="?page=home" <?=isActivePage("home")?>>
 
-				<h1>Drew Vo</h1>
+				<p>Drew Vo</p>
 			</a>
 
 			<nav class="site-menu">

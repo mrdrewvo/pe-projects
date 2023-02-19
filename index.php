@@ -6,14 +6,14 @@
 
 <?php require("head.php"); ?>
 
-<?php include('templates/modules/header/template.php'); ?>
+<body >
+	<?php include('templates/modules/header/template.php'); ?>
+	
+	<main class="page-section site-main">
+			<?php renderPageTemplate() ?>
+	</main>
 
-<p><?=printQueryString();?></p>
-
-<main class="page-section site-main">
-		<?php renderPageTemplate() ?>
-</main>
-
-<?php include("templates/modules/footer/template.php"); ?>
+	<?php include("templates/modules/footer/template.php"); ?>
+</body>
 
 </html>

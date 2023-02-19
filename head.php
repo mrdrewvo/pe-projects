@@ -1,5 +1,4 @@
 <head>
-
 	<meta charset="utf-8">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +18,5 @@
 	<meta property="og:image:type" content="image/jpeg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="A blob-style graphic of letters D and V">
-	
+	<meta property="og:image:alt" content="A blob-style graphic of letters D and V">	
 </head>
-
-<body>

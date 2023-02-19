@@ -1,7 +1,12 @@
 header-bar {
 	display: block;
-	padding: 10px;
+/*	padding: 10px;*/
 	background-color: var(--primaryColor1);
+}
+
+header-bar p {
+	padding: unset;
+	color: var(--offwhite);
 }
 
 header inner-column {
@@ -17,7 +22,7 @@ mast-head {
 	gap: 10px;
 }
 
-mast-head h1 {
+mast-head p {
 	font-size: 23vw;
 	font-weight: 800;
 	color: var(--primaryColor1);

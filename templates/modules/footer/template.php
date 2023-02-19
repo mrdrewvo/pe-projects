@@ -27,5 +27,3 @@
 		</footer-mod>
 	</inner-column>
 </footer>
-
-</body>
