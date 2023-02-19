@@ -25,13 +25,11 @@ function getFile($path) {
 	return dirname(__FILE__) . '/' . $path;
 }
 
-
+// Use to print the querystring in the URL - useful when your browser window is too small to see the string at the end
 function printQueryString() {
 	return $_SERVER['QUERY_STRING'];
 }
 
-
-// ROUTER
 
 function currentPage() {
 	if(isset($_GET["page"])) {
