@@ -1,7 +1,7 @@
 {
 	"id": "home",
-	"title": "Welcome",
-	"intro": "You have made it!",
+	"title1": "Welcome",
+	"title2": "You have made it!",
 	"sections": [
 		{
 			"heading": "My latest work"
