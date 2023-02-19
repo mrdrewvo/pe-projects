@@ -39,13 +39,16 @@ function currentPage() {
 }
 
 
-// Router for php framework based on current page... or 404
-function renderPageTemplate() {
-	$filePath = "templates/pages/" . currentPage() . "/template.php";
-	if ( file_exists($filePath) ) {
-	   	include($filePath);
-	} else { 
-		include("templates/pages/404/template.php");
+function pageClass($page) {
+	return "$page-page";
+}
+
+
+function pageTemplateClass($pageData) {
+	if ( isset($pageData["template"]) ) {
+		return "$pageData[template]-template";
+	} else {
+		return "default-template";
 	}
 }
 

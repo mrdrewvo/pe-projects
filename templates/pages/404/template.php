@@ -1,7 +1,9 @@
 <section class="error-404">
-	
 	<inner-column>
-		
-		404
+
+		<h1 class='loud-voice'>404 Error</h1>
+
+		<p>Your request for <code><?=$page?></code> was not found.</p>
+
 	</inner-column>
 </section>

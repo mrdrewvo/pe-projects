@@ -64,7 +64,7 @@ mast-head nav a {
 		gap: 10px;
 	}
 
-	mast-head h1 {
+	mast-head p {
 		font-size: clamp(62.5px, 12.5vw, 180px);
 	}
 

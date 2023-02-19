@@ -2,6 +2,7 @@
 	"id": "home",
 	"title1": "Welcome",
 	"title2": "You have made it!",
+	"template": "home",
 	"sections": [
 		{
 			"heading": "My latest work"
