@@ -1,0 +1,32 @@
+[
+	{
+		"linkName": "Home",
+		"slug": "home",
+		"headerLink": "false"
+	},
+	{
+		"linkName": "About me",
+		"slug": "about",
+		"headerLink": "true"
+	},
+	{
+		"linkName": "Projects",
+		"slug": "projects",
+		"headerLink": "true"
+	},
+	{
+		"linkName": "Goals",
+		"slug": "goals",
+		"headerLink": "false"
+	},
+	{
+		"linkName": "Resume",
+		"slug": "resume",
+		"headerLink": "false"
+	},
+	{
+		"linkName": "Style Guide",
+		"slug": "style-guide",
+		"headerLink": "false"
+	}
+]

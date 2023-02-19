@@ -1,12 +1,12 @@
 <?php
 
-$page = null;
+//UTILITIES
 
-// function enableErrorReporting() {
-// 	error_reporting(E_ALL);
-// 	ini_set('display_errors', '1');
-// }
-// enableErrorReporting(); // turn it on
+function enableErrorReporting() {
+	error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+}
+enableErrorReporting(); // turn it on
 
 
 // Use to print out arrays to double check
@@ -31,6 +31,8 @@ function printQueryString() {
 }
 
 
+// ROUTER
+
 function currentPage() {
 	if(isset($_GET["page"])) {
 		return $_GET["page"];
@@ -40,7 +42,7 @@ function currentPage() {
 
 
 // Router for php framework based on current page... or 404
-function getPageTemplate() {
+function renderPageTemplate() {
 	$filePath = "templates/pages/" . currentPage() . "/template.php";
 	if ( file_exists($filePath) ) {
 	   	include($filePath);

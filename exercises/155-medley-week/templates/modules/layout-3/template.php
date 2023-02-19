@@ -3,7 +3,17 @@
 	$articles = json_decode($json, true);?>
 
 <layout-3>
+
+	<section class="layout-3a" id="layout-3a">
+		<inner-column>
+			
+		</inner-column>
+	</section>
+
+
 	<h1 class="attention-voice">Layout 3</h1>
+
+
 
 	<ul class="article-list">
 		<?php foreach($articles as $article) { ?>

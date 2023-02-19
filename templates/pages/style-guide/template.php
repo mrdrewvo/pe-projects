@@ -1,8 +1,5 @@
-<?php include("head.php"); ?>
-
-<?php include("header.php"); ?>
-
-<?php include("data/style-guide-data.php"); ?>
+<?php $json = file_get_contents("data/style-guide-data.json"); ?>
+<?php $styleGuideData = json_decode($json, true); ?>
 
 <main class="page-section site-main">
 	
@@ -18,7 +15,7 @@
 
 				<ul>
 
-					<?php foreach($styleGuideData as $styleGuidePoint) { ?>
+					<?php foreach($styleGuideData["Style Guide Vision"] as $styleGuidePoint) { ?>
 
 						<li>
 
@@ -31,33 +28,6 @@
 				
 				</ul>
 			</style-guide-mod>
-
-			<success-checklist>
-				<h2>Success Checklist</h2>
-
-				<ol class="site-success">
-					
-					<?php foreach($siteSuccessList as $siteSuccessPoint) { ?>
-
-						<li>
-								
-							<h3><?=$siteSuccessPoint["section"]?></h3>
-
-							<ul>
-								
-								<?php foreach($siteSuccessPoint["requirements"] as $requirement) { ?>
-
-									<li>
-										
-										<p><?=$requirement?></p>
-									</li>
-								<?php } ?>
-							</ul>
-						</li>
-
-					<?php }?>
-				</ol>
-			</success-checklist>
 		</inner-column>
 	</section>
 </main>

@@ -11,7 +11,7 @@
 <p><?=printQueryString();?></p>
 
 <main class="page-section site-main">
-		<?php getPageTemplate() ?>
+		<?php renderPageTemplate() ?>
 </main>
 
 <?php include("templates/modules/footer/template.php"); ?>

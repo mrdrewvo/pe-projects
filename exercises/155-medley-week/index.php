@@ -33,11 +33,7 @@
 				</inner-column>
 			</section>
 
-			<section class="layout-3" id="layout-3">
-				<inner-column>
-					<?php include('templates/modules/layout-3/template.php'); ?>	
-				</inner-column>
-			</section>
+			<?php include('templates/modules/layout-3/template.php'); ?>
 		</main>
 
 		<footer class="site-footer">

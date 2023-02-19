@@ -3,6 +3,11 @@ footer {
 	padding: 20px 0px;
 }
 
+footer-mod {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 footer :is(p, a) {
 	color: var(--offwhite);
 	font-size: 14px;
@@ -11,28 +16,21 @@ footer :is(p, a) {
 	padding: 5px;
 }
 
-contact-menu {
+.site-menu, .contact-menu, {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
-socials-menu {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+footer-mod p {
+	grid-column: span 2;
+	margin-top: 30px;
 }
 
 @media (min-width: 550px) {
-	contact-menu {
+	.site-menu, .contact-menu {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	socials-menu {
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 20px;
 	}
 }
