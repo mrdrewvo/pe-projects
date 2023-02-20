@@ -1,13 +1,19 @@
 {
-	"id": "home",
-	"title1": "Welcome",
-	"title2": "You have made it!",
+	"id": "about",
+	"title1": "What's cookin'",
+	"title2": "good lookin'?",
 	"sections": [
 		{
-			"heading": "My latest work"
-		},
-		{
-			"heading": "Things I like"
+			"module": "graphic-diptych",
+			"imgLink": "images/drew1.jpg",
+			"heading": "",
+			"content": [
+				"Still curious about me? Well,&nbspI'm&nbspblushing!",
+				"I'm a tech ops leader turned UX engineer under mentorship of <a href='https://perpetual.education' target='_blank' rel='noopener noreferrer'>Perpetual Education</a>.",
+				"My colleagues affectionately call me detail-obsessed, but I say I'm a fan of a job well&nbspdone.",
+				"On my free time, you'll find me baking or diving into a new productivity hack, but that's not why you're here.",
+				"How may I bring your designs to life today?"
+			]
 		}
 	]
 }
