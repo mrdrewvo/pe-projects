@@ -1,4 +1,4 @@
-<?php $json = file_get_contents("data/site-menu.json"); ?>
+<?php $json = file_get_contents("data/site-menu-data.json"); ?>
 <?php $siteMenuData = json_decode($json, true); ?>
 
 <header class="page-section site-header">

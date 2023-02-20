@@ -1,12 +1,14 @@
+/*MODULES*/
+@import '../templates/modules/graphic-diptych/style.css';
+@import '../templates/modules/page-header/style.css';
 @import '../templates/modules/site-header/style.css';
 @import '../templates/modules/site-footer/style.css';
-@import '../templates/modules/page-header/style.css';
-@import '../templates/modules/graphic-diptych/style.css';
 
-@import '../templates/pages/home/style.css';
+/*PAGES*/
 @import '../templates/pages/404/style.css';
 @import '../templates/pages/about/style.css';
+@import '../templates/pages/goals/style.css';
+@import '../templates/pages/home/style.css';
 @import '../templates/pages/projects/style.css';
 @import '../templates/pages/resume/style.css';
-@import '../templates/pages/goals/style.css';
 @import '../templates/pages/style-guide/style.css';
