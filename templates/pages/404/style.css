@@ -1,3 +1,10 @@
 .error-404 {
-	color: red;
+	color: var(--maroon);
+	margin-top: 50px;
+}
+
+.error-404 inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
