@@ -3,7 +3,7 @@
 
 <header class="page-section site-header">
 	<header-bar>
-		<p><?=printQueryString();?></p>
+		<!-- <p><?=printQueryString();?></p> -->
 	</header-bar>
 
 	<inner-column>
