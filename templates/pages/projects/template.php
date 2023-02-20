@@ -1,15 +1,14 @@
-<?php $json = file_get_contents("data/projects-data.json"); ?>
-<?php $projectsData = json_decode($json, true); ?>
+<?php
+	$json = file_get_contents('data/projects-data.json');
+	$projectsData = json_decode($json, true);
+?>
 
+<?php 
+	include('templates/modules/page-header/template.php');
+?>
 
-<section class="projects">
+<section>
 	<inner-column>
-		<featured-projects-title>
-			<h2>Featured Projects</h2>
-			
-			<h2>My latest work!</h2>
-		</featured-projects-title>
-
 		<ul class="featured-projects-list">
 			<?php foreach($projectsData as $project) { ?>
 				<li>
