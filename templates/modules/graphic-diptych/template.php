@@ -1,48 +1,21 @@
-<section class="about-me">
+<?php
+	$heading = $section["heading"] ?? "Default heading here";
+	$flipped = (isset($flipped)) ? "flipped" : "";
+	$imgLink = $section["imgLink"] ?? "https://peprojects.dev/images/square.jpg";
+?>
+
+<graphic-diptych class='<?=$flipped?>'>
 	
-	<inner-column>
-		
-		<about-me-title>
-				
-			<h2>What's cookin'</h2>
-			
-			<h2>good lookin'?</h2>
-		</about-me-title>
-
-		<about-me-mod>
-
-
-<graphic-diptych>
-
 	<picture>
-		<img src='images/hero.webp' alt='lots of screenshots of the productivity app'>
+		<img src='<?=$imgLink?>' alt='$todo'>
 	</picture>
-	
-	<text-content>
-		<h1 class='loud-voice'>Get it done with the best productivity app&nbspever</h1>
 
-		<p>Get it done</p>
-	</text-content>
+	<div class='content'>
+		<h2 class='attention-voice'><?=$heading?></h2>
+		
+		<?php foreach($section["content"] as $content) { ?>
+			<p><?=$content?></p>
+		<?php } ?>
+	</div>
 
 </graphic-diptych>
-
-
-			<picture>
-				<img src="images/drew1.jpg" alt="">
-			</picture>
-
-			<about-me-text>
-
-				<p>Still curious about me? Well,&nbspI'm&nbspblushing!</p>
-
-				<p>I'm a tech ops leader turned UX engineer under mentorship of <a href="https://perpetual.education" target="_blank" rel="noopener noreferrer">Perpetual Education</a>.</p>
-
-				<p>My colleagues affectionately call me detail-obsessed, but I say I'm a fan of a job well&nbspdone.</p>
-
-				<p>On my free time, you'll find me baking or diving into a new productivity hack, but that's not why you're here.</p>
-
-				<p>How may I bring your designs to life today?</p>
-			</about-me-text>
-		</about-me-mod>
-	</inner-column>
-</section>

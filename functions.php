@@ -31,14 +31,6 @@ function printQueryString() {
 }
 
 
-function currentPage() {
-	if(isset($_GET["page"])) {
-		return $_GET["page"];
-	} else
-		return "home";
-}
-
-
 function pageClass($page) {
 	return "$page-page";
 }
@@ -49,6 +41,14 @@ function pageTemplateClass($pageData) {
 		return "$pageData[template]-template";
 	} else {
 		return "default-template";
+	}
+}
+
+
+function styleGuideDetailLink($type, $page) {
+	if ($page == "style-guide") {
+		$link = "/layouts/$type";
+		echo "<a href='$link' target='$type'>LINK</a>";
 	}
 }
 
