@@ -1,36 +1,14 @@
 @import "meyer-reset.css";
 @import "setup.css";
-
+@import "custom-properties.css";
+/*@import "developer-styles.css";*/
 @import "typography.css";
-@import "modules.css";
 @import "components.css";
-
+@import "modules.css";
 
 /** {
 	outline: 1px solid red;
 }*/
-
-html {
-
-	/*color palette*/
-	--blue: #162442;
-	--offwhite: #F2EFE6; 
-	--green: #486254;
-	--tan: #B8814C;
-	--pink: #FFD7D7;
-	--maroon: #A81C1C;
-
-	--paper: var(--offwhite);
-	--primaryColor1: var(--blue);
-	--primaryColor2: var(--green);
-	--linkHover: var(--tan);
-	--accent: var(--pink);
-	--codeColor: var(--green);
-
-	/*view widths*/
-	--standardWidth: 1100px;
-	--tightWidth: 800px;
-}
 
 body {
 	font-family: "Avenir Next", "Helvetica Neue"; /*default fonts*/
