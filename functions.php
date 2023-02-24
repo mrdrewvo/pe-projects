@@ -1,7 +1,5 @@
 <?php
 
-//UTILITIES
-
 function enableErrorReporting() {
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
@@ -10,7 +8,7 @@ enableErrorReporting(); // turn it on
 
 
 // Use to print out arrays to double check
-function show($things) {
+function formatCode($things) {
 	echo "<code class='show-code'>";
 		echo '<pre>';
 			print_r($things);
@@ -24,6 +22,7 @@ function show($things) {
 function getFile($path) {
 	return dirname(__FILE__) . '/' . $path;
 }
+
 
 // Use to print the querystring in the URL - useful when your browser window is too small to see the string at the end
 function printQueryString() {
@@ -64,4 +63,13 @@ function isActivePage($name) {
 	if ($page == $name) {
 		echo 'class="active"'; // assigns class "active" on the current page
 	}
+}
+
+
+// Not sure what this function does...
+function magic_code_tm($code) {
+  $patterns = ["/<(?!\/?mark\b[^>]*>)/", "/[\$]/"];
+  $replacements = ['&lt;', "&#36;"];
+
+  return preg_replace($patterns, $replacements, $code);
 }
