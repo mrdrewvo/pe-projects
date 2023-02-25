@@ -4,6 +4,9 @@
 	"title2": "good lookin'?",
 	"sections": [
 		{
+			"module": "page-header"
+		},
+		{
 			"module": "graphic-diptych",
 			"imgLink": "images/drew1.jpg",
 			"heading": "Still curious about me? ",

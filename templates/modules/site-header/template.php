@@ -9,7 +9,6 @@
 	<inner-column>
 		<mast-head>
 			<a href="?page=home" <?=isActivePage("home")?>>
-
 				<p>Drew Vo</p>
 			</a>
 

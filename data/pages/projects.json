@@ -2,5 +2,12 @@
 	"id": "projects",
 	"title1": "Featured Projects",
 	"title2": "My latest work!",
-	"template": "projects"
+	"sections": [
+		{
+			"module": "page-header"
+		},
+		{
+			"module": "projects-list"
+		}
+	]
 }

@@ -1,26 +1,15 @@
-.projects inner-column {
+.projects-list inner-column {
 	max-width: 400px;
 }
 
-featured-projects-title {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: clamp(50px, 4em, 150px) 0 20px 0;
-}
-
-featured-projects-title h2 {
-	color: var(--primaryColor1);
-}
-
-.featured-projects-list {
+.projects-list ul{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	margin-bottom: 30px;
 }
 
-.featured-projects-list li {
+.projects-list li {
 	background-color: var(--primaryColor1);	
 }
 

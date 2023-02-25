@@ -2,5 +2,12 @@
 	"id": "home",
 	"title1": "Welcome",
 	"title2": "You have made it!",
-	"template": "home"
+	"sections": [
+		{
+			"module": "home-banner"
+		},
+		{
+			"module": "projects-list"
+		}
+	]
 }
