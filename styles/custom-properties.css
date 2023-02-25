@@ -20,6 +20,7 @@ html {
 	--accent: var(--pink);
 	--codeColor: var(--green);
 	--shadow: rgba(0,0,0,.8);
+	--fade: rgba(255,255,255,.25);
 
 	--space: 10px;
 

@@ -1,13 +1,15 @@
 {
 	"id": "projects",
-	"title1": "Featured Projects",
-	"title2": "My latest work!",
 	"sections": [
 		{
-			"module": "page-header"
+			"module": "page-header",
+			"title1": "Featured Projects",
+			"title2": "My latest work!"
 		},
 		{
-			"module": "projects-list"
+			"module": "list",
+			"listDataFile": "projects",
+			"listComponent": "project-card"
 		}
 	]
 }

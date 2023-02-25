@@ -1,4 +1,4 @@
-.graphic-diptych {
+.graphic-diptych-module {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -11,16 +11,16 @@
 	max-width: var(--tightWidth);
 }
 
-.graphic-diptych p {
+.graphic-diptych-module p {
 	font-size: 18px;
 	line-height: 1.5;
 }
 
-.graphic-diptych a {
+.graphic-diptych-module a {
 	color: var(--blue);
 }
 
-.graphic-diptych picture {
+.graphic-diptych-module picture {
  	width: 90%;
  	max-width: 400px;
  	margin: -50px 0 0 0;
@@ -28,16 +28,16 @@
 }
 
 @media (min-width: 650px) {
-	.graphic-diptych {
+	.graphic-diptych-module {
 		flex-direction: row-reverse;
 		margin: 2em 4em 30px 0;
 	}
 
-	.graphic-diptych .content {
+	.graphic-diptych-module .content {
 		flex-basis: 55%;
 	}
 
-	.graphic-diptych picture {
+	.graphic-diptych-module picture {
 	 	flex: 1;
 	 	
 	 	margin: -6em -4em 0 0;

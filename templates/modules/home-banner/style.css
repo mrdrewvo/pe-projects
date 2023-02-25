@@ -3,7 +3,7 @@ home-mod {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	min-height: 75vh;
+	min-height: 80vh;
 	height: 100%;
 }
 

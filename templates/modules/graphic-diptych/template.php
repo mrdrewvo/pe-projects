@@ -4,7 +4,7 @@
 	$imgLink = $section["imgLink"] ?? "https://peprojects.dev/images/square.jpg";
 ?>
 
-<section class="graphic-diptych <?=$flipped?>">
+<section class="graphic-diptych-module <?=$flipped?>">
 	<inner-column>
 		<picture>
 			<img src='<?=$imgLink?>' alt='$todo'>

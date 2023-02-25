@@ -1,11 +1,7 @@
-<section class="home">
-
+<section class="home-banner-module">
 	<inner-column>
-
 		<home-mod>
-
-			<picture class="drew-home">
-				
+			<picture class="drew-home">				
 				<img src="images/drew-nike.png" alt="">
 			</picture>
 

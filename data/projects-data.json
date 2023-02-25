@@ -1,17 +1,21 @@
 [
 	{
 		"title": "Industry Theme Challenge",
+		"slug": "theme-challenge",
 		"description": "A study in visual stylings for the project management tool industry",
-		"link": "theme-challenge"
+		"directLink": "projects/theme-challenge"
 	},
 	{
 		"title": "DoorDash Custom Copy",
+		"slug": "doordash-copy",
 		"description": "Emulated merchant sign-up page for copy customization trials",
-		"link": "doordash-copy"
+		"directLink": "projects/doordash-copy"
 	},
 	{
 		"title": "Cake Design by Gregory",
+		"slug": "small-business-challenge",
 		"description": "Personal website for sugar flower artist, Gregory. (Hint: look for those hidden links!)",
-		"link": "small-business-challenge"
+		"caseStudyLink": "?",
+		"directLink": "projects/small-business-challenge"
 	}
 ]

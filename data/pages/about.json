@@ -1,10 +1,10 @@
 {
 	"id": "about",
-	"title1": "What's cookin'",
-	"title2": "good lookin'?",
 	"sections": [
 		{
-			"module": "page-header"
+			"module": "page-header",
+			"title1": "What's cookin'",
+			"title2": "good lookin'?"
 		},
 		{
 			"module": "graphic-diptych",

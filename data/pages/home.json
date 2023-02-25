@@ -1,13 +1,17 @@
 {
 	"id": "home",
-	"title1": "Welcome",
-	"title2": "You have made it!",
 	"sections": [
 		{
 			"module": "home-banner"
 		},
 		{
-			"module": "projects-list"
+			"module": "page-subheader",
+			"subtitle": "Featured Projects"
+		},
+		{
+			"module": "list",
+			"listDataFile": "projects",
+			"listComponent": "project-card"
 		}
 	]
 }

@@ -1,0 +1,18 @@
+.page-subheader {
+	padding: calc(2 * var(--space)) 0 var(--space) 0;
+}
+
+.page-subheader h2 {
+	font-weight: 300;
+	font-size: 40px;
+}
+
+/*HOME PAGE*/
+.page-subheader {
+	background-color: var(--primaryColor1);
+}
+
+.page-subheader h2 {
+	color: var(--tan);
+	border-bottom: 1px solid var(--tan);
+}
