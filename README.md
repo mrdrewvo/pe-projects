@@ -14,5 +14,5 @@
 ## Complete
 [x] add developer.css
 [X] Project List
-	[X]module refactoring (style)
+	[X] module refactoring (style)
 	[X] buttons to case study and direct link

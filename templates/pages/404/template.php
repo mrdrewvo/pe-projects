@@ -1,4 +1,4 @@
-<section class="error-404">
+<section class="error-404-page">
 	<inner-column>
 
 		<h1 class='loud-voice'>404 Error</h1>

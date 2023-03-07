@@ -46,7 +46,7 @@ function pageTemplateClass($pageData) {
 
 function styleGuideDetailLink($type, $page) {
 	if ($page == "style-guide") {
-		$link = "/layouts/$type";
+		$link = "templates/modules/$type";
 		echo "<a href='$link' target='$type'>LINK</a>";
 	}
 }

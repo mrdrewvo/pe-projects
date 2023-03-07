@@ -1,35 +1,30 @@
 <?php $json = file_get_contents("data/style-guide-data.json"); ?>
 <?php $styleGuideData = json_decode($json, true); ?>
 
-<main class="page-section site-main">
-	
-	<section class="index-page"> 
+<section class="style-guide-page"> 
 
-		<inner-column>
+	<inner-column>
 
-			<style-guide-mod>
+		<style-guide-mod>
 
-				<h2>Style Guide</h2>
+			<h2>Style Guide</h2>
 
-				<h2>Guiding Questions</h2>
+			<h2>Guiding Questions</h2>
 
-				<ul>
+			<ul>
 
-					<?php foreach($styleGuideData["Style Guide Vision"] as $styleGuidePoint) { ?>
+				<?php foreach($styleGuideData["Style Guide Vision"] as $styleGuidePoint) { ?>
 
-						<li>
+					<li>
 
-							<h3><?=$styleGuidePoint["question"]?></h3>
+						<h3><?=$styleGuidePoint["question"]?></h3>
 
-							<p><?=$styleGuidePoint["answer"]?></p>
-						</li>
+						<p><?=$styleGuidePoint["answer"]?></p>
+					</li>
 
-					<?php }?>
-				
-				</ul>
-			</style-guide-mod>
-		</inner-column>
-	</section>
-</main>
-
-<?php //include("footer.php"); ?>
+				<?php }?>
+			
+			</ul>
+		</style-guide-mod>
+	</inner-column>
+</section>
