@@ -6,6 +6,9 @@
 
 ---
 
+## TUE 2023.03.07
+* damn, that's a long list of pre-determined document object elements
+
 ## MON 2023.03.06
 ### Lesson Notes
 * was nice trying to backtrack like in terminal and it worked!
