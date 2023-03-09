@@ -6,16 +6,18 @@
 
 <section class="graphic-diptych-module <?=$flipped?>">
 	<inner-column>
-		<picture>
-			<img src='<?=$imgLink?>' alt='$todo'>
-		</picture>
-		
-		<div class='content'>
-			<h2 class='attention-voice'><?=$heading?></h2>
+		<graphic-diptych>
+			<picture>
+				<img src='<?=$imgLink?>' alt='$todo'>
+			</picture>
 			
-			<?php foreach($section["content"] as $content) { ?>
-				<p><?=$content?></p>
-			<?php } ?>
-		</div>
+			<div class='content'>
+				<h2 class='attention-voice'><?=$heading?></h2>
+				
+				<?php foreach($section["content"] as $content) { ?>
+					<p><?=$content?></p>
+				<?php } ?>
+			</div>
+		</graphic-diptych>
 	</inner-column>
 </section>
