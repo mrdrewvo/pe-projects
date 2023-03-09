@@ -7,7 +7,9 @@
 		<footer-mod>
 			<nav class="site-menu">
 				<?php foreach($siteMenuData as $siteMenuLink) { ?>
-					<a href="?page=<?=$siteMenuLink['slug']?>" <?php isActivePage($siteMenuLink['slug']); ?>><?=$siteMenuLink['linkName']?></a>
+					<?php if ($siteMenuLink['hidden'] == "false") { ?>
+						<a href="?page=<?=$siteMenuLink['slug']?>" <?php isActivePage($siteMenuLink['slug']); ?>><?=$siteMenuLink['linkName']?></a>
+					<?php } ?>
 				<?php } ?>
 			</nav>
 				

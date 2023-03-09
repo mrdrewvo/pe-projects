@@ -2,31 +2,37 @@
 	{
 		"linkName": "Home",
 		"slug": "home",
-		"headerLink": "false"
+		"headerLink": "false",
+		"hidden": "false"
 	},
 	{
 		"linkName": "About me",
 		"slug": "about",
-		"headerLink": "true"
+		"headerLink": "true",
+		"hidden": "false"
 	},
 	{
 		"linkName": "Projects",
 		"slug": "projects",
-		"headerLink": "true"
+		"headerLink": "true",
+		"hidden": "false"
 	},
 	{
 		"linkName": "Goals",
 		"slug": "goals",
-		"headerLink": "false"
+		"headerLink": "false",
+		"hidden": "true"
 	},
 	{
 		"linkName": "Resume",
 		"slug": "resume",
-		"headerLink": "false"
+		"headerLink": "false",
+		"hidden": "true"
 	},
 	{
 		"linkName": "Style Guide",
 		"slug": "style-guide",
-		"headerLink": "false"
+		"headerLink": "false",
+		"hidden": "true"
 	}
 ]
