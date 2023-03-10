@@ -1,0 +1,83 @@
+# JavaScript Practice in Exercises for Programmers
+
+## Challenge 1 - Saying Hello
+
+### Pseudocode
+
+Initialize name
+Initialize greetingMessage
+
+Prompt for name with "What is your name?"
+
+Concatentate name into greetingMessage "Hello name, nice to meet you!"
+
+Display updated greetingMessage that includes name
+
+
+## Challenge 2 - Counting the Number of Characters
+
+### Pseudocode
+
+Initialize inputString
+Initialize charCount
+
+Prompt for inputString with "What is the input string?"
+
+Count characters for inputString using built-in function
+
+Display message with inputString and charCount - "inputString has charCount characters."
+
+
+## Challenge 3 - Printing Quotes
+
+### Inputs
+quoteString
+authorName
+
+### Outputs
+finalMessage
+
+### Pseudocode
+Prompt for quoteString with "What is the quote?"
+Prompt for authorName with "Who said it?"
+
+Contatenate finalMessage with "authorName says, "quoteString."" (using escape characters)
+
+Display finalMessage
+
+
+## Challenge 4 - Mad Lib
+
+### Inputs
+inputNoun
+inputVerb
+inputAdverb
+inputAdjective
+
+### Outputs
+finalMessage
+
+### Pseudocode
+Prompt for inputNoun with "Enter a noun:"
+Prompt for inputVerb with "Enter a verb:"
+Prompt for inputAdverb with "Enter a adverb:"
+Prompt for inputAdjective with "Enter a adjective:"
+
+Contatenate finalMessage with "Do you inputVerb your inputAdjective inputNoun inputAdjective? That's hilarious!"
+
+Display finalMessage
+
+
+## Challenge 5 - Simple Math
+
+### Inputs
+
+
+### Outputs
+
+
+### Pseudocode
+
+
+
+
