@@ -1094,7 +1094,7 @@ body .markdown-body
 <hr />
 <h2 id="challenge-2-counting-the-number-of-characters">Challenge 2 - Counting the Number of Characters<a class="headerlink" href="#challenge-2-counting-the-number-of-characters" title="Permanent link"></a></h2>
 <h3 id="goal_1">Goal<a class="headerlink" href="#goal_1" title="Permanent link"></a></h3>
-<p>Create a program that prompts for an input string and dis- plays output that shows the input string and the number of characters the string contain</p>
+<p>Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contain</p>
 <h3 id="inputs_1">Inputs<a class="headerlink" href="#inputs_1" title="Permanent link"></a></h3>
 <p>inputString</p>
 <h3 id="outputs_1">Outputs<a class="headerlink" href="#outputs_1" title="Permanent link"></a></h3>
@@ -1103,6 +1103,19 @@ body .markdown-body
 <p>Prompt for inputString with &ldquo;What is the input string?&rdquo;</p>
 <p>Count characters for inputString using built-in function</p>
 <p>Display message with inputString and charCount - &ldquo;inputString has charCount characters.&rdquo;</p>
+<h3 id="js_1">JS<a class="headerlink" href="#js_1" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function stringCharCount() {
+    var inputString = prompt(&quot;What is the input string?&quot;);
+    if(inputString) {
+        var charCount = inputString.length;
+        alert(inputString + &quot; has &quot; + charCount + &quot; characters.&quot;);
+    } else {
+        alert(&quot;String, please!&quot;);
+        stringCharCount();
+    }
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-3-printing-quotes">Challenge 3 - Printing Quotes<a class="headerlink" href="#challenge-3-printing-quotes" title="Permanent link"></a></h2>
 <h3 id="goal_2">Goal<a class="headerlink" href="#goal_2" title="Permanent link"></a></h3>
@@ -1117,6 +1130,28 @@ authorName</p>
 Prompt for authorName with &ldquo;Who said it?&rdquo;</p>
 <p>Contatenate finalMessage with &ldquo;authorName says, &ldquo;quoteString.&rdquo;&rdquo; (using escape characters)</p>
 <p>Display finalMessage</p>
+<h3 id="js_2">JS<a class="headerlink" href="#js_2" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function quoteAuthor(quoteString) {
+    var authorName = prompt(&quot;Who said it?&quot;);
+    if (authorName) {
+        var finalMessage = authorName + &#39; says, \&quot;&#39; + quoteString + &#39;.\&quot;&#39;;
+        alert (finalMessage);    
+    } else {
+        alert(&quot;Sorry I didn&#39;t catch that. If the author is unknown, write just that or \&quot;annonymous!\&quot;&quot;);
+        quoteAuthor(quoteString);
+    }
+}
+function printingQuotes() {
+    var quoteString = prompt(&quot;What is the quote?&quot;);
+    if (quoteString) {
+        quoteAuthor(quoteString);
+    } else {
+        alert(&quot;Quotes require words! Please input the quote.&quot;);
+        printingQuotes();
+    }
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-4-mad-lib">Challenge 4 - Mad Lib<a class="headerlink" href="#challenge-4-mad-lib" title="Permanent link"></a></h2>
 <h3 id="goal_3">Goal<a class="headerlink" href="#goal_3" title="Permanent link"></a></h3>
@@ -1127,14 +1162,23 @@ inputVerb
 inputAdverb
 inputAdjective</p>
 <h3 id="outputs_3">Outputs<a class="headerlink" href="#outputs_3" title="Permanent link"></a></h3>
-<p>finalMessage</p>
+<p>a final message (only a single output statement, so not splitting up with concatenating variable then display)</p>
 <h3 id="pseudocode_3">Pseudocode<a class="headerlink" href="#pseudocode_3" title="Permanent link"></a></h3>
 <p>Prompt for inputNoun with &ldquo;Enter a noun:&rdquo;
 Prompt for inputVerb with &ldquo;Enter a verb:&rdquo;
 Prompt for inputAdverb with &ldquo;Enter a adverb:&rdquo;
 Prompt for inputAdjective with &ldquo;Enter a adjective:&rdquo;</p>
-<p>Contatenate finalMessage with &ldquo;Do you inputVerb your inputAdjective inputNoun inputAdjective? That&rsquo;s hilarious!&rdquo;</p>
-<p>Display finalMessage</p>
+<p>display final message with &ldquo;Do you inputVerb your inputAdjective inputNoun inputAdjective? That&rsquo;s hilarious!&rdquo;</p>
+<h3 id="js_3">JS<a class="headerlink" href="#js_3" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function madLib() {
+    var inputNoun = prompt(&quot;Enter a noun:&quot;);
+    var inputVerb = prompt(&quot;Enter a verb:&quot;);
+    var inputAdjective = prompt(&quot;Enter an adjective:&quot;);
+    var inputAdverb = prompt(&quot;Enter an adverb:&quot;);
+    alert(`Do you ${inputVerb} your ${inputAdjective} ${inputNoun} ${inputAdverb}? That&#39;s hilarious!`);
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-5-simple-math">Challenge 5 - Simple Math<a class="headerlink" href="#challenge-5-simple-math" title="Permanent link"></a></h2>
 <h3 id="goal_4">Goal<a class="headerlink" href="#goal_4" title="Permanent link"></a></h3>

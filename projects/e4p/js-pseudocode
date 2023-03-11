@@ -38,7 +38,7 @@ function sayingHello() {
 ## Challenge 2 - Counting the Number of Characters
 
 ### Goal
-Create a program that prompts for an input string and dis- plays output that shows the input string and the number of characters the string contain
+Create a program that prompts for an input string and displays output that shows the input string and the number of characters the string contain
 
 ### Inputs
 inputString
@@ -52,6 +52,20 @@ Prompt for inputString with "What is the input string?"
 Count characters for inputString using built-in function
 
 Display message with inputString and charCount - "inputString has charCount characters."
+
+### JS
+```
+function stringCharCount() {
+    var inputString = prompt("What is the input string?");
+    if(inputString) {
+        var charCount = inputString.length;
+        alert(inputString + " has " + charCount + " characters.");
+    } else {
+        alert("String, please!");
+        stringCharCount();
+    }
+}
+```
 
 
 ***
@@ -76,6 +90,28 @@ Contatenate finalMessage with "authorName says, "quoteString."" (using escape ch
 
 Display finalMessage
 
+### JS
+```
+function quoteAuthor(quoteString) {
+    var authorName = prompt("Who said it?");
+    if (authorName) {
+        var finalMessage = authorName + ' says, \"' + quoteString + '.\"';
+        alert (finalMessage);    
+    } else {
+        alert("Sorry I didn't catch that. If the author is unknown, write just that or \"annonymous!\"");
+        quoteAuthor(quoteString);
+    }
+}
+function printingQuotes() {
+    var quoteString = prompt("What is the quote?");
+    if (quoteString) {
+        quoteAuthor(quoteString);
+    } else {
+        alert("Quotes require words! Please input the quote.");
+        printingQuotes();
+    }
+}
+```
 
 ***
 
@@ -91,7 +127,7 @@ inputAdverb
 inputAdjective
 
 ### Outputs
-finalMessage
+a final message (only a single output statement, so not splitting up with concatenating variable then display)
 
 ### Pseudocode
 Prompt for inputNoun with "Enter a noun:"
@@ -99,9 +135,18 @@ Prompt for inputVerb with "Enter a verb:"
 Prompt for inputAdverb with "Enter a adverb:"
 Prompt for inputAdjective with "Enter a adjective:"
 
-Contatenate finalMessage with "Do you inputVerb your inputAdjective inputNoun inputAdjective? That's hilarious!"
+display final message with "Do you inputVerb your inputAdjective inputNoun inputAdjective? That's hilarious!"
 
-Display finalMessage
+### JS
+```
+function madLib() {
+    var inputNoun = prompt("Enter a noun:");
+    var inputVerb = prompt("Enter a verb:");
+    var inputAdjective = prompt("Enter an adjective:");
+    var inputAdverb = prompt("Enter an adverb:");
+    alert(`Do you ${inputVerb} your ${inputAdjective} ${inputNoun} ${inputAdverb}? That's hilarious!`);
+}
+```
 
 
 ***
