@@ -1077,6 +1077,20 @@ body .markdown-body
 <p>Prompt for name with &ldquo;What is your name?&rdquo;</p>
 <p>Concatentate name into greetingMessage &ldquo;Hello name, nice to meet you!&rdquo;</p>
 <p>Display updated greetingMessage that includes name</p>
+<h3 id="js">JS<a class="headerlink" href="#js" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function sayingHello() {
+    var name = prompt(&quot;What is your name?&quot;);
+
+    if(name) {
+        var greetingMessage = &quot;Hello &quot; + name + &quot;, nice to meet you!&quot;;
+        alert(greetingMessage);
+    } else {
+        alert(&quot;I&#39;m sorry? I didn&#39;t get your name.&quot;);
+        sayingHello();
+    }
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-2-counting-the-number-of-characters">Challenge 2 - Counting the Number of Characters<a class="headerlink" href="#challenge-2-counting-the-number-of-characters" title="Permanent link"></a></h2>
 <h3 id="goal_1">Goal<a class="headerlink" href="#goal_1" title="Permanent link"></a></h3>

@@ -18,6 +18,20 @@ Concatentate name into greetingMessage "Hello name, nice to meet you!"
 
 Display updated greetingMessage that includes name
 
+### JS
+```
+function sayingHello() {
+    var name = prompt("What is your name?");
+
+    if(name) {
+        var greetingMessage = "Hello " + name + ", nice to meet you!";
+        alert(greetingMessage);
+    } else {
+        alert("I'm sorry? I didn't get your name.");
+        sayingHello();
+    }
+}
+```
 
 ***
 
