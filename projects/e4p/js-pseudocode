@@ -2,11 +2,16 @@
 
 ## Challenge 1 - Saying Hello
 
+### Goal
+Create a program that prompts for your name and prints a greeting using your name
+
+### Inputs
+name
+
+### Outputs
+greetingMessage
+
 ### Pseudocode
-
-Initialize name
-Initialize greetingMessage
-
 Prompt for name with "What is your name?"
 
 Concatentate name into greetingMessage "Hello name, nice to meet you!"
@@ -14,13 +19,20 @@ Concatentate name into greetingMessage "Hello name, nice to meet you!"
 Display updated greetingMessage that includes name
 
 
+***
+
 ## Challenge 2 - Counting the Number of Characters
 
+### Goal
+Create a program that prompts for an input string and dis- plays output that shows the input string and the number of characters the string contain
+
+### Inputs
+inputString
+
+### Outputs
+charCount
+
 ### Pseudocode
-
-Initialize inputString
-Initialize charCount
-
 Prompt for inputString with "What is the input string?"
 
 Count characters for inputString using built-in function
@@ -28,7 +40,12 @@ Count characters for inputString using built-in function
 Display message with inputString and charCount - "inputString has charCount characters."
 
 
+***
+
 ## Challenge 3 - Printing Quotes
+
+### Goal
+Create a program that prompts for a quote and an author. Display the quotation and author as shown in the example output
 
 ### Inputs
 quoteString
@@ -46,7 +63,12 @@ Contatenate finalMessage with "authorName says, "quoteString."" (using escape ch
 Display finalMessage
 
 
+***
+
 ## Challenge 4 - Mad Lib
+
+### Goal
+Create a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective and injects those into a story that you create
 
 ### Inputs
 inputNoun
@@ -68,15 +90,227 @@ Contatenate finalMessage with "Do you inputVerb your inputAdjective inputNoun in
 Display finalMessage
 
 
+***
+
 ## Challenge 5 - Simple Math
 
-### Inputs
+### Goal
+Write a program that prompts for two numbers. Print the sum, difference, product, and quotient of those numbers as shown in the example output
 
+### Inputs
+firstNum
+secondNum
 
 ### Outputs
-
+sumEquation
+differenceEquation
+productEquation
+quotientEquation
 
 ### Pseudocode
+Prompt for firstNum with "What is the first number?"
+Prompt for secondNum with "What is the second number?"
+
+Convert firstNum to number format
+Convert secondNum to number format
+
+Concatenate sumEquation with firstNum "+" secondNum "=" (firstNum + secondNum)
+Concatenate differenceEquation with firstNum "-" secondNum "=" (firstNum - secondNum)
+Concatenate productEquation with firstNum "*" secondNum "=" (firstNum * secondNum)
+Concatenate quotientEquation with firstNum "/" secondNum "=" (firstNum / secondNum) and rounding to the nearest hundredth
+
+Display sumEquation, differenceEquation, productEquation, and quotientEquation altogether with line breaks
+
+
+***
+
+## Challenge 6 - Retirement Calculator
+
+### Goal
+Create a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output as shown in the example that follows
+
+### Inputs
+currentAge
+retireAgeGoal
+
+### Outputs
+yearsLeft
+retireYear
+finalMessage
+
+### Pseudocode
+Prompt for currentAge with "What is your current age?"
+Prompt for retireAgeGoal with "At what age would you like to retire?"
+
+Convert currentAge to number format
+convert retireAgeGoal to number format
+
+Calculate yearsLeft with retireAgeGoal - currentAge
+Calculate retireYear with currentYear (built-in function) + yearsLeft
+
+Concatenate finalMessage with "You have yearsLeft years left until you can retire. It's currentYear, so you can retire in retireYear." with line break between sentences.
+
+Display finalmessage
+
+
+***
+
+## Challenge 7 - Area of a Rectangular Room
+
+### Goal
+Create a program that calculates the area of a room. Prompt the user for the length and width of the room in feet. Then display the area in both square feet and square meters
+
+### Inputs
+roomLength
+roomWidth
+
+### Assumptions
+conversionConstant = 0.09290304
+
+### Outputs
+areaSqft
+areaSqm
+confirmationMessage
+finalMessage
+
+### Pseudocode
+Prompt for roomLength in feet with "What is the length of the room in feet?"
+Prompt for roomWidth in feet with "What is the width of the room in feet?"
+
+Declare conversionConstant
+
+Convert roomLength to number format
+convert roomWidth to number format
+
+Calculate areaSqft with roomLength * roomWidth
+Calculate areaSqm with areaSqft * conversionConstant and round to 3 decimal places
+
+Concatenate confirmationMessage with "You entered dimensions of roomLength feet by roomWidth feet."
+Concatenate finalMessage with "The area is (line break) areaSqft square feet (line break) areaSqm square meters"
+
+Display confirmationMessage
+Display finalMessage
+
+
+***
+
+## Challenge 8 - Pizza Party
+
+### Goal
+Write a program to evenly divide pizzas. Prompt for the number of people, the number of pizzas, and the number of slices per pizza. Ensure that the number of pieces comes out even. Display the number of pieces of pizza each person should get. If there are leftovers, show the number of leftover pieces
+
+### Inputs
+countPeople
+countPizzas
+
+### Assumptions
+slicesPerPizza = 12?
+
+### Outputs
+slicesPerPerson
+slicesLeftover
+confirmationMessage
+finalMessage
+
+### Pseudocode
+Prompt for countPeople with "How many people?"
+Prompt for countPizzas with "How many pizzas do you have?"
+
+Declare slicesPerPizza
+
+Convert countPeople to number format
+convert countPizzas to number format
+
+Calculate totalSlices with countPizzas * slicesPerPizza
+Calculate slicesPerPerson with totalSlices / countPeople, rounded down
+Calculate slicesLeftover with totalSlices - (countPeople * slicesPerPerson)
+
+Concatenate confirmationMessage with "countPeople people with countPizzas pizzas"
+Concatenate finalMessage with "Each person gets slicesPerPerson slices of pizza. (line break) There are slicesLeftover leftover pieces."
+
+Display confirmationMessage
+Display finalMessage
+
+
+***
+
+## Challenge 9 - Paint Calculator
+
+### Goal
+Calculate gallons of paint needed to paint the ceiling of a room. Prompt for the length and width, and assume one gallon covers 350 square feet. Display the number of gallons needed to paint the ceiling as a whole number
+
+### Inputs
+ceilingLength
+ceilingWidth
+
+### Assumptions
+gallonCoverage = 350 (1 gallon of paint covers 350 sq ft)
+
+### Outputs
+paintGallons
+finalMessage
+
+### Pseudocode
+Prompt for ceilingLength with "What is the room length (in feet)?"
+Prompt for ceilingWidth with "What is the room length (in feet)?"
+
+Convert ceilingLength to number format
+convert ceilingWidth to number format
+
+Calculate ceilingArea with ceilingLength * ceilingWidth
+Calculate paintGallons with ceilingArea / gallonCoverage, rounding up to the nearest whole number
+
+Concatenate finalMessage with "You will need to purchase pantGallons gallons of paint to cover ceilingArea square feet."
+
+Display finalMessage
+
+
+***
+
+## Challenge 10 - Self-Checkout
+
+### Goal
+Create a simple self-checkout system. Prompt for the prices and quantities of three items. Calculate the subtotal of the items. Then calculate the tax using a tax rate of 5.5%. Print out the line items with the quantity and total, and then print out the subtotal, tax amount, and total
+
+### Inputs
+price1
+quantity1
+price2
+quantity2
+price3
+quantity3
+
+### Assumptions
+taxRate = 0.0055
+
+### Outputs
+subTotal
+tax
+finalTotal
+finalMessage
+
+### Pseudocode
+Prompt for price1 with "Enter the price of item 1:"
+Prompt for quantity1 with "Enter the quantity of item 1:"
+Prompt for price2 with "Enter the price of item 1:"
+Prompt for quantity2 with "Enter the quantity of item 1:"
+Prompt for price3 with "Enter the price of item 1:"
+Prompt for quantity3 with "Enter the quantity of item 1:"
+
+Convert all values to number format
+
+Calculate subTotal with "(price1 * quantity1) +
+(price2 * quantity2) + (price3 * quantity3)
+Calculate tax with subTotal * taxRate
+Calculate finalTotal with subTotal + tax
+
+Format subTotalPretty, taxPretty, and finalTotalPretty by adding $ and rounding to 2 decimal places
+
+Concatenate finalMessage with "Subtotal: subTotalPretty (line break) Tax: taxPretty (line break) Total: finalTotalPretty"
+
+Display finalMessage
+
+
 
 
 
