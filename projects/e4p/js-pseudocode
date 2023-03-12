@@ -1,5 +1,19 @@
 # JavaScript Practice in Exercises for Programmers
 
+***
+
+#### Table of Contents
+1. [Saying Hello](#challenge-1-saying-hello)
+2. [Counting the Number of Characters](#challenge-2-counting-the-number-of-characters)
+3. [Printing Quotes](#challenge-3-printing-quotes)
+4. [Mad Lib](#challenge-4-mad-lib)
+5. [Simple Math](#challenge-5-simple-math)
+6. [Retirement Calculator](#challenge-6-retirement-calculator)
+7. [Area of Rectangular Room](#challenge-7-area-of-a-rectangular-room)
+8. [Pizza Party](#challenge-8-pizza-party)
+9. [Paint Calculator](#challenge-9-paint-calculator)
+10. [Self-Checkout](#challenge-10-self-checkout)
+
 ## Challenge 1 - Saying Hello
 
 ### Goal
@@ -180,13 +194,57 @@ Concatenate quotientEquation with firstNum "/" secondNum "=" (firstNum / secondN
 
 Display sumEquation, differenceEquation, productEquation, and quotientEquation altogether with line breaks
 
+### JS
+```
+function num1Input () {
+    var num1 = prompt("What is the first number? (default: 0)");
+
+    if (!isNaN(num1)) {
+        num1 = Number(num1);
+        return num1;
+    } else {
+        alert("I need a first number, please!");
+        num1Input();
+    }
+}
+
+function num2Input () {
+    var num2 = prompt("What is the second number? (default: 0)");
+
+    if (!isNaN(num2)) {
+        num2 = Number(num2);
+        return num2;
+    } else {
+        alert("I need a second number, please!");
+        num2Input();
+    }
+}
+
+function simpleMath() {
+    var num1 = num1Input();
+    var num2 = num2Input();
+
+    numSum = parseFloat(num1 + num2).toFixed(2);
+    numDifference = parseFloat(num1 - num2).toFixed(2);
+    numProduct = parseFloat(num1 * num2).toFixed(2);
+    numQuotient = parseFloat(num1 / num2).toFixed(2);
+
+    var sumEquation = `${num1} + ${num2} = ${numSum}`;
+    var differenceEquation = `${num1} - ${num2} = ${numDifference}`;
+    var productEquation = `${num1} * ${num2} = ${numProduct}`;
+    var quotientEquation = `${num1} / ${num2} = ${numQuotient}`;
+
+    alert(`${sumEquation} \n ${differenceEquation} \n ${productEquation} \n ${quotientEquation}`);
+}
+```
+
 
 ***
 
 ## Challenge 6 - Retirement Calculator
 
 ### Goal
-Create a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output as shown in the example that follows
+Create a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output
 
 ### Inputs
 currentAge
@@ -210,6 +268,45 @@ Calculate retireYear with currentYear (built-in function) + yearsLeft
 Concatenate finalMessage with "You have yearsLeft years left until you can retire. It's currentYear, so you can retire in retireYear." with line break between sentences.
 
 Display finalmessage
+
+### JS
+```
+function inputCurrentAge () {
+    var currentAge = prompt("What is your current age?");
+
+    if (!isNaN(currentAge) && (currentAge != "")) {
+        currentAge = Number(currentAge);
+        return currentAge;
+    } else {
+        alert("Don't be shy! I won't tell!");
+        inputCurrentAge();
+    }
+}
+
+function inputRetireAgeGoal () {
+    var retireAgeGoal = prompt("At what age would you like to retire?");
+
+    if (!isNaN(retireAgeGoal) && (retireAgeGoal != "")) {
+        retireAgeGoal = Number(retireAgeGoal);
+        return retireAgeGoal;
+    } else {
+        alert("I didn't catch that!");
+        inputRetireAgeGoal();
+    }
+}
+
+function retirementCalculator() {
+    var currentAge = inputCurrentAge();
+    var retireAgeGoal = inputRetireAgeGoal();
+
+    var yearsLeft = retireAgeGoal - currentAge;
+    var currentYear = Number(new Date().getFullYear());
+    var retireYear = currentYear + yearsLeft;
+    var finalMessage = (`You have ${yearsLeft} years left until you can retire.\nIt's ${currentYear}, so you can retire in ${retireYear}.`);
+
+    alert(finalMessage);
+}
+```
 
 
 ***
@@ -250,6 +347,48 @@ Concatenate finalMessage with "The area is (line break) areaSqft square feet (li
 Display confirmationMessage
 Display finalMessage
 
+### JS
+```
+function inputRoomLength () {
+    var roomLength = prompt("What is the length of the room in feet?");
+
+    if (!isNaN(roomLength) && (roomLength != "")) {
+        roomLength = Number(roomLength);
+        return roomLength;
+    } else {
+        alert("Submission invalid. Please try again! *beep boop*");
+        inputRoomLength();
+    }
+}
+
+function inputRoomWidth () {
+    var roomWidth = prompt("What is the width of the room in feet?");
+
+    if (!isNaN(roomWidth) && (roomWidth != "")) {
+        roomWidth = Number(roomWidth);
+        return roomWidth;
+    } else {
+        alert("Submission invalid. Please try again! *beep boop*");
+        inputRoomWidth();
+    }
+}
+
+function areaOfRectangularRoom() {
+    var roomLength = inputRoomLength();
+    var roomWidth = inputRoomWidth();
+
+    var conversionConstant = 0.09290304;
+
+    var areaSqft = roomLength * roomWidth;
+	var areaSqm = parseFloat(areaSqft * conversionConstant).toFixed(3);
+
+	var confirmationMessage = (`You entered dimensions of ${roomLength} feet by ${roomWidth} feet.`);
+
+	var finalMessage = (`The area is\n${areaSqft} square feet\n${areaSqm} square meters`);
+
+	alert(`${confirmationMessage}\n${finalMessage}`);
+}
+```
 
 ***
 

@@ -1066,6 +1066,20 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>js-pseudocode</title></head><body><article class="markdown-body"><h1 id="javascript-practice-in-exercises-for-programmers">JavaScript Practice in Exercises for Programmers<a class="headerlink" href="#javascript-practice-in-exercises-for-programmers" title="Permanent link"></a></h1>
+<hr />
+<h4 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link"></a></h4>
+<ol>
+<li><a href="#challenge-1-saying-hello">Saying Hello</a></li>
+<li><a href="#challenge-2-counting-the-number-of-characters">Counting the Number of Characters</a></li>
+<li><a href="#challenge-3-printing-quotes">Printing Quotes</a></li>
+<li><a href="#challenge-4-mad-lib">Mad Lib</a></li>
+<li><a href="#challenge-5-simple-math">Simple Math</a></li>
+<li><a href="#challenge-6-retirement-calculator">Retirement Calculator</a></li>
+<li><a href="#challenge-7-area-of-a-rectangular-room">Area of Rectangular Room</a></li>
+<li><a href="#challenge-8-pizza-party">Pizza Party</a></li>
+<li><a href="#challenge-9-paint-calculator">Paint Calculator</a></li>
+<li><a href="#challenge-10-self-checkout">Self-Checkout</a></li>
+</ol>
 <h2 id="challenge-1-saying-hello">Challenge 1 - Saying Hello<a class="headerlink" href="#challenge-1-saying-hello" title="Permanent link"></a></h2>
 <h3 id="goal">Goal<a class="headerlink" href="#goal" title="Permanent link"></a></h3>
 <p>Create a program that prompts for your name and prints a greeting using your name</p>
@@ -1201,10 +1215,53 @@ Concatenate differenceEquation with firstNum &ldquo;-&rdquo; secondNum &ldquo;=&
 Concatenate productEquation with firstNum &ldquo;*&rdquo; secondNum &ldquo;=&rdquo; (firstNum * secondNum)
 Concatenate quotientEquation with firstNum &ldquo;/&rdquo; secondNum &ldquo;=&rdquo; (firstNum / secondNum) and rounding to the nearest hundredth</p>
 <p>Display sumEquation, differenceEquation, productEquation, and quotientEquation altogether with line breaks</p>
+<h3 id="js_4">JS<a class="headerlink" href="#js_4" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function num1Input () {
+    var num1 = prompt(&quot;What is the first number? (default: 0)&quot;);
+
+    if (!isNaN(num1)) {
+        num1 = Number(num1);
+        return num1;
+    } else {
+        alert(&quot;I need a first number, please!&quot;);
+        num1Input();
+    }
+}
+
+function num2Input () {
+    var num2 = prompt(&quot;What is the second number? (default: 0)&quot;);
+
+    if (!isNaN(num2)) {
+        num2 = Number(num2);
+        return num2;
+    } else {
+        alert(&quot;I need a second number, please!&quot;);
+        num2Input();
+    }
+}
+
+function simpleMath() {
+    var num1 = num1Input();
+    var num2 = num2Input();
+
+    numSum = parseFloat(num1 + num2).toFixed(2);
+    numDifference = parseFloat(num1 - num2).toFixed(2);
+    numProduct = parseFloat(num1 * num2).toFixed(2);
+    numQuotient = parseFloat(num1 / num2).toFixed(2);
+
+    var sumEquation = `${num1} + ${num2} = ${numSum}`;
+    var differenceEquation = `${num1} - ${num2} = ${numDifference}`;
+    var productEquation = `${num1} * ${num2} = ${numProduct}`;
+    var quotientEquation = `${num1} / ${num2} = ${numQuotient}`;
+
+    alert(`${sumEquation} \n ${differenceEquation} \n ${productEquation} \n ${quotientEquation}`);
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-6-retirement-calculator">Challenge 6 - Retirement Calculator<a class="headerlink" href="#challenge-6-retirement-calculator" title="Permanent link"></a></h2>
 <h3 id="goal_5">Goal<a class="headerlink" href="#goal_5" title="Permanent link"></a></h3>
-<p>Create a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output as shown in the example that follows</p>
+<p>Create a program that determines how many years you have left until retirement and the year you can retire. It should prompt for your current age and the age you want to retire and display the output</p>
 <h3 id="inputs_5">Inputs<a class="headerlink" href="#inputs_5" title="Permanent link"></a></h3>
 <p>currentAge
 retireAgeGoal</p>
@@ -1221,6 +1278,44 @@ convert retireAgeGoal to number format</p>
 Calculate retireYear with currentYear (built-in function) + yearsLeft</p>
 <p>Concatenate finalMessage with &ldquo;You have yearsLeft years left until you can retire. It&rsquo;s currentYear, so you can retire in retireYear.&rdquo; with line break between sentences.</p>
 <p>Display finalmessage</p>
+<h3 id="js_5">JS<a class="headerlink" href="#js_5" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function inputCurrentAge () {
+    var currentAge = prompt(&quot;What is your current age?&quot;);
+
+    if (!isNaN(currentAge) &amp;&amp; (currentAge != &quot;&quot;)) {
+        currentAge = Number(currentAge);
+        return currentAge;
+    } else {
+        alert(&quot;Don&#39;t be shy! I won&#39;t tell!&quot;);
+        inputCurrentAge();
+    }
+}
+
+function inputRetireAgeGoal () {
+    var retireAgeGoal = prompt(&quot;At what age would you like to retire?&quot;);
+
+    if (!isNaN(retireAgeGoal) &amp;&amp; (retireAgeGoal != &quot;&quot;)) {
+        retireAgeGoal = Number(retireAgeGoal);
+        return retireAgeGoal;
+    } else {
+        alert(&quot;I didn&#39;t catch that!&quot;);
+        inputRetireAgeGoal();
+    }
+}
+
+function retirementCalculator() {
+    var currentAge = inputCurrentAge();
+    var retireAgeGoal = inputRetireAgeGoal();
+
+    var yearsLeft = retireAgeGoal - currentAge;
+    var currentYear = Number(new Date().getFullYear());
+    var retireYear = currentYear + yearsLeft;
+    var finalMessage = (`You have ${yearsLeft} years left until you can retire.\nIt&#39;s ${currentYear}, so you can retire in ${retireYear}.`);
+
+    alert(finalMessage);
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-7-area-of-a-rectangular-room">Challenge 7 - Area of a Rectangular Room<a class="headerlink" href="#challenge-7-area-of-a-rectangular-room" title="Permanent link"></a></h2>
 <h3 id="goal_6">Goal<a class="headerlink" href="#goal_6" title="Permanent link"></a></h3>
@@ -1247,6 +1342,48 @@ Calculate areaSqm with areaSqft * conversionConstant and round to 3 decimal plac
 Concatenate finalMessage with &ldquo;The area is (line break) areaSqft square feet (line break) areaSqm square meters&rdquo;</p>
 <p>Display confirmationMessage
 Display finalMessage</p>
+<h3 id="js_6">JS<a class="headerlink" href="#js_6" title="Permanent link"></a></h3>
+<div class="highlight"><pre>function inputRoomLength () {
+    var roomLength = prompt(&quot;What is the length of the room in feet?&quot;);
+
+    if (!isNaN(roomLength) &amp;&amp; (roomLength != &quot;&quot;)) {
+        roomLength = Number(roomLength);
+        return roomLength;
+    } else {
+        alert(&quot;Submission invalid. Please try again! *beep boop*&quot;);
+        inputRoomLength();
+    }
+}
+
+function inputRoomWidth () {
+    var roomWidth = prompt(&quot;What is the width of the room in feet?&quot;);
+
+    if (!isNaN(roomWidth) &amp;&amp; (roomWidth != &quot;&quot;)) {
+        roomWidth = Number(roomWidth);
+        return roomWidth;
+    } else {
+        alert(&quot;Submission invalid. Please try again! *beep boop*&quot;);
+        inputRoomWidth();
+    }
+}
+
+function areaOfRectangularRoom() {
+    var roomLength = inputRoomLength();
+    var roomWidth = inputRoomWidth();
+
+    var conversionConstant = 0.09290304;
+
+    var areaSqft = roomLength * roomWidth;
+    var areaSqm = parseFloat(areaSqft * conversionConstant).toFixed(3);
+
+    var confirmationMessage = (`You entered dimensions of ${roomLength} feet by ${roomWidth} feet.`);
+
+    var finalMessage = (`The area is\n${areaSqft} square feet\n${areaSqm} square meters`);
+
+    alert(`${confirmationMessage}\n${finalMessage}`);
+}
+</pre></div>
+
 <hr />
 <h2 id="challenge-8-pizza-party">Challenge 8 - Pizza Party<a class="headerlink" href="#challenge-8-pizza-party" title="Permanent link"></a></h2>
 <h3 id="goal_7">Goal<a class="headerlink" href="#goal_7" title="Permanent link"></a></h3>
