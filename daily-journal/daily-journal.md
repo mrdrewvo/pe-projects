@@ -6,6 +6,9 @@
 
 ---
 
+## WED 2023.03.12
+* going to meet with Derek tomorrow to see why my JS e4p exercises stopped returning values
+
 ## TUE 2023.03.07
 * damn, that's a long list of pre-determined document object elements
 
