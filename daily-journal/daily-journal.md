@@ -6,6 +6,10 @@
 
 ---
 
+## FRI 2023.03.17
+* trying the E4P stuff with JS lesson finally...
+* I truly have ADHD. I cannot function or focus. What do I do??
+
 ## WED 2023.03.12
 * going to meet with Derek tomorrow to see why my JS e4p exercises stopped returning values
 
