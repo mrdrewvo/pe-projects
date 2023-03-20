@@ -10,9 +10,9 @@
 
 			<?php 
 
-			$countPeople = 1;
-			$countPizzas = 1;
-			$slicesPerPizza = 8; //assumed
+			$countPeople = null;
+			$countPizzas = null;
+			$slicesPerPizza = null; //assumed
 			?>
 
 			<h2>Pizza Party Calculator</h2>
@@ -21,32 +21,46 @@
 				
 				<p>Let's see how many pieces each person can get if we split evenly. Sharing is caring!</p>	
 				
-				<div class="form-field">
-					
+				<field>
 					<label for="people">How many people in the party?</label>
 					<input
 						type="number"
 						name="people"
 						id="people"
-						value="<?=$countPeople?>"
+						value="1"
 						step="1"
-						min="1"/>	
-				</div>
+						min="1"
+						required/>	
+				</field>
 				
-				<div class="form-field">
-					
+				<field>
 					<label for="pizzas">How many pizzas do you have?</label>
 					<input
 						type="number"
 						name="pizzas"
 						id="pizzas"
-						value="<?=$countPizzas?>"
+						value="1"
 						step="1"
-						min="1"/>	
-				</div>
+						min="1"
+						required/>	
+				</field>
+
+				<field>
+					<label for="slices">How many slices per pizza?</label>
+					<input
+						type="number"
+						name="slices"
+						id="slices"
+						value="8"
+						step="1"
+						min="1"
+						required/>
+				</field>
 				
 				<button type="submit" name="submitted">Pizza Time!</button>
 			</form>
+
+			<output class="message"></output>
 
 			<?php
 
@@ -54,6 +68,7 @@
 
 				$countPeople = $_POST["people"];
 				$countPizzas = $_POST["pizzas"];
+				$slicesPerPizza = $_POST["slices"];
 
 				$totalSlices = $countPizzas * $slicesPerPizza;
 
@@ -100,6 +115,8 @@
 				";
 			}
 			?>
+
+			<script src='my-script.js'></script>
 		</inner-column>
 	</section>
 </main>
