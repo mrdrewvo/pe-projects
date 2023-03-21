@@ -6,6 +6,17 @@
 
 ---
 
+## MON 2023.03.20 - Mockup to Code Sprint
+* Goal: emulate a visual design/layout from Figma
+	* Ensure the CSS design system is powerful and resiliant
+		* Use custom properties
+	* Ensure the architecture is flexible
+		* How does the sytem work?
+		* How many modules are there really? How many are just slightly tweaked versions of the same one?
+			* Which modules use simlar data?
+		* Which tools are the best tools for the job?
+
+
 ## FRI 2023.03.17
 * trying the E4P stuff with JS lesson finally...
 * I truly have ADHD. I cannot function or focus. What do I do??
