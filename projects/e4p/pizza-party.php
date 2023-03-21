@@ -12,7 +12,7 @@
 
 			$countPeople = null;
 			$countPizzas = null;
-			$slicesPerPizza = null; //assumed
+			$slicesPerPizza = null;
 			?>
 
 			<h2>Pizza Party Calculator</h2>
