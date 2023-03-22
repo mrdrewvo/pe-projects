@@ -60,7 +60,7 @@
 				<button type="submit" name="submitted">Pizza Time!</button>
 			</form>
 
-			<output class="message"></output>
+			<output></output>
 
 			<?php
 
