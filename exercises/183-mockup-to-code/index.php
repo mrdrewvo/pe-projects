@@ -31,7 +31,11 @@
 		<?php
 			// PAGE TEMPLATE
 			if ($pageData) { 
-				include('templates/pages/default/template.php');
+				if ( !isset( $pageData["template"] ) ) {
+					include('templates/pages/default/template.php');
+				} else {
+					include("templates/pages/$pageData[template]/template.php");
+				}
 			} else {
 				http_response_code(404);
 				include('templates/pages/404/template.php');
