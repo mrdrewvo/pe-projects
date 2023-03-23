@@ -1,4 +1,5 @@
-@import '../templates/components/LINK/style.css';
+@import '../templates/components/link/style.css';
+@import '../templates/components/language/style.css';
 @import '../templates/components/project-card/style.css';
 
 /* buttons and icons and smaller reusable bits here */
