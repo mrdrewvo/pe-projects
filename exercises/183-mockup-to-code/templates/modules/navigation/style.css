@@ -1,19 +1,20 @@
-header inner-column {
-	max-width: unset;
-	padding: unset;
-}
-
 mast-head {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
 }
 
+mast-head .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 mast-head .logo picture {
-	height: 25px;
-	max-width: 100px;
+	height: 40px;
+	max-width: 125px;
 }
 
 mast-head .language {
@@ -41,35 +42,3 @@ mast-head nav a {
 	text-align: center;
 	padding: 5px;
 }
-
-@media (min-width: 500px) {
-	header inner-column {
-		max-width: var(--standardWidth);
-		padding: 0px 20px;
-	}
-
-	mast-head {
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-end;
-		gap: 10px;
-	}
-
-	mast-head nav {
-		gap: 20px;
-	}
-}
-
-@media (min-width: 1000px) {
-	mast-head nav a {
-		font-size: 20px;
-	}
-}
-
-
-
-
-
-
-
-

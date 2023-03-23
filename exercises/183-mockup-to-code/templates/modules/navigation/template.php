@@ -1,11 +1,11 @@
 <?php
+	$class = $section["class"] ?? "";
 	$logoImg = $section["logoImg"] ?? "https://peprojects.dev/images/landscape.jpg";
-	$siteMenu = $section["siteMenu"] ?? ["Home", "Updates", "Services", "Features", "About Us"];
-	$langImg = $section["langImg"] ?? "https://peprojects.dev/images/square.jpg";
-	$langAbbr = $section["langAbbr"] ?? "EN";
+	$siteMenu = $section["siteMenu"] ?? ["Home", "About Us", "Services", "Contact Us"];
+	$actions = $section["actions"] ?? ["actions" => ["type" => "link", "text" => "Link", "url" => "?", "style" => "dark"]];
 ?>
 
-<header class="page-section site-header">
+<header class="page-section site-header <?=$class?>"">
 	<inner-column>
 		<mast-head>
 			<a href="?" class="logo">
@@ -14,16 +14,21 @@
 
 			<nav class="site-menu">
 				<?php foreach($siteMenu as $siteMenuLink) { ?>
-					<a href="?"><?=$siteMenuLink?></a>
+					<a
+						href="<?=$siteMenuLink["url"]?>"
+						<?php if($siteMenuLink["external"] == true) { ?>
+							target="<?=siteMenuLink["target"]?>"
+						<?php } ?>>
+						<?=$siteMenuLink["text"]?>
+					</a>
 				<?php } ?>
 			</nav>
 
-			<a href="?" class="language">
-				<picture><img src="<?=$langImg?>" alt=""></picture>
-				<p><?=$langAbbr?></p>
-			</a>
-
-			<a href="?" class="button-login"></a>
+			<action-section>
+				<?php foreach($actions as $action) { ?>
+					<?php include("templates/components/$action[type]/template.php");?>
+				<?php } ?>
+			</action-section>
 		</mast-head>
 	</inner-column>
 </header>
