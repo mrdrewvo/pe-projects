@@ -1,6 +1,8 @@
 <!-- LINK DATA FROM TEMPLATE DATA FILE -->
-<?php $text = $action['text']; ?>
-<?php $url = $action["url"]; ?>
-<?php $style = $action["style"]; ?>
+<?php
+	$text = $action['text'];
+	$url = $action["url"];
+	$style = $action["style"];
+?>
 
-<a href="<?=$url?> class="<?=$style?>><?=$text?></a>
+<a href="<?=$url?>" class="<?=$style?>"><?=$text?></a>
