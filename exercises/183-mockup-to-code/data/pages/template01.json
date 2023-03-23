@@ -3,9 +3,34 @@
 	"sections": [
 		{
 			"module": "navigation",
-			"menu": [
+			"class": "light",
+			"siteMenu": [
 				{
-					"text": "home",
+					"text": "Home",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Updates",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Services",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Features",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "About Us",
 					"url": "?",
 					"external": false,
 					"target": ""
@@ -13,20 +38,21 @@
 			],
 			"actions": [
 				{
-					"type": "language-selector"
+					"type": "language",
+					"url": "?",
+					"style": "dark"
 				},
 				{
 					"type": "link",
-					"text": "",
-					"url": "",
-					"style": ""
+					"text": "Login",
+					"url": "?",
+					"style": "dark"
 				}
 			]
 		},
 		{
 			"module": "hero",
-			"title": "Yo I'm a title!",
-			"tagline": "And, I'm a tagline!",
+			"class": "standard",
 			"actions": [
 				{
 					"type": "link",
