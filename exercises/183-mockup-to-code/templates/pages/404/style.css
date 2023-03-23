@@ -1,0 +1,10 @@
+.error-404-page {
+	color: var(--maroon);
+	margin-top: 50px;
+}
+
+.error-404-page inner-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

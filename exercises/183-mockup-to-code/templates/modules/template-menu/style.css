@@ -1,0 +1,20 @@
+template-menu {
+	display: block;
+	padding: 10px;
+}
+
+template-menu inner-column {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav.template-menu {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+template-menu p {
+	line-height: unset;
+}

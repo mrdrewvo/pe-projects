@@ -1,0 +1,55 @@
+{
+	"id": "template01",
+	"sections": [
+		{
+			"module": "navigation",
+			"menu": [
+				{
+					"text": "home",
+					"url": "?",
+					"external": false,
+					"target": ""
+				}
+			],
+			"actions": [
+				{
+					"type": "language-selector"
+				},
+				{
+					"type": "link",
+					"text": "",
+					"url": "",
+					"style": ""
+				}
+			]
+		},
+		{
+			"module": "hero",
+			"title": "Yo I'm a title!",
+			"tagline": "And, I'm a tagline!",
+			"actions": [
+				{
+					"type": "link",
+					"text": "Get Started",
+					"url": "?",
+					"style": "dark"
+				},
+				{
+					"type": "link",
+					"text": "Start free trial",
+					"url": "?",
+					"style": "light"
+				}
+			]
+		},
+		{
+			"module": "center-content1",
+			"logo-picture": "",
+			"section-title": "Rhoncus, accumsan dictum",
+			"title": "Rhoncus, accumsan dictum",
+			"tagline": "Rhoncus, accumsan dictum",
+			"link": "",
+			"media": "video"
+		}
+	]
+}

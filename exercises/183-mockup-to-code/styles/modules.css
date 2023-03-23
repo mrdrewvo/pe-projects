@@ -1,0 +1,13 @@
+/*MODULES*/
+@import '../templates/modules/template-menu/style.css';
+@import '../templates/modules/navigation/style.css';
+
+@import '../templates/modules/navigation/style.css';
+@import '../templates/modules/hero/style.css';
+@import '../templates/modules/footer/style.css';
+
+
+/*PAGES*/
+@import '../templates/pages/404/style.css';
+@import '../templates/pages/default/style.css';
+@import '../templates/pages/style-guide/style.css';

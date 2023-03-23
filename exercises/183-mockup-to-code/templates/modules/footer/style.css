@@ -1,0 +1,38 @@
+footer {
+	background-color: var(--blue);
+	padding: 20px 0px;
+	border-top: 1px solid var(--offwhite);
+}
+
+footer-mod {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+footer :is(p, a) {
+	color: var(--offwhite);
+	font-size: 14px;
+	font-weight: 200;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.site-menu, .contact-menu, {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 50px;
+}
+
+footer-mod p {
+	grid-column: span 2;
+	margin-top: 30px;
+	font-size: .75em;
+}
+
+@media (min-width: 550px) {
+	.site-menu, .contact-menu {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

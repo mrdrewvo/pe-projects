@@ -1,0 +1,100 @@
+[
+	{
+		"heading": "Work Experience",
+		"experiences": [
+			{
+				"company": "Thumbtack",
+				"details": [
+					{
+						"role": "Senior Product Operations Manager",
+						"year": "Feb 2022 - Dec 2022",
+						"description": "what I did and how that bridged the previous jobs into this ont / and prepares me for the next one",
+						"tools": ""
+					}
+				]
+			},
+			{
+				"company": "Verte",
+				"details": [
+					{
+						"role": "Senior Manager, Customer Success",
+						"year": "Aug 2021 - Feb 2022",
+						"description": "description",
+						"tools": ""
+					}
+				]
+			},
+			{
+				"company": "Flexport",
+				"details": [
+					{
+						"role": "Program Manager, Operational Excellence",
+						"year": "Aug 2020 - Aug 2021",
+						"description": "description",
+						"tools": ""
+					},
+					{
+						"role": "Global Operations Manager",
+						"year": "Sep 2019 - Aug 2020",
+						"description": "description",
+						"tools": ""
+					},
+					{
+						"role": "Senior Global Operations Associate",
+						"year": "Feb 2018 - Sep 2019",
+						"description": "description",
+						"tools": ""
+					},
+					{
+						"role": "Global Operations Associate",
+						"year": "Mar 2017 - Feb 2018",
+						"description": "description",
+						"tools": ""
+					}
+				]
+			},
+			{
+				"company": "Shire",
+				"details": [
+					{
+						"role": "Project Manager",
+						"year": "Oct 2015 - Mar 2017",
+						"description": "description",
+						"tools": ""
+					},
+					{
+						"role": "Operations Leadership Development Program Associate",
+						"year": "Jul 2013 - Oct 2015",
+						"description": "description",
+						"tools": ""
+					}
+				]
+			}
+		]
+	},
+	{
+		"heading": "Education",
+		"experiences": [
+			{
+				"degree": "Design for the Web",
+				"institution": "Perpeptual Education",
+				"year": "Oct 2022 - Expected May 2023"
+			},
+			{
+				"degree": "Project Management Certificate",
+				"institution": "UC Berkely Extension",
+				"year": "Jun 2016 - Dec 2016"
+			},
+			{
+				"degree": "MBA: Operations",
+				"institution": "Keck Graduate Institute",
+				"year": "Aug 2011 - May 2013"
+			},
+			{
+				"degree": "BS: Bioengineering",
+				"institution": "University of California,  San Diego",
+				"year": "Aug 2006 - May 2010"
+			}
+		]
+	}
+]
