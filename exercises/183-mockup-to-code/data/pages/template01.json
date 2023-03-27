@@ -69,13 +69,35 @@
 			]
 		},
 		{
-			"module": "center-content1",
-			"logo-picture": "",
-			"section-title": "Rhoncus, accumsan dictum",
-			"title": "Rhoncus, accumsan dictum",
-			"tagline": "Rhoncus, accumsan dictum",
-			"link": "",
-			"media": "video"
+			"module": "center-content",
+			"class": "standard",
+			"sectionTitle": "This is a section title",
+			"title": "This is a headline - but could be part of the section title?",
+			"tagline": "I'm a snazy tagline!",
+			"content": [
+				{
+					"type": "video",
+					"sources": [
+						{
+							"url": "https://peprojects.dev/videos/sky.mp4",
+							"type": "mp4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"module": "center-content",
+			"class": "standard",
+			"sectionTitle": "This is a section title",
+			"title": "This is a headline - but could be part of the section title?",
+			"tagline": "I'm a snazy tagline!",
+			"content": [
+				{
+					"type": "list",
+					"listName": "Features"
+				}
+			]
 		}
 	]
 }

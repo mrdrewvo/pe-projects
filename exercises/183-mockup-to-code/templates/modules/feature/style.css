@@ -1,0 +1,13 @@
+hero-module {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+action-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
