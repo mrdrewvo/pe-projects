@@ -8,7 +8,7 @@ var count = 0;
 
 function add(content) {
 	const todo = {
-		id: `todo-${count++}`,
+		id: `todo-${++count}`,
 		content: content
 	}
 	todos.push(todo);
@@ -20,12 +20,14 @@ function remove(index) {
 	todos.splice(index, 1);
 }
 
+// Review with Derek - using var index and the error I get
 function complete(id) {
 	todos[id].complete = true;
 	showUpdate(`Completed ${todos[id].content}`);
 }
 
 add("Go to the market");
+
 add("Prepare dinner");
 
 complete(0);
@@ -33,5 +35,3 @@ complete(0);
 add("Call Meka");
 
 remove(1);
-
-add()
