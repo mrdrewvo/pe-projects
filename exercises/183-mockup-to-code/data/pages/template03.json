@@ -1,0 +1,103 @@
+{
+	"id": "template01",
+	"sections": [
+		{
+			"module": "navigation",
+			"class": "light",
+			"siteMenu": [
+				{
+					"text": "Home",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Updates",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Services",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "Features",
+					"url": "?",
+					"external": false,
+					"target": ""
+				},
+				{
+					"text": "About Us",
+					"url": "?",
+					"external": false,
+					"target": ""
+				}
+			],
+			"actions": [
+				{
+					"type": "language",
+					"url": "?",
+					"style": "dark"
+				},
+				{
+					"type": "link",
+					"text": "Login",
+					"url": "?",
+					"style": "dark"
+				}
+			]
+		},
+		{
+			"module": "hero",
+			"class": "standard",
+			"actions": [
+				{
+					"type": "link",
+					"text": "Get Started",
+					"url": "?",
+					"style": "dark"
+				},
+				{
+					"type": "link",
+					"text": "Start free trial",
+					"url": "?",
+					"style": "light"
+				}
+			]
+		},
+		{
+			"module": "center-content",
+			"class": "standard",
+			"sectionTitle": "This is a section title",
+			"title": "This is a headline - but could be part of the section title?",
+			"tagline": "I'm a snazy tagline!",
+			"content": [
+				{
+					"type": "video",
+					"sources": [
+						{
+							"url": "https://peprojects.dev/videos/sky.mp4",
+							"type": "mp4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"module": "center-content",
+			"class": "standard",
+			"sectionTitle": "This is a section title",
+			"title": "This is a headline - but could be part of the section title?",
+			"tagline": "I'm a snazy tagline!",
+			"content": [
+				{
+					"type": "list",
+					"listName": "Features"
+				}
+			]
+		}
+	]
+}
