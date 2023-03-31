@@ -1,6 +1,9 @@
+@import '../templates/components/email-signup/style.css';
+@import '../templates/components/language-selector/style.css';
 @import '../templates/components/link/style.css';
-@import '../templates/components/language/style.css';
-@import '../templates/components/project-card/style.css';
+@import '../templates/components/list/style.css';
+@import '../templates/components/list-card/style.css';
+@import '../templates/components/video/style.css';
 
 /* buttons and icons and smaller reusable bits here */
 
