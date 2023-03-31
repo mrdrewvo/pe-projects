@@ -4,6 +4,7 @@ mast-head {
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
+	padding: var(--space) 0;
 }
 
 mast-head .logo {
@@ -13,20 +14,14 @@ mast-head .logo {
 }
 
 mast-head .logo picture {
-	height: 40px;
-	max-width: 125px;
-}
-
-mast-head .language {
-	display: flex;
-}
-
-mast-head .language picture {
-	width: 25px;
+	max-width: 150px;
+	height: auto;
 }
 
 mast-head a {
 	text-decoration: none;
+	color: var(--textInk);
+	font-weight: 500;
 }
 
 mast-head nav {
@@ -34,11 +29,17 @@ mast-head nav {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	gap: 50px;
+	gap: 30px;
 }
 
 mast-head nav a {
-	font-size: 16px;
+	font-size: 14px;
 	text-align: center;
 	padding: 5px;
+}
+
+action-section {
+	display: flex;
+	align-items: center;
+	gap: calc(2 * var(--space));
 }

@@ -1,5 +1,5 @@
 <?php
-	$class = $section["class"] ?? "";
+	$class = $section["class"] ?? "default-light";
 	$logoImg = $section["logoImg"] ?? "https://peprojects.dev/images/landscape.jpg";
 	$siteMenu = $section["siteMenu"] ?? ["Home", "About Us", "Services", "Contact Us"];
 	$actions = $section["actions"] ?? ["actions" => ["type" => "link", "text" => "Link", "url" => "?", "style" => "dark"]];
