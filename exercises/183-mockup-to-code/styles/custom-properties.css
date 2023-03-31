@@ -3,24 +3,23 @@
 html {
 
 	/*color palette*/
-	--blue: #162442;
-	--green: #486254;
-	--tan: #B8814C;
-	--pink: #FFD7D7;
-	--maroon: #A81C1C;
-	--gray: #6A6E7A;
-	--black: #343334;
-	--offwhite: #F2EFE6; 
-	--white: #fefefe;
+	--blurple: hsl(225 80% 56%);
+	--lightBlurple: hsl(226 81% 86%);
+	--gray: hsl(0 0% 38%);
+	--black: hsl(0 0% 13%);
+	--offwhite: hsl(225 100% 98%); 
+	--white: hsl(0 0% 100%);
 
-	--paper: var(--offwhite);
-	--primaryColor1: var(--blue);
-	--primaryColor2: var(--green);
-	--linkHover: var(--tan);
+	--paper: var(--white);
+	--headerInk: var(--black);
+	--textInk: var(--gray);
+	--primaryColor1: var(--blurple);
+	--primaryColor2: var(--lightBlurple);
+	/*--linkHover: var(--tan);
 	--accent: var(--pink);
 	--codeColor: var(--green);
 	--shadow: rgba(0,0,0,.8);
-	--fade: rgba(255,255,255,.25);
+	--fade: rgba(255,255,255,.25);*/
 
 	--space: 10px;
 
