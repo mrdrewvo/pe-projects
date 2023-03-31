@@ -11,6 +11,8 @@ const shoppingListApp = {
 		console.log(this.shoppingList);
 	},
 
+	// #todo - separate out a found() function
+
 	// add an item to the list
 	add: function(itemName) {
 		
