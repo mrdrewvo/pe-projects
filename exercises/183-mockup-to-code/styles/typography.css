@@ -1,4 +1,4 @@
-/* Should we pull in @fonts here? */
+@import url(//https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
 
 .loud-voice	{
 	font-size: clamp(36px, 5vw, 60px);
@@ -27,7 +27,7 @@
 :is(.calm-voice, p, li) em {
 	font-style: italic;
 }
-
+ d
 :is(.calm-voice, p, li) strong {
 	font-weight: 700;
 }
