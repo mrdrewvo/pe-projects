@@ -3,6 +3,7 @@
 	"sections": [
 		{
 			"module": "navigation",
+			"logoImg": "media/images/logo-default-dark.svg",
 			"class": "light",
 			"siteMenu": [
 				{
@@ -38,15 +39,15 @@
 			],
 			"actions": [
 				{
-					"type": "language",
+					"type": "language-selector",
 					"url": "?",
-					"style": "dark"
+					"langImg": "media/images/language-selector-globe-dark.svg"
 				},
 				{
 					"type": "link",
-					"text": "Login",
+					"text": "LogIn",
 					"url": "?",
-					"style": "dark"
+					"style": "dark round-button"
 				}
 			]
 		},
