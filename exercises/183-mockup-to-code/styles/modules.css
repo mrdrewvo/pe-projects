@@ -1,11 +1,10 @@
 /*MODULES*/
-@import '../templates/modules/template-menu/style.css';
-@import '../templates/modules/navigation/style.css';
-
-@import '../templates/modules/navigation/style.css';
-@import '../templates/modules/hero/style.css';
+@import '../templates/modules/center-content/style.css';
+@import '../templates/modules/feature/style.css';
 @import '../templates/modules/footer/style.css';
-
+@import '../templates/modules/hero/style.css';
+@import '../templates/modules/navigation/style.css';
+@import '../templates/modules/template-menu/style.css';
 
 /*PAGES*/
 @import '../templates/pages/404/style.css';
