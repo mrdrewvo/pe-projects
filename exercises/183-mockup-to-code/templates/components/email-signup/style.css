@@ -1,46 +1,40 @@
-project-card { 
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	padding: 20px;
-	height: 100%;
-	width: 100%;
-	text-decoration: none;
-
-	font-size: 18px;
-	color: white;
-}
+/* general style/shape */
+email-signup-module input{
+	border: unset;
+	font-family: inherit;
+	font-size: 12px;
+	width: 200px;
+	border-radius: 3px;
+	margin-right: var(--space);
 }
 
-project-card picture {
-	background: var(--primaryColor1);
+email-signup-module button {
+	background-color: var(--white);
+	border: unset;
+	border-radius: 3px;
 }
 
-project-card picture img {
-	opacity: .75;
+/* colors where input field is dark */
+email-signup-module.dark-field {
+
 }
 
-project-card h3 {
-	font-size: 25px;
-	font-weight: 700;
-	margin: 10px 0 20px 0;
-	color: white;
+email-signup-module.dark-field input {
+	background-color: var(--darkBlurple);
+	color: var(--white);
+	padding: .75em 1em;
 }
 
-.project-buttons {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: var(--space);
-	margin-top: calc(2 * var(--space));
+email-signup-module.dark-field input::placeholder{
+	color: var(--white);
 }
 
-/*HOME PAGE*/
-.home-page project-card { 
-	background-color: var(--fade);
+email-signup-module.dark-field button {
+	color: var(--primaryColor1);
+	padding: .75em 1em;
 }
 
-/*PROJECTS LIST PAGE*/
-.projects-page project-card { 
-	background-color: var(--primaryColor1);
+/* colors where input field is light */
+email-signup-module.light-field {
+
 }

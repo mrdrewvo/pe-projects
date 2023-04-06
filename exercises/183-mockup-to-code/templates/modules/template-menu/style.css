@@ -1,6 +1,12 @@
 template-menu {
 	display: block;
 	padding: 10px;
+	border-bottom: 1px solid black;
+	background-color: lightgray;
+}
+
+template-menu :is(p, a) {
+	font-size: 12px;
 }
 
 template-menu inner-column {
@@ -13,8 +19,14 @@ nav.template-menu {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 
 template-menu p {
 	line-height: unset;
+}
+
+template-links {
+	display: flex;
+	gap: var(--space);
 }

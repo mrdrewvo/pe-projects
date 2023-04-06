@@ -3,7 +3,8 @@
 
 <email-signup-module class="<?=$style?>">
 	<form method='POST'>
-		<input type="text" value="Email Address">
-		<button type="submit" name="submitted">Sign Up</button>
+
+		<input type="text" placeholder="Email Address" class="round-button">
+		<button type="submit" name="submitted">SignUp</button>
 	</form>
 </email-signup-module>

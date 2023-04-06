@@ -3,12 +3,14 @@
 @import "custom-properties.css";
 /*@import "developer-styles.css";*/
 @import "typography.css";
-@import "components.css";
 @import "modules.css";
+@import "components.css";
+
 
 body {
-	font-family: "Inter", "Avenir Next", "Helvetica Neue";
+	font-family: 'Inter'; /* "Avenir Next", "Helvetica Neue"*/
 	font-weight: 400;
+	font-size: 14px;
 
 	display: flex;
 	flex-direction: column;
@@ -35,6 +37,9 @@ inner-column {
 	}	
 }
 
+a {
+	text-decoration: none;
+}
 /*a:hover {
 	color: var(--linkHover);
 	transition: 0.2s;

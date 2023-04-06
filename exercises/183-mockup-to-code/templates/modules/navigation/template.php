@@ -5,7 +5,7 @@
 	$actions = $section["actions"] ?? ["actions" => ["type" => "link", "text" => "Link", "url" => "?", "style" => "dark"]];
 ?>
 
-<header class="page-section site-header <?=$class?>"">
+<header class="page-section site-header <?=$class?>">
 	<inner-column>
 		<mast-head>
 			<a href="?" class="logo">
@@ -18,7 +18,8 @@
 						href="<?=$siteMenuLink["url"]?>"
 						<?php if($siteMenuLink["external"] == true) { ?>
 							target="<?=siteMenuLink["target"]?>"
-						<?php } ?>>
+						<?php } ?>
+							<?php isActivePage($templateMenuLink['slug']); ?>>
 						<?=$siteMenuLink["text"]?>
 					</a>
 				<?php } ?>

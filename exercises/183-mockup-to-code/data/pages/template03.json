@@ -1,8 +1,9 @@
 {
-	"id": "template01",
+	"id": "template03",
 	"sections": [
 		{
 			"module": "navigation",
+			"logoImg": "media/images/logo-default-dark.svg",
 			"class": "light",
 			"siteMenu": [
 				{
@@ -38,33 +39,27 @@
 			],
 			"actions": [
 				{
-					"type": "language",
+					"type": "link",
+					"text": "SignUp",
 					"url": "?",
-					"style": "dark"
+					"style": "light round-button"
 				},
 				{
 					"type": "link",
-					"text": "Login",
+					"text": "LogIn",
 					"url": "?",
-					"style": "dark"
+					"style": "dark round-button"
 				}
 			]
 		},
 		{
 			"module": "hero",
-			"class": "standard",
+			"class": "dark",
+			"titleClass": "uppercase",
 			"actions": [
 				{
-					"type": "link",
-					"text": "Get Started",
-					"url": "?",
-					"style": "dark"
-				},
-				{
-					"type": "link",
-					"text": "Start free trial",
-					"url": "?",
-					"style": "light"
+					"type": "email-signup",
+					"style": "dark-field"
 				}
 			]
 		},
@@ -87,17 +82,33 @@
 			]
 		},
 		{
-			"module": "center-content",
-			"class": "standard",
-			"sectionTitle": "This is a section title",
-			"title": "This is a headline - but could be part of the section title?",
-			"tagline": "I'm a snazy tagline!",
-			"content": [
+			"module": "faq",
+			"class": "standard two-column",
+			"faqs": [
 				{
-					"type": "list",
-					"listName": "Features"
+					"question": "How Soon Will My Order Ship?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis esse nulla eos doloremque, ex minima culpa quidem sed saepe corporis perferendis sint aut eligendi. Neque voluptate consectetur, aperiam. Laudantium."
+				},
+				{
+					"question": "Is There Any Warranty Exclusions?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque nulla praesentium molestias voluptatibus maxime consectetur officia iure corporis totam? Nostrum facere libero, ipsa obcaecati repudiandae neque doloremque in explicabo."
+				},
+				{
+					"question": "Are There Any Return Exclusions?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis esse nulla eos doloremque, ex minima culpa quidem sed saepe corporis perferendis sint aut eligendi. Neque voluptate consectetur, aperiam. Laudantium."
+				},
+				{
+					"question": "Will I Be Charged For a Replacement Item?",
+					"answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, iusto, deleniti. Distinctio laboriosam maxime neque, quas nam harum, incidunt ipsam sit a aspernatur quia cumque maiores rerum dignissimos ab, recusandae."
+				},
+				{
+					"question": "How Can I Track My Orders & Payment?",
+					"answer": "Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nihil corporis in, nobis quam saepe deleniti? Voluptate, alias, asperiores sapiente labore minus eveniet modi eaque repellat quam dicta, cupiditate impedit officia."
 				}
 			]
+		},
+		{
+			"module": "footer"
 		}
 	]
 }

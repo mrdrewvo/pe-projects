@@ -53,7 +53,7 @@
 		},
 		{
 			"module": "hero",
-			"class": "standard",
+			"class": "light",
 			"actions": [
 				{
 					"type": "link",
@@ -73,7 +73,7 @@
 			"module": "center-content",
 			"class": "standard",
 			"sectionTitle": "This is a section title",
-			"title": "This is a headline - but could be part of the section title?",
+			"title": "This is a headline! Or part of the title?",
 			"tagline": "I'm a snazy tagline!",
 			"content": [
 				{
@@ -88,17 +88,33 @@
 			]
 		},
 		{
-			"module": "center-content",
+			"module": "faq",
 			"class": "standard",
-			"sectionTitle": "This is a section title",
-			"title": "This is a headline - but could be part of the section title?",
-			"tagline": "I'm a snazy tagline!",
-			"content": [
+			"faqs": [
 				{
-					"type": "list",
-					"listName": "Features"
+					"question": "How Soon Will My Order Ship?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis esse nulla eos doloremque, ex minima culpa quidem sed saepe corporis perferendis sint aut eligendi. Neque voluptate consectetur, aperiam. Laudantium."
+				},
+				{
+					"question": "Is There Any Warranty Exclusions?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque nulla praesentium molestias voluptatibus maxime consectetur officia iure corporis totam? Nostrum facere libero, ipsa obcaecati repudiandae neque doloremque in explicabo."
+				},
+				{
+					"question": "Are There Any Return Exclusions?",
+					"answer": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis esse nulla eos doloremque, ex minima culpa quidem sed saepe corporis perferendis sint aut eligendi. Neque voluptate consectetur, aperiam. Laudantium."
+				},
+				{
+					"question": "Will I Be Charged For a Replacement Item?",
+					"answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, iusto, deleniti. Distinctio laboriosam maxime neque, quas nam harum, incidunt ipsam sit a aspernatur quia cumque maiores rerum dignissimos ab, recusandae."
+				},
+				{
+					"question": "How Can I Track My Orders & Payment?",
+					"answer": "Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nihil corporis in, nobis quam saepe deleniti? Voluptate, alias, asperiores sapiente labore minus eveniet modi eaque repellat quam dicta, cupiditate impedit officia."
 				}
 			]
+		},
+		{
+			"module": "footer"
 		}
 	]
 }

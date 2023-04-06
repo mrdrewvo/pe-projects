@@ -1,0 +1,60 @@
+faq-module {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	padding: 75px 0px;
+}
+
+faq-module > :is(h2, p) {
+	text-align: center;
+}
+
+faq-module .faq-list {
+	margin-top: calc(4 * var(--space));
+}
+
+faq-module details {
+	border-bottom: 1px solid var(--lightGray);
+	padding: var(--space) 0;
+}
+
+faq-module details > summary {
+	list-style: none;
+	font-weight: 500;
+}
+
+faq-module details p {
+	font-size: .8rem;
+	margin-top: var(--space);
+}
+
+:is(.faq-module.standard, .faq-module.fancy) inner-column{
+	max-width: var(--tightWidth);
+}
+
+@media (min-width: 700px) {
+	.faq-module.two-column faq-module {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: calc(2 * var(--space));
+	}
+
+	.faq-module.two-column inner-column {
+		max-width: var(--standardWidth);
+	}
+
+	.faq-module.two-column faq-module h2 {
+		align-self: end;
+	}
+
+	.faq-module.two-column faq-module > :is(h2, p) {
+		text-align: left;
+	}	
+
+	.faq-module.two-column faq-module .faq-list{
+		grid-column: 2;
+		grid-row: 1 / 3;
+		margin-top: unset;
+	}
+}

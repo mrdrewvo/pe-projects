@@ -4,8 +4,10 @@ html {
 
 	/*color palette*/
 	--blurple: hsl(225 80% 56%);
-	--lightBlurple: hsl(226 81% 86%);
+	--darkBlurple: hsl(227 77% 52%);
+	--lightBlurple: hsl(222 100% 98%);
 	--gray: hsl(0 0% 38%);
+	--lightGray: hsl(0 0% 75%);
 	--black: hsl(0 0% 13%);
 	--offwhite: hsl(225 100% 98%); 
 	--white: hsl(0 0% 100%);
@@ -24,7 +26,8 @@ html {
 	--space: 10px;
 
 	/*view widths*/
-	--standardWidth: 1100px;
+	--wideWidth: 1200px;
+	--standardWidth: 1000px;
 	--tightWidth: 800px;
 }
 

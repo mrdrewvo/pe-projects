@@ -1,18 +1,11 @@
-<?php $json = file_get_contents("data/style-guide-data.json"); ?>
+<?php $json = file_get_contents("data/pages/style-guide.json"); ?>
 <?php $styleGuideData = json_decode($json, true); ?>
 
 <section class="style-guide-page"> 
-
 	<inner-column>
-
 		<style-guide-mod>
-
-			<h2>Style Guide</h2>
-
-			<h2>Guiding Questions</h2>
-
+			<h1>Style Guide</h2>
 			<ul>
-
 				<?php foreach($styleGuideData["Style Guide Vision"] as $styleGuidePoint) { ?>
 
 					<li>

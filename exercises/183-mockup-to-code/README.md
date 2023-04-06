@@ -16,6 +16,35 @@ https://www.figma.com/file/TN28dkJ1pQ04fRlb2mqAqm/Wireframe-Kit?node-id=0-1
 
 
 ## Tasks
+
+### Site
+
+#### Parking Lot
 1. Decide link hover and click animations
 2. Make smaller screen layouts
-3. Dark mode
+3. Site-wide dark mode
+
+### Navigation
+
+#### Complete
+1. "dark style"
+
+#### In Progress
+1. Responsive layout - how to center nav when wrapped to second row?
+
+#### On Deck
+
+#### Parking Lot 
+1. Fix the "active" class for the template and nav menu
+
+
+
+
+
+
+finish building and styling
+	hero
+	center content
+	FAQ
+	footer
+

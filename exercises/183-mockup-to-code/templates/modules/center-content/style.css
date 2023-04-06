@@ -1,13 +1,29 @@
-hero-module {
+content-center {
+	padding: 75px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-action-section {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+content-center * {
+	text-align: center;
+}
+
+content-center h2 {
+	color: var(--textInk);
+
+}
+
+content-center h3 {
+	font-size: 32px;
+	font-weight: 600;
+	max-width: 25ch;
+}
+
+
+content-center video {
+	width: 75%;
+	height: auto;
+	margin-top: calc(2 * var(--space));
 }

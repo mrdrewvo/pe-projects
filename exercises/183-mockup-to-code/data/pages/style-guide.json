@@ -1,5 +1,6 @@
 {
 	"id": "style-guide",
+	"template": "style-guide",
 	"sections": [
 		{
 			"module": "navigation"

@@ -9,6 +9,24 @@ function Monster(name, age) { // Constructive functions are written with a capit
 
 }
 
+const chunky = new Monster("Chunky", 15);
+
+const munch = new Monster("Munchy", 45);
+
+chunky.roar();
+
+console.log(munchy.name);
+
+munchy.roar();
+
+Monster.prototype.whisper = function() {
+	console.log(`... hi my name is ${name}`)
+};
+
+
+
+
+
 const todoApp = {
 
 	todos: [],

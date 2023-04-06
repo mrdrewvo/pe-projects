@@ -3,33 +3,39 @@ mast-head {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	gap: 10px;
-	padding: var(--space) 0;
+	gap: var(--space);
+	padding: calc(1.5 * var(--space)) 0;
+	flex-wrap: wrap;
 }
 
 mast-head .logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-mast-head .logo picture {
-	max-width: 150px;
-	height: auto;
+	flex-basis: 125px;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 mast-head a {
-	text-decoration: none;
 	color: var(--textInk);
-	font-weight: 500;
+	font-weight: 400;
 }
 
 mast-head nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	gap: 30px;
+	flex-wrap: wrap;
+	gap: calc(0.5 * var(--space)) calc(1.5 * var(--space));
+	order: 3;
+	margin: 0 auto;
+}
+
+header.dark {
+	background-color: var(--blurple);
+}
+
+header.dark nav a {
+	color: var(--white);
 }
 
 mast-head nav a {
@@ -42,4 +48,14 @@ action-section {
 	display: flex;
 	align-items: center;
 	gap: calc(2 * var(--space));
+}
+
+@media(min-width: 700px) {
+	mast-head {
+		flex-wrap: unset;
+	}
+
+	mast-head nav {
+		order: unset;
+	}
 }

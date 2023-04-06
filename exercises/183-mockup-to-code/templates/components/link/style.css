@@ -1,9 +1,20 @@
+a {
+	font-size: 14px;
+}
+
+a.light {
+	background-color: var(--white);
+	color: var(--primaryColor1);
+	outline: 1.5px solid var(--primaryColor1);
+	padding: .5em 1.4em;
+}
+
 a.dark {
 	background-color: var(--primaryColor1);
 	color: var(--white);
+	padding: .6em 1.5em;
 }
 
 a.round-button {
-	padding: .75em 1.5em;
-	border-radius: 8px;
+	border-radius: 3px;
 }
