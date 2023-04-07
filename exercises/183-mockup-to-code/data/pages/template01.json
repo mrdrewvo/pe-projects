@@ -114,7 +114,9 @@
 			]
 		},
 		{
-			"module": "footer"
+			"module": "footer",
+			"class": "dark",
+			"logoImg": "media/images/logo-light.svg"
 		}
 	]
 }

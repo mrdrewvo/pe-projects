@@ -11,7 +11,7 @@
 	<inner-column>
 		<content-center>
 			<h2><?=$sectionTitle?></h2>
-			<h3><?=$title?></h3>
+			<h3 class="loud-voice"><?=$title?></h3>
 			<p><?=$tagline?></p>
 			<?php foreach($content as $contentItem) { ?>
 				<?php include("templates/components/$contentItem[type]/template.php");?>

@@ -82,6 +82,10 @@
 			]
 		},
 		{
+			"module": "feature",
+			"class": "centered-cards"
+		},
+		{
 			"module": "faq",
 			"class": "standard two-column",
 			"faqs": [
@@ -108,7 +112,9 @@
 			]
 		},
 		{
-			"module": "footer"
+			"module": "footer",
+			"class": "dark",
+			"logoImg": "media/images/logo-light.svg"
 		}
 	]
 }

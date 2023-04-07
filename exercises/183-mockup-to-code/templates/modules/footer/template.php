@@ -1,4 +1,9 @@
-<footer class="page-section site-footer">
+<?php
+	$class = $section["class"] ?? "dark";
+	$logoImg = $section["logoImg"] ?? "dark";
+?>
+
+<footer class="page-section site-footer <?=$class?>">
 	<inner-column>
 		
 		<footer-top-mod>
@@ -31,15 +36,17 @@
 
 			<subscribe-box>
 				<h4 class="strong-voice">Subscribe</h4>
-				<input type="text">
-				<button type="submit" name="submitted">></button>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, animi? Perferendis similique veniam voluptatem repellat eos distinctio unde dolores. Accusamus vitae nesciunt quos aperiam eaque, quae. Placeat suscipit, perspiciatis distinctio.</p>
+				<form action="submit">
+					<input type="text" placeholder="Email address">
+					<button type="submit" name="submitted">></button>
+				</form>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, animi? Perferendis similique veniam voluptatem repellat eos distinctio unde dolores.</p>
 			</subscribe-box>
 
 		</footer-top-mod>
 
 		<footer-bottom-mod>
-			<picture><img src="media/images/logo-light" alt=""></picture>
+			<picture><img src="<?=$logoImg?>" alt=""></picture>
 
 			<boring-legal-stuff>
 				<a href="?">Terms</a>

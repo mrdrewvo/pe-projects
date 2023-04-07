@@ -82,6 +82,10 @@
 			]
 		},
 		{
+			"module": "feature",
+			"class": "left-aligned-cards"
+		},
+		{
 			"module": "faq",
 			"class": "fancy",
 			"faqs": [
@@ -108,7 +112,9 @@
 			]
 		},
 		{
-			"module": "footer"
+			"module": "footer",
+			"class": "light",
+			"logoImg": "media/images/logo-default-dark.svg"
 		}
 	]
 }

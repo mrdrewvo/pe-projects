@@ -1,13 +1,67 @@
-hero-module {
+feature-module {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 100px 0;
 }
 
-action-section {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
+.feature-card picture {
+	max-width: 15px;
+	height: auto;
 }
+
+.feature-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: calc(1.5 * var(--space));
+	margin-top: calc(4 * var(--space));
+}
+
+.feature-card {
+	padding: calc(1.5 * var(--space));
+}
+
+.feature-card h4 {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.feature-card p {
+	font-size: 12px;
+}
+
+.feature.left-aligned-cards .feature-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: var(--space);
+	border: 1px solid var(--lightGray);
+	border-radius: 5px;
+	max-width: 250px;
+}
+
+.feature.centered-cards .feature-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space);
+	border: 1px solid var(--lightGray);
+	border-radius: 5px;
+	max-width: 250px;
+}
+
+.feature.centered-cards .feature-card p {
+	text-align: center;
+}
+
+/*@media (min-width: 600px) {
+	.feature.left-aligned-cards .feature-cards {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}*/
