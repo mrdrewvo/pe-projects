@@ -4,7 +4,7 @@
 		
 <main class="page-section site-main">
 
-	<section class="gradient">
+	<section class="gradient paint-calculator">
 	
 		<inner-column>
 
@@ -39,14 +39,15 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 
 			<?php 
 
-			$ceilingLength = 0;
-			$ceilingWidth = 0;
+			$ceilingLength = 1;
+			$ceilingWidth = 1;
 			$gallonCoverage = 350;
 
 			if(isset($_POST["submitted"])) {
 
 				$ceilingLength = $_POST["length"];
 				$ceilingWidth = $_POST["width"];
+				$gallonCoverage = $_POST["gallonCoverage"];
 
 				$ceilingArea = $ceilingLength * $ceilingWidth;
 
@@ -65,8 +66,6 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 
 			<h2>How many gallons of paint do we need to cover our ceiling?</h2>
 
-			<p class="reminder">Reminder: 1 gallon of paint covers <?=$gallonCoverage?> square feet.</p>
-
 			<form method='POST'>
 				
 				<p>Please enter your ceiling dimensions below.</p>
@@ -80,7 +79,7 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 						id="length"
 						value="<?=$ceilingLength?>"
 						step="any"
-						min="0"/>	
+						min="1"/>	
 				</div>
 				
 				<div class="form-field">
@@ -92,19 +91,34 @@ numeric values. Don’t allow the user to proceed if the value entered is not nu
 						id="width"
 						value="<?=$ceilingWidth?>"
 						step="any"
+						min="1"/>	
+				</div>
+
+				<div class="form-field">
+					
+					<label for="gallonCoverage">Coverage Area per Paint Gallon (in sq feet)</label>
+					<input
+						type="number"
+						name="gallonCoverage"
+						id="gallonCoverage"
+						value="<?=$gallonCoverage?>"
+						step="any"
 						min="0"/>	
 				</div>
 				
 				<button type="submit" name="submitted">Let's find out!</button>
 			</form>
 
-			<?php
-
-			if(isset($_POST["submitted"])) {
+			<output></output>
 			
-				echo $outputMessage;
-			}
-			?>
+			<!-- <?php
+				if(isset($_POST["submitted"])) {
+				
+					echo $outputMessage;
+				}
+			?> -->
+
+			<script src='paint-calculator.js'></script>
 		</inner-column>
 	</section>
 </main>

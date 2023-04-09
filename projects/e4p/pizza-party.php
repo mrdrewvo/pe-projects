@@ -116,7 +116,7 @@
 			}
 			?>
 
-			<script src='my-script.js'></script>
+			<script src='pizza-party.js'></script>
 		</inner-column>
 	</section>
 </main>
