@@ -1,0 +1,36 @@
+.list-module inner-column {
+	max-width: 400px;
+}
+
+.list-module ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 30px;
+}
+
+@media (min-width: 800px) {
+	.list-module inner-column {
+		max-width: var(--standardWidth);
+	}
+
+	.list-module ul {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		gap: 20px;
+	}
+
+	.list-item {
+		width: calc((100% - 40px ) / 3);
+	}
+}
+
+/*HOME PAGE*/
+.home-page .list-module {
+	background-color: var(--primaryColor1);
+}
+
+/*PROJECTS LIST PAGE*/
+

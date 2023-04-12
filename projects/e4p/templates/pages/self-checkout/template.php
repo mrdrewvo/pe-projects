@@ -1,13 +1,8 @@
-<?php include("head.php"); ?>
-
-<?php include("header.php"); ?>
-
-<section class="selfcheckout">
-
+<section class="self-checkout">
 	<inner-column>
-
+		
 		<?php
-
+		// declare references
 		$quanity1 = 0;
 		$price1 = 0;
 		$quanity2 = 0;
@@ -15,7 +10,6 @@
 		$quanity3 = 0;
 		$price3 = 0;
 
-		//provided tax rate
 		$taxRate = .0055;
 
 		$subtotalPrice = 0;
@@ -44,8 +38,7 @@
 		// }
 			
 		if(isset($_POST["submitted"])) {
-
-			//assign the input variables
+			// assign the input variables
 			$quantity1 = floatval($_POST["quantity1"]);
 			$price1 = floatval($_POST["price1"]);
 			$quantity2 = floatval($_POST["quantity2"]);
@@ -57,17 +50,17 @@
 			$prettyprice2 = "$". number_format($price2,2);
 			$prettyprice3 = "$". number_format($price3,2);
 
-			//calculate subtotal
+			// calculate subtotal
 			$subtotalPrice = $quantity1 * $price1 + $quantity2 * $price2 + $quantity3 * $price3;
 
 			$prettySubtotalPrice = "$". number_format($subtotalPrice,2);
 
-			//calculate tax
+			// calculate tax
 			$taxPrice = $subtotalPrice * $taxRate;
 
 			$prettyTaxPrice = "$". number_format($taxPrice,2);
 
-			//calculate total price
+			// calculate total price
 			$totalPrice = "$". number_format($subtotalPrice + $taxPrice,2);
 
 			if ($quantity1 > 1) {
@@ -88,15 +81,14 @@
 				$isOrAre3 = "is";
 			}
 
-			//create all output messages
+			// create all output messages
 			$msgItem1 = "<p>There $isOrAre1 $quantity1 of Item 1 priced at $prettyprice1 each.</p>";
 			$msgItem2 = "<p>There $isOrAre2 $quantity2 of Item 2 priced at $prettyprice2 each.</p>";
 			$msgItem3 = "<p>There $isOrAre3 $quantity3 of Item 3 priced at $prettyprice3 each.</p>";
 			$msgSubtotal = "<p>The subtotal is $prettySubtotalPrice.</p>";
 			$msgTax = "<p>The total tax is $prettyTaxPrice.</p>";
 			$msgTotal = "<p>The final total is $totalPrice.</p>";
-		}
-		?>
+		} ?>
 
 		<h2>Self-Checkout: An introvert's best friend</h2>
 
@@ -131,27 +123,20 @@
 					step='.01'
 					min='0'/>	
 				</div>";
-			};
-
-			?>
+			}; ?>
 			
 			<button type="submit" name="submitted">Submit</button>
 		</form>
 
-		<?php
-
-		if(isset($_POST["submitted"])) {
-		
-			echo "
-				<div class='output-message'>
-					$msgItem1
-					$msgItem2
-					$msgItem3
-					$msgSubtotal
-					$msgTax
-					$msgTotal
-				</div>";
-		}
-		?>
+		<output>
+			<?php if(isset($_POST["submitted"])) { ?>
+				<?=$msgItem1?>
+				<?=$msgItem2?>
+				<?=$msgItem3?>
+				<?=$msgSubtotal?>
+				<?=$msgTax?>
+				<?=$msgTotal?>
+			<?php } ?>
+		</output>
 	</inner-column>
 </section>

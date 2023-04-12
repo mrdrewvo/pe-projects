@@ -1,32 +1,29 @@
+/* ~~~ DOC STYLING ~~~ */
 
-/* ~~~ DOC STRUCTURE ~~~ */
-
+@import "custom-properties.css";
 @import "meyer-reset.css";
+@import "modules.css";
 @import "setup.css";
+@import "typography.css";
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
 
 body {
-	font-family: sans-serif;
+	font-family: "TT Norms Pro";
+	background-color: var(--paper);
 }
 
 inner-column {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 700px;
+	margin: 0 auto;
+	max-width: var(--tightWidth);
 	padding: 20px;
 }
 
 /* ~~~ ELEMENT STYLING ~~~ */
-
-.site-header {
-	background-color: #F5F5F5;
-	padding: 15px;
-	font-weight: 800;
-}
-
-.site-header h1 {
+header h1 {
 	color: #434343;
 	font-size: 40px;
+	font-weight: 600;
 	text-align: center;
 }
 

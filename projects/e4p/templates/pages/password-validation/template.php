@@ -1,16 +1,18 @@
-<?php include("head.php"); ?>
-
-<?php include("header.php"); ?>
-
 <section class="password-validation">
-
 	<inner-column>
 
 		<?php
-
+		// declare references
 		$inputUsername = null;
 		$inputPassword = null;
 
+		$loginMatch = null;
+		$msgWelcome = "<p class='welcome'>Welcome</p>";
+		$msgDenied = "<p class='denied'>I don't you. Stranger Danger!</p>";
+
+		$outputMessage = null;
+
+		// declare assumptions
 		$realLogins = [
 			[
 				"username" => "alpha6",
@@ -21,57 +23,29 @@
 				"password" => "Boo!123",	
 			]
 		];
-		
-		$loginMatch = null;
-		$msgWelcome = "<p class='welcome'>Welcome</p>";
-		$msgDenied = "<p class='denied'>I don't you. Stranger Danger!</p>";
-
-		$msgOutput = null;
 			
 		if(isset($_POST["submitted"])) {
-
-			//assign the input variables
-
-			echo "<pre><code>";
-
-			var_dump($_POST);
-
-			echo "</pre></code>";
-
+			// assign the input variables
 			$inputUsername = $_POST["username"];
 			$inputPassword = $_POST["password"];
 			
-			//compare the username first - if failed, 
-			
+			// calculations
+			// compare the username first - if failed...
 			foreach($realLogins as $login) {
-
 				$loginCheck = strcasecmp($inputUsername, $login["username"]);
 				echo $login["username"];
-
 			};
 
-			echo "<pre><code>";
-
-			var_dump($loginCheck);
-
-			echo "</pre></code>";
-
-			// then compare associated password
+			// if username match, then compare associated password
 			// if(strcmp($inputPassword, $realPassword) === 0) {
-
 			//$loginMatch
-
-
-
-
 			//assign message accordingly
 			if($logMatch) {
-				$msgOutput = $msgWelcome;
+				$outputMessage = $msgWelcome;
 			} else {
-				$msgOutput = $msgDenied;
+				$outputMessage = $msgDenied;
 			}
-		}
-		?>
+		} ?>
 
 		<h2>Password Validation</h2>
 
@@ -79,34 +53,33 @@
 			
 			<p>To those that need to feel validated today.</p>
 			
-			<div class='form-field'>
-				
+			<form-field>
 				<label for='username'>Username</label>
+
 				<input
 					type='text'
 					name='username'
 					id='username'/>	
-			</div>
+			</form-field>
 
-			<div class='form-field'>
-				
+			<form-field>
 				<label for='password'>Password</label>
+				
 				<input
 					type='password'
 					name='password'
 					id='password'/>	
-			</div>
+			</form-field>
 			
 			<button type="submit" name="submitted">Submit</button>
 		</form>
 
-		<?php
+		<output>
+			<?php if(isset($_POST["submitted"])) { ?>
+				<?=$outputMessage?>
+			<?php } ?>
+		</output>
 
-		if(isset($_POST["submitted"])) {
-		
-			echo $msgOutput;
-				
-		}
-		?>
+		<script src='script.js'></script>
 	</inner-column>
 </section>

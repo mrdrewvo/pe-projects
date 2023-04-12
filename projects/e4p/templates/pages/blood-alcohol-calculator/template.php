@@ -1,23 +1,19 @@
-<?php include("head.php"); ?>
-
-<?php include("header.php"); ?>
-
-<section class="blood-alcohol-calculator">
-
 <!--
-prompt (inputs):
-	$weight // in lbs
+Goal: Calculate the user's BAC and determine if they are safe to drive.
+
+Prompts/Inputs:
+	$weight (in lbs)
 	$sex
 	$countDrinks
-	$alcoholPerDrink // in oz
-	$timeSinceDrink // in hours
+	$alcoholPerDrink (in oz)
+	$timeSinceDrink (in hours)
 
-Assumed
+Assumptions:
 	$alcDistRatioMale = .73;
 	$alcDistRatioFemale = .66;
-	$bacLimit = 0.08; // not legal to drive >=$bacLimit
+	$bacLimit = 0.08; (not legal to drive >=$bacLimit)
 
-Processing
+Calculations:
 	if $sex = M/F (dropdown?) {
 		$alcRatio = 
 	} else 
@@ -30,16 +26,16 @@ Processing
 		$legalOrNot 
 	}
 	
-Output
+Output:
 	"Your BAC is $BAC."
 	"It [is][is not] legal for you to drive. Be safe!"
-
  -->
+
+<section class="blood-alcohol-calculator">
 	<inner-column>
 
 		<?php
-
-		//declare refereces
+		// declare refereces
 		$weight = 1;// in lbs
 		$sex = [0, 0];
 		$countDrinks = 0;	
@@ -52,13 +48,14 @@ Output
 		$bacLimit = 0.08; // not legal to drive >=$bacLimit
 		
 		if(isset($_POST["submitted"])) {
-			//assign the input variables
+			// assign the input variables
 			$weight = $_POST["weight"];
 			$sex = $_POST["sex"];
 			$countDrinks = $_POST["countDrinks"];	
 			$alcoholPerDrink = $_POST["alcoholPerDrink"];
 			$timeSinceDrink = $_POST["timeSinceDrink"];
 			
+			// calculations
 			$alcoholConsumed = $countDrinks * $alcoholPerDrink;
 
 			if ($sex = "M") {
@@ -68,11 +65,9 @@ Output
 			}
 
 			$BAC = round(($alcoholConsumed * 5.14 / $weight * $alcRatio) - .015 * $timeSinceDrink,3);
-		}
-		?>
+		} ?>
 
 		<!-- form -->
-
 		<h2>Legal Driving Age</h2>
 
 		<form method='POST'>
@@ -81,11 +76,9 @@ Output
 
 			<p class="reminder">Reminder: The BAC limit is <?=$bacLimit?>.</p>
 			
-			<!-- $weight = 0;// in lbs -->
 			<form-field>
-				
 				<label for='weight'>How much do you weigh? (in lbs)</label>
-				
+
 				<input
 					type='number'
 					name='weight'
@@ -95,38 +88,35 @@ Output
 					min = '1'/>	
 			</form-field>
 
-			<!-- $sex = null; -->
-			<form-field>
-				
+			<form-field>				
 				<p>Sex (M/F)</p>
 
 				<form-option>
-					
 					<input
 						type='radio'
 						name='sex'
 						id='M'
-						value='<?=$sex?>'
+						value='M'
 						required/>
+					
 					<label for='M'>M</label>
 				</form-option>	
 
 				<form-option>
-					
 					<input
 						type='radio'
 						name='sex'
 						id='F'
-						value='<?=$sex?>'
+						value='F'
 						required/>
-					<label for='M'>F</label>
+					
+					<label for='F'>F</label>
 				</form-option>	
 			</form-field>
 
-			<!-- $countDrinks = 0;	 -->
 			<form-field>
-				
 				<label for='countDrinks'>How many drinks have you had?</label>
+
 				<input
 					type='number'
 					name='countDrinks'
@@ -136,11 +126,9 @@ Output
 					min = '0'/>	
 			</form-field>
 
-			<!-- $alcoholPerDrink = 0;  // in oz -->
-
 			<form-field>
-				
 				<label for='alcoholPerDrink'>About how many oz of alcohol was in each drink?</label>
+
 				<input
 					type='number'
 					name='alcoholPerDrink'
@@ -150,11 +138,9 @@ Output
 					min = '0'/>	
 			</form-field>
 
-			<!-- $timeSinceDrink = 0;// in hours -->
-
 			<form-field>
-				
 				<label for='timeSinceDrink'>How many hours ago was your last drink?</label>
+				
 				<input
 					type='number'
 					name='timeSinceDrink'
@@ -167,20 +153,23 @@ Output
 			<button type="submit" name="submitted">Submit</button>
 		</form>
 
-		<?php
+		<output>
+			<?php
+				if(isset($_POST["submitted"])) {
+				
+					echo "<p>Your BAC is $BAC.</p>";
+				
+					echo "<p>";
+					if ($BAC >= $bacLimit) {
+						echo "It is not legal for you to drive. Sober up!";
+					} else {
+						echo "Good to go! But still make sure to drive safe.";
+					}
+					echo "</p>";
+				}
+			?>
+		</output>
 
-		if(isset($_POST["submitted"])) {
-
-			echo "<p>Your BAC is $BAC.</p>";
-
-			echo "<p>";
-			if ($BAC >= $bacLimit) {
-				echo "It is not legal for you to drive. Sober up!";
-			} else {
-				echo "Good to go! But still make sure to drive safe.";
-			}
-			echo "</p>";
-		}
-		?>
+		<script src='script.js'></script>
 	</inner-column>
 </section>

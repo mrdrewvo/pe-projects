@@ -3,8 +3,8 @@
 // Get coverage area per gallon
 
 // Ended up doing all three with one function
-function retrieveInput(reference) {
-	var input = document.getElementById(reference);
+function retrieveInput(id) {
+	var input = document.getElementById(id);
 	var inputValue = Number(input.value);
 	return inputValue;
 }
@@ -15,16 +15,14 @@ console.log('Coverage Area per Paint Gallon: ', retrieveInput('gallonCoverage'))
 
 // Calculate the ceiling area
 function ceilingArea() {
-	var ceilingArea = retrieveInput('length') * retrieveInput('width');
-	return ceilingArea;
+	return retrieveInput('length') * retrieveInput('width');
 }
 
 console.log('Ceiling Area: ', ceilingArea());
 
 // Calculate the number of gallons required
 function countPaintGallons() {
-	var countPaintGallons = Math.ceil(ceilingArea() / retrieveInput('gallonCoverage'));
-	return countPaintGallons;
+	return Math.ceil(ceilingArea() / retrieveInput('gallonCoverage'));
 }
 
 console.log('Paint Gallons to Purchase: ', countPaintGallons());
@@ -37,32 +35,36 @@ function pluralize(singularWord, count) {
 		} else {
 			return `${singularWord}s`;
 		}
-	} else {
-		return singularWord;
 	}
+	return singularWord;
 }
 
 // Create a message
-function paintMessage() {
-	var paintMessage = `
+function generateMessage() {
+	return `
 			<p>You will need to purchase <span>${countPaintGallons()} ${pluralize('gallon', countPaintGallons())} of paint</span></p>
 			<p>to cover <span>${ceilingArea()} square ${pluralize('foot', ceilingArea())}.</span></p>`;
-	return paintMessage;
 }
-
-console.log('Output: ', paintMessage());
 
 // Output a message
 const $formPaintCalculator = document.querySelector('.paint-calculator form');
 const $outputPaintCalculator = document.querySelector('.paint-calculator output');
 
+function renderMessage() {
+	$outputPaintCalculator.innerHTML = generateMessage()
+}
+
+function clearMessage() {
+	$outputPaintCalculator.innerHTML = ``;
+}
+
 $formPaintCalculator.addEventListener('submit',function(myEvent) {
 	myEvent.preventDefault();
-	$outputPaintCalculator.innerHTML = paintMessage()
+	renderMessage();
 })
 
 // Clear output if one of the input changes
 $formPaintCalculator.addEventListener('input', function() {
-	$outputPaintCalculator.innerHTML = ``;
+	clearMessage();
 })
 

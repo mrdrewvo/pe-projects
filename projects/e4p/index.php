@@ -1,59 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
 <?php include("head.php"); ?>
 
-<?php include("header.php"); ?>
+<?php
+	// ROUTER
+	$page = "home";
+	if ( isset($_GET['page']) ) {
+		$page = $_GET['page'];
+	}
 
-<section>
-
-	<inner-column>
-
-		<?php
-
-		$forms = [
-			[
-				"formNum" => "8",
-				"formName" => "Pizza Party",
-				"formSrc" => "pizza-party.php"
-			],
-			[
-				"formNum" => "9",
-				"formName" => "Paint Calculator",
-				"formSrc" => "paint-calculator.php"
-			],
-			[
-				"formNum" => "10",
-				"formName" => "Self-Checkout",
-				"formSrc" => "self-checkout.php"
-			],
-			[
-				"formNum" => "15",
-				"formName" => "Password Validation",
-				"formSrc" => "password-validation.php"
-			],
-			[
-				"formNum" => "17",
-				"formName" => "Blood Alcohol Calculator",
-				"formSrc" => "blood-alcohol-calculator.php"
-			],
-		];
-
-		echo "<ul>";
-
-		foreach ($forms as $form) {
-
-			$formNum = $form["formNum"];
-			$formName = $form["formName"];
-			$formSrc = $form["formSrc"];
-
-			echo "
-				<li>
-					<a href='$formSrc'>$formNum $formName</a>
-				<li>";
+	// ACTIVE CLASS FUNCTION
+	function isActivePage($name) {	
+		if ( isset($page) ) {
+			$page = $_GET["page"];
+		} else {
+			$page = "home"; // defaults class "active" if no query string
 		}
 
-		echo "</ul>"
-		?>
-	</inner-column>
-</section>
+		if ($page == $name) {
+			echo 'class="active"'; // assigns class "active" on the current page
+		}
+	}
+
+	include("header.php");
+
+	// EXERCISE PAGE
+	$pageFilePath = "templates/pages/$page/template.php";
+	if ( file_exists($pageFilePath) ) { 
+		include($pageFilePath);
+	} else {
+		http_response_code(404);
+		include('templates/pages/404/template.php');
+	}
+?>
 
 <?php include("footer.php"); ?>
 

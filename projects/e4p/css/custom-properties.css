@@ -1,0 +1,32 @@
+body {
+
+	/* ~~~ color palette ~~~ */
+	--teal: rgba(19, 77, 88, 1);
+	--darkTeal: rgba(15, 43, 54, 1);
+	--salmon: rgba(249, 115, 77, 1);
+	--green: rgba(0, 61, 38, 1);
+	--gray: rgba(69, 69, 69, 1);
+	--black: rgba(26, 30, 36, 1);
+	--offWhite: rgba(225, 216, 209, 1);
+	--white: rgba(238, 238, 238, 1);
+
+	--paper: var(--white);
+	--ink: var(--black);
+	--primaryColor1: var(--teal);
+	--primaryColor2: var(--darkTeal);
+/*	--linkHover: var(--tan);*/
+	--accent: var(--salmon);
+	--codeColor: var(--green);
+	--shadow: rgba(0,0,0,.8);
+	--fade: rgba(255,255,255,.25);
+
+	/* ~~~ space widths ~~~ */	
+	--wideSpace: 20px;
+	--standardSpace: 10px;
+	--tightSpace: 5px;
+
+	/* ~~~ viewport widths ~~~ */
+	--wideWidth: 1200px;
+	--standardWidth: 1000px;
+	--tightWidth: 800px;
+}

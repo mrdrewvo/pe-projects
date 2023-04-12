@@ -1,0 +1,11 @@
+/*MODULES*/
+@import '../templates/modules/graphic-diptych/style.css';
+@import '../templates/modules/page-header/style.css';
+@import '../templates/modules/page-subheader/style.css';
+@import '../templates/modules/home-banner/style.css';
+@import '../templates/modules/list/style.css';
+@import '../templates/modules/site-header/style.css';
+@import '../templates/modules/site-footer/style.css';
+
+/*PAGES*/
+@import '../templates/pages/404/style.css';

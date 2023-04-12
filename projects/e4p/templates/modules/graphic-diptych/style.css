@@ -1,0 +1,57 @@
+.graphic-diptych-module {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+graphic-diptych {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	gap: 20px;
+	background-color: var(--primaryColor2);
+	color: var(--offwhite);
+	margin: 100px 0 30px 0;
+	max-width: var(--tightWidth);
+}
+
+graphic-diptych p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+graphic-diptych a {
+	color: var(--blue);
+}
+
+graphic-diptych picture {
+ 	width: 90%;
+ 	max-width: 400px;
+ 	margin: -50px 0 0 0;
+ 	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+@media (min-width: 650px) {
+	.graphic-diptych-module inner-column {
+		padding: 0 100px;
+	}
+
+	graphic-diptych {
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 50px 0 30px 0;
+	}
+
+	graphic-diptych .content {
+		flex-basis: 55%;
+	}
+
+	graphic-diptych picture {
+	 	flex: 1;
+	 	
+	 	margin: -6em -4em 0 0;
+	 	box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+	}	
+}
