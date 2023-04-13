@@ -55,7 +55,7 @@ Challenges:
 			$outputMessage = "<div class='output-message'><p>You will need to purchase <span>$paintGallons $galorgals of paint</span></p><p>to cover <span>$ceilingArea square feet.</span></p></div>";
 		} ?>
 
-		<h2>Paint Calculator</h2>
+		<h2 class="attention-voice">Paint Calculator</h2>
 
 		<p>How many gallons of paint do we need to cover our ceiling?</p>
 
@@ -63,33 +63,35 @@ Challenges:
 			
 			<p>Please enter your ceiling dimensions below.</p>
 			
-			<form-field>
-				<label for="length">Length (in feet)</label>
-
-				<input
-					type="number"
-					name="length"
-					id="length"
-					value="<?=$ceilingLength?>"
-					step="any"
-					min="1"/>	
-			</form-field>
-			
-			<form-field>
-				<label for="width">Width (in feet)</label>
-
-				<input
-					type="number"
-					name="width"
-					id="width"
-					value="<?=$ceilingWidth?>"
-					step="any"
-					min="1"/>	
-			</form-field>
+			<form-field-group>
+				<form-field>
+					<label for="length">Length (in feet)</label>
+				
+					<input
+						type="number"
+						name="length"
+						id="length"
+						value="<?=$ceilingLength?>"
+						step="any"
+						min="1"/>	
+				</form-field>
+				
+				<form-field>
+					<label for="width">Width (in feet)</label>
+				
+					<input
+						type="number"
+						name="width"
+						id="width"
+						value="<?=$ceilingWidth?>"
+						step="any"
+						min="1"/>	
+				</form-field>
+			</form-field-group>
 
 			<form-field>
 				<label for="gallonCoverage">Coverage Area per Paint Gallon (in sq feet)</label>
-				
+
 				<input
 					type="number"
 					name="gallonCoverage"
@@ -108,6 +110,6 @@ Challenges:
 			<?php } ?>
 		</output>
 
-		<script src='script.js'></script>
+		<script src='templates/pages/<?=$page?>/script.js'></script>
 	</inner-column>
 </section>

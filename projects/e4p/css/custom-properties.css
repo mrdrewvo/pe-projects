@@ -15,7 +15,7 @@ body {
 	--primaryColor1: var(--teal);
 	--primaryColor2: var(--darkTeal);
 /*	--linkHover: var(--tan);*/
-	--accent: var(--salmon);
+	--accentColor: var(--salmon);
 	--codeColor: var(--green);
 	--shadow: rgba(0,0,0,.8);
 	--fade: rgba(255,255,255,.25);
@@ -26,7 +26,7 @@ body {
 	--tightSpace: 5px;
 
 	/* ~~~ viewport widths ~~~ */
-	--wideWidth: 1200px;
+	--wideWidth: 1250px;
 	--standardWidth: 1000px;
-	--tightWidth: 800px;
+	--tightWidth: 750px;
 }

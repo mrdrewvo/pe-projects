@@ -3,9 +3,9 @@
 		
 		<?php 
 		//declare references
-		$countPeople = null;
-		$countPizzas = null;
-		$slicesPerPizza = null;
+		$countPeople = 1;
+		$countPizzas = 1;
+		$slicesPerPizza = 8;
 
 		if(isset($_POST["submitted"])) {
 			// assign the input references
@@ -54,12 +54,14 @@
 			}
 
 			$outputMessage = "
-				<p>We have $countPeople $personOrPeople with $countPizzas $pizzaOrPizzas.</p>
-				<p>Each person gets $slicesPerPerson $pieceOrPieces1 of pizza.</p>
-				<p>There $isOrAre $leftoverSlices leftover $pieceOrPieces2.</p>";
+				<div class='output-message'>
+					<p>We have $countPeople $personOrPeople with $countPizzas $pizzaOrPizzas.</p>
+					<p>Each person gets $slicesPerPerson $pieceOrPieces1 of pizza.</p>
+					<p>There $isOrAre $leftoverSlices leftover $pieceOrPieces2.</p>
+				</div>";
 		} ?>
 
-		<h2>Pizza Party Calculator</h2>
+		<h2 class="attention-voice">Pizza Party Calculator</h2>
 
 		<form method='POST'>
 			
@@ -72,37 +74,39 @@
 					type="number"
 					name="people"
 					id="people"
-					value="1"
-					step="1"
-					min="1"
-					required/>	
-			</form-field>
-			
-			<form-field>
-				<label for="pizzas">How many pizzas do you have?</label>
-
-				<input
-					type="number"
-					name="pizzas"
-					id="pizzas"
-					value="1"
+					value="<?=$countPeople?>"
 					step="1"
 					min="1"
 					required/>	
 			</form-field>
 
-			<form-field>
-				<label for="slices">How many slices per pizza?</label>
-
-				<input
-					type="number"
-					name="slices"
-					id="slices"
-					value="8"
-					step="1"
-					min="1"
-					required/>
-			</form-field>
+			<form-field-group>
+				<form-field>
+					<label for="pizzas">How many pizzas do you have?</label>
+				
+					<input
+						type="number"
+						name="pizzas"
+						id="pizzas"
+						value="<?=$countPizzas?>"
+						step="1"
+						min="1"
+						required/>	
+				</form-field>
+				
+				<form-field>
+					<label for="slices">How many slices per pizza?</label>
+				
+					<input
+						type="number"
+						name="slices"
+						id="slices"
+						value="<?=$slicesPerPizza?>"
+						step="1"
+						min="1"
+						required/>
+				</form-field>
+			</form-field-group>
 			
 			<button type="submit" name="submitted">Pizza Time!</button>
 		</form>
@@ -113,6 +117,6 @@
 			<?php } ?>
 		</output>
 
-		<script src='script.js'></script>
+		<script src='templates/pages/<?=$page?>/script.js'></script>
 	</inner-column>
 </section>

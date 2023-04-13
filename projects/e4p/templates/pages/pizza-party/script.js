@@ -61,9 +61,11 @@ function pluralize(singularWord, count) {
 // Create a message
 function pizzaMessage() {
 	var pizzaMessage = `
-		<p>Hi! We have ${countPeople()} ${pluralize('person',countPeople())} with ${countPizzas()} ${pluralize('pizza', countPizzas())}.</p>
-		<p>Each person gets ${slicesPerPerson()} ${pluralize('piece',slicesPerPerson())} of pizza.</p>
-		<p>There ${pluralize('is',leftoverSlices())} ${leftoverSlices()} leftover ${pluralize('piece',leftoverSlices())}.</p>`;
+		<div class="output-message">
+			<p>Hi! We have ${countPeople()} ${pluralize('person',countPeople())} with ${countPizzas()} ${pluralize('pizza', countPizzas())}.</p>
+			<p>Each person gets ${slicesPerPerson()} ${pluralize('piece',slicesPerPerson())} of pizza.</p>
+			<p>There ${pluralize('is',leftoverSlices())} ${leftoverSlices()} leftover ${pluralize('piece',leftoverSlices())}.</p>
+		</div>`;
 	return pizzaMessage;
 }
 

@@ -4,6 +4,6 @@
 
 <header class='page-subheader'>
 	<inner-column>
-		<h2><?=$subtitle?></h2>
+		<h2 class="attention-voice"><?=$subtitle?></h2>
 	</inner-column>
 </header>

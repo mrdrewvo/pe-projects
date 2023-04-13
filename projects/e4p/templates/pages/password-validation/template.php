@@ -47,7 +47,7 @@
 			}
 		} ?>
 
-		<h2>Password Validation</h2>
+		<h2 class="attention-voice">Password Validation</h2>
 
 		<form method='POST'>
 			
@@ -76,10 +76,12 @@
 
 		<output>
 			<?php if(isset($_POST["submitted"])) { ?>
-				<?=$outputMessage?>
+				<div class="output-message">
+					<?=$outputMessage?>
+				</div>
 			<?php } ?>
 		</output>
 
-		<script src='script.js'></script>
+		<script src='templates/pages/<?=$page?>/script.js'></script>
 	</inner-column>
 </section>

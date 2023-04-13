@@ -15,7 +15,7 @@ body {
 inner-column {
 	display: block;
 	margin: 0 auto;
-	max-width: var(--tightWidth);
+	max-width: var(--standardWidth);
 	padding: 20px;
 }
 
@@ -30,6 +30,7 @@ mast-head {
 
 mast-head h1 {
 	text-align: center;
+	color: var(--primaryColor2);
 }
 
 nav {
@@ -44,66 +45,103 @@ nav {
 
 nav a {
 	padding: .5em;
-	background-color: var(--teal);
+	background-color: var(--primaryColor1);
 	border-radius: 2em;
 	color: var(--white);
-	font-size: .75em;
+	font-size: .8em;
 	width: 175px;
 	text-align: center;
 }
 
+:is(nav a, form button):hover {
+	background-color: var(--accentColor);
+}
+
+section inner-column {
+	max-width: var(--tightWidth);
+}
+
 h2 {
-	font-size: 25px;
-	font-weight: 800;
-	text-align:center;
-	padding-bottom: 20px;
-}
-
-p {
-	line-height: 1.25;
-	padding: 10px 0px;
-}
-
-.reminder {
 	text-align: center;
-	font-style: italic;
-	background-color: rgba(255,76,48,.4);
-	font-size: 14px;
+	padding-bottom: var(--standardSpace);
+	color: var(--primaryColor1);
 }
 
 form {
 	min-height: 25vh;
-	margin: 20px 0px;
+	margin: var(--standardSpace) 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	gap: 20px;
+	gap: var(--wideSpace);
+}
+
+form-field-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wideSpace);
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	form-field-group {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+form-field {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+}
+
+label {
+	margin-bottom: var(--tightSpace);
+}
+
+input[type=text], input[type=number], input[type=password] {
+	padding: .75em;
+	border-radius: 2em;
+	border: unset;
+	margin: 0 calc(-1 * var(--tightSpace));
 }
 
 form button {
+	padding: 1em 1.25em;
+	background-color: var(--primaryColor1);
+	border-radius: 2em;
+	border: unset;
+	color: var(--white);
 	align-self: center;
-	padding: 10px;
+	text-align: center;
+}
+
+.reminder {
+	background-color: var(--accentColor);
+	color: var(--white);
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	align-self: center;
+	padding: var(--standardSpace);
 }
 
 .output-message {
+	display: block;
 	text-align: center;
 	padding: 20px 20px;
-	background: rgba(255,255,255,.3);
+	margin-top: calc(2 * var(--wideSpace));
+	background: var(--fade);
 	outline: 3px solid #434343;
 }
 
 .output-message span {
 	font-weight: 700;
 }
-
-@media (min-width: 700px) {
-	h2 {
-		font-size: 40px;
-	}
-}
-
-
 
 .gradient {
     background: linear-gradient(-45deg, #ffeb3b, #74efff, #9c27b0);

@@ -1,3 +1,45 @@
+<!--
+Goal: Create a simple self-checkout system. Prompt for the prices and quantities of three items. Calculate the subtotal of the items. Then calculate the tax using a tax rate of 5.5%. Print out the line items with the quantity and total, and then print out the subtotal, tax amount, and total.
+
+Prompts/Inputs:
+	price1
+	quantity1
+	price2
+	quantity2
+	price3
+	quantity3
+
+Assumptions:
+	taxRate = 0.0055
+
+Output:
+	subTotal
+	tax
+	finalTotal
+	finalMessage
+
+Pseudocode:
+	Prompt for price1 with "Enter the price of item 1:"
+	Prompt for quantity1 with "Enter the quantity of item 1:"
+	Prompt for price2 with "Enter the price of item 1:"
+	Prompt for quantity2 with "Enter the quantity of item 1:"
+	Prompt for price3 with "Enter the price of item 1:"
+	Prompt for quantity3 with "Enter the quantity of item 1:"
+
+	Convert all values to number format
+
+	Calculate subTotal with "(price1 * quantity1) +
+	(price2 * quantity2) + (price3 * quantity3)
+	Calculate tax with subTotal * taxRate
+	Calculate finalTotal with subTotal + tax
+
+	Format subTotalPretty, taxPretty, and finalTotalPretty by adding $ and rounding to 2 decimal places
+
+	Concatenate finalMessage with "Subtotal: subTotalPretty (line break) Tax: taxPretty (line break) Total: finalTotalPretty"
+
+	Display finalMessage
+-->
+
 <section class="self-checkout">
 	<inner-column>
 		
@@ -90,53 +132,55 @@
 			$msgTotal = "<p>The final total is $totalPrice.</p>";
 		} ?>
 
-		<h2>Self-Checkout: An introvert's best friend</h2>
+		<h2 class="attention-voice">Self-Checkout: An introvert's best friend</h2>
 
 		<form method='POST'>
 			
 			<p>Please enter your item unit price and quantity below (up to 3 items).</p>
 			
-			<?php 
-			
-			for($i=1; $i<=3; $i++) {
+			<?php for($i=1; $i<=3; $i++) { ?>
 
-				echo "<p>Item $i</p>";
+				<label>Item <?=$i?></label>
 
-				echo "<div class='form-field'>
-				
-				<label for='quantity$i'>Quantity</label>
-				<input
-					type='number'
-					name='quantity$i'
-					id='quantity$i'
-					step='1'
-					min='0'/>	
-				</div>";
-
-				echo "<div class='form-field'>
-				
-				<label for='price$i'>Price ($)</label>
-				<input
-					type='number'
-					name='price$i'
-					id='price$i'
-					step='.01'
-					min='0'/>	
-				</div>";
-			}; ?>
+				<form-field-group>
+					<form-field>
+						<label for='quantity<?=$i?>'>Quantity</label>
+						<input
+							type='number'
+							name='quantity<?=$i?>'
+							id='quantity<?=$i?>'
+							step='1'
+							min='0'/>	
+					</form-field>
+					
+					<form-field>
+						<label for='price<?=$i?>'>Price ($)</label>
+						<input
+							type='number'
+							name='price<?=$i?>'
+							id='price<?=$i?>'
+							step='.01'
+							min='0'/>	
+					</form-field>
+				</form-field-group>
+			<?php } ?>
 			
 			<button type="submit" name="submitted">Submit</button>
 		</form>
 
 		<output>
 			<?php if(isset($_POST["submitted"])) { ?>
-				<?=$msgItem1?>
-				<?=$msgItem2?>
-				<?=$msgItem3?>
-				<?=$msgSubtotal?>
-				<?=$msgTax?>
-				<?=$msgTotal?>
+				<div class="output-message">
+					<?=$msgItem1?>
+					<?=$msgItem2?>
+					<?=$msgItem3?>
+					<?=$msgSubtotal?>
+					<?=$msgTax?>
+					<?=$msgTotal?>
+				</div>
 			<?php } ?>
 		</output>
+
+		<script src='templates/pages/<?=$page?>/script.js'></script>
 	</inner-column>
 </section>

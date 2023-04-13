@@ -1,31 +1,27 @@
-// Get length in feet
-// Get width in feet
-// Get coverage area per gallon
-
-// Ended up doing all three with one function
+// retrieve our inputs
 function retrieveInput(id) {
 	var input = document.getElementById(id);
 	var inputValue = Number(input.value);
 	return inputValue;
 }
 
-console.log('Length: ', retrieveInput('length'));
-console.log('Width: ', retrieveInput('width'));
-console.log('Coverage Area per Paint Gallon: ', retrieveInput('gallonCoverage'));
 
-// Calculate the ceiling area
-function ceilingArea() {
-	return retrieveInput('length') * retrieveInput('width');
-}
 
-console.log('Ceiling Area: ', ceilingArea());
 
-// Calculate the number of gallons required
-function countPaintGallons() {
-	return Math.ceil(ceilingArea() / retrieveInput('gallonCoverage'));
-}
+// calculate the subtotal
 
-console.log('Paint Gallons to Purchase: ', countPaintGallons());
+
+
+
+// calculate the tax
+
+
+
+
+// calculate the total price
+
+
+
 
 // Pluralize
 function pluralize(singularWord, count) {

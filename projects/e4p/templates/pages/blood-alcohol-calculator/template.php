@@ -36,11 +36,11 @@ Output:
 
 		<?php
 		// declare refereces
-		$weight = 1;// in lbs
+		$weight = 1; // in lbs
 		$sex = [0, 0];
 		$countDrinks = 0;	
 		$alcoholPerDrink = 0;  // in oz
-		$timeSinceDrink = 0;// in hours
+		$timeSinceDrink = 0; // in hours
 
 		//hardcoded data
 		$alcDistRatioMale = .73;
@@ -68,7 +68,7 @@ Output:
 		} ?>
 
 		<!-- form -->
-		<h2>Legal Driving Age</h2>
+		<h2 class="attention-voice">Legal Driving Age</h2>
 
 		<form method='POST'>
 			
@@ -76,67 +76,71 @@ Output:
 
 			<p class="reminder">Reminder: The BAC limit is <?=$bacLimit?>.</p>
 			
-			<form-field>
-				<label for='weight'>How much do you weigh? (in lbs)</label>
-
-				<input
-					type='number'
-					name='weight'
-					id='weight'
-					value='<?=$weight?>'
-					step='0.1'
-					min = '1'/>	
-			</form-field>
-
-			<form-field>				
-				<p>Sex (M/F)</p>
-
-				<form-option>
+			<form-field-group>
+				<form-field>
+					<label for='weight'>How much do you weigh? (in lbs)</label>
+				
 					<input
-						type='radio'
-						name='sex'
-						id='M'
-						value='M'
-						required/>
-					
-					<label for='M'>M</label>
-				</form-option>	
+						type='number'
+						name='weight'
+						id='weight'
+						value='<?=$weight?>'
+						step='0.1'
+						min = '1'/>	
+				</form-field>
+				
+				<form-field>				
+					<label>Sex (M/F)</label>
+				
+					<form-option>
+						<input
+							type='radio'
+							name='sex'
+							id='M'
+							value='M'
+							required/>
+						
+						<label for='M'>M</label>
+					</form-option>	
+				
+					<form-option>
+						<input
+							type='radio'
+							name='sex'
+							id='F'
+							value='F'
+							required/>
+						
+						<label for='F'>F</label>
+					</form-option>	
+				</form-field>
+			</form-field-group>
 
-				<form-option>
+			<form-field-group>
+				<form-field>
+					<label for='countDrinks'>How many drinks have you had?</label>
+				
 					<input
-						type='radio'
-						name='sex'
-						id='F'
-						value='F'
-						required/>
-					
-					<label for='F'>F</label>
-				</form-option>	
-			</form-field>
-
-			<form-field>
-				<label for='countDrinks'>How many drinks have you had?</label>
-
-				<input
-					type='number'
-					name='countDrinks'
-					id='countDrinks'
-					value='<?=$countDrinks?>'
-					step='0.1'
-					min = '0'/>	
-			</form-field>
-
-			<form-field>
-				<label for='alcoholPerDrink'>About how many oz of alcohol was in each drink?</label>
-
-				<input
-					type='number'
-					name='alcoholPerDrink'
-					id='alcoholPerDrink'
-					value='<?=$alcoholPerDrink?>'
-					step='0.1'
-					min = '0'/>	
-			</form-field>
+						type='number'
+						name='countDrinks'
+						id='countDrinks'
+						value='<?=$countDrinks?>'
+						step='0.1'
+						min = '0'/>	
+				</form-field>
+				
+				<form-field>
+					<label for='alcoholPerDrink'>About how many oz of alcohol per drink?</label>
+				
+					<input
+						type='number'
+						name='alcoholPerDrink'
+						id='alcoholPerDrink'
+						value='<?=$alcoholPerDrink?>'
+						step='0.1'
+						min = '0'/>	
+				</form-field>
+			</form-field-group>
 
 			<form-field>
 				<label for='timeSinceDrink'>How many hours ago was your last drink?</label>
@@ -157,6 +161,8 @@ Output:
 			<?php
 				if(isset($_POST["submitted"])) {
 				
+					echo '<div class="output-message">';
+
 					echo "<p>Your BAC is $BAC.</p>";
 				
 					echo "<p>";
@@ -166,10 +172,12 @@ Output:
 						echo "Good to go! But still make sure to drive safe.";
 					}
 					echo "</p>";
+
+					echo "</div>";
 				}
 			?>
 		</output>
 
-		<script src='script.js'></script>
+		<script src='templates/pages/<?=$page?>/script.js'></script>
 	</inner-column>
 </section>

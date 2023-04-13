@@ -29,7 +29,17 @@ function bac() {
 }
 
 function generateMessage() {
-	return '<p>hello</p>';
+	if (bac() >= .08) {
+		var recommendation = "It is not legal for you to drive. Sober up!";
+	} else {
+		var recommendation = "Good to go! But still make sure to drive safe.";
+	}
+
+	return `
+		<div class="output-message">
+			<p>Hi! Your BAC is ${bac()}.</p>	
+			<p>${recommendation}</p>
+		</div>`;
 }
 
 // Output a message
