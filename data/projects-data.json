@@ -17,5 +17,11 @@
 		"description": "Personal website for sugar flower artist, Gregory. (Hint: look for those hidden links!)",
 		"caseStudyLink": "https://mrdrewvo.substack.com/p/hello-its-gregory",
 		"directLink": "projects/small-business-challenge"
+	},
+	{
+		"title": "Exercises for Programmers",
+		"slug": "e4p",
+		"description": "Under Construction - form practice in PHP and JavaScript",
+		"directLink": "projects/e4p"
 	}
 ]
