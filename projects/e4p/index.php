@@ -6,7 +6,7 @@
 
 <?php
 	// ROUTER
-	$page = "home";
+	$page = "pizza-party";
 	if ( isset($_GET['page']) ) {
 		$page = $_GET['page'];
 	}
@@ -16,7 +16,7 @@
 		if ( isset($page) ) {
 			$page = $_GET["page"];
 		} else {
-			$page = "home"; // defaults class "active" if no query string
+			$page = "pizza-party"; // defaults class "active" if no query string
 		}
 
 		if ($page == $name) {
