@@ -20,16 +20,36 @@ inner-column {
 }
 
 /* ~~~ ELEMENT STYLING ~~~ */
-header h1 {
-	color: #434343;
-	font-size: 40px;
-	font-weight: 600;
+mast-head {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--wideSpace);
+}
+
+mast-head h1 {
 	text-align: center;
 }
 
-.site-main section{
-	min-height: 40vh;
-	padding: 20px 0px 40px 0px;
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/*display: grid;
+	grid-template-columns: 1fr 1fr 1fr;*/
+	gap: var(--tightSpace);
+}
+
+nav a {
+	padding: .5em;
+	background-color: var(--teal);
+	border-radius: 2em;
+	color: var(--white);
+	font-size: .75em;
+	width: 175px;
+	text-align: center;
 }
 
 h2 {
@@ -50,11 +70,6 @@ p {
 	background-color: rgba(255,76,48,.4);
 	font-size: 14px;
 }
-
-/*.site-main section:nth-of-type(2n+1) {
-	background-color: #179ACE;
-	color: white;
-}*/
 
 form {
 	min-height: 25vh;

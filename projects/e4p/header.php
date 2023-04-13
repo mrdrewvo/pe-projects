@@ -8,7 +8,7 @@
 
 		<mast-head>
 			<a href="?page=home" <?=isActivePage("home")?>>
-				<h1>Exercises for Programmers</h1>
+				<h1 class="loud-voice">Exercises for Programmers</h1>
 			</a>
 
 			<nav class="site-menu">
