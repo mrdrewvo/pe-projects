@@ -31,7 +31,7 @@ Challenges:
 		// declare references
 		$ceilingLength = 1;
 		$ceilingWidth = 1;
-		$gallonCoverage = 350;
+		$gallonCoverage = 200;
 
 		if(isset($_POST["submitted"])) {
 			// assign the input references
@@ -72,7 +72,7 @@ Challenges:
 						name="length"
 						id="length"
 						value="<?=$ceilingLength?>"
-						step="any"
+						step=".01"
 						min="1"/>	
 				</form-field>
 				
@@ -84,7 +84,7 @@ Challenges:
 						name="width"
 						id="width"
 						value="<?=$ceilingWidth?>"
-						step="any"
+						step=".01"
 						min="1"/>	
 				</form-field>
 			</form-field-group>
@@ -97,8 +97,8 @@ Challenges:
 					name="gallonCoverage"
 					id="gallonCoverage"
 					value="<?=$gallonCoverage?>"
-					step="any"
-					min="0"/>	
+					step=".01"
+					min="1"/>	
 			</form-field>
 			
 			<button type="submit" name="submitted">Let's find out!</button>
