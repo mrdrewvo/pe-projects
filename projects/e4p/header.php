@@ -7,9 +7,10 @@
 	<inner-column>
 
 		<mast-head>
-			<a href="?page=home" <?=isActivePage("home")?>>
+			<h1 class="loud-voice">Exercises for Programmers</h1>
+			<!-- <a href="?page=home" <?=isActivePage("home")?>>
 				<h1 class="loud-voice">Exercises for Programmers</h1>
-			</a>
+			</a> -->
 
 			<nav class="site-menu">
 				<?php foreach($formsData as $formData) { 

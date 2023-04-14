@@ -51,7 +51,7 @@
 
 		<form method='POST'>
 			
-			<p>To those that need to feel validated today.</p>
+			<p>For those that need to feel validated today.</p>
 			
 			<form-field>
 				<label for='username'>Username</label>

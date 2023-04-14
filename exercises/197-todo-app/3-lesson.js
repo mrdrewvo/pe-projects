@@ -1,9 +1,9 @@
 function Monster(name, age) { // Constructive functions are written with a capital letter
 
 	this.name = name,
-	this.age.age,
+	this.age = age,
 
-	this.roar: function() {
+	this.roar =  function() {
 		alert(`${name}!!!!`);
 	}
 
@@ -11,7 +11,7 @@ function Monster(name, age) { // Constructive functions are written with a capit
 
 const chunky = new Monster("Chunky", 15);
 
-const munch = new Monster("Munchy", 45);
+const munchy = new Monster("Munchy", 45);
 
 chunky.roar();
 
