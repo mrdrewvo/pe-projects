@@ -24,9 +24,9 @@
 // };
 
 
-function TodoApp() {
+function TodoApp(name = "none") {
 
-	// this.name = name;
+	this.name = name;
 	this.todos = [];
 	
 	this.idIncrementor = 0,
@@ -34,7 +34,7 @@ function TodoApp() {
 	this.showUpdate = function(note = "") {
 		console.log(`--- ${note}`);
 		console.log('My Todos:', this.todos);
-	},
+	};
 
 	this.add = function(content) {
 		const todo = {
@@ -43,17 +43,17 @@ function TodoApp() {
 			};
 		this.todos = [...this.todos, todo];
 		this.showUpdate(`Added ${content}`);
-	},
+	};
 
 	this.remove = function(index) {
-		this.todos.splice(index, 1);
 		this.showUpdate(`Removed ${this.todos[index].content}`);
-	},
+		this.todos.splice(index, 1);		
+	};
 
 	this.complete = function(id) {
 		this.todos[id].complete = true;
 		this.showUpdate(`Completed ${this.todos[id].content}`);
-	}
+	};
 }
 
 const trial = new TodoApp();
@@ -64,7 +64,9 @@ const trial2 = new TodoApp();
 
 trial2.add('eat your veggies');
 
+trial2.add('pack for trip');
 
+trial2.remove('0');
 
 
 
