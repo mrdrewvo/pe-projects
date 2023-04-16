@@ -1,70 +1,81 @@
-function Monster(name, age) { // Constructive functions are written with a capital letter
+// function Monster(name, age) { // Constructive functions are written with a capital letter
 
-	this.name = name,
-	this.age = age,
+// 	this.name = name,
+// 	this.age = age,
 
-	this.roar =  function() {
-		alert(`${name}!!!!`);
-	}
+// 	this.roar =  function() {
+// 		alert(`${this.name}!!!!`);
+// 	}
 
-}
+// }
 
-const chunky = new Monster("Chunky", 15);
+// const chunky = new Monster("Chunky", 15);
 
-const munchy = new Monster("Munchy", 45);
+// const munchy = new Monster("Munchy", 45);
 
-chunky.roar();
+// chunky.roar();
 
-console.log(munchy.name);
+// console.log(munchy.name);
 
-munchy.roar();
+// munchy.roar();
 
-Monster.prototype.whisper = function() {
-	console.log(`... hi my name is ${name}`)
-};
-
-
+// Monster.prototype.whisper = function() {
+// 	console.log(`... hi my name is ${this.name}`)
+// };
 
 
+function TodoApp() {
 
-const todoApp = {
+	// this.name = name;
+	this.todos = [];
+	
+	this.idIncrementor = 0,
 
-	todos: [],
-	idIncrementor: 0,
-
-	showUpdate(note = "") {
+	this.showUpdate = function(note = "") {
 		console.log(`--- ${note}`);
 		console.log('My Todos:', this.todos);
 	},
 
-	add(content) {
+	this.add = function(content) {
 		const todo = {
 			id: `todo-${++this.idIncrementor}`,
-			content: content,
+			content,
 			};
 		this.todos = [...this.todos, todo];
 		this.showUpdate(`Added ${content}`);
 	},
 
-	remove(index) {
-		this.showUpdate(`Removed ${this.todos[index].content}`);
+	this.remove = function(index) {
 		this.todos.splice(index, 1);
+		this.showUpdate(`Removed ${this.todos[index].content}`);
 	},
 
-	complete(id) {
+	this.complete = function(id) {
 		this.todos[id].complete = true;
 		this.showUpdate(`Completed ${this.todos[id].content}`);
-	},
+	}
 }
 
-todoApp.add("Go to the market");
+const trial = new TodoApp();
 
-todoApp.add("Prepare dinner");
+trial.add('take a walk');
 
-todoApp.add("Play tennis")
+const trial2 = new TodoApp();
 
-todoApp.complete(0);
+trial2.add('eat your veggies');
 
-todoApp.add("Call Meka");
 
-todoApp.remove(1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
