@@ -6,6 +6,13 @@
 
 ---
 
+## THU 2023.04.27 - Been a while
+* Today I'm going to quickly draw up a couple screens in Figma
+	* Login (with app title)
+	* Grocery list
+	* Item Details
+	* Filter (maybe not this one)
+
 ## MON 2023.03.20 - Mockup to Code Sprint
 * Goal: emulate a visual design/layout from Figma
 	* Ensure the CSS design system is powerful and resiliant
