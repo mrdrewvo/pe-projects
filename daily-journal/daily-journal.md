@@ -6,6 +6,21 @@
 
 ---
 
+## THU 2023.05.04 - False start, it's okay!
+* Meeting with Derek to see how to layout this Vue lesson plan
+* Still need to work on:
+	* portfolio case studies
+	* todo app in vanilla.js
+* Career pathing:
+	* Options: 
+		* Go for a product manager/project manager role to get the salary and perks back then continue the program
+		* Headsdown with the program and get the coding job
+	* Things to consider:
+		* Busy with house sale/move in May-June
+		* Probably won't actually move until July
+		
+
+
 ## THU 2023.04.27 - Been a while
 * Today I'm going to quickly draw up a couple screens in Figma
 	* Login (with app title)
