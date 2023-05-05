@@ -18,8 +18,15 @@
 	* Things to consider:
 		* Busy with house sale/move in May-June
 		* Probably won't actually move until July
-		
-
+* Lesson Notes - E4P with Vue options API
+	* Exercises for programmers #1 in all the flavors
+		* [JS with a function (and recursion?)](https://perpetual.education/stories/e4p-01/#js-2-function-recursion)
+			* Some problems with this program are...
+				* It can't initialize on it's own (needs a form).
+				* You can't cancel out of the loop
+		* What is StackBlitz?
+		* Lesson Video
+			* 
 
 ## THU 2023.04.27 - Been a while
 * Today I'm going to quickly draw up a couple screens in Figma
@@ -37,7 +44,6 @@
 		* How many modules are there really? How many are just slightly tweaked versions of the same one?
 			* Which modules use simlar data?
 		* Which tools are the best tools for the job?
-
 
 ## FRI 2023.03.17
 * trying the E4P stuff with JS lesson finally...
