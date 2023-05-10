@@ -6,6 +6,13 @@
 
 ---
 
+## TUE 2023.05.09 - Vue App
+[CodePen](https://codepen.io/perpetual-education/pen/ZEqvzma/8d675fd7545825db7ed9f18f6cb92e27)
+* Add/remove items
+* Search list
+* Toggle a class (color?)
+
+
 ## THU 2023.05.04 - False start, it's okay!
 * Meeting with Derek to see how to layout this Vue lesson plan
 * Still need to work on:
